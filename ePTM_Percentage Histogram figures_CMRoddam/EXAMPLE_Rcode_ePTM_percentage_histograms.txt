@@ -1,0 +1,81 @@
+## Example for REAL ePTM scenario Runs: Cumulative Percentage per Fate-node figures   
+####################################
+
+#### Individual Histograms/figures #########
+############################################
+
+##### Scenario B (baseline -5000 OMR)
+
+### Insertion = 332 (Sacramento River at Sacto) ###
+
+#Bring in data file and name it whatever you want; the command "na.strings" turns the -999s to NA which R ignores
+B_I332<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenB_Sac_out.csv",na.strings=-999)
+
+head(B_I332)
+colnames(B_I332)
+
+#Credit to Doug Jackson (SWFSC): "for-loop" to change dates from text format to numeric format
+#note: default in R for dates starts at Jan 1. 1970
+
+#"pull-out" columnes names
+dataNames_B_I332<- names(B_I332)
+
+for(i in 1:ncol(B_I332))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_B_I332[i]))
+{
+B_I332[,i] <- as.numeric(as.Date(B_I332[,i], format="%d%b%Y"))
+}
+}
+
+#Check to make sure for-loop worked- your dates should be numeric now
+head(B_I332)
+
+
+## Histogram where Insertaion pt= Sacramento, ePart fate= Chipps
+#make histogram first with the command hist(); you can fiddle with the bins for the dates with breaks()
+hChipps_B_I332=hist(B_I332$Chipps_lastDate,breaks=seq(16477,16495,by=1))
+
+#view struture of histogram
+str(hChipps_BI332)
+
+#re-define density to show percentages of 1000 eParts
+hChipps_B_I332$density=(hChipps_B_I332$counts/1000)*100
+
+#cumulative summation of percentages
+hChipps_B_I332.cum<-cumsum(hChipps_B_I332$density)
+
+#plot histogram; can change labs and titles; to add a second line to the main title use "\n"
+#also pch() is the dot type; you could also change the color of your data points with col="blue" etc, or you can get fancy and google colors in R and get specific numbers of diff shades of colors
+#ylim() defines y-axis; yaxt="n" tells R to not show the y-axis (becuase I want to customize it later)
+plot(hChipps_B_I332.cum,ylab="Cumulative Percentage of enhanced Particles",main="Baseline (-5000) OMR:\nInsertion=Sac R. at Sacramento, Fate=Chipps",xlab="Days after enhanced particle insertion (Feb 11- Mar 2,2015)",pch=1,ylim=c(0,100),yaxt="n")
+
+#Customize y-axis
+axis(2,at=seq(0,100,by=10))
+
+
+##### Bring in second dataset:Scenario A (-6250 OMR flex)
+###Insertion =332 (Sacramento River at Sacto)
+## Do same step as above, and call this datafile something different
+
+
+### After making another histogram with the SCenario A output: Compare points on the same graph
+
+#first I plot the point from the Scenario B and customized my titles, labs, and axes
+plot(hChipps_B_I332.cum,ylab="Cumulative Percentage of enhanced Particles",main="Insertion=Sac R. at Sacramento, Fate=Chipps",xlab="Days after enhanced particle insertion (Feb 11- Mar 2,2015)",pch=1,ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+
+#plot points from Scenario B histogram
+points(hChipps_A_I332.cum,pch=18)
+
+#add legend; the first two numbers are the coordinates for where you want to legend to be; you can also say 'topleft' or 'bottomright', etc.
+#the c() is what you want the legend to say in that exact order; and the pch() is the order of the dots as is aligns with your legend text
+legend(1,100,c("-5000 OMR Baseline","-6250 OMR Flex"),pch=c(1,18))
+
+
+## Want a pdf of your graph?
+## With your graph window open, and the size you want it-- go to: File -> Save as -> pdf (This option will only show if you graph window in R is the last one clicked on (i.e. activated))
+
+
+##### FIN

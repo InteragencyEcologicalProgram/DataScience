@@ -1,0 +1,677 @@
+fish.ID,Prey.taxa,LH,Date,Year,Month,yr.mo,Run,Site.Code,Gear,FL,Fullness,Digestion,Damp.wt,Empty.wt,Count,Wt,Stomach.broken.damaged,Comments,REF,Category,fin.wt
+2012-001CHNS,Daphniidae,ephippia,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,70,4,2,0.0888,0.0515,3,5.00E-04,,,Cladocera,Zooplankton,2.6980658
+2012-001CHNS,Animal Matter,,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,70,4,2,0.0888,0.0515,NA,0.0047,,,Animal Matter,Nondescript,2.6980658
+2012-001CHNS,Daphnia sp,,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,70,4,2,0.0888,0.0515,4,0.0014,,,Cladocera,Zooplankton,2.6980658
+2012-001CHNS,Daphniidae,,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,70,4,2,0.0888,0.0515,5,2.00E-04,,,Cladocera,Zooplankton,2.6980658
+2012-002CHNS,unidentified,,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,69,2,3,0.1106,0.0757,NA,0.0022,,,Unidentified,Nondescript,2.96461924
+2012-002CHNS,Daphnia pulex/pulicaria,,3/13/2012,2012,Mar,2012.Mar,S,STTD,RSTR,69,2,3,0.1106,0.0757,10,0.0048,,,Cladocera,Zooplankton,2.96461924
+2012-006CHNS,Animal Matter,,3/16/2012,2012,Mar,2012.Mar,S,STTD,RSTR,68,2,5,0.0827,0.0711,NA,0,,,Animal Matter,Nondescript,2.70981328
+2012-006CHNS,Daphnia sp,,3/16/2012,2012,Mar,2012.Mar,S,STTD,RSTR,68,2,5,0.0827,0.0711,17,0.0012,,,Cladocera,Zooplankton,2.70981328
+2012-006CHNS,Daphniidae,,3/16/2012,2012,Mar,2012.Mar,S,STTD,RSTR,68,2,5,0.0827,0.0711,4,2.00E-04,,,Cladocera,Zooplankton,2.70981328
+2012-007CHNF,Aphididae,,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,7,0.0027,,,Hemiptera,Terrestrial,1.84393044
+2012-007CHNF,unidentified,,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,NA,0.0012,,,Unidentified,Nondescript,1.84393044
+2012-007CHNF,Chironomidae,adult,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,12,0.0035,,,Diptera,Diptera,1.84393044
+2012-007CHNF,Dolichopodidae,adult,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,1,0.0025,,,Diptera,Diptera,1.84393044
+2012-007CHNF,Ceratopogonidae,adult,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,2,0,,,Diptera,Diptera,1.84393044
+2012-007CHNF,Cyclopoida,,3/12/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,3,5,0.0624,0.0428,9,2.00E-04,,,Copepoda,Zooplankton,1.84393044
+2012-007CHNS,Daphnia sp,,3/19/2012,2012,Mar,2012.Mar,S,STTD,RSTR,72,6,3,0.1775,0.0418,26,0.0067,,,Cladocera,Zooplankton,3.03676748
+2012-007CHNS,Simocephalus sp,,3/19/2012,2012,Mar,2012.Mar,S,STTD,RSTR,72,6,3,0.1775,0.0418,2,1.00E-04,,,Cladocera,Aquatic,3.03676748
+2012-007CHNS,Daphniidae,,3/19/2012,2012,Mar,2012.Mar,S,STTD,RSTR,72,6,3,0.1775,0.0418,24,0.0048,,,Cladocera,Zooplankton,3.03676748
+2012-007CHNS,Animal Matter,,3/19/2012,2012,Mar,2012.Mar,S,STTD,RSTR,72,6,3,0.1775,0.0418,NA,0.0133,,,Animal Matter,Nondescript,3.03676748
+2012-008CHNF,unidentified,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,2,4,0.0279,0.016,NA,0.0019,,,Unidentified,Nondescript,1.748911
+2012-008CHNF,Ceratopogonidae,adult,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,2,4,0.0279,0.016,1,0,,,Diptera,Diptera,1.748911
+2012-008CHNF,Daphnia pulex/pulicaria,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,2,4,0.0279,0.016,6,0.0014,,,Cladocera,Zooplankton,1.748911
+2012-009CHNF,Animal Matter,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,61,3,2,0.057,0.0441,NA,0.0033,,,Animal Matter,Nondescript,2.07888004
+2012-009CHNF,Chironomidae,emergent,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,61,3,2,0.057,0.0441,1,9.00E-04,,,Diptera,Diptera,2.07888004
+2012-009CHNF,Cladocera,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,61,3,2,0.057,0.0441,1,1.00E-04,,,Cladocera,Zooplankton,2.07888004
+2012-009CHNF,Daphniidae,ephippia,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,61,3,2,0.057,0.0441,1,2.00E-04,,,Cladocera,Zooplankton,2.07888004
+2012-010CHNF,Daphnia sp,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,5,4,0.0876,0.0394,118,0.0074,,,Cladocera,Zooplankton,2.15425104
+2012-010CHNF,Animal Matter,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,5,4,0.0876,0.0394,NA,0.0034,,,Animal Matter,Nondescript,2.15425104
+2012-010CHNF,Nematoda,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,5,4,0.0876,0.0394,1,0,,,Nematoda,Aquatic,2.15425104
+2012-010CHNF,Cladocera,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,58,5,4,0.0876,0.0394,104,0.0212,Y,stomach open,Cladocera,Zooplankton,2.15425104
+2012-011CHNF,Animal Matter,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,56,3,4,0.0297,0.0176,NA,0.0011,,,Animal Matter,Nondescript,1.4151994
+2012-011CHNF,Daphniidae,,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,56,3,4,0.0297,0.0176,3,4.00E-04,,,Cladocera,Zooplankton,1.4151994
+2012-011CHNF,Hemiptera,adult,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,56,3,4,0.0297,0.0176,1,5.00E-04,,,Hemiptera,Terrestrial,1.4151994
+2012-011CHNF,Daphniidae,ephippia,3/13/2012,2012,Mar,2012.Mar,F,STTD,RSTR,56,3,4,0.0297,0.0176,1,0,,,Cladocera,Zooplankton,1.4151994
+2012-012CHNF,Animal Matter,,3/14/2012,2012,Mar,2012.Mar,F,STTD,RSTR,64,3,2,0.0696,0.0373,NA,0.0062,, ,Animal Matter,Nondescript,2.47777456
+2012-012CHNF,Daphnia sp,,3/14/2012,2012,Mar,2012.Mar,F,STTD,RSTR,64,3,2,0.0696,0.0373,6,7.00E-04,,,Cladocera,Zooplankton,2.47777456
+2012-012CHNF,Daphnia sp,ephippia,3/14/2012,2012,Mar,2012.Mar,F,STTD,RSTR,64,3,2,0.0696,0.0373,5,8.00E-04,,,Cladocera,Zooplankton,2.47777456
+2012-012CHNF,Chironomidae,adult,3/14/2012,2012,Mar,2012.Mar,F,STTD,RSTR,64,3,2,0.0696,0.0373,1,8.00E-04,,thoraces,Diptera,Diptera,2.47777456
+2012-013CHNF,Animal Matter,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,NA,0.0027,,,Animal Matter,Nondescript,1.79423756
+2012-013CHNF,Calanoida,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,1,1.00E-04,,,Copepoda,Zooplankton,1.79423756
+2012-013CHNF,Aphididae,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,1,6.00E-04,,,Hemiptera,Terrestrial,1.79423756
+2012-013CHNF,Daphniidae,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,42,0.0068,,,Cladocera,Zooplankton,1.79423756
+2012-013CHNF,Eurycercus sp,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,1,1.00E-04,,,Cladocera,Aquatic,1.79423756
+2012-013CHNF,Simocephalus sp,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,4,9.00E-04,,,Cladocera,Aquatic,1.79423756
+2012-013CHNF,Cyclopoida,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,1,1.00E-04,,,Copepoda,Zooplankton,1.79423756
+2012-013CHNF,Daphnia pulex/pulicaria,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,57,6,4,0.1014,0.0062,136,0.0189,,,Cladocera,Zooplankton,1.79423756
+2012-014CHNF,Simocephalus sp,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,5,4,0.0938,0.0366,2,7.00E-04,,,Cladocera,Aquatic,2.56842768
+2012-014CHNF,Daphnia pulex/pulicaria,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,5,4,0.0938,0.0366,30,0.0096,,,Cladocera,Zooplankton,2.56842768
+2012-014CHNF,Daphniidae,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,5,4,0.0938,0.0366,19,0.0031,,,Cladocera,Zooplankton,2.56842768
+2012-014CHNF,Animal Matter,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,5,4,0.0938,0.0366,NA,0.0034,,,Animal Matter,Nondescript,2.56842768
+2012-015CHNF,Animal Matter,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,4,5,0.0896,0.0324,NA,0.0043,,,Animal Matter,Nondescript,2.75805072
+2012-015CHNF,Daphnia sp,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,65,4,5,0.0896,0.0324,122,0.0347,Y,stomach open,Cladocera,Zooplankton,2.75805072
+2012-016CHNF,Tipulidae,adult,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,1,0.0031,,,Diptera,Diptera,1.8741828
+2012-016CHNF,Simocephalus sp,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,2,3.00E-04,,,Cladocera,Aquatic,1.8741828
+2012-016CHNF,Animal Matter,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,NA,0.0012,,,Animal Matter,Nondescript,1.8741828
+2012-016CHNF,Daphnia pulex/pulicaria,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,32,0.0161,,,Cladocera,Zooplankton,1.8741828
+2012-016CHNF,Cyclopoida,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,1,0,,,Copepoda,Zooplankton,1.8741828
+2012-016CHNF,Daphniidae,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,56,5,4,0.0602,0.0062,16,0.0052,,,Cladocera,Zooplankton,1.8741828
+2012-017CHNF,unidentified,,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,57,4,5,0.0714,0.0259,NA,3.00E-04,,,Unidentified,Nondescript,1.816485
+2012-017CHNF,Chironomidae,pupa,3/15/2012,2012,Mar,2012.Mar,F,BL-3,Beach Seine,57,4,5,0.0714,0.0259,10,0.0221,,,Diptera,Diptera,1.816485
+2012-018CHNF,Animal Matter,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,55,5,3,0.0506,0.0205,NA,0.0084,,,Animal Matter,Nondescript,1.56781268
+2012-018CHNF,Cladocera,,3/15/2012,2012,Mar,2012.Mar,F,STTD,RSTR,55,5,3,0.0506,0.0205,26,0.0051,,,Cladocera,Zooplankton,1.56781268
+2012-019CHNF,Nematoda,,3/16/2012,2012,Mar,2012.Mar,F,STTD,RSTR,63,3,5,0.049,0.0329,1,0,Y,only 2/3 stomach present,Nematoda,Aquatic,2.08865228
+2012-019CHNF,unidentified,adult,3/16/2012,2012,Mar,2012.Mar,F,STTD,RSTR,63,3,5,0.049,0.0329,NA,6.00E-04,Y,only 2/3 stomach present,Unidentified,Nondescript,2.08865228
+2012-019CHNF,Daphnia pulex/pulicaria,,3/16/2012,2012,Mar,2012.Mar,F,STTD,RSTR,63,3,5,0.049,0.0329,27,0.0046,Y,only 2/3 stomach present,Cladocera,Zooplankton,2.08865228
+2012-021CHNF,Animal Matter,,3/14/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,1,1,0.0757,0.0646,NA,0,,mammal hair,Animal Matter,Nondescript,2.7801942
+2012-022CHNF,Daphnia sp,,3/16/2012,2012,Mar,2012.Mar,F,STTD,RSTR,56,2,6,0.0527,0.0497,2,6.00E-04,Y,stomach open,Cladocera,Zooplankton,1.52456532
+2012-023CHNF,Animal Matter,,3/19/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,2,5,0.0678,0.0581,NA,0,,,Animal Matter,Nondescript,2.5483634
+2012-023CHNF,Daphnia sp,,3/19/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,2,5,0.0678,0.0581,3,5.00E-04,,,Cladocera,Zooplankton,2.5483634
+2012-024CHNF,Animal Matter,,3/20/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,4,4,0.0697,0.0523,NA,9.00E-04,,,Animal Matter,Nondescript,2.78986248
+2012-024CHNF,Daphnia sp,,3/20/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,4,4,0.0697,0.0523,8,0.0013,,,Cladocera,Zooplankton,2.78986248
+2012-024CHNF,Daphniidae,,3/20/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,4,4,0.0697,0.0523,6,0.0014,,,Cladocera,Zooplankton,2.78986248
+2012-024CHNF,Aphididae,adult,3/20/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,4,4,0.0697,0.0523,4,9.00E-04,,winged,Hemiptera,Terrestrial,2.78986248
+2012-024CHNF,Algae,,3/20/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,4,4,0.0697,0.0523,NA,6.00E-04,,,Unidentified,Nondescript,2.78986248
+2012-024CHNS,Psyllidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,4.00E-04,,,Hemiptera,Terrestrial,3.31174168
+2012-024CHNS,Acari,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,2,0,,,Arachnida,Terrestrial,3.31174168
+2012-024CHNS,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,19,0.002,,,Diptera,Diptera,3.31174168
+2012-024CHNS,Ephydridae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,0.0027,,,Diptera,Diptera,3.31174168
+2012-024CHNS,Ostracoda,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,0,,,Ostracoda,Aquatic,3.31174168
+2012-024CHNS,Aphididae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,4,7.00E-04,,,Hemiptera,Terrestrial,3.31174168
+2012-024CHNS,Nematocera,larvae,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,5.00E-04,,,Diptera,Diptera,3.31174168
+2012-024CHNS,Collembola,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,0,,,Collembola,Terrestrial,3.31174168
+2012-024CHNS,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,NA,0.0052,,,Animal Matter,Nondescript,3.31174168
+2012-024CHNS,Americorophium spinicorne,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,0.0057,,,Amphipoda,Aquatic,3.31174168
+2012-024CHNS,Inorganic matter,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,NA,5.00E-04,,sand,Inorganic Matter,Nondescript,3.31174168
+2012-024CHNS,Hymenoptera,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,2,3.00E-04,,,Hymenoptera,Terrestrial,3.31174168
+2012-024CHNS,Aranae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,74,6,4,0.1182,0.044,1,0.0071,,,Arachnida,Terrestrial,3.31174168
+2012-025CHNF,Brachycera,adult,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,3,3,0.0655,0.0442,2,8.00E-04,,,Diptera,Diptera,2.68486288
+2012-025CHNF,Animal Matter,,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,3,3,0.0655,0.0442,NA,0.0027,,,Animal Matter,Nondescript,2.68486288
+2012-025CHNF,Aranae,,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,3,3,0.0655,0.0442,1,3.00E-04,,"cephalothorax, legs",Arachnida,Terrestrial,2.68486288
+2012-025CHNF,Chironomidae,adult,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,3,3,0.0655,0.0442,4,2.00E-04,,,Diptera,Diptera,2.68486288
+2012-025CHNS,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,NA,0.0033,,,Animal Matter,Nondescript,3.03624768
+2012-025CHNS,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,13,0.0013,,"heads, thoraces",Diptera,Diptera,3.03624768
+2012-025CHNS,Chydoridae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,1,0,,,Cladocera,Aquatic,3.03624768
+2012-025CHNS,Ceratopogonidae,pupa,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,1,1.00E-04,,,Diptera,Diptera,3.03624768
+2012-025CHNS,Daphnia sp,ephippia,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,2,2.00E-04,,,Cladocera,Zooplankton,3.03624768
+2012-025CHNS,Aphididae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,2,1.00E-04,,,Hemiptera,Terrestrial,3.03624768
+2012-025CHNS,Psocoptera,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,1,2.00E-04,,,Psocoptera,Terrestrial,3.03624768
+2012-025CHNS,Hypogastruridae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,1,1.00E-04,,,Collembola,Terrestrial,3.03624768
+2012-025CHNS,Daphnia sp,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,5,2.00E-04,,,Cladocera,Zooplankton,3.03624768
+2012-025CHNS,Aranae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,75,4,3,0.1448,0.0658,1,3.00E-04,,,Arachnida,Terrestrial,3.03624768
+2012-026CHNF,Daphniidae,,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,4,2,0.0761,0.0574,2,5.00E-04,,,Cladocera,Zooplankton,2.5395268
+2012-026CHNF,Animal Matter,,3/23/2012,2012,Mar,2012.Mar,F,STTD,RSTR,67,4,2,0.0761,0.0574,NA,0.0041,,,Animal Matter,Nondescript,2.5395268
+2012-026CHNS,Hypogastruridae/Onychiuridae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,6,0,,,Collembola,Terrestrial,3.4013552
+2012-026CHNS,Aphididae,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,22,0.0022,,mostly thoraces,Hemiptera,Terrestrial,3.4013552
+2012-026CHNS,Hymenoptera,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,3,0.001,,,Hymenoptera,Terrestrial,3.4013552
+2012-026CHNS,Formicidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,1,0.0022,,,Hymenoptera,Terrestrial,3.4013552
+2012-026CHNS,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,7,0.0011,,,Diptera,Diptera,3.4013552
+2012-026CHNS,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,NA,0.0052,,,Animal Matter,Nondescript,3.4013552
+2012-026CHNS,Psyllidae,adult,3/27/2012,2012,Mar,2012.Mar,S,STTD,RSTR,73,5,2,0.1425,0.0651,1,1.00E-04,,,Hemiptera,Terrestrial,3.4013552
+2012-027CHNF,Diptera,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,1,5.00E-04,,,Diptera,Diptera,2.51052196
+2012-027CHNF,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,NA,0.0065,,,Animal Matter,Nondescript,2.51052196
+2012-027CHNF,Daphnia sp,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,7,0.0011,,,Cladocera,Zooplankton,2.51052196
+2012-027CHNF,Aphididae,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,2,8.00E-04,,wingless,Hemiptera,Terrestrial,2.51052196
+2012-027CHNF,Aphididae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,3,0.0015,,winged,Hemiptera,Terrestrial,2.51052196
+2012-027CHNF,Nematoda,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,1,0,,,Nematoda,Aquatic,2.51052196
+2012-027CHNF,Cyclopoida,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,3,4.00E-04,,,Copepoda,Zooplankton,2.51052196
+2012-027CHNF,Insect matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,NA,0.0059,,,Insecta,Nondescript,2.51052196
+2012-027CHNF,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,4,0.0023,,,Diptera,Diptera,2.51052196
+2012-027CHNF,Calanoida,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,2,0,,,Copepoda,Zooplankton,2.51052196
+2012-027CHNF,Cladocera,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,62,4,3,0.1298,0.0732,15,0.0024,,,Cladocera,Zooplankton,2.51052196
+2012-029CHNF,Daphnia sp,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,13,0.0015,,,Cladocera,Zooplankton,2.567596
+2012-029CHNF,Psocoptera,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,7.00E-04,,,Psocoptera,Terrestrial,2.567596
+2012-029CHNF,Thripidae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,0,,,Thysanoptera,Terrestrial,2.567596
+2012-029CHNF,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,NA,0.0074,,,Animal Matter,Nondescript,2.567596
+2012-029CHNF,Cladocera,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,8,0.0011,,,Cladocera,Zooplankton,2.567596
+2012-029CHNF,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,3,4.00E-04,,,Diptera,Diptera,2.567596
+2012-029CHNF,Insect matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,NA,0.0077,Y,stomach open,Insecta,Nondescript,2.567596
+2012-029CHNF,Collembola,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,0,,,Collembola,Terrestrial,2.567596
+2012-029CHNF,Aphididae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,10,0.0036,,winged,Hemiptera,Terrestrial,2.567596
+2012-029CHNF,Cyclopoida,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,0,,,Copepoda,Zooplankton,2.567596
+2012-029CHNF,Diptera,pupa,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,0,,,Diptera,Diptera,2.567596
+2012-029CHNF,Calanoida,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,8,8.00E-04,,,Copepoda,Zooplankton,2.567596
+2012-029CHNF,Hemiptera,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,60,5,3,0.1035,0.0534,1,9.00E-04,,only half of individual,Hemiptera,Terrestrial,2.567596
+2012-030CHNF,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,3,0.0974,0.0602,NA,0.0118,,"insect parts, legs/thoraces",Animal Matter,Nondescript,3.39231068
+2012-030CHNF,Chironomidae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,3,0.0974,0.0602,3,2.00E-04,,thoraces,Diptera,Diptera,3.39231068
+2012-030CHNF,Aphididae,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,3,0.0974,0.0602,7,9.00E-04,,mostly thoraces,Hemiptera,Terrestrial,3.39231068
+2012-030CHNF,Plant Matter,,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,3,0.0974,0.0602,NA,1.00E-04,,,Plant Matter,Nondescript,3.39231068
+2012-030CHNF,Tipulidae,adult,3/27/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,3,0.0974,0.0602,1,0.0025,,,Diptera,Diptera,3.39231068
+2012-031CHNF,Simocephalus sp,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,4,3.00E-04,,,Cladocera,Aquatic,0.95081008
+2012-031CHNF,Chydoridae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,1,0,,,Cladocera,Aquatic,0.95081008
+2012-031CHNF,Daphnia sp,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,20,0.0013,,,Cladocera,Zooplankton,0.95081008
+2012-031CHNF,Hymenoptera,adult,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,1,0,,,Hymenoptera,Terrestrial,0.95081008
+2012-031CHNF,Thysanoptera,adult,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,1,0,,,Thysanoptera,Terrestrial,0.95081008
+2012-031CHNF,Cyclopoida,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,1,0,,,Copepoda,Zooplankton,0.95081008
+2012-031CHNF,Sminthuridae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,1,2.00E-04,,,Collembola,Terrestrial,0.95081008
+2012-031CHNF,Calanoida,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,4,1.00E-04,,,Copepoda,Zooplankton,0.95081008
+2012-031CHNF,Gammaridea,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,8,0.007,,,Amphipoda,Aquatic,0.95081008
+2012-031CHNF,Chironomidae,pupa,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,3,5.00E-04,,,Diptera,Diptera,0.95081008
+2012-031CHNF,Aphididae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,11,0.0011,,,Hemiptera,Terrestrial,0.95081008
+2012-031CHNF,Chironomidae,emergent,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,11,0.0035,,,Diptera,Diptera,0.95081008
+2012-031CHNF,Daphniidae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,27,0.0018,,,Cladocera,Zooplankton,0.95081008
+2012-031CHNF,Corophiidae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,7,8.00E-04,,,Amphipoda,Aquatic,0.95081008
+2012-031CHNF,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,NA,0.0017,,,Animal Matter,Nondescript,0.95081008
+2012-031CHNF,Psyllidae,adult,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,48,6,5,0.0591,0.012,2,0.0012,,,Hemiptera,Terrestrial,0.95081008
+2012-032CHNF,Corophiidae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,9,0.0017,,,Amphipoda,Aquatic,1.25229408
+2012-032CHNF,Psyllidae,adult,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,1,7.00E-04,,,Hemiptera,Terrestrial,1.25229408
+2012-032CHNF,Daphnia sp,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,29,0.0028,,,Cladocera,Zooplankton,1.25229408
+2012-032CHNF,Gammaridea,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,9,0.0132,,,Amphipoda,Aquatic,1.25229408
+2012-032CHNF,Chironomidae,emergent,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,11,0.0026,,,Diptera,Diptera,1.25229408
+2012-032CHNF,Cyclopoida,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,4,2.00E-04,,,Copepoda,Zooplankton,1.25229408
+2012-032CHNF,Chydoridae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,1,0,,,Cladocera,Aquatic,1.25229408
+2012-032CHNF,Collembola,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,1,2.00E-04,,,Collembola,Terrestrial,1.25229408
+2012-032CHNF,Animal Matter,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,NA,0.0024,,,Animal Matter,Nondescript,1.25229408
+2012-032CHNF,Chironomidae,pupa,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,2,0.004,,,Diptera,Diptera,1.25229408
+2012-032CHNF,Chironomidae,larvae,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,2,1.00E-04,,,Diptera,Diptera,1.25229408
+2012-032CHNF,Trichoptera,adult,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,1,2.00E-04,,,Trichoptera,Terrestrial,1.25229408
+2012-032CHNF,Daphniidae,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,3,3.00E-04,,,Cladocera,Zooplankton,1.25229408
+2012-032CHNF,Calanoida,,3/27/2012,2012,Mar,2012.Mar,F,BL-5,Beach Seine,49,5,5,0.0798,0.0242,9,7.00E-04,,,Copepoda,Zooplankton,1.25229408
+2012-033CHNF,Animal Matter,,3/28/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,4,4,0.074,0.0573,NA,6.00E-04,,,Animal Matter,Nondescript,3.01597548
+2012-033CHNF,Gammaridea,,3/28/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,4,4,0.074,0.0573,1,0.0017,,,Amphipoda,Aquatic,3.01597548
+2012-033CHNF,Cladocera,,3/28/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,4,4,0.074,0.0573,4,9.00E-04,,,Cladocera,Zooplankton,3.01597548
+2012-033CHNF,Aphididae,adult,3/28/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,4,4,0.074,0.0573,2,4.00E-04,,winged,Hemiptera,Terrestrial,3.01597548
+2012-033CHNF,Psyllidae,adult,3/28/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,4,4,0.074,0.0573,1,2.00E-04,,,Hemiptera,Terrestrial,3.01597548
+2012-034CHNF,Daphniidae,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,4,0.0941,0.0504,42,0.0123,,digested,Cladocera,Zooplankton,2.9527678
+2012-034CHNF,unidentified,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,70,5,4,0.0941,0.0504,NA,0.0052,,,Unidentified,Nondescript,2.9527678
+2012-035CHNF,Daphniidae,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,5,4,0.1073,0.0552,12,0.0063,,,Cladocera,Zooplankton,3.24084096
+2012-035CHNF,Animal Matter,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,5,4,0.1073,0.0552,NA,0.004,,,Animal Matter,Nondescript,3.24084096
+2012-035CHNF,Daphnia pulex/pulicaria,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,5,4,0.1073,0.0552,19,0.0089,,,Cladocera,Zooplankton,3.24084096
+2012-035CHNF,Aphididae,,3/29/2012,2012,Mar,2012.Mar,F,STTD,RSTR,71,5,4,0.1073,0.0552,1,2.00E-04,,,Hemiptera,Terrestrial,3.24084096
+2012-036CHNF,Daphniidae,,3/30/2012,2012,Mar,2012.Mar,F,STTD,RSTR,68,4,3,0.0901,0.0597,17,0.0015,,,Cladocera,Zooplankton,3.29989024
+2012-036CHNF,Daphnia sp,,3/30/2012,2012,Mar,2012.Mar,F,STTD,RSTR,68,4,3,0.0901,0.0597,10,0.0013,,,Cladocera,Zooplankton,3.29989024
+2012-036CHNF,Daphnia sp,ephippia,3/30/2012,2012,Mar,2012.Mar,F,STTD,RSTR,68,4,3,0.0901,0.0597,4,3.00E-04,,,Cladocera,Zooplankton,3.29989024
+2012-036CHNF,Animal Matter,,3/30/2012,2012,Mar,2012.Mar,F,STTD,RSTR,68,4,3,0.0901,0.0597,NA,0.0058,,,Animal Matter,Nondescript,3.29989024
+2012-037CHNF,Chironomidae,adult,3/30/2012,2012,Mar,2012.Mar,F,STTD,RSTR,66,2,5,0.0434,0.0375,1,0,,,Diptera,Diptera,2.41851736
+2013-003CHNF,Animal Matter,,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,88,4,2,0.2197,0.1369,NA,0.0253,,,Animal Matter,Nondescript,6.44977428
+2013-003CHNF,Hemiptera,adult,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,88,4,2,0.2197,0.1369,1,0.0084,,,Hemiptera,Terrestrial,6.44977428
+2013-003CHNF,Daphniidae,ephippia,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,88,4,2,0.2197,0.1369,2,0,,,Cladocera,Zooplankton,6.44977428
+2013-003CHNF,Chironomidae,adult,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,88,4,2,0.2197,0.1369,1,4.00E-04,,,Diptera,Diptera,6.44977428
+2013-003CHNF,Diptera,adult,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,88,4,2,0.2197,0.1369,1,9.00E-04,,,Diptera,Diptera,6.44977428
+2013-004CHNF,Animal Matter,,3/6/2013,2013,Mar,2013.Mar,F,STTD,RSTR,85,4,5,0.1598,0.1156,NA,0.001,,,Animal Matter,Nondescript,6.33
+2013-004CHNF,Daphnia magna,,3/6/2013,2013,Mar,2013.Mar,F,STTD,RSTR,85,4,5,0.1598,0.1156,7,0.0031,,,Cladocera,Zooplankton,6.33
+2013-004CHNF,Daphnia pulex/pulicaria,,3/6/2013,2013,Mar,2013.Mar,F,STTD,RSTR,85,4,5,0.1598,0.1156,13,0.0042,,,Cladocera,Zooplankton,6.33
+2013-004CHNF,Daphnia sp,,3/6/2013,2013,Mar,2013.Mar,F,STTD,RSTR,85,4,5,0.1598,0.1156,26,0.0092,,,Cladocera,Zooplankton,6.33
+2013-009CHNS,Corixidae,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,64,3,6,0.0611,0.0328,1,0,,wing only,Hemiptera,Aquatic,2.82
+2013-009CHNS,Mysidacea,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,64,3,6,0.0611,0.0328,1,0.0039,,head only,Mysidacea,Zooplankton,2.82
+2013-010CHNS,Chironomidae,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,4,4,0.0679,0.0573,2,0.0026,,,Diptera,Diptera,4.11
+2013-010CHNS,Animal Matter,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,4,4,0.0679,0.0573,NA,9.00E-04,,,Animal Matter,Nondescript,4.11
+2013-010CHNS,Plant matter,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,4,4,0.0679,0.0573,NA,0.002,,,NA,Nondescript,4.11
+2013-010CHNS,Mysidacea,,3/1/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,4,4,0.0679,0.0573,1,0,,,Mysidacea,Zooplankton,4.11
+2013-011-CHNS,Animal Matter,,3/8/2013,2013,Mar,2013.Mar,F,STTD,RSTR,82,2,1,0.1252,0.0981,NA,9.00E-04,,,Animal Matter,Nondescript,NA
+2013-012CHNS,Chironomidae,adult,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,65,2,6,0.0616,0.0469,1,2.00E-04,,,Diptera,Diptera,2.57237816
+2013-012CHNS,Corixidae,nymph,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,65,2,6,0.0616,0.0469,1,5.00E-04,,,Hemiptera,Aquatic,2.57237816
+2013-013CHNS,unidentified,,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,63,4,5,0.0692,0.0254,NA,0.0075,,,Unidentified,Nondescript,2.27921096
+2013-013CHNS,Daphniidae,,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,63,4,5,0.0692,0.0254,54,0.0108,,,Cladocera,Zooplankton,2.27921096
+2013-014CHNS,Daphniidae,ephippia,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,72,3,3,0.1339,0.0989,1,1.00E-04,,,Cladocera,Zooplankton,3.88903156
+2013-014CHNS,Daphniidae,,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,72,3,3,0.1339,0.0989,10,0.0015,,,Cladocera,Zooplankton,3.88903156
+2013-014CHNS,Animal Matter,,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,72,3,3,0.1339,0.0989,NA,0.0015,,,Animal Matter,Nondescript,3.88903156
+2013-014CHNS,Daphnia pulex/pulicaria,,3/8/2013,2013,Mar,2013.Mar,S,STTD,RSTR,72,3,3,0.1339,0.0989,11,0.0024,,,Cladocera,Zooplankton,3.88903156
+2013-016CHNS,Insect matter,,3/12/2013,2013,Mar,2013.Mar,S,STTD,RSTR,77,2,6,0.0971,0.0901,NA,0,,,Insecta,Nondescript,4.66592464
+2013-017CHNS,Daphnia sp,,3/12/2013,2013,Mar,2013.Mar,S,STTD,RSTR,65,2,3,0.0488,0.048,5,4.00E-04,Y,stomach open,Cladocera,Zooplankton,2.44617072
+2013-017CHNS,Chironomidae,adult,3/12/2013,2013,Mar,2013.Mar,S,STTD,RSTR,65,2,3,0.0488,0.048,1,5.00E-04,,,Diptera,Diptera,2.44617072
+2013-017CHNS,Aphididae,adult,3/12/2013,2013,Mar,2013.Mar,S,STTD,RSTR,65,2,3,0.0488,0.048,1,1.00E-04,,,Hemiptera,Terrestrial,2.44617072
+2013-018CHNF,Animal Matter,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,NA,0.0014,,,Animal Matter,Nondescript,0.70421696
+2013-018CHNF,Chironomidae,adult,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,3,0.0047,,,Diptera,Diptera,0.70421696
+2013-018CHNF,Daphniidae,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,5,4.00E-04,,,Cladocera,Zooplankton,0.70421696
+2013-018CHNF,Americorophium stimpsoni,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,10,0.0023,,,Amphipoda,Aquatic,0.70421696
+2013-018CHNF,Corophiidae,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,6,0.0013,,,Amphipoda,Aquatic,0.70421696
+2013-018CHNF,Chironomidae,larvae,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,2,2.00E-04,,,Diptera,Diptera,0.70421696
+2013-018CHNF,Gammarus daiberi,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,24,0.0014,,,Amphipoda,Aquatic,0.70421696
+2013-018CHNF,Daphnia pulex/pulicaria,,3/14/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,43,6,5,0.038,0.0025,10,8.00E-04,,,Cladocera,Zooplankton,0.70421696
+2013-018CHNS,Gammaridea,,3/13/2013,2013,Mar,2013.Mar,S,STTD,Beach Seine,78,3,4,0.0927,0.0625,1,0,,digested,Amphipoda,Aquatic,4.77529056
+2013-018CHNS,Insect matter,,3/13/2013,2013,Mar,2013.Mar,S,STTD,Beach Seine,78,3,4,0.0927,0.0625,NA,0,,,Insecta,Nondescript,4.77529056
+2013-018CHNS,Chironomidae,adult,3/13/2013,2013,Mar,2013.Mar,S,STTD,Beach Seine,78,3,4,0.0927,0.0625,3,0.003,,,Diptera,Diptera,4.77529056
+2013-018CHNS,unidentified,,3/13/2013,2013,Mar,2013.Mar,S,STTD,Beach Seine,78,3,4,0.0927,0.0625,NA,0.0028,,,Unidentified,Nondescript,4.77529056
+2013-019CHNF,Aphididae,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,11,7.00E-04,,,Hemiptera,Terrestrial,2.46561124
+2013-019CHNF,Corixidae,nymph,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0.0024,,,Hemiptera,Aquatic,2.46561124
+2013-019CHNF,Daphniidae,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0,,digested,Cladocera,Zooplankton,2.46561124
+2013-019CHNF,Chironomidae,adult,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,26,0.004,,,Diptera,Diptera,2.46561124
+2013-019CHNF,Chironomidae,pupa,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0,,,Diptera,Diptera,2.46561124
+2013-019CHNF,Nematoda,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0,,,Nematoda,Aquatic,2.46561124
+2013-019CHNF,Insect matter,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,NA,0.0126,,,Insecta,Nondescript,2.46561124
+2013-019CHNF,Plant Matter,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,NA,7.00E-04,,,Plant Matter,Nondescript,2.46561124
+2013-019CHNF,Diptera,adult,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0,,thoraces,Diptera,Diptera,2.46561124
+2013-019CHNF,Trichoptera,larvae,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,1,0.0015,,,Trichoptera,Aquatic,2.46561124
+2013-019CHNF,Chironomidae,larvae,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,65,4,5,0.0798,0.0203,2,0,,,Diptera,Diptera,2.46561124
+2013-020CHNF,Aphididae,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,9,0.0028,,,Hemiptera,Terrestrial,2.3903442
+2013-020CHNF,Chironomidae,adult,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,14,0.0032,,mostly thoraces,Diptera,Diptera,2.3903442
+2013-020CHNF,Animal Matter,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,NA,0.0024,,,Animal Matter,Nondescript,2.3903442
+2013-020CHNF,Corixidae,adult,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,1,0.0057,,,Hemiptera,Aquatic,2.3903442
+2013-020CHNF,Chironomidae,pupa,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,1,4.00E-04,,,Diptera,Diptera,2.3903442
+2013-020CHNF,Chironomidae,larvae,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,3,3.00E-04,,,Diptera,Diptera,2.3903442
+2013-020CHNF,Gammaridea,,3/29/2013,2013,Mar,2013.Mar,F,BL-5,Beach Seine,64,5,4,0.0827,0.0212,1,0.0057,,,Amphipoda,Aquatic,2.3903442
+2013-022CHNS,Chironomidae,adult,3/13/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,5,4,0.0954,0.0525,9,0.009,,,Diptera,Diptera,3.68911648
+2013-022CHNS,Hymenoptera,adult,3/13/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,5,4,0.0954,0.0525,1,7.00E-04,,digested,Hymenoptera,Terrestrial,3.68911648
+2013-022CHNS,Aphididae,,3/13/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,5,4,0.0954,0.0525,2,3.00E-04,,,Hemiptera,Terrestrial,3.68911648
+2013-022CHNS,unidentified,,3/13/2013,2013,Mar,2013.Mar,S,STTD,RSTR,75,5,4,0.0954,0.0525,NA,0.0032,,,Unidentified,Nondescript,3.68911648
+2013-023CHNS,Gammaridea,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,74,3,3,0.1164,0.0853,1,7.00E-04,,digested parts,Amphipoda,Aquatic,4.29104488
+2013-023CHNS,unidentified,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,74,3,3,0.1164,0.0853,NA,0.0083,,,Unidentified,Nondescript,4.29104488
+2013-025CHNS,Dolichopodidae,adult,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,5,4,0.123,0.077,1,0.0069,,,Diptera,Diptera,4.80876568
+2013-025CHNS,Diptera,adult,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,5,4,0.123,0.077,1,5.00E-04,,thoraces,Diptera,Diptera,4.80876568
+2013-025CHNS,Animal Matter,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,5,4,0.123,0.077,NA,0.0017,,,Animal Matter,Nondescript,4.80876568
+2013-025CHNS,Daphnia pulex/pulicaria,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,5,4,0.123,0.077,3,9.00E-04,,,Cladocera,Zooplankton,4.80876568
+2013-025CHNS,Chironomidae,adult,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,5,4,0.123,0.077,2,0.0017,,thoraces,Diptera,Diptera,4.80876568
+2013-028CHNS,Chironomidae,adult,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,6,0.0048,,,Diptera,Diptera,5.3391696
+2013-028CHNS,Calanoida,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,21,0.0014,,,Copepoda,Zooplankton,5.3391696
+2013-028CHNS,Daphniidae,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,46,0.0094,,,Cladocera,Zooplankton,5.3391696
+2013-028CHNS,Animal Matter,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,NA,0.0177,,,Animal Matter,Nondescript,5.3391696
+2013-028CHNS,Simocephalus sp,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,2,0,,,Cladocera,Aquatic,5.3391696
+2013-028CHNS,Daphnia pulex/pulicaria,,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,87,0.0238,,,Cladocera,Zooplankton,5.3391696
+2013-028CHNS,Chironomidae,pupa,3/14/2013,2013,Mar,2013.Mar,S,STTD,RSTR,78,6,4,0.1902,0.0429,1,5.00E-04,,,Diptera,Diptera,5.3391696
+2013-029CHNS,Calanoida,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,63,0.0046,Y,,Copepoda,Zooplankton,5.66217332
+2013-029CHNS,Simocephalus sp,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,1,0,Y,,Cladocera,Aquatic,5.66217332
+2013-029CHNS,Isotomidae,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,1,0,Y,,Collembola,Terrestrial,5.66217332
+2013-029CHNS,Chironomidae,adult,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,4,0.0043,Y,thoraces,Diptera,Diptera,5.66217332
+2013-029CHNS,Daphnia magna,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,38,0.0255,Y,,Cladocera,Zooplankton,5.66217332
+2013-029CHNS,Animal Matter,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,NA,0.0074,Y,stomach cut too high,Animal Matter,Nondescript,5.66217332
+2013-029CHNS,Daphnia pulex/pulicaria,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,59,0.0156,Y,,Cladocera,Zooplankton,5.66217332
+2013-029CHNS,Daphnia sp,,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,111,0.0361,Y,,Cladocera,Zooplankton,5.66217332
+2013-029CHNS,Daphniidae,ephippia,3/14/2013,2013,Mar,2013.Mar,F,BL-3,Beach Seine,82,6,5,NA,0.0794,1,0,Y,,Cladocera,Zooplankton,5.66217332
+2013-030CHNS,unidentified,,3/5/2013,2013,Mar,2013.Mar,S,STTD,RSTR,69,4,3,0.0659,0.038,NA,0.006,,,Unidentified,Nondescript,3.04872288
+2013-030CHNS,Daphniidae,,3/5/2013,2013,Mar,2013.Mar,S,STTD,RSTR,69,4,3,0.0659,0.038,13,0.0029,,digested,Cladocera,Zooplankton,3.04872288
+2013-031CHNF,Daphniidae,,3/5/2013,2013,Mar,2013.Mar,F,STTD,RSTR,87,2,5,0.1595,0.1394,5,8.00E-04,,,Cladocera,Zooplankton,7.10846484
+2014-001CHNS,Scelionidae,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,1,3.00E-04,,,Hymenoptera,Terrestrial,3.7095966
+2014-001CHNS,Ichneumonidae,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,1,0.0027,,,Hymenoptera,Terrestrial,3.7095966
+2014-001CHNS,Psyllidae,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,6,0.0044,,,Hemiptera,Terrestrial,3.7095966
+2014-001CHNS,Aphididae,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,8,0.0013,,,Hemiptera,Terrestrial,3.7095966
+2014-001CHNS,Hymenoptera,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,3,0.0067,,,Hymenoptera,Terrestrial,3.7095966
+2014-001CHNS,Chironomidae,adult,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,4,0.002,,,Diptera,Diptera,3.7095966
+2014-001CHNS,Animal Matter,,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,NA,0.0259,,insect parts,Animal Matter,Nondescript,3.7095966
+2014-001CHNS,Hypogastruridae,,3/4/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,6,3,0.1282,0.043,1,0,,,Collembola,Terrestrial,3.7095966
+2014-001CHNW,Chironomidae,pupa,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,1,1.00E-04,,,Diptera,Diptera,9.00604672
+2014-001CHNW,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,1,2.00E-04,,,Diptera,Diptera,9.00604672
+2014-001CHNW,Coenagrionidae,nymph,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,1,0.0068,,,Odonata,Aquatic,9.00604672
+2014-001CHNW,Trichoptera,larvae,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,1,0,,,Trichoptera,Aquatic,9.00604672
+2014-001CHNW,Hypogastruridae,,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,1,0,,,Collembola,Terrestrial,9.00604672
+2014-001CHNW,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,W,BL-5,Beach Seine,96,4,4,0.1592,0.106,NA,0.0161,,,Animal Matter,Nondescript,9.00604672
+2014-002CHNS,Hydroptilidae,adult,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,1,7.00E-04,,,Trichoptera,Terrestrial,3.3124694
+2014-002CHNS,Gammaridea,,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,1,0.0023,,,Amphipoda,Aquatic,3.3124694
+2014-002CHNS,Brachycera,pupa,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,1,9.00E-04,,,Diptera,Diptera,3.3124694
+2014-002CHNS,Psyllidae,adult,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,1,0.0011,,,Hemiptera,Terrestrial,3.3124694
+2014-002CHNS,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,1,0,,,Diptera,Diptera,3.3124694
+2014-002CHNS,Plant matter,,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,NA,3.00E-04,,,NA,Nondescript,3.3124694
+2014-002CHNS,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,S,"BL-5, YB",Beach Seine,70,3,3,0.0927,0.0528,NA,0.0073,,,Animal Matter,Nondescript,3.3124694
+2014-002CHNW,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,W,STTD,RSTR,96,1,NA,0.0916,0.0864,NA,0,,,Animal Matter,Nondescript,8.91528964
+2014-003CHNS,Cladocera,,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,1,0,,,Cladocera,Zooplankton,2.68631832
+2014-003CHNS,Brachycera,adult,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,1,2.00E-04,,,Diptera,Diptera,2.68631832
+2014-003CHNS,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,NA,0.0043,,,Animal Matter,Nondescript,2.68631832
+2014-003CHNS,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,9,0.0011,,,Diptera,Diptera,2.68631832
+2014-003CHNS,Aphididae,adult,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,1,7.00E-04,,winged,Hemiptera,Terrestrial,2.68631832
+2014-003CHNS,Calanoida,,3/5/2014,2014,Mar,2014.Mar,S,BL-5,Beach Seine,65,4,3,0.0525,0.0195,1,2.00E-04,,,Copepoda,Zooplankton,2.68631832
+2014-003CHNW,Daphnia pulex/pulicaria,,3/14/2014,2014,Mar,2014.Mar,W,STTD,RSTR,95,4,6,0.0097,0.0627,2,1.00E-04,,,Cladocera,Zooplankton,8.62
+2014-003CHNW,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,W,STTD,RSTR,95,4,6,0.0097,0.0627,1,1.00E-04,,,Diptera,Diptera,8.62
+2014-003CHNW,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,W,STTD,RSTR,95,4,6,0.0097,0.0627,3,3.00E-04,,,Cladocera,Zooplankton,8.62
+2014-003CHNW,Osteichthyes,,3/14/2014,2014,Mar,2014.Mar,W,STTD,RSTR,95,4,6,0.0097,0.0627,NA,0.015,,"digested, bones",Chordata,Aquatic,8.62
+2014-004CHNS,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,66,5,3,0.0726,0.0342,5,4.00E-04,,thoraces,Diptera,Diptera,3.06514856
+2014-004CHNS,Hymenoptera,adult,3/5/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,66,5,3,0.0726,0.0342,3,0.0019,,mostly heads,Hymenoptera,Terrestrial,3.06514856
+2014-004CHNS,Aphididae,,3/5/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,66,5,3,0.0726,0.0342,1,2.00E-04,,wingless,Hemiptera,Terrestrial,3.06514856
+2014-004CHNS,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,66,5,3,0.0726,0.0342,NA,0.0232,,incl. insect parts,Animal Matter,Nondescript,3.06514856
+2014-004CHNS,Nematocera,adult,3/5/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,66,5,3,0.0726,0.0342,1,2.00E-04,,,Diptera,Diptera,3.06514856
+2014-005CHNS,Corixidae,adult,3/7/2014,2014,Mar,2014.Mar,S,STTD,RSTR,75,2,5,0.0677,0.0536,1,0.0023,,mostly exoskeleton,Hemiptera,Aquatic,3.36112268
+2014-006CHNS,Insecta,,3/12/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,81,2,2,0.1022,0.076,1,4.00E-04,,,Insecta,Nondescript,5.68
+2014-006CHNS,Daphniidae,,3/12/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,81,2,2,0.1022,0.076,11,8.00E-04,,,Cladocera,Zooplankton,5.68
+2014-006CHNS,Animal Matter,,3/12/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,81,2,2,0.1022,0.076,NA,0.003,,,Animal Matter,Nondescript,5.68
+2014-007CHNF,Copepoda,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,1,1.00E-04,,,Copepoda,Zooplankton,1.94404392
+2014-007CHNF,Hymenoptera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,2,6.00E-04,,,Hymenoptera,Terrestrial,1.94404392
+2014-007CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,6,9.00E-04,,,Diptera,Diptera,1.94404392
+2014-007CHNF,Brachycera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,1,4.00E-04,,,Diptera,Diptera,1.94404392
+2014-007CHNF,Cladocera,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,2,0,,,Cladocera,Zooplankton,1.94404392
+2014-007CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,NA,0.0015,,,Animal Matter,Nondescript,1.94404392
+2014-007CHNF,Aphididae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,60,5,4,0.0469,0.0242,3,0.0011,,winged,Hemiptera,Terrestrial,1.94404392
+2014-007CHNS,Animal Matter,,3/13/2014,2014,Mar,2014.Mar,S,STTD,RSTR,71,4,4,0.1095,0.0586,NA,0.016,,,Animal Matter,Nondescript,4.36184164
+2014-007CHNS,Daphnia sp,,3/13/2014,2014,Mar,2014.Mar,S,STTD,RSTR,71,4,4,0.1095,0.0586,48,0.0083,,,Cladocera,Zooplankton,4.36184164
+2014-007CHNS,Daphniidae,,3/13/2014,2014,Mar,2014.Mar,S,STTD,RSTR,71,4,4,0.1095,0.0586,15,0.0014,,,Cladocera,Zooplankton,4.36184164
+2014-007CHNS,Simocephalus sp,,3/13/2014,2014,Mar,2014.Mar,S,STTD,RSTR,71,4,4,0.1095,0.0586,6,0.0022,,,Cladocera,Aquatic,4.36184164
+2014-008CHNF,Corixidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,1,0.0022,,,Hemiptera,Aquatic,1.51437724
+2014-008CHNF,Aphididae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,3,5.00E-04,,winged,Hemiptera,Terrestrial,1.51437724
+2014-008CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,16,0.0124,,,Diptera,Diptera,1.51437724
+2014-008CHNF,Trichoptera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,4,0.0011,,,Trichoptera,Terrestrial,1.51437724
+2014-008CHNF,Plecoptera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,1,0.0031,,,Plecoptera,Terrestrial,1.51437724
+2014-008CHNF,Chironomidae,larvae,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,2,5.00E-04,,,Diptera,Diptera,1.51437724
+2014-008CHNF,Plant matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,NA,0,,,NA,Nondescript,1.51437724
+2014-008CHNF,Gammaridea,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,1,0.0017,,,Amphipoda,Aquatic,1.51437724
+2014-008CHNF,Daphniidae,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,2,0,,,Cladocera,Zooplankton,1.51437724
+2014-008CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,NA,0.0029,,,Animal Matter,Nondescript,1.51437724
+2014-008CHNF,Mymaridae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,1,0,,,Hymenoptera,Terrestrial,1.51437724
+2014-008CHNF,Chironomidae,pupa,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,54,6,5,0.0752,0.0131,2,0.0016,,,Diptera,Diptera,1.51437724
+2014-008CHNS,Psyllidae,adult,3/14/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,5,3,0.1245,0.0783,2,0.001,,,Hemiptera,Terrestrial,4
+2014-008CHNS,Psocoptera,adult,3/14/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,5,3,0.1245,0.0783,1,0,,,Psocoptera,Terrestrial,4
+2014-008CHNS,Cladocera,,3/14/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,5,3,0.1245,0.0783,2,1.00E-04,,,Cladocera,Zooplankton,4
+2014-008CHNS,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,5,3,0.1245,0.0783,NA,0.0156,,,Animal Matter,Nondescript,4
+2014-008CHNS,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,S,"STTD, YB",RSTR,72,5,3,0.1245,0.0783,17,0.0079,,,Diptera,Diptera,4
+2014-010CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,3,0.0239,0.0097,8,0.0012,,,Diptera,Diptera,1.03200284
+2014-010CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,3,0.0239,0.0097,NA,0.0026,,,Animal Matter,Nondescript,1.03200284
+2014-010CHNF,Chironomidae,pupa,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,3,0.0239,0.0097,1,5.00E-04,,,Diptera,Diptera,1.03200284
+2014-010CHNS,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,S,STTD,RSTR,80,2,2,0.1055,0.0885,3,2.00E-04,,,Cladocera,Zooplankton,5.16
+2014-010CHNS,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,S,STTD,RSTR,80,2,2,0.1055,0.0885,2,5.00E-04,,thoraces,Diptera,Diptera,5.16
+2014-010CHNS,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,S,STTD,RSTR,80,2,2,0.1055,0.0885,NA,0.0067,,,Animal Matter,Nondescript,5.16
+2014-011CHNF,Trichoptera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,44,3,3,0.0097,0.0055,1,3.00E-04,,,Trichoptera,Terrestrial,0.90288452
+2014-011CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,44,3,3,0.0097,0.0055,1,0,,,Diptera,Diptera,0.90288452
+2014-011CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,44,3,3,0.0097,0.0055,NA,0,,,Animal Matter,Nondescript,0.90288452
+2014-012CHNF,Insect matter,,3/15/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,2,1,0.0234,0.0116,NA,0.0029,,,Insecta,Nondescript,1.0726512
+2014-013CHNF,Daphniidae,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,6,3,0.0327,0.0089,2,1.00E-04,,,Cladocera,Zooplankton,1.03720084
+2014-013CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,6,3,0.0327,0.0089,NA,0.0046,,,Animal Matter,Nondescript,1.03720084
+2014-013CHNF,Plant matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,6,3,0.0327,0.0089,NA,3.00E-04,,,NA,Nondescript,1.03720084
+2014-013CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,6,3,0.0327,0.0089,18,0.0028,,thoraces,Diptera,Diptera,1.03720084
+2014-013CHNF,Sminthuridae,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,6,3,0.0327,0.0089,2,9.00E-04,,,Collembola,Terrestrial,1.03720084
+2014-013CHNS,Chironomidae,adult,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,68,3,6,0.099,0.0836,3,0.0034,,,Diptera,Diptera,3.44
+2014-013CHNS,Corixidae,adult,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,68,3,6,0.099,0.0836,1,0.0073,,,Hemiptera,Aquatic,3.44
+2014-014CHNF,Eurycercus sp,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,3,3.00E-04,,,Cladocera,Aquatic,0.93760716
+2014-014CHNF,Gammaridea,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,1,0.0025,,,Amphipoda,Aquatic,0.93760716
+2014-014CHNF,Chironomidae,emergent,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,4,0.0024,,,Diptera,Diptera,0.93760716
+2014-014CHNF,Chironomidae,pupa,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,2,2.00E-04,,,Diptera,Diptera,0.93760716
+2014-014CHNF,Hydroptilidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,1,3.00E-04,,,Trichoptera,Terrestrial,0.93760716
+2014-014CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,NA,9.00E-04,,,Animal Matter,Nondescript,0.93760716
+2014-014CHNF,Cladocera,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,45,5,5,0.0274,0.0081,2,0,,,Cladocera,Zooplankton,0.93760716
+2014-015CHNF,Collembola,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,40,NA,6,NA,NA,2,0,Y,,Collembola,Terrestrial,0.77938004
+2014-015CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,40,NA,6,NA,NA,7,0.001,Y,,Diptera,Diptera,0.77938004
+2014-015CHNF,Daphniidae,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,40,NA,6,NA,NA,1,0,Y,stomach too damaged to weigh,Cladocera,Zooplankton,0.77938004
+2014-015CHNF,Chironomidae,larvae,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,40,NA,6,NA,NA,2,0,Y,,Diptera,Diptera,0.77938004
+2014-015CHNS,Simocephalus sp,,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,67,6,5,NA,0.0374,5,8.00E-04,Y,,Cladocera,Aquatic,3.69
+2014-015CHNS,Daphnia sp,,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,67,6,5,NA,0.0374,222,0.0414,Y,,Cladocera,Zooplankton,3.69
+2014-015CHNS,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,67,6,5,NA,0.0374,NA,0.0026,Y,,Animal Matter,Nondescript,3.69
+2014-015CHNS,Corixidae,nymph,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,67,6,5,NA,0.0374,1,0.0022,Y,,Hemiptera,Aquatic,3.69
+2014-015CHNS,Daphniidae,,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,67,6,5,NA,0.0374,119,0.0153,Y,,Cladocera,Zooplankton,3.69
+2014-016CHNF,Entomobryidae,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,1,1.00E-04,Y,,Collembola,Terrestrial,0.43189
+2014-016CHNF,Chironomidae,larvae,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,1,0,Y,,Diptera,Diptera,0.43189
+2014-016CHNF,Cladocera,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,4,0,Y,,Cladocera,Zooplankton,0.43189
+2014-016CHNF,Chironomidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,6,9.00E-04,Y,,Diptera,Diptera,0.43189
+2014-016CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,NA,9.00E-04,Y,"not in inventory, cut too high",Animal Matter,Nondescript,0.43189
+2014-016CHNF,Cyclopoida,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,2,0,Y,,Copepoda,Zooplankton,0.43189
+2014-016CHNF,Chironomidae,pupa,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,2,4.00E-04,Y,,Diptera,Diptera,0.43189
+2014-016CHNF,Collembola,,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,2,0,Y,,Collembola,Terrestrial,0.43189
+2014-016CHNF,Aphididae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,2,1.00E-04,Y,,Hemiptera,Terrestrial,0.43189
+2014-016CHNF,Hymenoptera,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,1,0,Y,,Hymenoptera,Terrestrial,0.43189
+2014-016CHNF,Hydroptilidae,adult,3/5/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,35,6,3,NA,0.0017,2,5.00E-04,Y,,Trichoptera,Terrestrial,0.43189
+2014-016CHNS,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,S,STTD,RSTR,88,2,1,0.1097,0.0717,NA,0.0209,,,Animal Matter,Nondescript,7.69
+2014-017CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,"STTD, YB",RSTR,55,2,1,0.0298,0.0159,NA,6.00E-04,,"incl. insect legs, thoraces",Animal Matter,Nondescript,1.50314956
+2014-018CHNF,Nematocera,adult,3/5/2014,2014,Mar,2014.Mar,F,STTD,RSTR,44,2,3,0.0194,0.0103,3,0,,thoraces,Diptera,Diptera,0.7779246
+2014-018CHNF,Animal Matter,,3/5/2014,2014,Mar,2014.Mar,F,STTD,RSTR,44,2,3,0.0194,0.0103,NA,0.0018,,,Animal Matter,Nondescript,0.7779246
+2014-020CHNF,Animal Matter,,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,2,3,0.029,0.0169,NA,0.0066,,,Animal Matter,Nondescript,1.46645168
+2014-020CHNF,Chironomidae,adult,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,2,3,0.029,0.0169,5,0.0011,,,Diptera,Diptera,1.46645168
+2014-021CHNF,Animal Matter,,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,2,1,0.0319,0.0224,NA,0,,,Animal Matter,Nondescript,1.3133186
+2014-023CHNF,Aphididae,adult,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,5,4,0.073,0.0179,1,4.00E-04,,,Hemiptera,Terrestrial,1.63569856
+2014-023CHNF,Animal Matter,,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,5,4,0.073,0.0179,NA,0.0161,,,Animal Matter,Nondescript,1.63569856
+2014-023CHNF,Thysanoptera,adult,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,5,4,0.073,0.0179,1,2.00E-04,,,Thysanoptera,Terrestrial,1.63569856
+2014-023CHNF,Psyllidae,adult,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,5,4,0.073,0.0179,2,6.00E-04,,,Hemiptera,Terrestrial,1.63569856
+2014-023CHNF,Chironomidae,adult,3/7/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,5,4,0.073,0.0179,69,0.0107,,thoraces,Diptera,Diptera,1.63569856
+2014-027CHNF,Animal Matter,,3/11/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,2,1,0.0171,0.0151,NA,2.00E-04,,incl. insect legs,Animal Matter,Nondescript,1.16496768
+2014-030CHNF,Animal Matter,,3/11/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,2,1,0.0717,0.0521,NA,8.00E-04,,incl. Aranae/insect legs,Animal Matter,Nondescript,2.2619536
+2014-034CHNF,Aphididae,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,2,6,0.0061,0.005,1,5.00E-04,Y,only 1/2 of stomach present,Hemiptera,Terrestrial,0.55430664
+2014-036CHNF,Animal Matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,2,1,0.0116,0.0105,NA,5.00E-04,,,Animal Matter,Nondescript,0.65753892
+2014-037CHNF,Daphnia sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,19,0.0019,,,Cladocera,Zooplankton,1.208319
+2014-037CHNF,Animal Matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,NA,0.0016,,,Animal Matter,Nondescript,1.208319
+2014-037CHNF,Chironomidae,pupa,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,1,0,,,Diptera,Diptera,1.208319
+2014-037CHNF,Simocephalus sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,1,1.00E-04,,,Cladocera,Aquatic,1.208319
+2014-037CHNF,Daphniidae,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,51,0.0078,,,Cladocera,Zooplankton,1.208319
+2014-037CHNF,Bosmina longirostris,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,1,0,,,Cladocera,Zooplankton,1.208319
+2014-037CHNF,Chironomidae,adult,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,43,0.0107,,mostly thoraces,Diptera,Diptera,1.208319
+2014-037CHNF,Daphnia sp,ephippia,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,4,3.00E-04,,,Cladocera,Zooplankton,1.208319
+2014-037CHNF,Brachycera,adult,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,50,6,4,0.0548,0.0034,1,6.00E-04,,,Diptera,Diptera,1.208319
+2014-038CHNF,Daphniidae,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,6,4,0.044,0.0082,39,0.0021,,,Cladocera,Zooplankton,1.20655168
+2014-038CHNF,Animal Matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,6,4,0.044,0.0082,NA,0.0013,,,Animal Matter,Nondescript,1.20655168
+2014-038CHNF,Daphnia sp,ephippia,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,6,4,0.044,0.0082,2,1.00E-04,,,Cladocera,Zooplankton,1.20655168
+2014-038CHNF,Cyclopoida,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,6,4,0.044,0.0082,1,1.00E-04,,,Copepoda,Zooplankton,1.20655168
+2014-038CHNF,Daphnia sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,48,6,4,0.044,0.0082,79,0.0076,,,Cladocera,Zooplankton,1.20655168
+2014-039CHNF,Daphnia sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,NA,NA,NA,NA,51,0.0101,Y,stomach too damaged to weigh,Cladocera,Zooplankton,1.31300672
+2014-040CHNF,Insect matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,NA,1.00E-04,,,Insecta,Nondescript,0.84435504
+2014-040CHNF,Daphnia pulex/pulicaria,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,106,0.0083,,,Cladocera,Zooplankton,0.84435504
+2014-040CHNF,Calanoida,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,1,0,,,Copepoda,Zooplankton,0.84435504
+2014-040CHNF,Corophiidae,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,1,0,,one antenna,Amphipoda,Aquatic,0.84435504
+2014-040CHNF,Plant Matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,NA,0,,,Plant Matter,Nondescript,0.84435504
+2014-040CHNF,unidentified,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,43,4,5,0.0204,0.0013,NA,0.0011,,,Unidentified,Nondescript,0.84435504
+2014-041CHNF,unidentified,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,5,0.0202,0.0051,NA,0.0011,,,Unidentified,Nondescript,0.95756748
+2014-041CHNF,Daphnia pulex/pulicaria,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,5,0.0202,0.0051,44,0.0051,Y,only 1/2 of stomach present,Cladocera,Zooplankton,0.95756748
+2014-042CHNF,Diptera,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,4,5,0.0425,0.0212,NA,0,,parts,Diptera,Diptera,1.18222504
+2014-042CHNF,Cyclopoida,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,4,5,0.0425,0.0212,1,0,,,Copepoda,Zooplankton,1.18222504
+2014-042CHNF,Calanoida,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,4,5,0.0425,0.0212,1,0,,,Copepoda,Zooplankton,1.18222504
+2014-042CHNF,Cladocera,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,4,5,0.0425,0.0212,70,0.0052,,,Cladocera,Zooplankton,1.18222504
+2014-042CHNF,Daphnia sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,49,4,5,0.0425,0.0212,37,0.0068,,,Cladocera,Zooplankton,1.18222504
+2014-043CHNF,Simocephalus sp,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0111,0.0042,1,0,,,Cladocera,Aquatic,0.54567796
+2014-043CHNF,Daphnia pulex/pulicaria,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0111,0.0042,24,0.0014,,,Cladocera,Zooplankton,0.54567796
+2014-043CHNF,Daphniidae,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0111,0.0042,9,2.00E-04,,,Cladocera,Zooplankton,0.54567796
+2014-043CHNF,Animal Matter,,3/13/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0111,0.0042,NA,2.00E-04,,,Animal Matter,Nondescript,0.54567796
+2014-044CHNF,Cyclopoida,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,5,0,,,Copepoda,Zooplankton,1.59380268
+2014-044CHNF,Sminthuridae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,1,3.00E-04,,,Collembola,Terrestrial,1.59380268
+2014-044CHNF,Daphnia sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,125,0.0142,,,Cladocera,Zooplankton,1.59380268
+2014-044CHNF,Daphnia sp,ephippia,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,3,2.00E-04,,,Cladocera,Zooplankton,1.59380268
+2014-044CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,27,0.0279,,,Diptera,Diptera,1.59380268
+2014-044CHNF,Psyllidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,NA,0.0012,,,Hemiptera,Terrestrial,1.59380268
+2014-044CHNF,Calanoida,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,3,2.00E-04,,,Copepoda,Zooplankton,1.59380268
+2014-044CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,149,0.0148,,,Cladocera,Zooplankton,1.59380268
+2014-044CHNF,Plant matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,NA,3.00E-04,,,NA,Nondescript,1.59380268
+2014-044CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,NA,0.0066,,,Animal Matter,Nondescript,1.59380268
+2014-044CHNF,Chironomidae,pupa,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,6,5,0.1663,0.0074,3,5.00E-04,,,Diptera,Diptera,1.59380268
+2014-046CHNF,Chironomidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,6,0.0211,0.0064,5,0.0023,,,Diptera,Diptera,0.63196476
+2014-046CHNF,Simocephalus sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,6,0.0211,0.0064,1,0,,,Cladocera,Aquatic,0.63196476
+2014-046CHNF,Daphnia sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,6,0.0211,0.0064,11,0.001,,,Cladocera,Zooplankton,0.63196476
+2014-046CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,6,0.0211,0.0064,1,2.00E-04,,,Cladocera,Zooplankton,0.63196476
+2014-047CHNF,Ephydridae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,2,0.0043,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Aphididae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,2.00E-04,,wingless,Hemiptera,Terrestrial,1.46936256
+2014-047CHNF,Psocoptera,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,0,,,Psocoptera,Terrestrial,1.46936256
+2014-047CHNF,Cecidomyiidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,4,0.0016,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Chironomidae,larvae,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,1.00E-04,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,NA,0.0044,,,Animal Matter,Nondescript,1.46936256
+2014-047CHNF,Psyllidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,5,0.0024,,,Hemiptera,Terrestrial,1.46936256
+2014-047CHNF,Psychodidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,0,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,19,0.0105,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Daphnia sp,ephippia,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,2,0,,,Cladocera,Zooplankton,1.46936256
+2014-047CHNF,Chironomidae,emergent,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,5,0.0037,,,Diptera,Diptera,1.46936256
+2014-047CHNF,Hypogastruridae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,0,,,Collembola,Terrestrial,1.46936256
+2014-047CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,40,0.004,,,Cladocera,Zooplankton,1.46936256
+2014-047CHNF,Cyclopoida,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,2,0,,,Copepoda,Zooplankton,1.46936256
+2014-047CHNF,Chironomidae,pupa,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,0,,thoraces,Diptera,Diptera,1.46936256
+2014-047CHNF,Simocephalus sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,1,4.00E-04,,,Cladocera,Aquatic,1.46936256
+2014-047CHNF,Daphnia pulex/pulicaria,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,6,5,0.1176,0.0098,40,0.0074,,,Cladocera,Zooplankton,1.46936256
+2014-048CHNF,Chironomidae,emergent,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,2,9.00E-04,,,Diptera,Diptera,0.5211434
+2014-048CHNF,Daphnia pulex/pulicaria,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,5,7.00E-04,,,Cladocera,Zooplankton,0.5211434
+2014-048CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,NA,1.00E-04,,,Animal Matter,Nondescript,0.5211434
+2014-048CHNF,Ceriodaphnia sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,1,0,,,Cladocera,Zooplankton,0.5211434
+2014-048CHNF,Copepoda,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,1,0,,,Copepoda,Zooplankton,0.5211434
+2014-048CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,5,0.0015,,,Diptera,Diptera,0.5211434
+2014-048CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,38,5,5,0.0228,0.0056,4,4.00E-04,,,Cladocera,Zooplankton,0.5211434
+2014-049CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,3,0.0174,0.0028,7,0.0016,,,Diptera,Diptera,0.535178
+2014-049CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,3,0.0174,0.0028,NA,0.0021,,,Animal Matter,Nondescript,0.535178
+2014-049CHNF,Psyllidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,40,5,3,0.0174,0.0028,2,3.00E-04,,,Hemiptera,Terrestrial,0.535178
+2014-050CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,4,5,0.0105,0.0049,1,0,,thoraces,Diptera,Diptera,0.45793572
+2014-050CHNF,Daphnia pulex/pulicaria,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,4,5,0.0105,0.0049,2,5.00E-04,,,Cladocera,Zooplankton,0.45793572
+2014-050CHNF,Carabidae,larvae,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,4,5,0.0105,0.0049,1,4.00E-04,,,Coleoptera,Terrestrial,0.45793572
+2014-050CHNF,Ceratopogonidae,pupa,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,4,5,0.0105,0.0049,1,0,,,Diptera,Diptera,0.45793572
+2014-050CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,4,5,0.0105,0.0049,NA,1.00E-04,,,Animal Matter,Nondescript,0.45793572
+2014-051CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,4,4,0.0338,0.0131,3,1.00E-04,,,Cladocera,Zooplankton,1.1662152
+2014-051CHNF,Daphnia sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,4,4,0.0338,0.0131,11,0.0011,,,Cladocera,Zooplankton,1.1662152
+2014-051CHNF,Chironomidae,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,4,4,0.0338,0.0131,8,0.0043,,,Diptera,Diptera,1.1662152
+2014-051CHNF,Trichoptera,adult,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,4,4,0.0338,0.0131,1,0,,,Trichoptera,Terrestrial,1.1662152
+2014-051CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,52,4,4,0.0338,0.0131,NA,0.0016,,,Animal Matter,Nondescript,1.1662152
+2014-052CHNF,Daphniidae,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,2,3,0.0434,0.0284,7,8.00E-04,,,Cladocera,Zooplankton,1.86139572
+2014-052CHNF,Animal Matter,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,57,2,3,0.0434,0.0284,NA,5.00E-04,,,Animal Matter,Nondescript,1.86139572
+2014-053CHNF,Daphnia sp,,3/14/2014,2014,Mar,2014.Mar,F,STTD,RSTR,41,2,6,0.019,0.0106,6,4.00E-04,,,Cladocera,Zooplankton,0.68165764
+2014-055CHNF,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,5,4,0.0489,0.0114,NA,0.0034,,,Animal Matter,Nondescript,1.37
+2014-055CHNF,Corixidae,nymph,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,53,5,4,0.0489,0.0114,3,0.007,,,Hemiptera,Aquatic,1.37
+2014-056CHNF,Corixidae,adult,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,1,3.00E-04,,,Hemiptera,Aquatic,1.49
+2014-056CHNF,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,NA,0.0031,,,Animal Matter,Nondescript,1.49
+2014-056CHNF,Daphniidae,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,14,0.0016,,,Cladocera,Zooplankton,1.49
+2014-056CHNF,Psyllidae,adult,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,1,4.00E-04,,,Hemiptera,Terrestrial,1.49
+2014-056CHNF,Cyclopoida,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,3,2.00E-04,,,Copepoda,Zooplankton,1.49
+2014-056CHNF,Daphnia sp,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,5,5.00E-04,,,Cladocera,Zooplankton,1.49
+2014-056CHNF,Chironomidae,adult,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,56,3,3,0.0475,0.0288,1,0,,thoraces,Diptera,Diptera,1.49
+2014-060CHNF,Corixidae,nymph,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,2,0.0036,,,Hemiptera,Aquatic,1.42
+2014-060CHNF,Calanoida,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,1,0,,,Copepoda,Zooplankton,1.42
+2014-060CHNF,Cyclopoida,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,6,4.00E-04,,,Copepoda,Zooplankton,1.42
+2014-060CHNF,Daphnia sp,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,10,0.0015,,,Cladocera,Zooplankton,1.42
+2014-060CHNF,Chironomidae,pupa,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,1,3.00E-04,,,Diptera,Diptera,1.42
+2014-060CHNF,Daphniidae,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,22,0.004,,,Cladocera,Zooplankton,1.42
+2014-060CHNF,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,51,5,4,0.0818,0.0347,NA,0.0029,,,Animal Matter,Nondescript,1.42
+2014-061CHNF,Chironomidae,pupa,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,61,5,4,0.1233,0.0351,1,6.00E-04,,,Diptera,Diptera,2.52
+2014-061CHNF,Daphnia sp,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,61,5,4,0.1233,0.0351,77,0.02,,,Cladocera,Zooplankton,2.52
+2014-061CHNF,Animal Matter,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,61,5,4,0.1233,0.0351,NA,0.0088,,,Animal Matter,Nondescript,2.52
+2014-061CHNF,Daphniidae,,3/18/2014,2014,Mar,2014.Mar,F,STTD,RSTR,61,5,4,0.1233,0.0351,61,0.0135,,,Cladocera,Zooplankton,2.52
+2014-065CHNF,Animal Matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,NA,3.00E-04,Y,stomach too damaged to weigh,Animal Matter,Nondescript,3.48
+2014-065CHNF,Aphididae,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,3,0,,,Hemiptera,Terrestrial,3.48
+2014-065CHNF,Psyllidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,3,3.00E-04,,,Hemiptera,Terrestrial,3.48
+2014-065CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,16,0.0018,,,Diptera,Diptera,3.48
+2014-065CHNF,Plant matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,NA,0.001,,,NA,Nondescript,3.48
+2014-065CHNF,Acari,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,1,0,,,Arachnida,Terrestrial,3.48
+2014-065CHNF,Ephydridae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,65,3,5,NA,NA,1,3.00E-04,,,Diptera,Diptera,3.48
+2014-066CHNF,Psocoptera,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,7,0.0027,Y,"stomach completely opened, very damaged; no stomach weight",Psocoptera,Terrestrial,2.55
+2014-066CHNF,Acari,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,1,0,Y,"stomach completely opened, very damaged; no stomach weight",Arachnida,Terrestrial,2.55
+2014-066CHNF,Psyllidae,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,2,9.00E-04,Y,"stomach completely opened, very damaged; no stomach weight",Hemiptera,Terrestrial,2.55
+2014-066CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,38,0.0088,Y,"stomach completely opened, very damaged; no stomach weight",Diptera,Diptera,2.55
+2014-066CHNF,Animal Matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,NA,0.0074,Y,"stomach completely opened, very damaged; no stomach weight",Animal Matter,Nondescript,2.55
+2014-066CHNF,Aphididae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,3,7.00E-04,Y,"stomach completely opened, very damaged; no stomach weight",Hemiptera,Terrestrial,2.55
+2014-066CHNF,Thripidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,1,0,Y,"stomach completely opened, very damaged; no stomach weight",Thysanoptera,Terrestrial,2.55
+2014-066CHNF,Isotomidae,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,3,9.00E-04,Y,"stomach completely opened, very damaged; no stomach weight",Collembola,Terrestrial,2.55
+2014-066CHNF,Hemiptera,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,1,4.00E-04,Y,"stomach completely opened, very damaged; no stomach weight",Hemiptera,Terrestrial,2.55
+2014-066CHNF,Daphnia sp,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,22,0.0028,Y,"stomach completely opened, very damaged; no stomach weight",Cladocera,Zooplankton,2.55
+2014-066CHNF,Cyclopoida,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,55,NA,NA,NA,NA,1,0,Y,"stomach completely opened, very damaged; no stomach weight",Copepoda,Zooplankton,2.55
+2014-067CHNF,Plant matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,NA,0,,,NA,Nondescript,2.58
+2014-067CHNF,Sciaridae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,2,1.00E-04,,,Diptera,Diptera,2.58
+2014-067CHNF,Daphniidae,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,16,0.0012,,,Cladocera,Zooplankton,2.58
+2014-067CHNF,Cyclopoida,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,1,0,,,Copepoda,Zooplankton,2.58
+2014-067CHNF,Animal Matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,NA,0.0014,,,Animal Matter,Nondescript,2.58
+2014-067CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,59,4,4,0.0397,0.0232,7,5.00E-04,,,Diptera,Diptera,2.58
+2014-068CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,61,2,6,0.0786,0.0562,6,0.0069,,,Diptera,Diptera,2.34
+2014-077CHNF,Plant matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,NA,2,NA,0.0301,NA,1.00E-04,Y,,NA,Nondescript,2.6
+2014-077CHNF,Cyclopoida,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,NA,2,NA,0.0301,1,0,Y,,Copepoda,Zooplankton,2.6
+2014-077CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,NA,2,NA,0.0301,11,8.00E-04,Y,thoraces,Diptera,Diptera,2.6
+2014-077CHNF,Animal Matter,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,NA,2,NA,0.0301,NA,0.0028,Y,,Animal Matter,Nondescript,2.6
+2014-079CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,4,3,0.0468,0.0304,7,0.0015,,,Diptera,Diptera,2.18
+2014-079CHNF,unidentified,,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,4,3,0.0468,0.0304,NA,0.0016,,,Unidentified,Nondescript,2.18
+2014-080CHNF,Aphididae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,5,6,0.0163,0.0039,1,3.00E-04,,winged,Hemiptera,Terrestrial,0.86
+2014-080CHNF,Corixidae,nymph,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,5,6,0.0163,0.0039,1,3.00E-04,,,Hemiptera,Aquatic,0.86
+2014-080CHNF,Chironomidae,adult,3/19/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,5,6,0.0163,0.0039,13,0.0015,,mostly thoraces,Diptera,Diptera,0.86
+2014-090CHNF,Thripidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,0,,,Thysanoptera,Terrestrial,2.54
+2014-090CHNF,Psyllidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,4,0.0015,,,Hemiptera,Terrestrial,2.54
+2014-090CHNF,Carabidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,8.00E-04,,,Coleoptera,Terrestrial,2.54
+2014-090CHNF,Corophiidae,juvenile,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,2,0,,,Amphipoda,Aquatic,2.54
+2014-090CHNF,Corixidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,0.002,,,Hemiptera,Aquatic,2.54
+2014-090CHNF,Sminthuridae,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,1.00E-04,,,Collembola,Terrestrial,2.54
+2014-090CHNF,Coenagrionidae,nymph,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,2,0.0075,,,Odonata,Aquatic,2.54
+2014-090CHNF,Psocoptera,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,1.00E-04,,,Psocoptera,Terrestrial,2.54
+2014-090CHNF,Gammarus daiberi,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,62,0.0132,,,Amphipoda,Aquatic,2.54
+2014-090CHNF,Chironomidae,larvae,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,8,3.00E-04,,,Diptera,Diptera,2.54
+2014-090CHNF,Formicidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,1,8.00E-04,,wingless,Hymenoptera,Terrestrial,2.54
+2014-090CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,21,0.0046,,,Diptera,Diptera,2.54
+2014-090CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,3,0,,,Cladocera,Zooplankton,2.54
+2014-090CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,NA,0.0143,,,Animal Matter,Nondescript,2.54
+2014-090CHNF,Hymenoptera,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,3,2.00E-04,,,Hymenoptera,Terrestrial,2.54
+2014-090CHNF,Chironomidae,emergent,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,11,0.0015,,mostly thoraces,Diptera,Diptera,2.54
+2014-090CHNF,Trichoptera,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,62,6,4,0.1526,0.0355,2,6.00E-04,,,Trichoptera,Terrestrial,2.54
+2014-092CHNF,Chironomidae,emergent,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,14,0.0054,,,Diptera,Diptera,0.96
+2014-092CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,4,0,,,Cladocera,Zooplankton,0.96
+2014-092CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,NA,0.0035,,,Animal Matter,Nondescript,0.96
+2014-092CHNF,Aphididae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,2,8.00E-04,,winged,Hemiptera,Terrestrial,0.96
+2014-092CHNF,Gammarus daiberi,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,28,0.0053,,,Amphipoda,Aquatic,0.96
+2014-092CHNF,Chironomidae,larvae,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,2,0,,,Diptera,Diptera,0.96
+2014-092CHNF,Diptera,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,1,0,,,Diptera,Diptera,0.96
+2014-092CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,4,0.0018,,,Diptera,Diptera,0.96
+2014-092CHNF,Sminthuridae,,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,1,0,,,Collembola,Terrestrial,0.96
+2014-092CHNF,Chironomidae,pupa,3/20/2014,2014,Mar,2014.Mar,F,BL-5,Beach Seine,49,6,4,0.047,0.0087,1,2.00E-04,,,Diptera,Diptera,0.96
+2014-095CHNF,Calanoida,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,1,0,,,Copepoda,Zooplankton,2.33
+2014-095CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,NA,0.0026,,,Animal Matter,Nondescript,2.33
+2014-095CHNF,Insect matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,NA,5.00E-04,,,Insecta,Nondescript,2.33
+2014-095CHNF,Daphnia sp,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,18,0.0031,,,Cladocera,Zooplankton,2.33
+2014-095CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,34,0.005,,,Cladocera,Zooplankton,2.33
+2014-095CHNF,Chironomidae,emergent,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,3,0.0022,,,Diptera,Diptera,2.33
+2014-095CHNF,Cyclopoida,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,62,4,4,0.0681,0.0339,8,3.00E-04,,,Copepoda,Zooplankton,2.33
+2014-097CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,2,4,0.065,0.0379,NA,1.00E-04,,,Animal Matter,Nondescript,2.07
+2014-097CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,2,4,0.065,0.0379,1,8.00E-04,,,Diptera,Diptera,2.07
+2014-100CHNF,Insect matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,2,4,0.029,0.0118,NA,0,,,Insecta,Nondescript,0.85
+2014-100CHNF,Calanoida,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,2,4,0.029,0.0118,1,0,,,Copepoda,Zooplankton,0.85
+2014-100CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,2,4,0.029,0.0118,5,4.00E-04,,,Cladocera,Zooplankton,0.85
+2014-100CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,2,4,0.029,0.0118,NA,6.00E-04,,,Animal Matter,Nondescript,0.85
+2014-101CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,44,2,4,0.0278,0.0211,2,8.00E-04,,,Diptera,Diptera,0.77
+2014-101CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,STTD,RSTR,44,2,4,0.0278,0.0211,NA,8.00E-04,,,Animal Matter,Nondescript,0.77
+2014-103CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,NA,0.0072,,,Animal Matter,Nondescript,1.9
+2014-103CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,10,0.0056,,,Diptera,Diptera,1.9
+2014-103CHNF,Cyclopoida,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,7,0,,,Copepoda,Zooplankton,1.9
+2014-103CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,75,0.0078,,,Cladocera,Zooplankton,1.9
+2014-103CHNF,Chironomidae,larvae,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,1,5.00E-04,,,Diptera,Diptera,1.9
+2014-103CHNF,Daphnia sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,55,6,4,0.1195,0.0218,100,0.0155,,,Cladocera,Zooplankton,1.9
+2014-104CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,43,6,4,0.0447,0.0098,61,0.005,,,Cladocera,Zooplankton,0.81
+2014-104CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,43,6,4,0.0447,0.0098,NA,0.0033,,,Animal Matter,Nondescript,0.81
+2014-104CHNF,Cyclopoida,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,43,6,4,0.0447,0.0098,2,0,,,Copepoda,Zooplankton,0.81
+2014-104CHNF,Chironomidae,pupa,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,43,6,4,0.0447,0.0098,3,0.0015,,,Diptera,Diptera,0.81
+2014-104CHNF,Daphnia sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-4,Beach Seine,43,6,4,0.0447,0.0098,67,0.0045,,,Cladocera,Zooplankton,0.81
+2014-105CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-3,Beach Seine,42,4,3,0.0262,0.0109,NA,0.0045,,,Animal Matter,Nondescript,0.63
+2014-105CHNF,Chironomidae,larvae,3/20/2014,2014,Mar,2014.Mar,F,BL-3,Beach Seine,42,4,3,0.0262,0.0109,1,2.00E-04,,,Diptera,Diptera,0.63
+2014-105CHNF,Cyclopoida,,3/20/2014,2014,Mar,2014.Mar,F,BL-3,Beach Seine,42,4,3,0.0262,0.0109,1,0,,,Copepoda,Zooplankton,0.63
+2014-105CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-3,Beach Seine,42,4,3,0.0262,0.0109,16,0.0021,,,Cladocera,Zooplankton,0.63
+2014-105CHNF,Daphnia pulex/pulicaria,,3/20/2014,2014,Mar,2014.Mar,F,BL-3,Beach Seine,42,4,3,0.0262,0.0109,7,6.00E-04,,,Cladocera,Zooplankton,0.63
+2014-106CHNF,Chironomidae,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,2,0,Y,thoraces,Diptera,Diptera,0.89
+2014-106CHNF,Ceriodaphnia sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,85,8.00E-04,Y,,Cladocera,Zooplankton,0.89
+2014-106CHNF,Animal Matter,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,NA,0.0049,Y,,Animal Matter,Nondescript,0.89
+2014-106CHNF,Calanoida,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,6,0,Y,,Copepoda,Zooplankton,0.89
+2014-106CHNF,Daphniidae,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,443,0.0069,Y,,Cladocera,Zooplankton,0.89
+2014-106CHNF,Cyclopoida,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,11,0,Y,,Copepoda,Zooplankton,0.89
+2014-106CHNF,Scaphelobaris sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,10,0,Y,,Cladocera,Aquatic,0.89
+2014-106CHNF,Simocephalus sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,22,2.00E-04,Y,,Cladocera,Aquatic,0.89
+2014-106CHNF,Daphnia sp,,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,59,0.0014,Y,,Cladocera,Zooplankton,0.89
+2014-106CHNF,Trichoptera,adult,3/20/2014,2014,Mar,2014.Mar,F,BL-2,Beach Seine,45,NA,4,NA,0.0015,1,0.0014,Y,,Trichoptera,Terrestrial,0.89
+2014-112CHNF,Aphididae,adult,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,3,0.0294,0.0127,1,0,,,Hemiptera,Terrestrial,0.99
+2014-112CHNF,Chironomidae,adult,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,3,0.0294,0.0127,2,0.0012,,,Diptera,Diptera,0.99
+2014-112CHNF,Plant matter,,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,3,0.0294,0.0127,NA,7.00E-04,,,NA,Nondescript,0.99
+2014-112CHNF,Sminthuridae,,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,3,0.0294,0.0127,1,4.00E-04,,,Collembola,Terrestrial,0.99
+2014-112CHNF,Animal Matter,,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,45,4,3,0.0294,0.0127,NA,0.0043,,,Animal Matter,Nondescript,0.99
+2014-114CHNF,Animal Matter,,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,2,3,0.0868,0.0567,NA,0.0076,,,Animal Matter,Nondescript,2.378
+2014-114CHNF,Chironomidae,adult,3/21/2014,2014,Mar,2014.Mar,F,STTD,RSTR,60,2,3,0.0868,0.0567,2,0.0014,,thoraces,Diptera,Diptera,2.378
+2014-118CHNF,Diptera,adult,3/25/2014,2014,Mar,2014.Mar,F,STTD,RSTR,46,4,3,0.0301,0.0182,1,0,,thoraces,Diptera,Diptera,1
+2014-118CHNF,Chironomidae,adult,3/25/2014,2014,Mar,2014.Mar,F,STTD,RSTR,46,4,3,0.0301,0.0182,6,0.0015,,thoraces,Diptera,Diptera,1
+2014-118CHNF,Animal Matter,,3/25/2014,2014,Mar,2014.Mar,F,STTD,RSTR,46,4,3,0.0301,0.0182,NA,0.0028,,,Animal Matter,Nondescript,1
+2014-120CHNF,Chironomidae,adult,3/26/2014,2014,Mar,2014.Mar,F,STTD,RSTR,54,2,5,0.0596,0.0422,3,2.00E-04,,thoraces,Diptera,Diptera,1.86
+2015-001CHNS,Hyallela sp,,3/3/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,4,2,0.0808,0.0598,1,0.0041,,,Amphipoda,Aquatic,3.6
+2015-001CHNS,Animal Matter,,3/3/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,4,2,0.0808,0.0598,NA,0.0097,,,Animal Matter,Nondescript,3.6
+2015-001CHNS,Formicidae,adult,3/3/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,4,2,0.0808,0.0598,1,6.00E-04,,wingless,Hymenoptera,Terrestrial,3.6
+2015-001CHNS,Aphididae,adult,3/3/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,4,2,0.0808,0.0598,1,5.00E-04,,,Hemiptera,Terrestrial,3.6
+2015-001CHNW,Hyallela sp,,3/27/2015,2015,Mar,2015.Mar,W,STTD,RSTR,96,2,5,0.1981,0.1714,1,8.00E-04,,,Amphipoda,Aquatic,9.56
+2015-001CHNW,unidentified,,3/27/2015,2015,Mar,2015.Mar,W,STTD,RSTR,96,2,5,0.1981,0.1714,NA,0.0019,,,Unidentified,Nondescript,9.56
+2015-001CHNW,Chironomidae,adult,3/27/2015,2015,Mar,2015.Mar,W,STTD,RSTR,96,2,5,0.1981,0.1714,1,0.0018,,,Diptera,Diptera,9.56
+2015-002CHNF,Crangonyx sp,,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,2,0.0019,,,Amphipoda,Aquatic,0.8645
+2015-002CHNF,Animal Matter,,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,NA,0.0015,,Sample jar lacking sample ID#,Animal Matter,Nondescript,0.8645
+2015-002CHNF,Sminthuridae,,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,1,0,,,Collembola,Terrestrial,0.8645
+2015-002CHNF,Auchenorrhyncha,nymph,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,11,2.00E-04,,,Hemiptera,Terrestrial,0.8645
+2015-002CHNF,Chironomidae,emergent,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,12,0.0017,,,Diptera,Diptera,0.8645
+2015-002CHNF,Ceratopogonidae,pupa,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,1,0,,,Diptera,Diptera,0.8645
+2015-002CHNF,Aphididae,adult,3/4/2015,2015,Mar,2015.Mar,F,STTD,RSTR,44,5,5,0.0357,0.0171,4,0.0021,,winged,Hemiptera,Terrestrial,0.8645
+2015-002CHNS,Insect matter,,3/11/2015,2015,Mar,2015.Mar,S,STTD,RSTR,79,2,6,0.0899,0.0892,NA,0.003,,,Insecta,Nondescript,5.35
+2015-003CHNF,Insect matter,,3/10/2015,2015,Mar,2015.Mar,F,STTD,RSTR,49,2,6,0.0358,0.029,NA,0,,legs,Insecta,Nondescript,1.21
+2015-003CHNS,Psocoptera,adult,3/11/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,3,5,0.093,0.0873,1,0.001,,,Psocoptera,Terrestrial,4.14
+2015-003CHNS,Hyallela sp,,3/11/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,3,5,0.093,0.0873,1,0.0052,,,Amphipoda,Aquatic,4.14
+2015-003CHNS,Animal Matter,,3/11/2015,2015,Mar,2015.Mar,S,STTD,RSTR,72,3,5,0.093,0.0873,NA,0.0018,,,Animal Matter,Nondescript,4.14
+2015-004CHNF,Crangonyx sp,,3/12/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,2,6,0.0415,0.0366,1,0.002,,,Amphipoda,Aquatic,1.56
+2015-004CHNS,Calanoida,,3/12/2015,2015,Mar,2015.Mar,S,AL-2,Beach Seine,73,6,5,0.2446,0.0807,80,0.0144,,,Copepoda,Zooplankton,4.74
+2015-004CHNS,Cladocera,,3/12/2015,2015,Mar,2015.Mar,S,AL-2,Beach Seine,73,6,5,0.2446,0.0807,56,0.0217,,,Cladocera,Zooplankton,4.74
+2015-004CHNS,Chironomidae,adult,3/12/2015,2015,Mar,2015.Mar,S,AL-2,Beach Seine,73,6,5,0.2446,0.0807,10,0.0024,,,Diptera,Diptera,4.74
+2015-004CHNS,Cyclopoida,,3/12/2015,2015,Mar,2015.Mar,S,AL-2,Beach Seine,73,6,5,0.2446,0.0807,2,1.00E-04,,,Copepoda,Zooplankton,4.74
+2015-004CHNS,Daphnia sp,,3/12/2015,2015,Mar,2015.Mar,S,AL-2,Beach Seine,73,6,5,0.2446,0.0807,382,0.0879,,,Cladocera,Zooplankton,4.74
+2015-005CHNF,Calanoida,,3/12/2015,2015,Mar,2015.Mar,F,BL-4,Beach Seine,51,4,5,0.0409,0.0294,2,2.00E-04,,,Copepoda,Zooplankton,1.31
+2015-005CHNF,Daphnia sp,,3/12/2015,2015,Mar,2015.Mar,F,BL-4,Beach Seine,51,4,5,0.0409,0.0294,17,0.004,,,Cladocera,Zooplankton,1.31
+2015-005CHNF,Chironomidae,,3/12/2015,2015,Mar,2015.Mar,F,BL-4,Beach Seine,51,4,5,0.0409,0.0294,2,9.00E-04,,,Diptera,Diptera,1.31
+2015-005CHNF,Aphididae,adult,3/12/2015,2015,Mar,2015.Mar,F,BL-4,Beach Seine,51,4,5,0.0409,0.0294,3,0.0019,,winged,Hemiptera,Terrestrial,1.31
+2015-005CHNF,Animal Matter,,3/12/2015,2015,Mar,2015.Mar,F,BL-4,Beach Seine,51,4,5,0.0409,0.0294,NA,0.004,,,Animal Matter,Nondescript,1.31
+2015-005CHNS,Insect matter,,3/24/2015,2015,Mar,2015.Mar,S,STTD,RSTR,91,3,6,0.1521,0.1379,NA,0.0124,,,Insecta,Nondescript,10.49
+2015-006CHNF,Psyllidae,adult,3/17/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,5,3,0.0953,0.0479,1,2.00E-04,,,Hemiptera,Terrestrial,1.87
+2015-006CHNF,Crangonyx sp,,3/17/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,5,3,0.0953,0.0479,1,0.0017,,,Amphipoda,Aquatic,1.87
+2015-006CHNF,Animal Matter,,3/17/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,5,3,0.0953,0.0479,NA,0.0099,,,Animal Matter,Nondescript,1.87
+2015-006CHNF,Chironomidae,emergent,3/17/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,5,3,0.0953,0.0479,29,0.0064,,thoraces,Diptera,Diptera,1.87
+2015-006CHNF,Chydorus sp,,3/17/2015,2015,Mar,2015.Mar,F,STTD,RSTR,52,5,3,0.0953,0.0479,1,0,,,Cladocera,Aquatic,1.87
+2015-006CHNS,Chironomidae,emergent,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,1,3.00E-04,,,Diptera,Diptera,7.94
+2015-006CHNS,Daphniidae,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,100,0.0337,,,Cladocera,Zooplankton,7.94
+2015-006CHNS,Calanoida,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,1,0,,,Copepoda,Zooplankton,7.94
+2015-006CHNS,Simocephalus sp,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,11,0.005,,,Cladocera,Aquatic,7.94
+2015-006CHNS,Ceriodaphnia sp,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,1,0,,,Cladocera,Zooplankton,7.94
+2015-006CHNS,Animal Matter,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,NA,0.0214,,,Animal Matter,Nondescript,7.94
+2015-006CHNS,Daphnia sp,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,240,0.137,,,Cladocera,Zooplankton,7.94
+2015-006CHNS,Osteichthyes,,3/25/2015,2015,Mar,2015.Mar,S,AL-4,Beach Seine,84,6,4,0.7041,0.0935,2,0.037,,,Chordata,Aquatic,7.94
+2015-010CHNF,Ephydridae,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,1,0.002,,,Diptera,Diptera,2.26
+2015-010CHNF,Insect matter,,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,NA,0.0021,,,Insecta,Nondescript,2.26
+2015-010CHNF,Hymenoptera,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,1,0,,,Hymenoptera,Terrestrial,2.26
+2015-010CHNF,Staphylinidae,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,1,4.00E-04,,,Coleoptera,Terrestrial,2.26
+2015-010CHNF,Aphididae,,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,3,4.00E-04,,,Hemiptera,Terrestrial,2.26
+2015-010CHNF,Psocoptera,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,1,3.00E-04,,,Psocoptera,Terrestrial,2.26
+2015-010CHNF,Chironomidae,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,2,2.00E-04,,,Diptera,Diptera,2.26
+2015-010CHNF,Cyclopoida,,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,1,0,,,Copepoda,Zooplankton,2.26
+2015-010CHNF,unidentified,,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,NA,9.00E-04,,,Unidentified,Nondescript,2.26
+2015-010CHNF,Trichoptera,adult,3/26/2015,2015,Mar,2015.Mar,F,STTD,RSTR,60,4,5,0.0636,0.037,2,0.0028,,digested,Trichoptera,Terrestrial,2.26
