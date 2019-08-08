@@ -2,6 +2,11 @@
 
 
 Scale <- function(x) {
-  x / (max(x) - min(x))
+  out <- x / (max(x) - min(x))
+  
+  class(out) <- "Scale"
+  
+  out
+  
 }
 
