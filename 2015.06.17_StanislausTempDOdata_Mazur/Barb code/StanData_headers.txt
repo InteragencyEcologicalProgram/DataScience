@@ -1,0 +1,13 @@
+1=1/1/1900 in Excel date formatting
+6/1/2015=42156
+
+Headers for StanDataCleanCSVJ
+
+Date	JDay  Month  Day  Year WY RPNTmax	RPNTmin	RPNTmean	RPN7DADM	RPNDOmax	RPNDOmin	RPNDOmean	OBBmax	OBBmin	OBBmean	OBB7DADM	OwlCmax	OwlCmin	OWLcmean	OwlC7DADM	57	55
+
+
+Headers for StanDataCleanCSV
+
+Date	RPNTmax	RPNTmin	RPNTmean	RPN7DADM	RPNDOmax	RPNDOmin	RPNDOmean	OBBmax	OBBmin	OBBmean	OBB7DADM	OwlCmax	OwlCmin	OWLcmean	OwlC7DADM	57	55
+
+

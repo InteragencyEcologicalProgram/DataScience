@@ -1,0 +1,470 @@
+#######################   REAL ePTM scenario Runs: DIED Waterbodies cumulative fate-node figures  ####################################
+
+##### Scenario B (baseline -5000 OMR)
+
+### Insertion = 332 (Sacramento River at Sacto) ###
+
+B_I332<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenB_Sac_out.csv",na.strings=-999)
+head(B_I332)
+colnames(B_I332)
+
+dataNames_B_I332<- names(B_I332)
+for(i in 1:ncol(B_I332))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_B_I332[i]))
+{
+B_I332[,i] <- as.numeric(as.Date(B_I332[,i], format="%d%b%Y"))
+}
+}
+
+head(B_I332)
+colnames(B_I332)
+
+## Subset B_I332 for diedWB and deathDate
+B_I332_death<-B_I332[,c(81,82)]
+head(B_I332_death)
+
+## Subset WITHIN death subsets
+
+#subset B_I332_death_802 ## SWP deaths ##
+B_I332_death_802<-subset(B_I332_death,diedWaterbody=="802")
+head(B_I332_death_802)
+
+#subset B_I332_death_216 ## CVP deaths ##
+B_I332_death_216<-subset(B_I332_death,diedWaterbody=="216")
+head(B_I332_death_216)
+
+#subset all other WB ## other WB deaths ##
+B_I332_death_no802<-subset(B_I332_death,diedWaterbody!="802")
+head(B_I332_death_no802)
+B_I332_death_no802_no216<-subset(B_I332_death_no802,diedWaterbody!="216")
+head(B_I332_death_no802_no216)
+
+
+### Insertion = 39 (San Joaquin River at Potato Pt. (just downstream of mouth of Old River) ###
+
+B_I39<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenB_CentDel_out.csv",na.strings=-999)
+head(B_I39)
+colnames(B_I39)
+
+dataNames_B_I39<- names(B_I39)
+for(i in 1:ncol(B_I39))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_B_I39[i]))
+{
+B_I39[,i] <- as.numeric(as.Date(B_I39[,i], format="%d%b%Y"))
+}
+}
+
+head(B_I39)
+colnames(B_I39)
+
+## Subset B_I39 for diedWB and deathDate
+B_I39_death<-B_I39[,c(81,82)]
+head(B_I39_death)
+
+## Subset WITHIN death subsets
+
+#subset B_I39_death_802 ## SWP deaths ##
+B_I39_death_802<-subset(B_I39_death,diedWaterbody=="802")
+head(B_I39_death_802)
+
+#subset B_I39_death_216 ## CVP deaths ##
+B_I39_death_216<-subset(B_I39_death,diedWaterbody=="216")
+head(B_I39_death_216)
+
+#subset all other WB ## other WB deaths ##
+B_I39_death_no802<-subset(B_I39_death,diedWaterbody!="802")
+head(B_I39_death_no802)
+B_I39_death_no802_no216<-subset(B_I39_death_no802,diedWaterbody!="216")
+head(B_I39_death_no802_no216)
+
+
+### Insertion = 121 (Middle River at Railroad Bridge (just downstream of Woodward Canal) ###
+
+B_I121<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenB_SouthDel_out.csv",na.strings=-999)
+head(B_I121)
+colnames(B_I121)
+
+dataNames_B_I121<- names(B_I121)
+for(i in 1:ncol(B_I121))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_B_I121[i]))
+{
+B_I121[,i] <- as.numeric(as.Date(B_I121[,i], format="%d%b%Y"))
+}
+}
+
+head(B_I121)
+colnames(B_I121)
+
+## Subset B_I121 for diedWB and deathDate
+B_I121_death<-B_I121[,c(81,82)]
+head(B_I121_death)
+
+## Subset WITHIN death subsets
+
+#subset B_I121_death_802 ## SWP deaths ##
+B_I121_death_802<-subset(B_I121_death,diedWaterbody=="802")
+head(B_I121_death_802)
+
+#subset B_I121_death_216 ## CVP deaths ##
+B_I121_death_216<-subset(B_I121_death,diedWaterbody=="216")
+head(B_I121_death_216)
+
+#subset all other WB ## other WB deaths ##
+B_I121_death_no802<-subset(B_I121_death,diedWaterbody!="802")
+head(B_I121_death_no802)
+B_I121_death_no802_no216<-subset(B_I121_death_no802,diedWaterbody!="216")
+head(B_I121_death_no802_no216)
+
+
+##########################################################################
+##### Scenario A (Flex OMR of -6250 for five days- Feb 12 thro Feb 16)
+
+### Insertion = 332 (Sacramento River at Sacto) ###
+
+A_I332<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenA_Sac_out.csv",na.strings=-999)
+head(A_I332)
+colnames(A_I332)
+
+dataNames_A_I332<- names(A_I332)
+for(i in 1:ncol(A_I332))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_A_I332[i]))
+{
+A_I332[,i] <- as.numeric(as.Date(A_I332[,i], format="%d%b%Y"))
+}
+}
+
+head(A_I332)
+colnames(A_I332)
+
+## Subset A_I332 for diedWB and deathDate
+A_I332_death<-A_I332[,c(81,82)]
+head(A_I332_death)
+
+## Subset WITHIN death subsets
+
+#subset A_I332_death_802 ## SWP deaths ##
+A_I332_death_802<-subset(A_I332_death,diedWaterbody=="802")
+head(A_I332_death_802)
+
+#subset A_I332_death_216 ## CVP deaths ##
+A_I332_death_216<-subset(A_I332_death,diedWaterbody=="216")
+head(A_I332_death_216)
+
+#subset all other WB ## other WB deaths ##
+A_I332_death_no802<-subset(A_I332_death,diedWaterbody!="802")
+head(A_I332_death_no802)
+A_I332_death_no802_no216<-subset(A_I332_death_no802,diedWaterbody!="216")
+head(A_I332_death_no802_no216)
+
+
+### Insertion = 39 (San Joaquin River at mouth of Old River) ###
+
+A_I39<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenA_CentDel_out.csv",na.strings=-999)
+head(A_I39)
+colnames(A_I39)
+
+dataNames_A_I39<- names(A_I39)
+for(i in 1:ncol(A_I39))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_A_I39[i]))
+{
+A_I39[,i] <- as.numeric(as.Date(A_I39[,i], format="%d%b%Y"))
+}
+}
+
+head(A_I39)
+colnames(A_I39)
+
+## Subset A_I39 for diedWB and deathDate
+A_I39_death<-A_I39[,c(81,82)]
+head(A_I39_death)
+
+## Subset WITHIN death subsets
+
+#subset A_I39_death_802 ## SWP deaths ##
+A_I39_death_802<-subset(A_I39_death,diedWaterbody=="802")
+head(A_I39_death_802)
+
+#subset A_I39_death_216 ## CVP deaths ##
+A_I39_death_216<-subset(A_I39_death,diedWaterbody=="216")
+head(A_I39_death_216)
+
+#subset all other WB ## other WB deaths ##
+A_I39_death_no802<-subset(A_I39_death,diedWaterbody!="802")
+head(A_I39_death_no802)
+A_I39_death_no802_no216<-subset(A_I39_death_no802,diedWaterbody!="216")
+head(A_I39_death_no802_no216)
+
+
+### Insertion = 121 (Middle River at Railroad Cut (just downstream of Woodward Canal) ###
+
+A_I121<-read.csv("J:/Water Ops Branch/DOSS/ePTM/Real_Outputs/ScenA_SouthDel_out.csv",na.strings=-999)
+head(A_I121)
+colnames(A_I121)
+
+dataNames_A_I121<- names(A_I121)
+for(i in 1:ncol(A_I121))
+{
+# See if this column name contains the word “Date"
+if(grepl("Date", dataNames_A_I121[i]))
+{
+A_I121[,i] <- as.numeric(as.Date(A_I121[,i], format="%d%b%Y"))
+}
+}
+
+head(A_I121)
+colnames(A_I121)
+
+## Subset A_I121 for diedWB and deathDate
+A_I121_death<-A_I121[,c(81,82)]
+head(A_I121_death)
+
+## Subset WITHIN death subsets
+
+#subset A_I121_death_802 ## SWP deaths ##
+A_I121_death_802<-subset(A_I121_death,diedWaterbody=="802")
+head(A_I121_death_802)
+
+#subset A_I121_death_216 ## CVP deaths ##
+A_I121_death_216<-subset(A_I121_death,diedWaterbody=="216")
+head(A_I121_death_216)
+
+#subset all other WB ## other WB deaths ##
+A_I121_death_no802<-subset(A_I121_death,diedWaterbody!="802")
+head(A_I121_death_no802)
+A_I121_death_no802_no216<-subset(A_I121_death_no802,diedWaterbody!="216")
+head(A_I121_death_no802_no216)
+
+###############################################################
+
+###### Individual histograms ########
+
+## B_I332_deaths
+
+#B_I332_deaths_802 ## SWP deaths ##
+hB_I332_802=hist(B_I332_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hB_I332_802$density=(hB_I332_802$counts/1000)*100
+hB_I332_802.cum<-cumsum(hB_I332_802$density)
+
+#B_I332_deaths_216 ## CVP deaths ##
+hB_I332_216=hist(B_I332_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I332_216$density=(hB_I332_216$counts/1000)*100
+hB_I332_216.cum<-cumsum(hB_I332_216$density)
+
+#B_I332_deaths_no802_no216 ## ALL other deaths ##
+hB_I332_other=hist(B_I332_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I332_other$density=(hB_I332_other$counts/1000)*100
+hB_I332_other.cum<-cumsum(hB_I332_other$density)
+
+## B_I39_deaths
+
+#B_I39_deaths_802 ## SWP deaths ##
+hB_I39_802=hist(B_I39_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hB_I39_802$density=(hB_I39_802$counts/1000)*100
+hB_I39_802.cum<-cumsum(hB_I39_802$density)
+
+#B_I39_deaths_216 ## CVP deaths ##
+hB_I39_216=hist(B_I39_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I39_216$density=(hB_I39_216$counts/1000)*100
+hB_I39_216.cum<-cumsum(hB_I39_216$density)
+
+#B_I39_deaths_no802_no216 ## ALL other deaths ##
+hB_I39_other=hist(B_I39_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I39_other$density=(hB_I39_other$counts/1000)*100
+hB_I39_other.cum<-cumsum(hB_I39_other$density)
+
+## B_I121_deaths
+
+#B_I121_deaths_802 ## SWP deaths ##
+hB_I121_802=hist(B_I121_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hB_I121_802$density=(hB_I121_802$counts/1000)*100
+hB_I121_802.cum<-cumsum(hB_I121_802$density)
+
+#B_I121_deaths_216 ## CVP deaths ##
+hB_I121_216=hist(B_I121_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I121_216$density=(hB_I121_216$counts/1000)*100
+hB_I121_216.cum<-cumsum(hB_I121_216$density)
+
+#B_I121_deaths_no802_no216 ## ALL other deaths ##
+hB_I121_other=hist(B_I121_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hB_I121_other$density=(hB_I121_other$counts/1000)*100
+hB_I121_other.cum<-cumsum(hB_I121_other$density)
+
+
+## A_I332_deaths
+
+#A_I332_deaths_802 ## SWP deaths ##
+hA_I332_802=hist(A_I332_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hA_I332_802$density=(hA_I332_802$counts/1000)*100
+hA_I332_802.cum<-cumsum(hA_I332_802$density)
+
+#A_I332_deaths_216 ## CVP deaths ##
+hA_I332_216=hist(A_I332_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I332_216$density=(hA_I332_216$counts/1000)*100
+hA_I332_216.cum<-cumsum(hA_I332_216$density)
+
+#A_I332_deaths_no802_no216 ## ALL other deaths ##
+hA_I332_other=hist(A_I332_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I332_other$density=(hA_I332_other$counts/1000)*100
+hA_I332_other.cum<-cumsum(hA_I332_other$density)
+
+## A_I39_deaths
+
+#A_I39_deaths_802 ## SWP deaths ##
+hA_I39_802=hist(A_I39_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hA_I39_802$density=(hA_I39_802$counts/1000)*100
+hA_I39_802.cum<-cumsum(hA_I39_802$density)
+
+#A_I39_deaths_216 ## CVP deaths ##
+hA_I39_216=hist(A_I39_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I39_216$density=(hA_I39_216$counts/1000)*100
+hA_I39_216.cum<-cumsum(hA_I39_216$density)
+
+#A_I39_deaths_no802_no216 ## ALL other deaths ##
+hA_I39_other=hist(A_I39_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I39_other$density=(hA_I39_other$counts/1000)*100
+hA_I39_other.cum<-cumsum(hA_I39_other$density)
+
+## A_I121_deaths
+
+#A_I121_deaths_802 ## SWP deaths ##
+hA_I121_802=hist(A_I121_death_802$deathDate,breaks=seq(16476,16495,by=1))
+hA_I121_802$density=(hA_I121_802$counts/1000)*100
+hA_I121_802.cum<-cumsum(hA_I121_802$density)
+
+#A_I121_deaths_216 ## CVP deaths ##
+hA_I121_216=hist(A_I121_death_216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I121_216$density=(hA_I121_216$counts/1000)*100
+hA_I121_216.cum<-cumsum(hA_I121_216$density)
+
+#A_I121_deaths_no802_no216 ## ALL other deaths ##
+hA_I121_other=hist(A_I121_death_no802_no216$deathDate,breaks=seq(16476,16495,by=1))
+hA_I121_other$density=(hA_I121_other$counts/1000)*100
+hA_I121_other.cum<-cumsum(hA_I121_other$density)
+
+##################################################################################
+
+####### COMPARISON Death Graphs: Baseline (B) and Flex (A) ###### y-axis from 0:100%
+
+##### Insertion = Sac R. at Sacramento (332)
+par(mfrow=c(2,1))
+
+plot(hB_I332_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= Sac R. at Sacramento, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hB_I332_216.cum,pch=17,col="orange")
+points(hB_I332_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I332_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= Sac R. at Sacramento, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hA_I332_216.cum,pch=17,col="orange")
+points(hA_I332_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+windows()
+
+##### Insertion = San Joaquin River at mouth of Old River (39)
+
+par(mfrow=c(2,1))
+
+plot(hB_I39_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= San Joaquin R. at mouth of Old R., Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hB_I39_216.cum,pch=17,col="orange")
+points(hB_I39_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died= All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I39_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= San Joaquin R. at mouth of Old R., Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hA_I39_216.cum,pch=17,col="orange")
+points(hA_I39_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+windows()
+
+##### Insertion = Middle River at Railroad Cut (121)
+
+par(mfrow=c(2,1))
+
+
+plot(hB_I121_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= Middle River at Railroad Cut, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hB_I121_216.cum,pch=17,col="orange")
+points(hB_I121_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died= All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I121_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= Middle River at Railroad Cut, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,100),yaxt="n")
+axis(2,at=seq(0,100,by=10))
+points(hA_I121_216.cum,pch=17,col="orange")
+points(hA_I121_other.cum,pch=16,col="blue")
+legend(1,100,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+
+
+##################################################################################
+
+############## y-axis = 0:50% ####################################################
+####### COMPARISON Graphs: Baseline (B) and Flex (A) ###### y-axis from 0:50%
+
+##### Insertion = Sac R. at Sacramento (332)
+
+par(mfrow=c(2,1))
+
+plot(hB_I332_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= Sac R. at Sacramento, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hB_I332_216.cum,pch=17,col="orange")
+points(hB_I332_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I332_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= Sac R. at Sacramento, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hA_I332_216.cum,pch=17,col="orange")
+points(hA_I332_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+windows()
+
+##### Insertion = San Joaquin River at mouth of Old River
+
+par(mfrow=c(2,1))
+
+plot(hB_I39_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= San Joaquin R. at mouth of Old R., Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hB_I39_216.cum,pch=17,col="orange")
+points(hB_I39_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died= All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I39_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= San Joaquin R. at mouth of Old R., Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hA_I39_216.cum,pch=17,col="orange")
+points(hA_I39_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+windows()
+
+##### Insertion = Middle River at Railroad Cut
+
+par(mfrow=c(2,1))
+
+plot(hB_I121_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-5000 OMR Baseline\nInsertion= Middle River at Railroad Cut, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hB_I121_216.cum,pch=17,col="orange")
+points(hB_I121_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died= All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+plot(hA_I121_802.cum, ylab="Cumulative Percentage of enhanced Particles",main="-6250 OMR Flex\nInsertion= Middle River at Railroad Cut, Fate= Died", xlab="Days after enhanced particle insertion (Feb 11-Mar 2,2015)",pch=15,col="red",ylim=c(0,60),yaxt="n")
+axis(2,at=seq(0,60,by=10))
+points(hA_I121_216.cum,pch=17,col="orange")
+points(hA_I121_other.cum,pch=16,col="blue")
+legend(1,60,c("Died= SWP","Died= CVP","Died=All other"),pch=c(15,17,16),col=c("red","orange","blue"))
+
+
+#########################   FIN   #############################

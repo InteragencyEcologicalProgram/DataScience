@@ -1,0 +1,17 @@
+2015.03.03_KLRSTcsv column headings
+
+StartD	StartT	StopD	StopT	HrsSampled	8.3RPM	8.4RPM	8.3Rev	8.4Rev	HrsFished	WLK	WaterT	Turb	MinFL	MaxFL	FR	SR	WR	LFR	AdCHINOOK	STEEL	AdSTEEL	FRcpue	SRcpue	WRcpue	LFRcpue	STEELcpue	Comments
+
+
+2015.03.03_KLRSTcsv_julian column headings
+
+10/1/2014=41913
+10/1/2015=42278
+1/1/2014=41640
+1/1/2015=42005
+1/1/1900=1
+
+Subtracted 41913 from StartDj to get StartDjWY
+Be sure column format is "general", or will get dates in the 1900s.
+
+StartD	StartDj	StartDjWY	StartT	StopD	StopDj	StopDjWY	StopT	HrsSampled	8.3RPM	8.4RPM	8.3Rev	8.4Rev	HrsFished	WLK	WaterT	Turb	MinFL	MaxFL	FR	SR	WR	LFR	AdCHINOOK	STEEL	AdSTEEL	FRcpue	SRcpue	WRcpue	LFRcpue	STEELcpue	EFF	Comments

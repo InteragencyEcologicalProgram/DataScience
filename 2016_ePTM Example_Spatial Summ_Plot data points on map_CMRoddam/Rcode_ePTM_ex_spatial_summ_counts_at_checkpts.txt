@@ -1,0 +1,63 @@
+###############   Spatially plotting data on maps   ##################
+
+#### Install and Load packages: ggmap, ggplots, and map (and any associated packages necessary- 
+# this may take some time-- ggplots in particular requries SEVERAL other packages to be installed and loaded)
+
+#Bring in data, and call it whatever you want; here I called it the exciting name of "data"
+data<-read.csv("J:/Water Ops Branch/DOSS/ePTM/ggmaps/ScenA_CentDel_ePartSum_EndRun.csv")
+
+#View data
+head(data)
+#Can view column names if want
+names(data)
+
+#"pulled-out" Latitude and Longitude from dataset so I can use it later
+#Note: Lat/Long data for DSM2 Nodes are from Doug Jackson (SWFSC)
+lat<-data$Latitude
+head(lat)
+
+lon<-data$Longitude
+head(lon)
+
+#"pulled-out" the count (of eParts from each Checkpoint, which I calculated manually from Excel Pivot Tables) from the dataset
+count<-data$count
+head(count)
+
+#getting the basemap from google maps; CAN Change maptype
+basemap<-get_map(location='Antioch',zoom=10,maptype='satellite',source='google')
+#view the map
+ggmap(basemap)
+
+#Defining basemap as "base layer" for ggplots
+map1<-ggmap(basemap,extent='panel',base_layer=ggplot(data,aes(x=Longitude,y=Latitude)))
+#View map-- you will NOT see any changes
+print(map1)
+
+#plotting data points all the same size
+map.epart<-map1+geom_point(color="red",size=4)
+
+#changing labs,titles
+map.epart<-map.epart+labs(title="Number of eParticles detected per checkpoint by end of model run\nOMR Flex, Insertion= San Joaquin at mouth of Old River",x="Longitude", y="Latitude")
+
+print(map.epart)
+
+#adjusting data points so bubbles are proportional to the counts of eParts per checkpoint
+# Notice I made a new map here titled "map.epart2" only because I wanted to keep my first map of just plotted checkpoints-- this is optional
+map.epart2<-map1+geom_point(aes(size=count),color="red")
+
+#changing labs, title
+map.epart2<-map.epart2+labs(title="Number of eParticles detected per checkpoint by end of model run\nOMR Flex, Insertion= San Joaquin at mouth of Old River",x="Longitude", y="Latitude")
+
+#View map!
+print(map.epart2)
+
+### making custom bubble sizes and legend ###
+map.epart2<-map1+geom_point(aes(size=count),color="red")+scale_size_area(breaks=c(25,50,100,200,300,400,500,600))
+
+#labs,titles
+map.epart2<-map.epart2+labs(title="Number of eParticles detected per checkpoint by end of model run\nOMR Flex, Insertion= San Joaquin at mouth of Old River",x="Longitude", y="Latitude", size="Count of eParticles")
+
+#View map!
+print(map.epart2)
+
+########## FIN
