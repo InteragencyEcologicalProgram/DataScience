@@ -1,0 +1,8 @@
+Species	Height.m	Mass.kg
+Edlerberry	17	128
+Schruberry 	0.75	54
+African sparrow	0.15	0.01
+European sparrow	0.05	0.005
+Herring	0.02	0.001
+Coconut	0.1	0.1
+Killer rabbit	0.13	0.37

@@ -1,0 +1,7 @@
+pet	length	wt	age
+cat	100	25	15
+dog	500	257	5
+sheep	750	399	2
+frog	50	15	3
+fish	5	5	6
+rat	45	21	1
