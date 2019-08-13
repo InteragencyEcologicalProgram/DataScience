@@ -1,0 +1,147 @@
+---
+title: "funnR"
+author: "Vanessa Tobias <vanessa_tobias@fws.gov>"
+date: "August 7, 2019"
+output: html_document
+---
+
+This isn't the most complete or exciting R markdown file you've ever found, but hopefully it's one of the funner ones. The purpose of this document is just to explore some fun and silly things that I've found in R.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# #install.packages("devtools") #requires recent version of R
+# library(devtools)
+# install_github("Gibbsdavidl/CatterPlots")
+# devtools::install_github("melissanjohnson/pupR")
+# install.packages("cowsay")
+
+library(CatterPlots)
+library(pupR)
+library(car)
+library(cowsay)
+library(praise)
+library(ggplot2)
+
+
+data(mtcars)
+motors <- mtcars
+```
+
+
+
+
+
+# R for Dog lovers
+```{r}
+pupR()
+#praise()
+text(x= 300, y = 50, praise(), col = "yellow", cex = 2)
+```
+
+```{r}
+e <- simpleError("test error")
+tryCatch(stop(e), error = function(e){
+  pupR()
+text(x= 300, y = 50,"Error Therapy pupR", col = "orange", cex = 2)
+})
+```
+
+## Let's make some CatterPlots!
+Source for CatterPlots: https://github.com/Gibbsdavidl/CatterPlots
+
+```{r}
+purr <- catplot(xs=motors$disp, ys=motors$wt, cat=5, size = 0.1,
+                catcolor='#000000FF')
+#cats(purr, -x, -y, cat=4, catcolor='#FF0000')
+```
+
+```{r}
+meow <- multicat(xs=motors$disp, ys=motors$wt,
+                 cat=c(1,2,3,4,5,6,7,8,9,10),
+                 catcolor=list('#000000FF'),
+                 canvas=c(-0.1,1.1, -0.1, 1.1),
+                 xlab="some cats", ylab="other cats", main="Random Cats")
+```
+
+# Sound with R
+
+```{r}
+library(beepr)
+
+beep(3)
+beep(8)
+
+```
+
+Make R play happy birthday: https://correlaid.org/en/blog/music-with-r/
+
+
+
+
+
+# xkcd plots
+
+```{r}
+download.file("http://simonsoftware.se/other/xkcd.ttf", dest="xkcd.ttf", mode="wb")
+system("mkdir ~/.fonts")
+system("cp xkcd.ttf  ~/.fonts")
+font_import(paths = ".", pattern = "[X/x]kcd", prompt=FALSE) #change the path to where R saved the font file
+fonts()
+fonttable()
+if(.Platform$OS.type != "unix") {   
+  ## Register fonts for Windows bitmap output
+  loadfonts(device="win")
+} else {
+  loadfonts()
+}
+windowsFonts(xkcd=windowsFont("TT xkcd"))
+
+library(xkcd)
+```
+
+
+```{r}
+xrange <- range(mtcars$mpg)
+yrange <- range(mtcars$wt)
+set.seed(123) # for reproducibility
+p <- ggplot() + 
+  geom_point(aes(mpg, wt), data=mtcars) +
+  #theme_xkcd() +
+  theme(text = element_text(size = 16, family = "Comic Sans MS")) +
+  xkcdaxis(xrange,yrange) +
+  labs(x = "some text")# +
+  #annotate("text", 11, 4, label = 'text text', hjust = 0, family = "xkcd", size = 10)
+p
+```
+
+
+# with crayola colors
+```{r}
+library(broman)
+plot_crayons()
+#brocolors("crayons")["Shamrock"]
+```
+
+
+```{r}
+p <- ggplot() + 
+  geom_smooth(aes(mpg, wt), data=mtcars, color =  brocolors("crayons")["Shamrock"],
+              se = FALSE, size = 1) +
+  #theme_xkcd() +
+  theme(text = element_text(size = 16, family = "Comic Sans MS")) +
+  xkcdaxis(xrange,yrange) +
+  labs(x = "", y = "")
+p
+```
+
+# rphylopic
+Potentially useful for real plots, but also really fun!
+```{r}
+library(rphylopic)
+mouse <- image_data("6b2b98f6-f879-445f-9ac2-2c2563157025", size="512")[[1]]
+p + add_phylopic(mouse, x=motors$disp, y=motors$wt)
+```
+
+
+
