@@ -1,0 +1,302 @@
+---
+title: "Loops in R"
+author: "Travis Hinkelman"
+date: "2019-11-14"
+output: 
+  ioslides_presentation:
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Idiomatic R
+
+>Of course someone has to write loops. It doesn't have to be you. - [Jenny Bryan](https://speakerdeck.com/jennybc/row-oriented-workflows-in-r-with-the-tidyverse?slide=16)
+
+But, if you are like me, you might find loops *more* intuitive for some tasks.
+
+And, in some cases, a loop is the best tool for the job.
+
+## Sequence
+
+Hand-written loops are more verbose and less optimized than built-in functions.
+
+```{r echo = TRUE}
+x <- c()
+val <- 1
+while (val < 2.1) {
+  x <- c(x, val)
+  val <- val + 0.1
+}
+x
+seq(1, 2, 0.1)
+```
+
+## Repeat
+
+```{r echo = TRUE}
+x <- c()
+for (i in 1:10){
+  x <- c(x, "*")
+}
+x
+rep("*", 10)
+```
+
+## Print
+
+```{r echo = TRUE}
+for (i in 1:5){
+  x <- c()
+  for (j in 1:i){
+    x <- c(x, "*")
+  }
+  cat(c(x, "\n"), sep = "")
+}
+```
+
+## Print
+
+```{r echo = TRUE, eval = FALSE}
+for (i in 1:5){
+  x <- c()
+  for (j in 1:i){
+    x <- c(x, "*")
+  }
+  cat(c(x, "\n"), sep = "")
+}
+```
+
+```{r echo = TRUE}
+for (i in 1:5){
+  cat(c(rep("*", i), "\n"), sep = "")
+}
+```
+
+## Fill Arrays
+
+Classic use case for loops.
+
+```{r echo = TRUE}
+out <- array(dim = c(3, 3, 3))
+for (i in 1:3){
+  for (j in 1:3){
+    for (k in 1:3){
+      out[i, j, k] <- i * j + k
+    }
+  }
+}
+out[, , 1]
+```
+
+## Manipulate Lists
+
+First, we need to create a list for the next loop example.
+
+```{r echo = TRUE}
+rlist <- list(A = data.frame(x = sample(10, 3), y = sample(10, 3)),
+              B = data.frame(x = sample(10, 3), y = sample(10, 3)))
+rlist
+```
+
+## Manipulate Lists
+
+If creating a new column in every data frame in the list, a novice R programmer might start with the following: 
+
+```{r echo = TRUE}
+rlist[["A"]]$z <- rlist[["A"]]$x + rlist[["A"]]$y
+rlist[["B"]]$z <- rlist[["B"]]$x + rlist[["B"]]$y
+```
+
+Reasonable choice for one-off script when list has few elements.
+
+## Manipulate Lists
+
+However, if list has many elements,
+
+```{r echo = TRUE, eval = FALSE}
+rlist[["A"]]$z <- rlist[["A"]]$x + rlist[["A"]]$y
+rlist[["B"]]$z <- rlist[["B"]]$x + rlist[["B"]]$y
+rlist[["C"]]$z <- rlist[["C"]]$x + rlist[["A"]]$y
+rlist[["D"]]$z <- rlist[["D"]]$x + rlist[["D"]]$y
+rlist[["E"]]$z <- rlist[["E"]]$x + rlist[["E"]]$y
+rlist[["F"]]$z <- rlist[["F"]]$x + rlist[["F"]]$y
+```
+
+then it is shorter and less error prone to write a loop.
+
+```{r echo = TRUE}
+for (i in names(rlist)){
+  rlist[[i]]$z <- rlist[[i]]$x + rlist[[i]]$y
+}
+```
+
+## Manipulate Lists
+
+```{r echo = TRUE}
+for (i in names(rlist)){
+  rlist[[i]]$z <- rlist[[i]]$x + rlist[[i]]$y
+}
+```
+
+Same loop written with `mutate` (from [`dplyr`](https://dplyr.tidyverse.org) package) to add the column.
+
+```{r echo = TRUE, eval = FALSE}
+for (i in names(rlist)){
+  rlist[[i]] <- dplyr::mutate(rlist[[i]], z = x + y)
+}
+```
+
+## Manipulate Lists
+
+```{r echo = TRUE}
+for (i in names(rlist)){
+  rlist[[i]]$z <- rlist[[i]]$x + rlist[[i]]$y
+}
+```
+
+Same loop written with `mutate` (from [`dplyr`](https://dplyr.tidyverse.org) package) to add the column.
+
+```{r echo = TRUE}
+for (i in names(rlist)){
+  rlist[[i]] <- dplyr::mutate(rlist[[i]], z = x + y)
+}
+```
+
+Pairing `lapply` and an anonymous function allows you to skip the loop.
+
+```{r echo = TRUE}
+rlist <- lapply(rlist, function(x){x$z = x$x + x$y; x})
+```
+
+## Generate Data
+
+Crude approach to simulate acoustic telemetry data of emigrating juvenile salmon.
+
+```{r echo = TRUE}
+sample5 <- function(x){sample(x, 5, replace = TRUE)}
+
+out_list <- list()
+for (i in 1:20){
+  out_list[[i]] <- 
+    data.frame(day = sort(runif(20, 0, 50)),
+               river_mile = c(sample5(20:16),
+                              sample5(15:11),
+                              sample5(10:6),
+                              sample5(5:1)))
+}
+out_df <- dplyr::bind_rows(out_list, .id = "cohort_id")
+```
+
+## Generate Data
+
+```{r echo = TRUE}
+head(out_df, 10)
+```
+
+## Save Plots
+
+```{r echo = TRUE, eval = FALSE}
+library(ggplot2)
+for (i in unique(out_df$cohort_id)){
+  out_sub <- dplyr::filter(out_df, cohort_id == i)
+  ggplot(out_sub, aes(x = day, y = river_mile)) +
+    geom_line() +
+    geom_point() +
+    labs(title = paste("Cohort", i))
+  ggsave(filename = paste0("Cohort_", i, ".png"), 
+         width = 6, 
+         height = 4, 
+         path = "figures")
+}
+```
+
+## Write Files
+
+Splitting data frames
+```{r echo = TRUE, eval = FALSE}
+for (i in unique(out_df$cohort_id)){
+  out_sub <- dplyr::filter(out_df, cohort_id == i)
+  write.csv(x = out_sub,
+            file = file.path("output", paste0("Cohort_", i, ".csv")),
+            row.names = FALSE)
+}
+```
+
+Elements of a list
+```{r echo = TRUE, eval = FALSE}
+for (i in names(out_list)){
+  write.csv(x = out_list[[i]],
+            file = file.path("output", paste0("Cohort_", i, ".csv")),
+            row.names = FALSE)
+}
+```
+
+## Read Files
+
+```{r echo = TRUE, eval = FALSE}
+fn <- list.files(path = "output", pattern = "csv", full.names = TRUE)
+
+in_list <- list()
+for (i in seq_along(fn)){
+  in_list[[i]] <- read.csv(fn[i])
+}
+```
+
+Skip the loop with `lapply`.
+
+```{r echo = TRUE, eval = FALSE}
+in_list <- lapply(fn, read.csv)
+```
+
+## Split-Apply-Combine
+
+```{r echo = TRUE}
+out_list <- list()
+for (i in unique(PlantGrowth$group)){
+  pg_sub <- dplyr::filter(PlantGrowth, group == i)
+  avg_weight_sub <- mean(pg_sub$weight)
+  out_list[[i]] <- data.frame(avg_weight = avg_weight_sub)
+}
+dplyr::bind_rows(out_list, .id = "group")
+```
+
+## Split-Apply-Combine
+
+```{r echo = TRUE, eval = FALSE}
+out_list <- list()
+for (i in unique(PlantGrowth$group)){
+  pg_sub <- dplyr::filter(PlantGrowth, group == i)
+  avg_weight_sub <- mean(pg_sub$weight)
+  out_list[[i]] <- data.frame(avg_weight = avg_weight_sub)
+}
+dplyr::bind_rows(out_list, .id = "group")
+```
+
+Skip the loop with `group_by` and `summarise` from the `dplyr` package.
+
+```{r echo = TRUE, eval = FALSE}
+PlantGrowth %>% 
+  group_by(group) %>% 
+  summarise(avg_weight = mean(weight))
+```
+
+## Take-away Points
+
+When available, use vectorized functions.
+
+Loops are useful when filling arrays, reading/writing data, and saving plots.
+
+Loops are natural extension of procedural style of programming.
+
+Growing a data structure in a loop is inefficient.  
+Pre-allocate instead.
+
+If you don't find loops intuitive, explore the [`apply`](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) family of functions or the [`purrr`](https://purrr.tidyverse.org) package.
+
+## Take-away Points
+
+>I was just reminded I've gone 782 days with no loops written in #rstats. Why do we need to teach these to beginners again? - [Miles McBain](https://twitter.com/MilesMcBain/status/966849825634369536)
+
