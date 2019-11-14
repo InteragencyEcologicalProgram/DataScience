@@ -75,4 +75,17 @@ demo4 = pivot_wider(demo, names_from = Species, values_from = Biovolume)
 
 #The sky's the limit!
 
+#We can pivot multiple variables at once
 
+#Add an example variable
+demo = mutate(demo, abundance = rnorm(nrow(demo)))
+
+#now transpose it
+demo5 = pivot_wider(data = demo, names_from = Species, values_from = c(Biovolume, abundance))
+View(demo5)
+
+
+#or if you want to drop one of them
+
+demo6 = pivot_wider(data = demo, id_cols = yearseason, names_from = Species, values_from = Biovolume)
+View(demo6)
