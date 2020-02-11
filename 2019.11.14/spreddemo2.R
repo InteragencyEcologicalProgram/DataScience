@@ -29,9 +29,12 @@ demo$yearseason = paste(demo$Year, as.numeric(demo$Season))
 #remove the old "year" and "season" values
 demo$Year = NULL
 demo$Season = NULL
+demo = select(demo, -Year)
 
 #If you're feeling fancy, you can also use the "mutate" function to do this all at once
-demo = mutate(demo, yearseason = paste(Year, as.numeric(Season)), Year = NULL, Season = NULL)
+demo = mutate(demo, yearseason = paste(Year, as.numeric(Season), sep = "_"), Year = NULL, Season = NULL)
+
+demo = unite(demo, col = "test", Biovolume, Species, sep = "_")
 
 View(demo)
 
@@ -87,5 +90,12 @@ View(demo5)
 
 #or if you want to drop one of them
 
-demo6 = pivot_wider(data = demo, id_cols = yearseason, names_from = Species, values_from = Biovolume)
+demo6 = pivot_wider(data = demo, id_cols = yearseason, 
+                    names_from = Species, values_from = Biovolume)
+View(demo6)
+
+
+
+demo6 = pivot_wider(data = demo,
+                    names_from = Species, values_from = Biovolume)
 View(demo6)

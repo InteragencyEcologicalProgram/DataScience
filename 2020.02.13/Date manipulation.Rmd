@@ -1,0 +1,190 @@
+---
+title: "Dates"
+author: "Rosemary Hartman"
+date: "2/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = F)
+```
+# Dates
+
+Dealing with dates is one of the most difficult data types, but fortunately the package "lubridate" makes it much easier.
+
+## Date and Time classes
+
+There are a few different types of data that reffer to dates. "Dates" just have a date component, whereas date-times may be POSIXct (number of seconds since 1970), or PSIXlt (a named vector of year/month/day/hour/minute/second/time zone).
+
+
+
+```{r}
+library(tidyverse)
+library(lubridate)
+?lubridate
+
+?DateTimeClasses
+
+today()
+
+now()
+rightnow = now()
+
+rightnow
+
+class(today())
+class(now())
+
+```
+
+## Converting from characters to dates
+
+I made a little example spreadsheet with dates and times in different formats. The basic "read.csv" function will automatically read these in as character vectors.
+
+```{r}
+
+dates = read.csv("dates.csv", stringsAsFactors = F)
+str(dates)
+
+```
+It thinks "Date" is a vector of characters. We want to tell it that it's a date.
+
+In base R, we can use as.date()
+
+```{r}
+
+dates2 = as.Date(dates$Date1)
+
+#Oops
+
+?as.Date
+?strptime
+
+
+#if we don't tell it the format we are in trouble.
+dates2 = as.Date(dates$Date1, format = "%m/%d/%Y")
+
+str(zoopdates)
+
+```
+
+
+
+Well, that seemed to work, but I can never remember how the "format" thing works. Fortunately, lubridate has some shortcuts. 
+
+
+
+```{r}
+?ymd
+
+dates2 = mutate(dates, Date1 = mdy(Date1))
+
+str(dates2)
+
+#there are similar functions to reformat the other date structures
+
+dates2 = mutate(dates, Date1 = mdy(Date1), #mdy automatically converts "month/day/year" or "month-day-year" 
+                Datetime = mdy_hm(Datetime), #mdy_hm converts both dates and times stored together (usually the best way to do it)
+                Date2 = ymd(Date2),
+                Date3 = mdy(Date3))
+
+str(dates2)
+
+```
+
+## Times
+
+R has a lot of ways of dealing with dates and times, and it can handle dates without times, but it actually has no built-in way of dealing with times that don't have dates. For that we can use the "hms" package (included in the "tidyverse")
+
+```{r}
+dates3 = mutate(dates2, StartTime = hms::parse_hm(StartTime),
+                EndTime = hms::parse_hm(EndTime)) #parse_hm converts it to a time
+
+str(dates3)
+
+```
+OK, so that worked pretty well, but you notice that "1955" got a little messed up. R stores date/times as the number of seconds since 1970, so if you feed R a 2-diget year, it assumes anything below 70 should be prefaced with "20" and anything above 70 should be prefaced with "19". This is why you should never store 2-diget years!
+
+## Extracting parts of a date-time
+
+If I want to organize my dataset by month, I need to extract the "month" part of the date.
+
+```{r}
+
+?month
+
+month(today())
+
+month(today(), label = TRUE)
+
+dates3 = mutate(dates3, Month = month(Date1), 
+                 julianday = yday(Date1), 
+                 monthday = mday(Date1), 
+                 weekday = wday(Date1))
+View(dates3)
+```
+
+## Arithmatic with dates and times
+
+Lubridate can store periods of time in three formats 
+
+* Period - Change in clock time between two date-times (years, months, days, etc)
+* Interval - Period between two specific time points (from 12:42 today until 2:16 tomorrow)
+* Duration - The exact number of seconds in a time span
+* difftime - base R version of a timespan
+
+```{r}
+
+rightnow - now()
+
+timetest = rightnow - now()
+
+class(timetest)
+
+as.period(timetest)
+
+
+span = interval(ymd_hms("2009-01-01 00:00:00"), ymd_hms("2010-02-02 01:01:01")) #interval
+as.period(span)
+as.period(span, unit = "day")
+
+
+as.interval(timetest, start = now())
+
+as.duration(timetest)
+as.duration(span)
+
+```
+
+# Now you try it!
+
+1. What happens if you parse a string that contains invalid dates?
+
+```{r}
+
+ymd(c("2010-10-10", "cheese"))
+
+```
+2. Parse each of the following dates (use lubridate or base r, as you see fit)
+
+```{r}
+d1 <- "January 1, 2010"
+
+d2 <- "2015-Mar-07"
+
+d3 <- "06-Jun-2017"
+
+d4 <- c("August 19 (2015)", "July 1 (2015)")
+
+d5 <- "12/30/14" # Dec 30, 2014
+
+```
+
+3. How many seconds are in the month of March?
+
+
+4. How old are you in minutes?
+
+
+
+
