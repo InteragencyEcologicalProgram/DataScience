@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval = F)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 # Dates
 
@@ -51,7 +51,7 @@ It thinks "Date" is a vector of characters. We want to tell it that it's a date.
 
 In base R, we can use as.date()
 
-```{r}
+```{r eval = F}
 
 dates2 = as.Date(dates$Date1)
 
