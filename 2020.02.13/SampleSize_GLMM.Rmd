@@ -1,0 +1,96 @@
+---
+title: "SampleSize_GLMM"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(lattice)
+library(lme4)
+# See Chapter 19 of Kery's Introduction to WinBUGS for ecologists
+```
+Generate data to fit a GLMM 
+
+```{r data_for_glmm}
+ 
+## Model Structure:  a) 'fixed' effect is the capping treatment: uncapped vs. capped redd; b)  the random effect is the redd into which eyed eggs are planted; c) continuous covariate is ambient bed hydraulic conductivity, i.e. the conductivity of the surrounding gravel has a linear effect on egg-to-fry (ETF) survival ; d) Response variable: Binomial distribution of number of (successful) emergent fry based on 250 eyed eggs planted in each redd at start of incubation season.
+
+## Overarching question:  How many samples (redds) do we need to detect an effect of capping a redd on the ETF survival? 
+
+#for(i in 2:10){ #Minimum of 2 uncapped redds, max of 10 capped redds 
+# Generate simulated data where we assume that capping has a negative effect on ETF survival 
+# 1. Number of capped sites up to 10 replicates: seq(1:10)
+
+# Generate factor levels for fixed treatment effect of capped vs. uncapped redds
+n_groups <- i # redds per treatment, max is 10
+n_cap <- factor(c(0,1)) # capping treatment
+n_sample <- 250 # sample 250 eggs per artificial redd, what proportion is alive?
+n <- n_groups * n_sample # sample size of eggs sampled across 2 treatments and 
+
+pop <- gl(n = n_groups, k = n_sample) # eggs across all redds
+
+# Normalize the Ambient Bed Hydraulic Conductivity (AmbHC) covariate (cm/hr)
+## No cap treatment
+ln_ambHC <- runif(n, log(100), log(3000)) #cm/hr
+
+# ln histogram
+hist(ln_ambHC)
+mn <- mean(ln_ambHC)
+sd <- sd(ln_ambHC)
+cat("Mean and sd used to normalise ln_ambHC:", mn, sd, "\n\n")
+ambHC_nocap <- (ln_ambHC - mn)/sd
+
+# ln histogram that is normalized
+hist(ambHC_nocap, col = "grey")
+
+## We only have uncapped average, and no data from capped redds.  Let's simulate treatment effect of capping the redd by generating the capped average survival from uncapped. 
+####  Do I standardize this too?
+ln_ambHC_cap <- ln_ambHC * 0.70
+hist(ln_ambHC_cap)
+mn_cap <- mean(ln_ambHC_cap)
+sd_cap <- sd(ln_ambHC_cap)
+####
+
+# N_i is total number of eggs surveyed in redd i, follows Binomial distribution 
+max_eggs <- 0.9 * n
+N <- round(runif(n, 0, max_eggs)) # n = nobs, min = 0, max = 0.9*2500
+
+# Build the design matrix (no intercept)
+Xmat <- model.matrix(~pop*ambHC_nocap-1-ambHC_nocap)
+#print(Xmat[249:269,])
+
+# Choose parameter values, only uncapped right now
+intercept_mean <- -0.5476 # from simple linear regression with ambHC_nocap
+intercept_sd <- 0.05 ##?
+slope_mean <- 0.1543
+slope_sd <- 0.1 ##?
+
+# Remember that n.groups is the number of redds sampled
+intercept_effects <- rnorm(n = n_groups, mean = intercept_mean, sd = intercept_sd)
+slope_effects <- rnorm(n = n_groups, mean = slope_mean, sd = slope_sd)
+all_effects <- c(intercept_effects, slope_effects)
+
+predictor_nocap <- Xmat %*% all_effects
+exp_p <- exp(predictor_nocap)/(1+exp(predictor_nocap)) # Expected proportion of eyed eggs that survive to fry stage
+
+Expected <- xyplot(exp_p ~ ambHC_nocap|pop, ylab = "Expected egg-to-fry survival", xlab = "Ambient bed hydraulic conductivity", main = paste("Expected ETF survival for sample size for", i, "redds"))
+# Look at the Expected ETF survival for each number of redds
+print(Expected) 
+
+Fry <- rbinom(n = n, size = N, prob = exp_p) # add binomial variation
+
+Realized <- xyplot(Fry/N ~ ambHC_nocap | pop, ylab = "Realized egg-to-fry survival", xlab = "Ambient bed hydraulic conductivity", main = paste("Realized ETF survival for", i, "redds"))
+Realized
+#}
+
+```
+Fit the GLMM with a random coefficients model, where both intercepts and slopes are random and independent
+
+```{r fit_glmm}
+glmm_fit <- glmer(cbind(Fry, N - Fry) ~ ambHC_nocap + (1 | pop) + (0 + ambHC_nocap | pop), family = binomial)
+
+# Show results
+glmm_fit 
+######
+
+```
+
