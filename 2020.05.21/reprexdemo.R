@@ -1,5 +1,7 @@
 #This is the code I'm having trouble with!
 #please can someone help me?
+#Rosemary Hartman
+#5/21/2020
 
 library(tidyr)
 load(iris)
@@ -25,11 +27,13 @@ library(dplyr)
 #the "iris' dataset has 150 rows. Let's just give people 50 rows.
 head(iris)
 iris2 = sample_n(iris, 50)
+
 head(iris2)
 
 #Option 2: we could replace the values in the columns
 #"rnorm" gives us random values pulled from a normal distribution
-iris3 = mutate(iris, Sepal.Length = rnorm(nrows(iris), mean = 2, sd = .5))
+iris3 = mutate(iris, Sepal.Length = rnorm(nrow(iris), 
+                                          mean = 2, sd = .5))
 head(iris3)
 
 #Option 3: Try and use a different data set.
