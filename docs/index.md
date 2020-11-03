@@ -1,14 +1,3 @@
----
-title: "index"
-author: "Rosie"
-date: "11/3/2020"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Welcome to the IEP Data Science PWT
 
 A statistical help group for people who love fish, wildlife, and command-line code.
