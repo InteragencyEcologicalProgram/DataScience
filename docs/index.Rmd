@@ -1,0 +1,19 @@
+---
+title: "index"
+author: "Rosie"
+date: "11/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Welcome to the IEP Data Science PWT
+
+A statistical help group for people who love fish, wildlife, and command-line code.
+
+Also useful for people who hate statistics, coding, and math, but need to learn how to use it. We will convert you! Post your question to our list and one of your fellow scientists may be able to offer advice.This group is intended to be a collaborative learning experience for all members. We will meet quarterly for half-day workshops that cover a variety of topics, including statistics, R, Open data practices, Python, data management, data cleaning, and anything else we want. Each meeting will have at least one presentation geared for beginners.
+
+Sign up for our [Google Groups listserve](https://groups.google.com/g/bay-delta-datascience)
+
