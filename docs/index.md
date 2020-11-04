@@ -26,7 +26,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 2:10 - 2:30 &nbsp;&nbsp; Peak Pumpkin Spice: When will it end?: The indefinite analysis continues ([Andrew M. Deines](https://www.exponent.com/professionals/d/deines-andrew-m), [Exponent](https://www.exponent.com))  
 2:30 - 2:35 &nbsp;&nbsp; Break  
 2:35 - 2:55 &nbsp;&nbsp; Earth Engine for Earth Observation (Dan Constable, [Delta Council](https://deltacouncil.ca.gov/))  
-2:55 - 3:30 &nbsp;&nbsp; An intro to making maps with sf ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))
+2:55 - 3:30 &nbsp;&nbsp; [An intro to making maps with sf](mapswithsf.html) (Rosemary Hartman, [DWR](https://water.ca.gov/))
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
