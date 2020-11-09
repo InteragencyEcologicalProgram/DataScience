@@ -12,3 +12,5 @@ Have a question about statistics or coding? Post a question to the listserve or 
 If your question is too complex for an email, concider leading a discussion at our next meeting! Contact Rosie if you want to present.
 
 For code from previous presentations, look in the folders under the date of the meeting. Check out "other resources" for a variety of resources on R and data science.
+
+Agendas and other resources will be posted to Github pages: https://interagencyecologicalprogram.github.io/DataScience/
