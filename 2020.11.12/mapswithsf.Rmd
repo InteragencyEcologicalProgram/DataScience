@@ -41,6 +41,29 @@ You will notice that we have one line per station with various attributes, such 
 
 The columns "latitude" and "longitude" tell you were the stations are, but R won't recognize this as spatial data in this format. We need to identify which columns have the spatial component and what the coordinate reference system is. If you are not familiar with coordinate reference systems, check out [this cheat sheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/OverviewCoordinateReferenceSystems.pdf)
 
+![maps with different reference systems](CRS.jpg)
+
+### Components of a CRS
+
+The coordinate reference system is made up of several key components:
+
+* Coordinate system:The X, Y grid upon which your data is overlayed and how you define where a point is located in space.
+* Horizontal and vertical units: The units used to define the grid along the x, y (and z) axis.
+* Datum:A modeled version of the shape of the Earth which defines the origin used to place the coordinate system in space. 
+* Projection Information: The mathematical equation used to flatten objects that are on a round surface (e.g. the Earth) so you can view them on a flat surface (e.g. your computer screens or a paper map).
+
+### Geographic versus projected CRS
+
+A geographic coordinate system locates latitude and longitude location using angles. Thus the spacing of each line of latitude moving north and south is not uniform. (example, WGS84)
+
+![Geogrphic CRS](geographic.jpg)
+
+A projected coordinate system locates latitude and longitude using static units. The line spacing is uniform so it is easier to transform and do analyses. However, they are usually only good for a small part of the earth (Example UTM)
+
+![Projected CRS](projected.png)
+
+We can specify the CRS via a list of the components, or by it's [numeric code](https://spatialreference.org/) . 
+
 EMP uses WGS84, which is number 4326.
 
 ```{r}
@@ -119,7 +142,13 @@ ggplot() +
 
 We'd also like a basemap so we can see the rest of the world.
 
-Basemaps are usually rasters, rather than vectors, but you can get them from online. There are various sources for online maps, including Google Maps, but Stamen maps are one of the easiest to work with.
+This is also a good opportunity to review rasters versus vectors. Spatial data can either be represented as a grid of equal-sized boxes, with data associated with each box (raster), or a group of polygons, with data associated with each point/line/polygon. The delta waterways shapefile is a vector - each river is made up of a list of points and has lines connecting the points.
+
+![Diagram of rasters versus vectors](rastervector.jpg)
+
+Basemaps are usually rasters, rather than vectors, and have very little information associated with them. Each pixel just has a color associated with it, so it's just a picture of a map.
+
+There are a number of free basemap sources online, including Google Maps, but Stamen maps are one of the easiest to work with.
 
 ```{r message = FALSE}
 
@@ -145,7 +174,7 @@ ggmap(basemap)+ #plot the basemap
 ```
 ## Labels
 
-We can label our points with `geom_sf_label` and add annotations with "annotate"
+We can label our points with `geom_sf_text` and add annotations with "annotate"
 
 ```{r}
 
@@ -163,8 +192,8 @@ ggmap(basemap, darken = c(.5, "white"))+ #plot the basemap and lighten it a litt
 geom_sf_text(data = EMPsf, aes(label = Station), #label the points
              nudge_x = 0.07, size = 3, #adjust size and position relative to points
              inherit.aes = FALSE,
-             check_overlap = T) #stop labels from being drawn over each other
-
+             check_overlap = T) + #stop labels from being drawn over each other
+annotate("text", label = "Yay Maps!", x = -122.2, y = 38.4, size = 8)
 ```
 
 
