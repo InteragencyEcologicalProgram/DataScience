@@ -18,7 +18,14 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 **1:00 - 4:00 PST on 11 February 2021**
 
-Agenda TBD
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 2:00 &nbsp;&nbsp; Bringing open science to Tampa Bay with reproducible workflows and dynamic documents ([Marcus Beck](https://github.com/fawda123), [TBEP](https://tbep.org/))  
+2:00 - 2:20 &nbsp;&nbsp; Building automated reporting tools for the National Estuarine Research Reserve System using the SWMPr family of packages ([Julie Padilla](https://www.limno.com/team/julie-padilla/), [LimnoTech](https://www.limno.com/))  
+2:20 - 2:25 &nbsp;&nbsp; Break  
+2:25 - 3:05 &nbsp;&nbsp; Knowledge to Practice (K2P) with the Global Water Pathogen Project: An end-to-end solution for water safety with an interface, back-end R model, and data management solutions ([Matthew Verbyla](http://safewater.sdsu.edu/index.php/people/), [SDSU](https://www.sdsu.edu/))  
+3:05 - 3:25 &nbsp;&nbsp; Delta Adapts: flood scenarios Shiny app ([Molly Williams](https://www.linkedin.com/in/molly-williams-1698412b/), [Delta Council](https://deltacouncil.ca.gov/))  
+3:25 - 3:45 &nbsp;&nbsp; R packages relevant to IEP (Nick Rasmussen, [DWR](https://water.ca.gov/))  
+3:45 - 4:00 &nbsp;&nbsp; My first pet python, analyzing precipitation (Derek Acomb, [DWR](https://water.ca.gov/))
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
