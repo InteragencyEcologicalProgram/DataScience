@@ -25,7 +25,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 2:25 - 3:05 &nbsp;&nbsp; Knowledge to Practice (K2P) with the Global Water Pathogen Project: An end-to-end solution for water safety with an interface, back-end R model, and data management solutions ([Matthew Verbyla](http://safewater.sdsu.edu/index.php/people/), [SDSU](https://www.sdsu.edu/))  
 3:05 - 3:25 &nbsp;&nbsp; Delta Adapts: flood scenarios Shiny app ([Molly Williams](https://www.linkedin.com/in/molly-williams-1698412b/), [Delta Council](https://deltacouncil.ca.gov/))  
 3:25 - 3:45 &nbsp;&nbsp; R packages relevant to IEP (Nick Rasmussen, [DWR](https://water.ca.gov/))  
-3:45 - 4:00 &nbsp;&nbsp; My first pet python, analyzing precipitation (Derek Acomb, [DWR](https://water.ca.gov/))
+3:45 - 4:00 &nbsp;&nbsp; My first pet python, analyzing precipitation (Derek Acomb, [CDFW](https://wildlife.ca.gov/))
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
