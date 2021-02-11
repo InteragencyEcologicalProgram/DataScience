@@ -1,0 +1,133 @@
+[Title Slide]
+
+***NEXT SLIDE***
+[Holding Fish]
+Hi I'm Derek.
+I'm a fisheries biologist for the department of fish and wildlife in Region 3, 
+I conduct salmonid habitat assessments, Fish barrier analysis, and manage restoration grants in the Russian River watershed
+
+For data processing, I used to have access to a programmer through a contract, 
+but now if I want something fancy, I need to figure it out on my own. Well almost, I do have support from you folks.
+This winter I finally got up the courage and wrote my first program.  And it works.
+What this program does is not important, it's the journey, or my first step that's important.
+So, stick with me here at the end of the day 
+while I hang my hello world program on the wall next to my kids elementary school art projects.
+
+***NEXT SLIDE***
+[apple program images]
+I started with computers way back, and I have always been an appliance operator rather than a programmer.
+I did do some programming in elementary school to reinforce math lessons.  We calculated cost per unit area for different sizes of pizza.
+
+***NEXT SLIDE***
+The most practical program I wrote is represented here:
+My friends and I were the first and last students allowed to write sentences like this.
+
+***NEXT SLIDE***
+Most of the time, I ran programs like this:
+[moon patrol image]
+
+***NEXT SLIDE***
+[image rain gauge]
+So here I am, an adult, with some real world problems that require the automation of a computer program.
+I need to calculate repetitive stuff over very long tables.
+
+***NEXT SLIDE***
+[image of matt parker video] https://www.youtube.com/watch?v=zUp8pkoeMss
+I might be able to do this analysis by hand using excel, 
+but I make mistakes when the source table goes over a few hundred rows.
+I need automation.
+So, Nothing to it, but to do it. Time to jump in.
+
+***NEXT SLIDE***
+[python image]
+I chose python as my language.
+Because I have been hearing about it for a long time,
+And because it sounds much more friendly than C.
+
+***NEXT SLIDE***
+[image of pandas icon]
+In python there is a great library called pandas.
+Pandas specializes in working with tables and time series.
+It has lots of built in features that greatly simplify tasks like importing and exporting table data.
+
+***NEXT SLIDE***
+[reveal sifl olly]
+You can very easily write one command that will do one thing to a column or the entire table.
+Nested loops are not necessary.
+You can also work with individual cells, however the complexity ramps up quickly for a noob like me.
+Here's the sales pitch, If I can figure it out, surely you could do much, much more.
+
+***NEXT SLIDE***
+[image of drying fish]
+Alright, Here's the project: 
+Locally, other biologists have found that juvenile coho salmon die off a certain number of days after a biologically significant event.
+This significant event is the loss of surface flow in the creek.
+This event happens sooner in droughts like this year, and later in years when we get precipitation closer to normal.
+
+***NEXT SLIDE***
+[precip accumulation chart]
+My crazy idea is that maybe rather than total precipitation, 
+it might be more important to know how much time has passed since a certain precipitation threshold.
+
+***NEXT SLIDE***
+[rain gauge image]
+The input data are daily precipitation totals from my local weather station (KSTS).
+
+***NEXT SLIDE***
+[image of input csv]
+This is what the raw data from the NOAA archive looks like.
+Note the text fields
+
+***NEXT SLIDE***
+[image of the program]
+First we import the csv file,
+Next clean up the data, like convert trace to a number, I assumed one-thousandth of an inch
+Then, for a given list of precipitation thresholds
+go calculate back in time
+summing the precipitation until you hit the listed threshold
+report the number of days to reach the threshold
+do this over all days and for all thresholds
+I could have had the program calculate all values for all days just as easily, 
+however this would result in a table with billions of records.
+So, I'll stick with my modified decade list for now.
+Last of all, output a new csv
+
+***NEXT SLIDE***
+[image of the top of the table]
+And it works
+Here you can see the days count up until we receive a trace of rain and then the counter drops
+
+***NEXT SLIDE***
+[image bottom of table]
+Here at the bottom of the table you can see that as of 31 January 2021 it has been 677 days since we have accumulated 35 inches at the Sonoma County airport.
+Average annual precipitation here is about 35 inches
+
+***NEXT SLIDE***
+Here are few essential functions that made the days since precipitation project possible
+[::-1] the reverse step allows us to go backwards
+.cumsum() the cumulative sum function, adds up as you go
+.idmax() gets the location of the first maximum
+
+
+What are my future plans for this program?
+Not much. I've moved on to a project that addresses a more immediate habitat data gap
+For this days since program, my next step would be to test out the groupby() function so I can calculate what the average, min and max values are for each day of the year.
+I think the .where() function could save me a lot of trouble by directly manipulating the dataframe rather than assigning the output to a new variable.
+When the time arises, I will use this project as a jumping off point for learning how to graphically display the data.
+I'll look into some of the python libraries and maybe R
+I think it would be fun to make a ridge line plot of this table
+When I get sufficiently skilled, this project will make a good test project 
+for automating data download, so the table could be updated daily.
+Now that I'm hooked, I can also work on proper formatting and coding conventions.
+
+***NEXT SLIDE***
+[image of step plot]
+I want to thank this group for helping inspire me to take the programming leap
+With this success I now have some of the confidence and some of the skills
+to tackle another work problem involving salmon habitat
+I'll be sure to present that project when I get it working.
+
+***NEXT SLIDE***
+[repeat of the code table]
+Do we have time for questions?
+
