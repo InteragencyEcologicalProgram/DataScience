@@ -8,7 +8,7 @@
 2:20 - 2:25 &nbsp;&nbsp; Break  
 2:25 - 3:05 &nbsp;&nbsp; Knowledge to Practice (K2P) with the Global Water Pathogen Project: An end-to-end solution for water safety with an interface, back-end R model, and data management solutions ([Matthew Verbyla](http://safewater.sdsu.edu/index.php/people/), [SDSU](https://www.sdsu.edu/))  
 3:05 - 3:25 &nbsp;&nbsp; Delta Adapts: flood scenarios Shiny app ([Molly Williams](https://www.linkedin.com/in/molly-williams-1698412b/), [Delta Council](https://deltacouncil.ca.gov/))  
-3:25 - 3:45 &nbsp;&nbsp; R packages relevant to IEP (Nick Rasmussen, [DWR](https://water.ca.gov/))  
+3:25 - 3:45 &nbsp;&nbsp; [R packages relevant to IEP](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11/IEP_R_Packages_2021-02-11.docx) (Nick Rasmussen, [DWR](https://water.ca.gov/))  
 3:45 - 4:00 &nbsp;&nbsp; [My first pet python, analyzing precipitation](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11/Acomb) (Derek Acomb, [CDFW](https://wildlife.ca.gov/))
 
 ### [2020-11-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2020.11.12)
