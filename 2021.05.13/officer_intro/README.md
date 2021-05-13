@@ -6,11 +6,11 @@ The officer package allows for manipulating Word (`.docx`) and PowerPoint (`.ppt
 
 ### Objective
 
-Create simple demo code for inserting and updating `ggplot2` figures in Word and PowerPoint documents. 
+Create simple demo code for inserting and updating `ggplot2` plots in Word and PowerPoint documents. 
 
 ### Resources
 
-[officer manual](https://davidgohel.github.io/officer/index.html)
-[officeverse documentation](https://ardata-fr.github.io/officeverse/)
-[The officer package: Making PowerPoint slides from R](https://rpodcast.github.io/officer-advrmarkdown/#1)
-[Crafting a PowerPoint Presentation with R](http://lenkiefer.com/2017/09/23/crafting-a-powerpoint-presentation-with-r/)
+[officer manual](https://davidgohel.github.io/officer/index.html)  
+[officeverse documentation](https://ardata-fr.github.io/officeverse/)  
+[The officer package: Making PowerPoint slides from R](https://rpodcast.github.io/officer-advrmarkdown/#1)  
+[Crafting a PowerPoint Presentation with R](http://lenkiefer.com/2017/09/23/crafting-a-powerpoint-presentation-with-r/)  
