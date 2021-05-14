@@ -17,8 +17,7 @@ ex_plot2 = ggplot(austin_housing, aes(x = month, y = sales)) +
 # Read Slides -------------------------------------------------------------
 
 read_pptx("ExampleSlides1.pptx") %>% 
-  layout_summary() %>% 
-  # pptx_summary() %>% 
+  pptx_summary() %>% 
   View()
 
 # Add Plots to Slides -----------------------------------------------------
