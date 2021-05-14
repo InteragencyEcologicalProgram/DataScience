@@ -1,5 +1,14 @@
 ## Previous meetings
 
+### [2020-05-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.05.13)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; Folsom Dam Power Bypass for water temperature management: Evaluation using [SacPAS egg mortality tool](http://www.cbr.washington.edu/sacramento/grow/index.html) (Barb Byrne, [NMFS](https://www.fisheries.noaa.gov/))  
+1:35 - 2:05 &nbsp;&nbsp; The [artemis R package](https://fishsciences.github.io/artemis/) for eDNA analysis ([Myfanwy Johnston](https://myfanwy.github.io/), [CFS](https://www.fishsciences.net/))  
+2:05 - 2:15 &nbsp;&nbsp; Break  
+2:15 - 3:15 &nbsp;&nbsp; Making metadata documents with [EMLaide](https://cvpia-osc.github.io/EMLaide/index.html) ([Sadie Gill](https://www.linkedin.com/in/sadiegill/), [FlowWest](https://www.flowwest.com/))  
+3:15 - 3:45 &nbsp;&nbsp; Introduction to the [officer package](https://davidgohel.github.io/officer/) for manipulating Word and PowerPoint documents from R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+
 ### [2020-02-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
