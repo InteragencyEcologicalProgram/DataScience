@@ -16,17 +16,14 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 #### Next Meeting
 
-**1:00 - 3:30 PST on 12 November 2020 via [Microsoft Teams](https://gcc02.safelinks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_OGY5OTZjOTUtNDQ1MS00Yjg5LTk0YTUtNzE3Y2E0ZWI3N2Ex%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522b71d5652-4b83-4257-afcd-7fd177884564%2522%252c%2522Oid%2522%253a%2522984f44d5-4180-46ad-9b77-e367b17d9727%2522%257d&data=04%7C01%7C%7C03efc17c32bf46bcf63d08d87cef9e0d%7Cb71d56524b834257afcd7fd177884564%7C0%7C0%7C637396715879326044%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=NcA3cN8NfXNdaRb5fe3aYsGfLhasS%2Bs6X3o2t3AtC2c%3D&reserved=0)**
+**1:00 - 3:00 pm PDT on 12 Aug 2021** ([Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTgxNmIyZjItOWZmMC00ZDQ5LTgyMTAtMTllY2Q2NzU5ODBi%40thread.v2/0?context=%7b%22Tid%22%3a%22b71d5652-4b83-4257-afcd-7fd177884564%22%2c%22Oid%22%3a%22984f44d5-4180-46ad-9b77-e367b17d9727%22%7d))
 
-1:00 - 1:05 &nbsp;&nbsp; Introductions and welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
-1:05 - 1:25 &nbsp;&nbsp; Calling all data wranglers: support the Outlier Detection Working Group! ([Michael Koohafkan](https://hydroecology.net/), [DWR](https://water.ca.gov/))  
-1:25 - 1:45 &nbsp;&nbsp; CA Public Drinking Water System Electronic Annual Report - Public Dataset as of July 2020 ([Stephen Burke](https://www.linkedin.com/in/burkalopolis/), [Water Boards](https://www.waterboards.ca.gov/))  
-1:45 - 1:50 &nbsp;&nbsp; Break  
-1:50 - 2:10 &nbsp;&nbsp; [Using Artificial Intelligence (AI) and drone technology to effectively and efficiently perform HAB monitoring, proactive alert and remediation](https://github.com/InteragencyEcologicalProgram/DataScience/raw/master/2020.11.12/PowerPoint%20-%20Grumpy%20Amoeba%20AI%20and%20drone%20(11-11-20)%20v1.pptx) (Santiago Cabalquinto Jr, Grumpy Amoeba)  
-2:10 - 2:30 &nbsp;&nbsp; Peak Pumpkin Spice: When will it end?: The indefinite analysis continues ([Andrew M. Deines](https://www.exponent.com/professionals/d/deines-andrew-m), [Exponent](https://www.exponent.com))  
-2:30 - 2:35 &nbsp;&nbsp; Break  
-2:35 - 2:55 &nbsp;&nbsp; Earth Engine for Earth Observation (Dan Constable, [Delta Council](https://deltacouncil.ca.gov/))  
-2:55 - 3:30 &nbsp;&nbsp; [An intro to making maps with sf](mapswithsf.html) (Rosemary Hartman, [DWR](https://water.ca.gov/))
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:45 &nbsp;&nbsp; Bayesian Network analysis - fun but probably dangerous. ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:45 - 2:15 &nbsp;&nbsp; Application of [MARSS](https://nwfsc-timeseries.github.io/MARSS/) to analyze 40 years of fish abundance data ([Denise Colombano](https://denise-colombano.github.io/), [UC Berkeley](https://nature.berkeley.edu/))  
+2:15 - 2:20 &nbsp;&nbsp; Break  
+2:20 - 2:50 &nbsp;&nbsp; Creating reproducible reports using R Markdown (James White, [CDFW](https://wildlife.ca.gov/))  
+2:50 - 3:00 &nbsp;&nbsp; [HEC-DSS](https://www.hec.usace.army.mil/software/hec-dss/) and R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 

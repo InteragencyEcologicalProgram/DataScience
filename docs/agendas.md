@@ -1,5 +1,37 @@
 ## Previous meetings
 
+### [2020-05-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.05.13)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; Folsom Dam Power Bypass for water temperature management: Evaluation using [SacPAS egg mortality tool](http://www.cbr.washington.edu/sacramento/grow/index.html) (Barb Byrne, [NMFS](https://www.fisheries.noaa.gov/))  
+1:35 - 2:05 &nbsp;&nbsp; The [artemis R package](https://fishsciences.github.io/artemis/) for eDNA analysis ([Myfanwy Johnston](https://myfanwy.github.io/), [CFS](https://www.fishsciences.net/))  
+2:05 - 2:15 &nbsp;&nbsp; Break  
+2:15 - 3:15 &nbsp;&nbsp; Making metadata documents with [EMLaide](https://cvpia-osc.github.io/EMLaide/index.html) ([Sadie Gill](https://www.linkedin.com/in/sadiegill/), [FlowWest](https://www.flowwest.com/))  
+3:15 - 3:45 &nbsp;&nbsp; Introduction to the [officer package](https://davidgohel.github.io/officer/) for manipulating Word and PowerPoint documents from R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+
+### [2020-02-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 2:00 &nbsp;&nbsp; Bringing open science to Tampa Bay with reproducible workflows and dynamic documents ([Marcus Beck](https://github.com/fawda123), [TBEP](https://tbep.org/))  
+2:00 - 2:20 &nbsp;&nbsp; Building automated reporting tools for the National Estuarine Research Reserve System using the SWMPr family of packages ([Julie Padilla](https://www.limno.com/team/julie-padilla/), [LimnoTech](https://www.limno.com/))  
+2:20 - 2:25 &nbsp;&nbsp; Break  
+2:25 - 3:05 &nbsp;&nbsp; Knowledge to Practice (K2P) with the Global Water Pathogen Project: An end-to-end solution for water safety with an interface, back-end R model, and data management solutions ([Matthew Verbyla](http://safewater.sdsu.edu/index.php/people/), [SDSU](https://www.sdsu.edu/))  
+3:05 - 3:25 &nbsp;&nbsp; Delta Adapts: flood scenarios Shiny app ([Molly Williams](https://www.linkedin.com/in/molly-williams-1698412b/), [Delta Council](https://deltacouncil.ca.gov/))  
+3:25 - 3:45 &nbsp;&nbsp; [R packages relevant to IEP](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11/IEP_R_Packages_2021-02-11.md) (Nick Rasmussen, [DWR](https://water.ca.gov/))  
+3:45 - 4:00 &nbsp;&nbsp; [My first pet python, analyzing precipitation](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11/Acomb) (Derek Acomb, [CDFW](https://wildlife.ca.gov/))
+
+### [2020-11-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2020.11.12)
+
+1:00 - 1:05 &nbsp;&nbsp; Introductions and welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:25 &nbsp;&nbsp; Calling all data wranglers: support the Outlier Detection Working Group! ([Michael Koohafkan](https://hydroecology.net/), [DWR](https://water.ca.gov/))  
+1:25 - 1:45 &nbsp;&nbsp; CA Public Drinking Water System Electronic Annual Report - Public Dataset as of July 2020 ([Stephen Burke](https://www.linkedin.com/in/burkalopolis/), [Water Boards](https://www.waterboards.ca.gov/))  
+1:45 - 1:50 &nbsp;&nbsp; Break  
+1:50 - 2:10 &nbsp;&nbsp; [Using Artificial Intelligence (AI) and drone technology to effectively and efficiently perform HAB monitoring, proactive alert and remediation](https://github.com/InteragencyEcologicalProgram/DataScience/raw/master/2020.11.12/PowerPoint%20-%20Grumpy%20Amoeba%20AI%20and%20drone%20(11-11-20)%20v1.pptx) (Santiago Cabalquinto Jr, Grumpy Amoeba)  
+2:10 - 2:30 &nbsp;&nbsp; Peak Pumpkin Spice: When will it end?: The indefinite analysis continues ([Andrew M. Deines](https://www.exponent.com/professionals/d/deines-andrew-m), [Exponent](https://www.exponent.com))  
+2:30 - 2:35 &nbsp;&nbsp; Break  
+2:35 - 2:55 &nbsp;&nbsp; Earth Engine for Earth Observation (Dan Constable, [Delta Council](https://deltacouncil.ca.gov/))  
+2:55 - 3:30 &nbsp;&nbsp; [An intro to making maps with sf](mapswithsf.html) (Rosemary Hartman, [DWR](https://water.ca.gov/))
+
 ### [2020-08-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2020.08.12)
 
 1:00 - 1:05 &nbsp;&nbsp; Introductions and welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
