@@ -1,0 +1,2329 @@
+[
+    {
+        "id": "kimmerer2002a",
+        "type": "article-journal",
+        "abstract": "ABSTRACT: All ecosystems are influenced by physical forcing. Estuarine ecosystems respond most strongly on an interannual timescale to variability in freshwater flow. Several mechanisms for positive or negative flow effects on biological populations in estuaries have been proposed; however, positive effects appear to operate mainly through stimulation of primary production with effects propagating up the food web. In the northern San Francisco Estuary, abundance or survival of several common species of fish and shrimp varied positively with flow-in data through 1992. I re-examined these relationships and those of several additional taxa in an analysis of long-term (20 to 40 yr) monitoring data. The spread of the introduced clam Potamocorbula amurensis in 1987 provided an opportunity to examine simultaneously the responses of estuarine species to flow and to changes in the food web. I separated variability into a flow response, a step change after 1987 and other sources of variability. Responses of fish and shrimp contrasted with those of lower trophic levels. All but 1 species of nekton responded positively to flow, only 2 had clear declines after 1987, and none of the relationships changed in slope after 1987. In contrast with the higher trophic levels, chlorophyll a (chl a) and several species of zooplankton declined markedly after 1987, and had either weak responses to flow or responses that changed after 1987. Thus, the food web appears strongly coupled between benthos and plankton, and weakly coupled between zooplankton and fish, as has been found in other systems. More importantly, the variation with freshwater flow of abundance or survival of organisms in higher trophic levels apparently did not occur through upward trophic transfer, since a similar relationship was lacking in most of the data on lower trophic levels. Rather, this variation may occur through attributes of physical habitat that vary with flow.",
+        "archive": "JSTOR",
+        "container-title": "Marine Ecology Progress Series",
+        "DOI": "10.3354/meps243039",
+        "ISSN": "0171-8630",
+        "page": "39-55",
+        "source": "JSTOR",
+        "title": "Effects of freshwater flow on abundance of estuarine organisms: physical effects or trophic linkages?",
+        "title-short": "Effects of freshwater flow on abundance of estuarine organisms",
+        "URL": "https://www.jstor.org/stable/24866158",
+        "volume": "243",
+        "author": [
+            {
+                "family": "Kimmerer",
+                "given": "W. J."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2002"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "stevens1977",
+        "type": "paper-conference",
+        "container-title": "Proceedings of the conference on assessing the effects of power-plant-induced mortality on fish populations",
+        "DOI": "10.1016/b978-0-08-021950-9.50014-4",
+        "event-place": "New York, New York",
+        "note": "Times cited: 2",
+        "page": "91-109",
+        "publisher": "Pergamon Press",
+        "publisher-place": "New York, New York",
+        "title": "Striped Bass (<i>Monrone saxatilis</i>) monitoring techniques in the Sacramento-San Joaquin Estuary",
+        "author": [
+            {
+                "family": "Stevens",
+                "given": "DE"
+            }
+        ],
+        "editor": [
+            {
+                "family": "Van Winkle",
+                "given": "W."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1977"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "kimmerer2002b",
+        "type": "article-journal",
+        "abstract": "Freshwater flow is the principal cause of physical variability in estuaries and a focus of conflict in estuaries where a substantial fraction of the freshwater is diverted. Variation in freshwater flow can have many effects: inundation of flood plains, increase loading and advective transport of materials and organisms, dilution or mobilization of contaminants, compression of the estuarine salinity field and density gradient, increase in stratification, and decrease in residence time for water while increasing it for some particles and biota. In the San Francisco Estuary, freshwater flow is highly variable, and has been altered by shifts in seasonal patterns of river flow and increases in diversions from tidal and nontidal regions, entraining fish of several species of concern. Abundance or survival of several estuarine-dependent species also increases with freshwater outflow. These relationships to flow may be due to several potential mechanisms, each with its own locus and period of effectiveness, but no mechanism has been conclusively shown to underlie the flow relationship of any species. Several flow-based management actions were established in the mid-1990s, including a salinity standard based on these flow effects, as well as reductions in diversion pumping during critical periods for listed species of fish. The effectiveness of these actions has not been established. To make the salinity standard more effective and more applicable to future estuarine conditions will require investigation to determine the underlying mechanisms. Effects of entrainment at diversion facilities are more straightforward conceptually but difficult to quantify, and resolving these may require experimental manipulations of diversion flow.",
+        "container-title": "Estuaries",
+        "DOI": "10.1007/bf02692224",
+        "ISSN": "0160-8347",
+        "issue": "6",
+        "journalAbbreviation": "Estuaries",
+        "language": "en",
+        "page": "1275-1290",
+        "source": "Springer Link",
+        "title": "Physical, biological, and management responses to variable freshwater flow into the San Francisco Estuary",
+        "URL": "https://doi.org/10.1007/BF02692224",
+        "volume": "25",
+        "author": [
+            {
+                "family": "Kimmerer",
+                "given": "W. J."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2002",
+                    12,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "thomson2010",
+        "type": "article-journal",
+        "abstract": "We examined trends in abundance of four pelagic fish species (delta smelt, longfin smelt, striped bass, and threadfin shad) in the upper San Francisco Estuary, California, USA, over 40 years using Bayesian change point models. Change point models identify times of abrupt or unusual changes in absolute abundance (step changes) or in rates of change in abundance (trend changes). We coupled Bayesian model selection with linear regression splines to identify biotic or abiotic covariates with the strongest associations with abundances of each species. We then refitted change point models conditional on the selected covariates to explore whether those covariates could explain statistical trends or change points in species abundances. We also fitted a multispecies change point model that identified change points common to all species. All models included hierarchical structures to model data uncertainties, including observation errors and missing covariate values. There were step declines in abundances of all four species in the early 2000s, with a likely common decline in 2002. Abiotic variables, including water clarity, position of the 2‰ isohaline (X2), and the volume of freshwater exported from the estuary, explained some variation in species' abundances over the time series, but no selected covariates could explain statistically the post-2000 change points for any species.",
+        "container-title": "Ecological Applications",
+        "DOI": "10.1890/09-0998.1",
+        "ISSN": "1939-5582",
+        "issue": "5",
+        "language": "en",
+        "page": "1431-1448",
+        "source": "Wiley Online Library",
+        "title": "Bayesian change point analysis of abundance trends for pelagic fishes in the upper San Francisco Estuary",
+        "URL": "https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/09-0998.1",
+        "volume": "20",
+        "author": [
+            {
+                "family": "Thomson",
+                "given": "JR"
+            },
+            {
+                "family": "Kimmerer",
+                "given": "WJ"
+            },
+            {
+                "family": "Brown",
+                "given": "LR"
+            },
+            {
+                "family": "Newman",
+                "given": "Ken B."
+            },
+            {
+                "family": "Nally",
+                "given": "Ralph Mac"
+            },
+            {
+                "family": "Bennett",
+                "given": "WA"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Fleishman",
+                "given": "E"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "sommer2007",
+        "type": "article-journal",
+        "abstract": "Although the pelagic fish community of the upper San Francisco Estuary historically has shown substantial variability, a recent collapse has captured the attention of resource managers, scientists, legislators, and the general public. The ecological and management consequences of the decline are most serious for delta smelt (Hypomesus transpacificus), a threatened species whose narrow range overlaps with large water diversions that supply water to over 25 million people. The decline occurred despite recent moderate hydrology, which typically results in at least modest recruitment, and investments of hundreds of millions of dollars in habitat restoration and environmental water allocations to support native fishes. In response to the pelagic fish collapse, an ambitious multi-hyphen;agency research team has been working since 2005 to evaluate the causes of the decline, which likely include a combination of factors: stock-recruitment effects, a decline in habitat quality, increased mortality rates, and reduced food availability due to invasive species.",
+        "container-title": "Fisheries",
+        "DOI": "10.1577/1548-8446(2007)32[270:TCOPFI]2.0.CO;2",
+        "ISSN": "0363-2415",
+        "issue": "6",
+        "page": "270-277",
+        "source": "Taylor and Francis+NEJM",
+        "title": "The Collapse of Pelagic Fishes in the Upper San Francisco Estuary: El Colapso de los Peces Pelagicos en La Cabecera Del Estuario San Francisco",
+        "title-short": "The Collapse of Pelagic Fishes in the Upper San Francisco Estuary",
+        "URL": "https://doi.org/10.1577/1548-8446(2007)32[270:TCOPFI]2.0.CO;2",
+        "volume": "32",
+        "author": [
+            {
+                "family": "Sommer",
+                "given": "T"
+            },
+            {
+                "family": "Armor",
+                "given": "C"
+            },
+            {
+                "family": "Baxter",
+                "given": "R"
+            },
+            {
+                "family": "Breuer",
+                "given": "R"
+            },
+            {
+                "family": "Brown",
+                "given": "L"
+            },
+            {
+                "family": "Chotkowski",
+                "given": "M"
+            },
+            {
+                "family": "Culberson",
+                "given": "S"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Gingras",
+                "given": "M"
+            },
+            {
+                "family": "Herbold",
+                "given": "B"
+            },
+            {
+                "family": "Kimmerer",
+                "given": "WJ"
+            },
+            {
+                "family": "Mueller-Solger",
+                "given": "A"
+            },
+            {
+                "family": "Nobriga",
+                "given": "M"
+            },
+            {
+                "family": "Souza",
+                "given": "K"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2007",
+                    6,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "moyle2004",
+        "type": "article-journal",
+        "abstract": "The Sacramento splittail (Pogonichthys macrolepidotus) is a cyprinid fish endemic to the Central Valley of California with a range that centers on the San Francisco Estuary. It is a state Species of Special Concern and was only recently (2003) delisted as a threatened species by the U. S. Fish and Wildlife Service. Splittail live 7-9 years, tolerate a wide range of environmental conditions, and have high fecundity. Typically, adults migrate upstream in January and February and spawn on seasonally inundated floodplains in March and April. In May the juveniles migrate back downstream to shallow, brackish water rearing grounds, where they feed on detritus and invertebrates for 1-2 years before migrating back upstream to spawn. Seven long-term sampling programs in the estuary indicate that the splittail population is maintained by strong year classes resulting from successful spawning in wet years, although some spawning occurs in all years. Modeling shows them to be resilient, but managing floodplains to promote frequent successful spawning is needed to keep them abundant. Additionally, it is important to provide safe migration corridors between spawning and rearing grounds as well as abundant high-quality brackish water rearing habitat. Key research needs are (1) to examine how the timing, magnitude, and duration of high flows contribute to the generation of strong year classes, (2) to describe differences in young of year survival on the floodplain and in river margins from hatching to down-river migration, (3) explore the possible trophic effects of new invaders such as the overbite clam and Siberian prawn, and (4) determine the response of splittail populations to climate change and sea level rise.",
+        "container-title": "San Francisco Estuary and Watershed Science",
+        "DOI": "10.15447/sfews.2004v2iss2art3",
+        "ISSN": "1546-2366",
+        "issue": "2",
+        "language": "en",
+        "page": "1-47",
+        "source": "escholarship.org",
+        "title": "Biology and Population Dynamics of Sacramento Splittail (<i>Pogonichthys macrolepidotus</i>) in the San Francisco Estuary: A Review",
+        "title-short": "Biology and Population Dynamics of Sacramento Splittail (<i>Pogonichthys macrolepidotus</i>) in the San Francisco Estuary",
+        "URL": "https://escholarship.org/uc/item/61r48686",
+        "volume": "2",
+        "author": [
+            {
+                "family": "Moyle",
+                "given": "PB"
+            },
+            {
+                "family": "Baxter",
+                "given": "RD"
+            },
+            {
+                "family": "Sommer",
+                "given": "T"
+            },
+            {
+                "family": "Foin",
+                "given": "TC"
+            },
+            {
+                "family": "Matern",
+                "given": "SA"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2004"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "nally2010",
+        "type": "article-journal",
+        "abstract": "Four species of pelagic fish of particular management concern in the upper San Francisco Estuary, California, USA, have declined precipitously since ca. 2002: delta smelt (Hypomesus transpacificus), longfin smelt (Spirinchus thaleichthys), striped bass (Morone saxatilis), and threadfin shad (Dorosoma petenense). The estuary has been monitored since the late 1960s with extensive collection of data on the fishes, their pelagic prey, phytoplankton biomass, invasive species, and physical factors. We used multivariate autoregressive (MAR) modeling to discern the main factors responsible for the declines. An expert-elicited model was built to describe the system. Fifty-four relationships were built into the model, only one of which was of uncertain direction a priori. Twenty-eight of the proposed relationships were strongly supported by or consistent with the data, while 26 were close to zero (not supported by the data but not contrary to expectations). The position of the 2‰ isohaline (a measure of the physical response of the estuary to freshwater flow) and increased water clarity over the period of analyses were two factors affecting multiple declining taxa (including fishes and the fishes' main zooplankton prey). Our results were relatively robust with respect to the form of stock–recruitment model used and to inclusion of subsidiary covariates but may be enhanced by using detailed state–space models that describe more fully the life-history dynamics of the declining species.",
+        "container-title": "Ecological Applications",
+        "DOI": "10.1890/09-1724.1",
+        "ISSN": "1939-5582",
+        "issue": "5",
+        "language": "en",
+        "page": "1417-1430",
+        "source": "Wiley Online Library",
+        "title": "Analysis of pelagic species decline in the upper San Francisco Estuary using multivariate autoregressive modeling (MAR)",
+        "URL": "https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/09-1724.1",
+        "volume": "20",
+        "author": [
+            {
+                "family": "Nally",
+                "given": "RM"
+            },
+            {
+                "family": "Thomson",
+                "given": "JR"
+            },
+            {
+                "family": "Kimmerer",
+                "given": "WJ"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Newman",
+                "given": "KB"
+            },
+            {
+                "family": "Sih",
+                "given": "A"
+            },
+            {
+                "family": "Bennett",
+                "given": "WA"
+            },
+            {
+                "family": "Brown",
+                "given": "L"
+            },
+            {
+                "family": "Fleishman",
+                "given": "E"
+            },
+            {
+                "family": "Culberson",
+                "given": "SD"
+            },
+            {
+                "family": "Castillo",
+                "given": "G"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "jassby1995",
+        "type": "article-journal",
+        "abstract": "Populations of native and introduced aquatic organisms in the San Francisco Bay/Sacramento-San Joaquin Delta Estuary ('Bay/Delta') have undergone significant declines over the past two decades. Decreased river inflow due to drought and increased freshwater diversion have contributed to the decline of at least some populations. Effective management of the estuary's biological resources requires a sensitive indicator of the response to freshwater inflow that has ecological significance, can be measured accurately and easily, and could be used as a 'policy' variable to set standards for managing freshwater inflow. Positioning of the 2% (grams of salt per kilogram of seawater) bottom salinity value along the axis of the estuary was examined for this purpose. The 2% bottom salinity position (denoted by X2) has simple and significant statistical relationships with annual measures of many estuarine resources, including the supply of phytoplankton and phytoplankton-derived detritus from local production and river loading; benthic macroinvertebrates (molluscs); mysids and shrimp; larval fish survival; and the abundance of planktivorous, piscivorous, and bottom-foraging fish. The actual mechanisms are understood for only a few of these populations. X2 also satisfies other recognized requirements for a habitat indicator and probably can be measured with greater accuracy and precision than alternative habitat indicators such as net freshwater inflow into the estuary. The 2% value may not have special ecological significance for other estuaries (in the Bay/Delta, it marks the locations of an estuarine turbidity maximum and peaks in the abundance of several estuarine organisms), but the concept of using near-bottom isohaline position as a habitat indicator should be widely applicable. Although X2 is a sensitive index of the estuarine community's response to net freshwater inflow, other hydraulic features of the estuary also determine population abundances and resource levels. In particular, diversion of water for export from or consumption within the estuary can have a direct effect on population abundance independent of its effect on X2. The need to consider diversion, in addition to X2, for managing certain estuarine resources is illustrated using striped bass survival as an example. The striped bass survival data were also used to illustrate a related important point: incorporating additional explanatory variables may decrease the prediction error for a population or process, but it can increase the uncertainty in parameter estimates and management strategies based on these estimates. Even in cases where the uncertainty is currently too large to guide management decisions, an uncertainty analysis can identify the most practical direction for future data acquisition.",
+        "container-title": "Ecological Applications",
+        "DOI": "10.2307/1942069",
+        "ISSN": "1939-5582",
+        "issue": "1",
+        "language": "en",
+        "page": "272-289",
+        "source": "Wiley Online Library",
+        "title": "Isohaline Position as a Habitat Indicator for Estuarine Populations",
+        "URL": "https://esajournals.onlinelibrary.wiley.com/doi/abs/10.2307/1942069",
+        "volume": "5",
+        "author": [
+            {
+                "family": "Jassby",
+                "given": "Alan D."
+            },
+            {
+                "family": "Kimmerer",
+                "given": "William J."
+            },
+            {
+                "family": "Monismith",
+                "given": "Stephen G."
+            },
+            {
+                "family": "Armor",
+                "given": "Charles"
+            },
+            {
+                "family": "Cloern",
+                "given": "James E."
+            },
+            {
+                "family": "Powell",
+                "given": "Thomas M."
+            },
+            {
+                "family": "Schubel",
+                "given": "Jerry R."
+            },
+            {
+                "family": "Vendlinski",
+                "given": "Timothy J."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1995"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "bennett2005",
+        "type": "article-journal",
+        "container-title": "San Francisco Estuary and Watershed Science",
+        "DOI": "10.15447/sfews.2005v3iss2art1",
+        "issue": "2",
+        "page": "1-71",
+        "title": "Critical assessment of the delta smelt population in the San-Francisco Estuary, California.",
+        "URL": "https://doi.org/10.15447/sfews.2005v3iss2art1",
+        "volume": "3",
+        "author": [
+            {
+                "family": "Bennett",
+                "given": "WA"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2005"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "baxter2010",
+        "type": "report",
+        "page": "259",
+        "publisher": "California Department of Water Resources",
+        "title": "Interagency ecological program 2010 pelagic organism decline work plan and synthesis of results.",
+        "URL": "http://www.science.calwater.ca.gov/iep/docs/ FinalPOD2010Workplan12610.pdf",
+        "author": [
+            {
+                "family": "Baxter",
+                "given": "RD"
+            },
+            {
+                "family": "Breuer",
+                "given": "R"
+            },
+            {
+                "family": "Brown",
+                "given": "L"
+            },
+            {
+                "family": "Conrad",
+                "given": "L"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Fong",
+                "given": "S"
+            },
+            {
+                "family": "Gehrts",
+                "given": "K"
+            },
+            {
+                "family": "Grimaldo",
+                "given": "L"
+            },
+            {
+                "family": "Herbold",
+                "given": "B"
+            },
+            {
+                "family": "Hrodey",
+                "given": "P"
+            },
+            {
+                "family": "Mueller-Solger",
+                "given": "A"
+            },
+            {
+                "family": "Sommer",
+                "given": "T"
+            },
+            {
+                "family": "Souza",
+                "given": "K"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "bennett2002",
+        "type": "article-journal",
+        "container-title": "Limnology and Oceanography",
+        "DOI": "10/fwt4hg",
+        "ISSN": "0024-3590",
+        "issue": "5",
+        "journalAbbreviation": "Limnology and Oceanography",
+        "note": "publisher: Wiley Online Library",
+        "page": "1496-1507",
+        "title": "Plasticity in vertical migration by native and exotic estuarine fishes in a dynamic low‐salinity zone",
+        "volume": "47",
+        "author": [
+            {
+                "family": "Bennett",
+                "given": "WA"
+            },
+            {
+                "family": "Kimmerer",
+                "given": "WJ"
+            },
+            {
+                "family": "Burau",
+                "given": "JR"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2002"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "chadwick1964",
+        "type": "article-journal",
+        "container-title": "California Fish and Game",
+        "issue": "2",
+        "journalAbbreviation": "California Fish and Game",
+        "page": "69-99",
+        "title": "Annual abundance of young striped bass, <i>Roccus saxatilis</i>, in the Sacramento-San Joaquin Delta, California",
+        "volume": "50",
+        "author": [
+            {
+                "family": "Chadwick",
+                "given": "Harold K"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1964"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "mahardja2020",
+        "type": "article-journal",
+        "container-title": "Ecological Applications",
+        "DOI": "10.1002/eap.2243",
+        "issue": "2",
+        "page": "e02243",
+        "title": "Resistance and resilience of pelagic and littoral fishes to drought in the San Francisco Estuary",
+        "volume": "31",
+        "author": [
+            {
+                "family": "Mahardja",
+                "given": "Brian"
+            },
+            {
+                "family": "Tobias",
+                "given": "Vanessa"
+            },
+            {
+                "family": "Khanna",
+                "given": "Shruti"
+            },
+            {
+                "family": "Mitchell",
+                "given": "Lara"
+            },
+            {
+                "family": "Lehman",
+                "given": "Peggy"
+            },
+            {
+                "family": "Sommer",
+                "given": "Ted"
+            },
+            {
+                "family": "Brown",
+                "given": "Larry"
+            },
+            {
+                "family": "Culberson",
+                "given": "Steve"
+            },
+            {
+                "family": "Conrad",
+                "given": "J. Louise"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2021"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "hughes2017",
+        "type": "article-journal",
+        "abstract": "As the contribution for long-term ecological and environmental studies (LTEES) to our understanding of how species and ecosystems respond to a changing global climate becomes more urgent, the relative number and investment in LTEES are declining. To assess the value of LTEES to advancing the field of ecology, we evaluated relationships between citation rates and study duration, as well as the representation of LTEES with the impact factors of 15 ecological journals. We found that the proportionate representation of LTEES increases with journal impact factor and that the positive relationship between citation rate and study duration is stronger as journal impact factor increases. We also found that the representation of LTEES in reports written to inform policy was greater than their representation in the ecological literature and that their authors particularly valued LTEES. We conclude that the relative investment in LTEES by ecologists and funders should be seriously reconsidered for advancing ecology and its contribution to informing environmental policy.",
+        "container-title": "BioScience",
+        "DOI": "10/f9x4pb",
+        "ISSN": "0006-3568",
+        "issue": "3",
+        "journalAbbreviation": "BioScience",
+        "page": "271-281",
+        "title": "Long-Term Studies Contribute Disproportionately to Ecology and Policy",
+        "URL": "https://doi.org/10.1093/biosci/biw185",
+        "volume": "67",
+        "author": [
+            {
+                "family": "Hughes",
+                "given": "Brent B."
+            },
+            {
+                "family": "Beas-Luna",
+                "given": "Rodrigo"
+            },
+            {
+                "family": "Barner",
+                "given": "Allison K."
+            },
+            {
+                "family": "Brewitt",
+                "given": "Kimberly"
+            },
+            {
+                "family": "Brumbaugh",
+                "given": "Daniel R."
+            },
+            {
+                "family": "Cerny-Chipman",
+                "given": "Elizabeth B."
+            },
+            {
+                "family": "Close",
+                "given": "Sarah L."
+            },
+            {
+                "family": "Coblentz",
+                "given": "Kyle E."
+            },
+            {
+                "family": "Nesnera",
+                "given": "Kristin L.",
+                "non-dropping-particle": "de"
+            },
+            {
+                "family": "Drobnitch",
+                "given": "Sarah T."
+            },
+            {
+                "family": "Figurski",
+                "given": "Jared D."
+            },
+            {
+                "family": "Focht",
+                "given": "Becky"
+            },
+            {
+                "family": "Friedman",
+                "given": "Maya"
+            },
+            {
+                "family": "Freiwald",
+                "given": "Jan"
+            },
+            {
+                "family": "Heady",
+                "given": "Kristen K."
+            },
+            {
+                "family": "Heady",
+                "given": "Walter N."
+            },
+            {
+                "family": "Hettinger",
+                "given": "Annaliese"
+            },
+            {
+                "family": "Johnson",
+                "given": "Angela"
+            },
+            {
+                "family": "Karr",
+                "given": "Kendra A."
+            },
+            {
+                "family": "Mahoney",
+                "given": "Brenna"
+            },
+            {
+                "family": "Moritsch",
+                "given": "Monica M."
+            },
+            {
+                "family": "Osterback",
+                "given": "Ann-Marie K."
+            },
+            {
+                "family": "Reimer",
+                "given": "Jessica"
+            },
+            {
+                "family": "Robinson",
+                "given": "Jonathan"
+            },
+            {
+                "family": "Rohrer",
+                "given": "Tully"
+            },
+            {
+                "family": "Rose",
+                "given": "Jeremy M."
+            },
+            {
+                "family": "Sabal",
+                "given": "Megan"
+            },
+            {
+                "family": "Segui",
+                "given": "Leah M."
+            },
+            {
+                "family": "Shen",
+                "given": "Chenchen"
+            },
+            {
+                "family": "Sullivan",
+                "given": "Jenna"
+            },
+            {
+                "family": "Zuercher",
+                "given": "Rachel"
+            },
+            {
+                "family": "Raimondi",
+                "given": "Peter T."
+            },
+            {
+                "family": "Menge",
+                "given": "Bruce A."
+            },
+            {
+                "family": "Grorud-Colvert",
+                "given": "Kirsten"
+            },
+            {
+                "family": "Novak",
+                "given": "Mark"
+            },
+            {
+                "family": "Carr",
+                "given": "Mark H."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2017",
+                    2,
+                    27
+                ]
+            ]
+        }
+    },
+    {
+        "id": "likens2012",
+        "type": "book",
+        "ISBN": "1-4615-7360-2",
+        "publisher": "Springer",
+        "title": "Long-term studies in ecology",
+        "author": [
+            {
+                "family": "Likens",
+                "given": "Gene E."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2012"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "mcgowan1990",
+        "type": "article-journal",
+        "container-title": "Trends in ecology & evolution",
+        "DOI": "10/fgv9wf",
+        "issue": "9",
+        "note": "ISBN: 0169-5347\npublisher: Elsevier",
+        "page": "293-299",
+        "title": "Climate and change in oceanic ecosystems: the value of time-series data",
+        "volume": "5",
+        "author": [
+            {
+                "family": "McGowan",
+                "given": "John A."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1990"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "codysmallwood1996",
+        "type": "book",
+        "ISBN": "0-08-053562-3",
+        "publisher": "Academic Press",
+        "title": "Long-term studies of vertebrate communities",
+        "author": [
+            {
+                "family": "Cody",
+                "given": "Martin L."
+            },
+            {
+                "family": "Smallwood",
+                "given": "Jeffrey A."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1996"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ducklow2009",
+        "type": "article-journal",
+        "container-title": "Annual Review of Marine Science",
+        "DOI": "10/d2dmm5",
+        "note": "ISBN: 1941-1405\npublisher: Annual Reviews",
+        "page": "279-302",
+        "title": "Contributions of long-term research and time-series observations to marine ecology and biogeochemistry",
+        "volume": "1",
+        "author": [
+            {
+                "family": "Ducklow",
+                "given": "Hugh W."
+            },
+            {
+                "family": "Doney",
+                "given": "Scott C."
+            },
+            {
+                "family": "Steinberg",
+                "given": "Deborah K."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2009"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "clutton-brocksheldon2010",
+        "type": "article-journal",
+        "container-title": "Trends in ecology & evolution",
+        "DOI": "10/cbdd3b",
+        "issue": "10",
+        "note": "ISBN: 0169-5347\npublisher: Elsevier",
+        "page": "562-573",
+        "title": "Individuals and populations: the role of long-term, individual-based studies of animals in ecology and evolutionary biology",
+        "volume": "25",
+        "author": [
+            {
+                "family": "Clutton-Brock",
+                "given": "Tim"
+            },
+            {
+                "family": "Sheldon",
+                "given": "Ben C."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "magurran2010",
+        "type": "article-journal",
+        "container-title": "Trends in ecology & evolution",
+        "DOI": "10/dqxgb5",
+        "issue": "10",
+        "note": "ISBN: 0169-5347\npublisher: Elsevier",
+        "page": "574-582",
+        "title": "Long-term datasets in biodiversity research and monitoring: assessing change in ecological communities through time",
+        "volume": "25",
+        "author": [
+            {
+                "family": "Magurran",
+                "given": "Anne E."
+            },
+            {
+                "family": "Baillie",
+                "given": "Stephen R."
+            },
+            {
+                "family": "Buckland",
+                "given": "Stephen T."
+            },
+            {
+                "family": "Dick",
+                "given": "Jan McP"
+            },
+            {
+                "family": "Elston",
+                "given": "David A."
+            },
+            {
+                "family": "Scott",
+                "given": "E. Marian"
+            },
+            {
+                "family": "Smith",
+                "given": "Rognvald I."
+            },
+            {
+                "family": "Somerfield",
+                "given": "Paul J."
+            },
+            {
+                "family": "Watt",
+                "given": "Allan D."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "nelson2011",
+        "type": "article-journal",
+        "container-title": "Endeavour",
+        "DOI": "10/cbrwv2",
+        "issue": "1",
+        "note": "ISBN: 0160-9327",
+        "page": "31",
+        "title": "The Isle Royale Wolf–Moose Project (1958-present) and the wonder of long-term ecological research",
+        "volume": "35",
+        "author": [
+            {
+                "family": "Nelson",
+                "given": "Michael P."
+            },
+            {
+                "family": "Vucetich",
+                "given": "John A."
+            },
+            {
+                "family": "Peterson",
+                "given": "Rolf O."
+            },
+            {
+                "family": "Vucetich",
+                "given": "Leah M."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2011"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "lindenmayer2012",
+        "type": "article-journal",
+        "container-title": "Austral Ecology",
+        "DOI": "10/f2zphv",
+        "issue": "7",
+        "note": "ISBN: 1442-9985\npublisher: Wiley Online Library",
+        "page": "745-757",
+        "title": "Value of long-term ecological studies",
+        "volume": "37",
+        "author": [
+            {
+                "family": "Lindenmayer",
+                "given": "David B."
+            },
+            {
+                "family": "Likens",
+                "given": "Gene E."
+            },
+            {
+                "family": "Andersen",
+                "given": "Alan"
+            },
+            {
+                "family": "Bowman",
+                "given": "David"
+            },
+            {
+                "family": "Bull",
+                "given": "C. Michael"
+            },
+            {
+                "family": "Burns",
+                "given": "Emma"
+            },
+            {
+                "family": "Dickman",
+                "given": "Chris R."
+            },
+            {
+                "family": "Hoffmann",
+                "given": "Ary A."
+            },
+            {
+                "family": "Keith",
+                "given": "David A."
+            },
+            {
+                "family": "Liddell",
+                "given": "Michael J."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2012"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "hofmann2013",
+        "type": "article-journal",
+        "container-title": "Oceanography",
+        "DOI": "10/f4899f",
+        "issue": "3",
+        "note": "ISBN: 1042-8275\npublisher: JSTOR",
+        "page": "140-148",
+        "title": "Taking the pulse of marine ecosystems: The importance of coupling long-term physical and biological observations in the context of global change biology",
+        "volume": "26",
+        "author": [
+            {
+                "family": "Hofmann",
+                "given": "Gretchen E."
+            },
+            {
+                "family": "Blanchette",
+                "given": "Carol A."
+            },
+            {
+                "family": "Rivest",
+                "given": "Emily B."
+            },
+            {
+                "family": "Kapsenberg",
+                "given": "Lydia"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2013"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "latour2016",
+        "type": "report",
+        "event-place": "Hayes, VA",
+        "genre": "Final report to Collaborative and Adaptive Management Team, Delta Smelt Scoping Team",
+        "number": "DWR-1258",
+        "page": "63",
+        "publisher": "Latour Environmental Consulting",
+        "publisher-place": "Hayes, VA",
+        "title": "Statistical modeling of delta smelt (<i>Hypomesus transpacificus</i>) survey data in the San Francisco-San Joaquin Delta, with reference to temporal and spatial autocorrelation.",
+        "author": [
+            {
+                "family": "Latour",
+                "given": "RJ"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2016"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "jeffries2016",
+        "type": "article-journal",
+        "abstract": "Skip to Next Section\nClimate change and associated increases in water temperatures may impact physiological performance in ectotherms and exacerbate endangered species declines. We used an integrative approach to assess the impact of elevated water temperature on two fishes of immediate conservation concern in a large estuary system, the threatened longfin smelt (Spirinchus thaleichthys) and endangered delta smelt (Hypomesus transpacificus). Abundances have reached record lows in California, USA, and these populations are at imminent risk of extirpation. California is currently impacted by a severe drought, resulting in high water temperatures, conditions that will become more common as a result of climate change. We exposed fish to environmentally relevant temperatures (14°C and 20°C) and used RNA sequencing to examine the transcriptome-wide responses to elevated water temperature in both species. Consistent with having a lower temperature tolerance, longfin smelt exhibited a pronounced cellular stress response, with an upregulation of heat shock proteins, after exposure to 20°C that was not observed in delta smelt. We detected an increase in metabolic rate in delta smelt at 20°C and increased expression of genes involved in metabolic processes and protein synthesis, patterns not observed in longfin smelt. Through examination of responses across multiple levels of biological organization, and by linking these responses to habitat distributions in the wild, we demonstrate that longfin smelt may be more susceptible than delta smelt to increases in temperatures, and they have little room to tolerate future warming in California. Understanding the species-specific physiological responses of sensitive species to environmental stressors is crucial for conservation efforts and managing aquatic systems globally.",
+        "container-title": "Journal of Experimental Biology",
+        "DOI": "10/f8p7p5",
+        "ISSN": "0022-0949, 1477-9145",
+        "issue": "11",
+        "language": "en",
+        "note": "publisher: The Company of Biologists Ltd\nsection: Research Article\nPMID: 27252456",
+        "page": "1705-1716",
+        "source": "jeb.biologists.org",
+        "title": "Effects of high temperatures on threatened estuarine fishes during periods of extreme drought",
+        "URL": "https://jeb.biologists.org/content/219/11/1705",
+        "volume": "219",
+        "author": [
+            {
+                "family": "Jeffries",
+                "given": "Ken M."
+            },
+            {
+                "family": "Connon",
+                "given": "Richard E."
+            },
+            {
+                "family": "Davis",
+                "given": "Brittany E."
+            },
+            {
+                "family": "Komoroske",
+                "given": "Lisa M."
+            },
+            {
+                "family": "Britton",
+                "given": "Monica T."
+            },
+            {
+                "family": "Sommer",
+                "given": "Ted R"
+            },
+            {
+                "family": "Todgham",
+                "given": "Anne E."
+            },
+            {
+                "family": "Fangue",
+                "given": "Nann A."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2016",
+                    6,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "macnally2010",
+        "type": "article-journal",
+        "abstract": "Four species of pelagic fish of particular management concern in the upper San Francisco Estuary, California, USA, have declined precipitously since ca. 2002: delta smelt (Hypomesus transpacificus), longfin smelt (Spirinchus thaleichthys), striped bass (Morone saxatilis), and threadfin shad (Dorosoma petenense). The estuary has been monitored since the late 1960s with extensive collection of data on the fishes, their pelagic prey, phytoplankton biomass, invasive species, and physical factors. We used multivariate autoregressive (MAR) modeling to discern the main factors responsible for the declines. An expert-elicited model was built to describe the system. Fifty-four relationships were built into the model, only one of which was of uncertain direction a priori. Twenty-eight of the proposed relationships were strongly supported by or consistent with the data, while 26 were close to zero (not supported by the data but not contrary to expectations). The position of the 2‰ isohaline (a measure of the physical response of the estuary to freshwater flow) and increased water clarity over the period of analyses were two factors affecting multiple declining taxa (including fishes and the fishes' main zooplankton prey). Our results were relatively robust with respect to the form of stock–recruitment model used and to inclusion of subsidiary covariates but may be enhanced by using detailed state–space models that describe more fully the life-history dynamics of the declining species.",
+        "container-title": "Ecological Applications",
+        "DOI": "10/dgm43f",
+        "ISSN": "1939-5582",
+        "issue": "5",
+        "language": "en",
+        "note": "_eprint: https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/09-1724.1",
+        "page": "1417-1430",
+        "source": "Wiley Online Library",
+        "title": "Analysis of pelagic species decline in the upper San Francisco Estuary using multivariate autoregressive modeling (MAR)",
+        "URL": "https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/09-1724.1",
+        "volume": "20",
+        "author": [
+            {
+                "family": "MacNally",
+                "given": "Ralph"
+            },
+            {
+                "family": "Thomson",
+                "given": "James R."
+            },
+            {
+                "family": "Kimmerer",
+                "given": "Wim J."
+            },
+            {
+                "family": "Feyrer",
+                "given": "Frederick"
+            },
+            {
+                "family": "Newman",
+                "given": "Ken B."
+            },
+            {
+                "family": "Sih",
+                "given": "Andy"
+            },
+            {
+                "family": "Bennett",
+                "given": "William A."
+            },
+            {
+                "family": "Brown",
+                "given": "Larry"
+            },
+            {
+                "family": "Fleishman",
+                "given": "Erica"
+            },
+            {
+                "family": "Culberson",
+                "given": "Steven D."
+            },
+            {
+                "family": "Castillo",
+                "given": "Gonzalo"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "moyle2002",
+        "type": "book",
+        "ISBN": "0-520-22754-9",
+        "publisher": "Univ of California Press",
+        "title": "Inland fishes of California: revised and expanded",
+        "author": [
+            {
+                "family": "Moyle",
+                "given": "Peter B"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2002"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "swanson2000",
+        "type": "article-journal",
+        "container-title": "Oecologia",
+        "DOI": "10/ch6dcg",
+        "ISSN": "0029-8549",
+        "issue": "3",
+        "journalAbbreviation": "Oecologia",
+        "note": "publisher: Springer",
+        "page": "384-390",
+        "title": "Comparative environmental tolerances of threatened delta smelt (<i>Hypomesus transpacificus</i>) and introduced wakasagi (<i>H. nipponensis</i>) in an altered California estuary",
+        "volume": "123",
+        "author": [
+            {
+                "family": "Swanson",
+                "given": "Christina"
+            },
+            {
+                "family": "Reid",
+                "given": "Turid"
+            },
+            {
+                "family": "Young",
+                "given": "Paciencia S"
+            },
+            {
+                "family": "Cech Jr",
+                "given": "Joseph J"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2000"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "hobbs2015",
+        "type": "webpage",
+        "container-title": "Last Days of the Longfin?",
+        "language": "en",
+        "title": "Last Days of the Longfin?",
+        "URL": "https://www.newsdeeply.com/water/community/2015/09/08/last-days-of-the-longfin",
+        "author": [
+            {
+                "family": "Hobbs",
+                "given": "James A."
+            },
+            {
+                "family": "Moyle",
+                "given": "Peter B."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2015"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "grimaldo2017",
+        "type": "article-journal",
+        "container-title": "Estuaries and Coasts",
+        "DOI": "10/gb29xn",
+        "ISSN": "1559-2731",
+        "issue": "6",
+        "journalAbbreviation": "Estuaries and Coasts",
+        "note": "publisher: Springer",
+        "page": "1771-1784",
+        "title": "Sampling uncharted waters: Examining rearing habitat of larval longfin smelt (<i>Spirinchus thaleichthys</i>) in the upper San Francisco Estuary",
+        "volume": "40",
+        "author": [
+            {
+                "family": "Grimaldo",
+                "given": "Lenny"
+            },
+            {
+                "family": "Feyrer",
+                "given": "Fred"
+            },
+            {
+                "family": "Burns",
+                "given": "Jillian"
+            },
+            {
+                "family": "Maniscalco",
+                "given": "Donna"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2017"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "baker1995",
+        "type": "article-journal",
+        "container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+        "DOI": "10/c9p7fb",
+        "ISSN": "0706-652X",
+        "issue": "4",
+        "journalAbbreviation": "Canadian Journal of Fisheries and Aquatic Sciences",
+        "note": "publisher: NRC Research Press Ottawa, Canada",
+        "page": "855-863",
+        "title": "Estimating the influence of temperature on the survival of Chinook salmon smolts (<i>Oncorhynchus tshawytscha</i>) migrating through the Sacramento–San Joaquin River Delta of California",
+        "volume": "52",
+        "author": [
+            {
+                "family": "Baker",
+                "given": "Peter Fritz"
+            },
+            {
+                "family": "Ligon",
+                "given": "Franklin K"
+            },
+            {
+                "family": "Speed",
+                "given": "Terence P"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "1995"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "lewis2019",
+        "type": "book",
+        "abstract": "Results of surveys for adult and larval Longfin Smelt in wetlands throughout the San Francisco Estuary. Includes special studies of otolith growth and chemistry, and genetic identifications.",
+        "note": "DOI: 10.13140/RG.2.2.12944.33280",
+        "title": "Interdisciplinary Studies on Longfin Smelt in the San Francisco Estuary",
+        "author": [
+            {
+                "family": "Lewis",
+                "given": "Levi"
+            },
+            {
+                "family": "Barros",
+                "given": "Arthur"
+            },
+            {
+                "family": "Willmes",
+                "given": "Malte"
+            },
+            {
+                "family": "Denney",
+                "given": "Christian"
+            },
+            {
+                "family": "Parker",
+                "given": "Christina"
+            },
+            {
+                "family": "Bisson",
+                "given": "Micah"
+            },
+            {
+                "family": "Hobbs",
+                "given": "James"
+            },
+            {
+                "family": "Finger",
+                "given": "Amanda"
+            },
+            {
+                "family": "Auringer",
+                "given": "Grace"
+            },
+            {
+                "family": "Benjamin",
+                "given": "Alyssa"
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    10,
+                    16
+                ]
+            ]
+        }
+    },
+    {
+        "id": "hobbs2006",
+        "type": "article-journal",
+        "abstract": "Habitat quality was assessed for two native osmerids, delta smelt Hypomesus transpacificus and longfin smelt Spirinchus thaleichthys, between two distinct nursery areas located in the low-salinity zone of the San Francisco estuary. The relationship between several variables was investigated including fish density, fish size, feeding success and the general condition of larvae as well as juveniles for both species. The nursery habitats that were evaluated included the North and South Channels of Suisun Bay. The results showed higher densities of zooplankton and decreased water velocities for the North Channel when compared to the South Channel. The dominant prey item was calanoid copepod Pseudodiaptomus forbesi for both species although longfin smelt residing in the North Channel also included another copepod in their diets, Acanthocyclops spp. In both locations, delta smelt fed predominantly during daytime flood tides, while longfin smelt feeding appeared to continue into the night hours. When both locations were compared, delta smelt in the North Channel exhibited higher densities, larger sizes, increased somatic condition and larvae <15 mm standard length demonstrated greater feeding success. Longfin smelt, exhibited similar densities, feeding success and size distributions between both channels, but generally showed poorer somatic condition for the South Channel, potentially due to energetic costs associated with documented vertical migration behaviour. Overall, the physical conditions of the North Channel provided superior habitat for both species, while the South Channel afforded only marginal habitat for longfin smelt and very poor habitat for delta smelt. Therefore, the North Channel of Suisun Bay acts as critical nursery habitat by providing better feeding and growing conditions leading to increased health and survival for both species.",
+        "container-title": "Journal of Fish Biology",
+        "DOI": "https://doi.org/10.1111/j.1095-8649.2006.01176.x",
+        "ISSN": "1095-8649",
+        "issue": "3",
+        "language": "en",
+        "note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1095-8649.2006.01176.x",
+        "page": "907-922",
+        "source": "Wiley Online Library",
+        "title": "Assessing nursery habitat quality for native smelts (Osmeridae) in the low-salinity zone of the San Francisco estuary",
+        "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1095-8649.2006.01176.x",
+        "volume": "69",
+        "author": [
+            {
+                "family": "Hobbs",
+                "given": "J. A."
+            },
+            {
+                "family": "Bennett",
+                "given": "W. A."
+            },
+            {
+                "family": "Burton",
+                "given": "J. E."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2006"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "lehman2005",
+        "type": "article-journal",
+        "abstract": "The first distribution, biomass and toxicity study of a newly established bloom of the colonial cyanobacteria Microcystis aeruginosa was conducted on October 15, 2003 in the upper San Francisco Bay Estuary. Microcystis aeruginosa was widely distributed throughout 180 km of waterways in the upper San Francisco Bay Estuary from freshwater to brackish water environments and contained hepatotoxic microcystins at all stations. Other cyanobacteria toxins were absent or only present in trace amounts. The composition of the microcystins among stations was similar and dominated by demethyl microcystin-LR followed by microcystin-LR. In situ toxicity computed for the >75 μm cell diameter size fraction was well below the 1 μg l−1 advisory level set by the World Health Organization for water quality, but the toxicity of the full population is unknown. The toxicity may have been greater earlier in the year when biomass was visibly higher. Toxicity was highest at low water temperature, water transparency and salinity. Microcystins from the bloom entered the food web and were present in both total zooplankton and clam tissue. Initial laboratory feeding tests suggested the cyanobacteria was not consumed by the adult copepod Eurytemora affinis, an important fishery food source in the estuary.",
+        "container-title": "Hydrobiologia",
+        "DOI": "10.1007/s10750-004-4670-0",
+        "ISSN": "1573-5117",
+        "issue": "1",
+        "journalAbbreviation": "Hydrobiologia",
+        "language": "en",
+        "page": "87-99",
+        "source": "Springer Link",
+        "title": "Distribution and toxicity of a new colonial <i>Microcystis aeruginosa</i> bloom in the San Francisco Bay Estuary, California",
+        "URL": "https://doi.org/10.1007/s10750-004-4670-0",
+        "volume": "541",
+        "author": [
+            {
+                "family": "Lehman",
+                "given": "P. W."
+            },
+            {
+                "family": "Boyer",
+                "given": "G."
+            },
+            {
+                "family": "Hall",
+                "given": "C."
+            },
+            {
+                "family": "Waller",
+                "given": "S."
+            },
+            {
+                "family": "Gehrts",
+                "given": "K."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2005",
+                    6,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "lehman2010",
+        "type": "article-journal",
+        "abstract": "The impact of the toxic cyanobacterium Microcystisaeruginosa on estuarine food web production in San Francisco Estuary is unknown. It is hypothesized that Microcystis contributed to a recent decline in pelagic organisms directly through its toxicity or indirectly through its impact on the food web after 1999. In order to evaluate this hypothesis, phytoplankton, cyanobacteria, zooplankton, and fish were collected biweekly at stations throughout the estuary in 2005. Concentrations of the tumor-promoting Microcystis toxin, microcystin, were measured in water, plankton, zooplankton, and fish by a protein phosphatase inhibition assay, and fish health was assessed by histopathology. Microcystis abundance was elevated in the surface layer of the western and central delta and reached a maximum of 32 × 109 cells l−1 at Old River in August. Its distribution across the estuary was correlated with a suite of phytoplankton and cyanobacteria species in the surface layer and 1 m depth including Aphanizomenon spp., Aulacoseira granulata, Bacillaria paradoxa, Rhodomonas spp., and Cryptomonas spp. Shifts in the phytoplankton community composition coincided with a decrease in the percentage of diatom and green algal carbon and increase in the percentage of cryptophyte carbon at 1 m depth. Maximum calanoid and cyclopoid copepod carbon coincided with elevated Microcystis abundance, but it was accompanied by a low cladocera to calanoid copepod ratio. Total microcystins were present at all levels of the food web and the greater total microcystins concentration in striped bass than their prey suggested toxins accumulated at higher trophic levels. Histopathology of fish liver tissue suggested the health of two common fish in the estuary, striped bass (Morone saxatilis), and Mississippi silversides (Menidia audens), was impacted by tumor-promoting substances, particularly at stations where total microcystins concentration was elevated. This study suggests that even at low abundance, Microcystis may impact estuarine fishery production through toxic and food web impacts at multiple trophic levels.",
+        "container-title": "Hydrobiologia",
+        "DOI": "10.1007/s10750-009-9999-y",
+        "ISSN": "1573-5117",
+        "issue": "1",
+        "journalAbbreviation": "Hydrobiologia",
+        "language": "en",
+        "page": "229-248",
+        "source": "Springer Link",
+        "title": "Initial impacts of <i>Microcystis aeruginosa</i> blooms on the aquatic food web in the San Francisco Estuary",
+        "URL": "https://doi.org/10.1007/s10750-009-9999-y",
+        "volume": "637",
+        "author": [
+            {
+                "family": "Lehman",
+                "given": "P. W."
+            },
+            {
+                "family": "Teh",
+                "given": "S. J."
+            },
+            {
+                "family": "Boyer",
+                "given": "G. L."
+            },
+            {
+                "family": "Nobriga",
+                "given": "M. L."
+            },
+            {
+                "family": "Bass",
+                "given": "E."
+            },
+            {
+                "family": "Hogle",
+                "given": "C."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010",
+                    1,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "ger2010",
+        "type": "article-journal",
+        "abstract": "1. Increasing blooms of Microcystis aeruginosa have unknown impacts on the copepods Eurytemora affinis and Pseudodiaptomus forbesi, which are the dominant zooplankters and key prey species for endangered larval fish in the upper San Francisco Estuary. 2. Laboratory feeding experiments were designed to measure the effect of Microcystis on copepod survival and to distinguish the effects of toxicity and nutrition. In a series of survival tests, copepods were fed a mixed diet of algae plus one of two strains of Microcystis, either producing (MC+) or lacking microcystin (MC−). 3. Microcystis significantly reduced survival even when it was a small proportion of the diet, indicating that toxicity was the major cause of mortality. Contrary to expectation, however, the MC+ strain did not result in higher mortality, suggesting that non-MC metabolites of Microcystis can be toxic to copepods. 4. Across treatments, survival of P. forbesi was greater than that of E. affinis, although the two copepods responded differently to both the ratio and the strain of Microcystis in their food. Survival of P. forbesi was greater on the MC+ strain and was inversely proportional to the ratio of dietary Microcystis (MC+ or MC−). In contrast, survival of E. affinis declined similarly across treatments and was not related to the proportion or strain of dietary Microcystis. Results indicate that the copepod P. forbesi can coexist with Microcystis while the other copepod E. affinis cannot. 5. Regardless of species, dietary Microcystis caused significant mortality to copepods, and it may cause adverse impacts to the potentially food-limited zooplankton community of the San Francisco Estuary. These impacts may not be related to the cellular MC concentration because Microcystis contains other metabolites that negatively affect copepods.",
+        "container-title": "Freshwater Biology",
+        "DOI": "https://doi.org/10.1111/j.1365-2427.2009.02367.x",
+        "ISSN": "1365-2427",
+        "issue": "7",
+        "language": "en",
+        "note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1365-2427.2009.02367.x",
+        "page": "1548-1559",
+        "source": "Wiley Online Library",
+        "title": "The effects of dietary <i>Microcystis aeruginosa</i> and microcystin on the copepods of the upper San Francisco Estuary",
+        "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2427.2009.02367.x",
+        "volume": "55",
+        "author": [
+            {
+                "family": "Ger",
+                "given": "Kemal A."
+            },
+            {
+                "family": "Teh",
+                "given": "Swee J."
+            },
+            {
+                "family": "Baxa",
+                "given": "Dolores V."
+            },
+            {
+                "family": "Lesmeister",
+                "given": "Sarah"
+            },
+            {
+                "family": "Goldman",
+                "given": "Charles R."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2010"
+                ]
+            ]
+        }
+    },
+    {
+        "id": "lehman2008",
+        "type": "article-journal",
+        "abstract": "A bloom of the cyanobacteria Microcystisaeruginosa was sampled over the summer and fall in order to determine if the spatial and temporal patterns in cell density, chlorophyll a (chl a) concentration, total microcystins concentration, and percent microcystins composition varied with environmental conditions in San Francisco Estuary. It was hypothesized that the seasonal variation in Microcystis cell density and microcystin concentration was ecologically important because it could influence the transfer of toxic microcystins into the aquatic food web. Sampling for Microcystis cell density, chl a concentration, total microcystins concentration and a suite of environmental conditions was conducted biweekly at nine stations throughout the freshwater tidal and brackish water regions of the estuary between July and November 2004. Total microcystins in zooplankton and clam tissue was also sampled in August and October. Microcystis cell density, chl a concentration and total microcystins concentration varied by an order of magnitude and peaked during August and September when $$ {\\text{P}}^{{\\text{B}}}_{{\\text{m}}} $$and αB were high. Low streamflow and high water temperature were strongly correlated with the seasonal variation of Microcystis cell density, total microcystins concentration (cell)−1 and total microcystins concentration (chl a)−1 in canonical correlation analyses. Nutrient concentrations and ratios were of secondary importance in the analysis and may be of lesser importance to seasonal variation of the bloom in this nutrient rich estuary. The seasonal variation of Microcystis density and biomass was potentially important for the structure and function of the estuarine aquatic food web, because total microcystins concentration was high at the base of the food web in mesozooplankton, amphipod, clam, and worm tissue during the peak of the bloom.",
+        "container-title": "Hydrobiologia",
+        "DOI": "10.1007/s10750-007-9231-x",
+        "ISSN": "1573-5117",
+        "issue": "1",
+        "journalAbbreviation": "Hydrobiologia",
+        "language": "en",
+        "page": "187-204",
+        "source": "Springer Link",
+        "title": "The influence of environmental conditions on the seasonal variation of <i>Microcystis</i> cell density and microcystins concentration in San Francisco Estuary",
+        "URL": "https://doi.org/10.1007/s10750-007-9231-x",
+        "volume": "600",
+        "author": [
+            {
+                "family": "Lehman",
+                "given": "P. W."
+            },
+            {
+                "family": "Boyer",
+                "given": "G."
+            },
+            {
+                "family": "Satchwell",
+                "given": "M."
+            },
+            {
+                "family": "Waller",
+                "given": "S."
+            }
+        ],
+        "issued": {
+            "date-parts": [
+                [
+                    "2008",
+                    3,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "DOI": "10.1016/b978-0-08-021950-9.50014-4",
+        "author": [
+            {
+                "family": "Stevens",
+                "given": "DE"
+            }
+        ],
+        "container-title": "Proceedings of the conference on assessing the effects of power-plant-induced mortality on fish populations",
+        "editor": [
+            {
+                "family": "Van Winkle",
+                "given": "W."
+            }
+        ],
+        "id": "stevens1977a",
+        "issued": {
+            "date-parts": [
+                [
+                    1977
+                ]
+            ]
+        },
+        "key": "8PQRRYW6",
+        "libraryid": "1",
+        "note": "Times cited: 2",
+        "page": "91-109",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "Pergamon Press",
+        "publisher-place": "New York, New York",
+        "times cited": "2",
+        "title": "Striped Bass (<i>Monrone saxatilis</i>) monitoring techniques in the Sacramento-San Joaquin Estuary",
+        "type": "paper-conference"
+    },
+    {
+        "author": [
+            {
+                "family": "Turner",
+                "given": "Jerry L."
+            },
+            {
+                "family": "Chadwick",
+                "given": "Harold K."
+            }
+        ],
+        "container-title": "Transactions of the American Fisheries Society",
+        "id": "turner1972",
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    1972
+                ]
+            ]
+        },
+        "key": "RLI398J5",
+        "libraryid": "1",
+        "page": "442-452",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "title": "Distribution and abundance of young-of-the-year striped bass, Morone saxatilis, in relation to river flow in the Sacramento-San Joaquin estuary",
+        "type": "article-journal",
+        "volume": "101"
+    },
+    {
+        "DOI": "10/c594kn",
+        "ISSN": "0706-652X",
+        "URL": "https://cdnsciencepub.com/doi/abs/10.1139/f07-048",
+        "author": [
+            {
+                "family": "Feyrer",
+                "given": "FV"
+            },
+            {
+                "family": "Nobriga",
+                "given": "ML"
+            },
+            {
+                "family": "Sommer",
+                "given": "TR"
+            }
+        ],
+        "container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+        "container-title-short": "Can. J. Fish. Aquat. Sci.",
+        "id": "feyrer2007",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    2007,
+                    4,
+                    1
+                ]
+            ]
+        },
+        "key": "BA67H3J9",
+        "libraryid": "1",
+        "page": "723-734",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "NRC",
+        "source": "cdnsciencepub.com (Atypon)",
+        "title": "Multidecadal trends for three declining fish species: habitat patterns and mechanisms in the San Francisco Estuary, California, USA",
+        "title-short": "Multidecadal trends for three declining fish species",
+        "type": "article-journal",
+        "volume": "64"
+    },
+    {
+        "DOI": "10/c594kn",
+        "ISSN": "0706-652X",
+        "URL": "https://cdnsciencepub.com/doi/abs/10.1139/f07-048",
+        "author": [
+            {
+                "family": "Feyrer",
+                "given": "FV"
+            },
+            {
+                "family": "Nobriga",
+                "given": "ML"
+            },
+            {
+                "family": "Sommer",
+                "given": "TR"
+            }
+        ],
+        "container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+        "container-title-short": "Can. J. Fish. Aquat. Sci.",
+        "id": "feyrer2007a",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    2007,
+                    4,
+                    1
+                ]
+            ]
+        },
+        "key": "BA67H3J9",
+        "libraryid": "1",
+        "page": "723-734",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "NRC",
+        "source": "cdnsciencepub.com (Atypon)",
+        "title": "Multidecadal trends for three declining fish species: habitat patterns and mechanisms in the San Francisco Estuary, California, USA",
+        "title-short": "Multidecadal trends for three declining fish species",
+        "type": "article-journal",
+        "volume": "64"
+    },
+    {
+        "DOI": "10/dxn6zd",
+        "ISSN": "1559-2731",
+        "author": [
+            {
+                "family": "Feyrer",
+                "given": "FV"
+            },
+            {
+                "family": "Newman",
+                "given": "K"
+            },
+            {
+                "family": "Nobriga",
+                "given": "ML"
+            },
+            {
+                "family": "Sommer",
+                "given": "TR"
+            }
+        ],
+        "container-title": "Estuaries and Coasts",
+        "container-title-short": "Estuaries and Coasts",
+        "id": "feyrer2011",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "key": "KU8SBTWE",
+        "libraryid": "1",
+        "page": "120-128",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "Springer",
+        "title": "Modeling the effects of future outflow on the abiotic habitat of an imperiled estuarine fish",
+        "type": "article-journal",
+        "volume": "34"
+    },
+    {
+        "DOI": "10/ggvxdg",
+        "author": [
+            {
+                "family": "Nobriga",
+                "given": "ML"
+            },
+            {
+                "family": "Sommer",
+                "given": "TR"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Fleming",
+                "given": "K"
+            }
+        ],
+        "container-title": "San Francisco Estuary and Watershed Science",
+        "id": "nobriga2008",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "key": "C7QWS4W2",
+        "libraryid": "1",
+        "note": "Times cited: 1",
+        "page": "13",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "times cited": "1",
+        "title": "Long-term trends in summertime habitat suitability for delta smelt, <i>Hypomesus transpacificus</i>.",
+        "type": "article-journal",
+        "volume": "6"
+    },
+    {
+        "DOI": "10.1139/f07-048",
+        "ISSN": "0706-652X",
+        "URL": "https://doi.org/10.1139/f07-048",
+        "accessed": {
+            "date-parts": [
+                [
+                    2020,
+                    4,
+                    27
+                ]
+            ]
+        },
+        "author": [
+            {
+                "family": "Feyrer",
+                "given": "Frederick"
+            },
+            {
+                "family": "Nobriga",
+                "given": "Matthew L"
+            },
+            {
+                "family": "Sommer",
+                "given": "Ted R"
+            }
+        ],
+        "container-title": "Canadian Journal of Fisheries and Aquatic Sciences",
+        "container-title-short": "Can. J. Fish. Aquat. Sci.",
+        "id": "feyrer2007b",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    2007,
+                    4,
+                    1
+                ]
+            ]
+        },
+        "key": "QDU3SIEL",
+        "libraryid": "1",
+        "page": "723-734",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "title": "Multidecadal trends for three declining fish species: habitat patterns and mechanisms in the San Francisco Estuary, California, USA",
+        "type": "article-journal",
+        "volume": "64"
+    },
+    {
+        "DOI": "10.1007/s12237-010-9343-9",
+        "ISSN": "1559-2731",
+        "URL": "https://doi.org/10.1007/s12237-010-9343-9",
+        "author": [
+            {
+                "family": "Feyrer",
+                "given": "Frederick"
+            },
+            {
+                "family": "Newman",
+                "given": "Ken"
+            },
+            {
+                "family": "Nobriga",
+                "given": "Matthew"
+            },
+            {
+                "family": "Sommer",
+                "given": "Ted"
+            }
+        ],
+        "container-title": "Estuaries and Coasts",
+        "container-title-short": "Estuaries and Coasts",
+        "id": "feyrer2011a",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2011,
+                    1,
+                    1
+                ]
+            ]
+        },
+        "key": "WILCTU28",
+        "libraryid": "1",
+        "page": "120-128",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "title": "Modeling the Effects of Future Outflow on the Abiotic Habitat of an Imperiled Estuarine Fish",
+        "type": "article-journal",
+        "volume": "34"
+    },
+    {
+        "DOI": "10/ggvxdg",
+        "author": [
+            {
+                "family": "Nobriga",
+                "given": "ML"
+            },
+            {
+                "family": "Sommer",
+                "given": "TR"
+            },
+            {
+                "family": "Feyrer",
+                "given": "F"
+            },
+            {
+                "family": "Fleming",
+                "given": "K"
+            }
+        ],
+        "container-title": "San Francisco Estuary and Watershed Science",
+        "id": "nobriga2008a",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "key": "C7QWS4W2",
+        "libraryid": "1",
+        "note": "Times cited: 1",
+        "page": "13",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "times cited": "1",
+        "title": "Long-term trends in summertime habitat suitability for delta smelt, <i>Hypomesus transpacificus</i>.",
+        "type": "article-journal",
+        "volume": "6"
+    },
+    {
+        "author": [
+            {
+                "family": "Morris",
+                "given": "T"
+            },
+            {
+                "family": "Civiello",
+                "given": "M"
+            }
+        ],
+        "container-title": "IEP Newsletter",
+        "id": "morris2013",
+        "issued": {
+            "date-parts": [
+                [
+                    2013
+                ]
+            ]
+        },
+        "key": "UP5NI6AY",
+        "libraryid": "1",
+        "page": "33-39",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "title": "<i>Microcystis aeruginosa</i> status and trends during the Fall Midwater Trawl Survey and a comparison to trends in the Summer Townet Survey",
+        "type": "article-journal",
+        "volume": "2"
+    },
+    {
+        "DOI": "10/gk55qp",
+        "ISSN": "2689-4203, 2689-419X",
+        "URL": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=193400&inline",
+        "author": [
+            {
+                "family": "Tempel",
+                "given": "TL"
+            },
+            {
+                "family": "Malinich",
+                "given": "TD"
+            },
+            {
+                "family": "Burns",
+                "given": "J"
+            },
+            {
+                "family": "Barros",
+                "given": "A"
+            },
+            {
+                "family": "Burdi",
+                "given": "CE"
+            },
+            {
+                "family": "Hobbs",
+                "given": "JA"
+            }
+        ],
+        "container-title": "California Fish and Wildlife Journal",
+        "id": "tempel2021",
+        "issue": "CESA Special Issue",
+        "issued": {
+            "date-parts": [
+                [
+                    2021,
+                    7,
+                    6
+                ]
+            ]
+        },
+        "key": "ERVBADJ6",
+        "language": "en",
+        "libraryid": "1",
+        "page": "148-171",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "source": "DOI.org (Crossref)",
+        "title": "The value of long-term monitoring of the San Francisco Estuary for Delta Smelt and Longfin Smelt",
+        "type": "article-journal"
+    },
+    {
+        "DOI": "10.1016/S1568-2692(00)80130-8",
+        "URL": "https://www.sciencedirect.com/science/article/pii/S1568269200801308",
+        "accessed": {
+            "date-parts": []
+        },
+        "author": [
+            {
+                "family": "Schoellhamer",
+                "given": "D. H."
+            }
+        ],
+        "collection-title": "Coastal and Estuarine Fine Sediment Processes",
+        "container-title": "Proceedings in Marine Science",
+        "editor": [
+            {
+                "family": "McAnally",
+                "given": "William H."
+            },
+            {
+                "family": "Mehta",
+                "given": "Ashish J."
+            }
+        ],
+        "id": "schoellhamer2000a",
+        "issued": {
+            "date-parts": [
+                [
+                    2000,
+                    1,
+                    1
+                ]
+            ]
+        },
+        "key": "KTM9U5UC",
+        "language": "en",
+        "libraryid": "1",
+        "page": "343-357",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "Elsevier",
+        "source": "ScienceDirect",
+        "title": "Influence of salinity, bottom topography, and tides on locations of estuarine turbidity maxima in northern San Francisco Bay",
+        "type": "chapter",
+        "volume": "3"
+    },
+    {
+        "DOI": "10/b8h3h7",
+        "ISSN": "1939-5590",
+        "URL": "https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.4319/lo.1998.43.7.1697",
+        "_eprint": "https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.4319/lo.1998.43.7.1697",
+        "author": [
+            {
+                "family": "Kimmerer",
+                "given": "W. J."
+            },
+            {
+                "family": "Burau",
+                "given": "J. R."
+            },
+            {
+                "family": "Bennett",
+                "given": "W. A."
+            }
+        ],
+        "container-title": "Limnology and Oceanography",
+        "id": "kimmerer1998",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    1998
+                ]
+            ]
+        },
+        "key": "L694DER2",
+        "language": "en",
+        "libraryid": "1",
+        "note": "_eprint: https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.4319/lo.1998.43.7.1697",
+        "page": "1697-1709",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "source": "Wiley Online Library",
+        "title": "Tidally oriented vertical migration and position maintenance of zooplankton in a temperate estuary",
+        "type": "article-journal",
+        "volume": "43"
+    },
+    {
+        "ISBN": "978-0-520-22754-5",
+        "URL": "https://www.ucpress.edu/book/9780520227545/inland-fishes-of-california",
+        "accessed": {
+            "date-parts": []
+        },
+        "author": [
+            {
+                "family": "Moyle",
+                "given": "PB"
+            }
+        ],
+        "id": "moyle2002a",
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "key": "KH3VG6RX",
+        "language": "en",
+        "libraryid": "1",
+        "number-of-pages": "517",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "Univ of California Press",
+        "source": "www.ucpress.edu",
+        "title": "Inland Fishes of California: revised and expanded",
+        "type": "book"
+    },
+    {
+        "DOI": "10/gmbmr6",
+        "ISSN": "1546-2366",
+        "URL": "https://escholarship.org/uc/item/36t046cq",
+        "author": [
+            {
+                "family": "Brown",
+                "given": "T"
+            },
+            {
+                "family": "Hieb",
+                "given": "KA"
+            }
+        ],
+        "container-title": "San Francisco Estuary and Watershed Science",
+        "id": "brown2014",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "key": "4QFSLKIK",
+        "language": "en",
+        "libraryid": "1",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "source": "escholarship.org",
+        "title": "Status of the Siberian Prawn, <i>Exopalaemon modestus</i>, in the San Francisco Estuary",
+        "type": "article-journal",
+        "volume": "12"
+    },
+    {
+        "DOI": "10.1007/978-94-009-5528-8_12",
+        "ISBN": "978-94-009-5528-8",
+        "URL": "https://doi.org/10.1007/978-94-009-5528-8_12",
+        "author": [
+            {
+                "family": "Hatfield",
+                "given": "SE"
+            }
+        ],
+        "collection-title": "Developments in Hydrobiology",
+        "container-title": "Temporal Dynamics of an Estuary: San Francisco Bay",
+        "editor": [
+            {
+                "family": "Cloern",
+                "given": "JE"
+            },
+            {
+                "family": "Nichols",
+                "given": "FH"
+            }
+        ],
+        "id": "hatfield1985",
+        "issued": {
+            "date-parts": [
+                [
+                    1985
+                ]
+            ]
+        },
+        "key": "PM4D3RXH",
+        "language": "en",
+        "libraryid": "1",
+        "page": "199-210",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "Springer Netherlands",
+        "publisher-place": "Dordrecht",
+        "source": "Springer Link",
+        "title": "Seasonal and interannual variation in distribution and population abundance of the shrimp <i>Crangon franciscorum</i> in San Francisco Bay",
+        "type": "chapter"
+    },
+    {
+        "URL": "https://escholarship.org/uc/item/5gh43754",
+        "author": [
+            {
+                "family": "Schroeter",
+                "given": "RE"
+            }
+        ],
+        "id": "schroeter2008",
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "key": "WG68GY5X",
+        "language": "en",
+        "libraryid": "1",
+        "providerkey": "2509FBBE-5BB0-44C4-B119-6083A81ED673",
+        "publisher": "University of California, Davis",
+        "source": "escholarship.org",
+        "title": "Biology and Long-Term Trends of Alien Hydromedusae and Striped Bass in a Brackish Tidal Marsh in the San Francisco Estuary",
+        "type": "thesis"
+    }
+]
