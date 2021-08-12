@@ -16,14 +16,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 #### Next Meeting
 
-**1:00 - 3:00 pm PDT on 12 Aug 2021** ([Microsoft Teams Meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTgxNmIyZjItOWZmMC00ZDQ5LTgyMTAtMTllY2Q2NzU5ODBi%40thread.v2/0?context=%7b%22Tid%22%3a%22b71d5652-4b83-4257-afcd-7fd177884564%22%2c%22Oid%22%3a%22984f44d5-4180-46ad-9b77-e367b17d9727%22%7d))
-
-1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
-1:05 - 1:45 &nbsp;&nbsp; Bayesian Network analysis - fun but probably dangerous. ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
-1:45 - 2:15 &nbsp;&nbsp; Application of [MARSS](https://nwfsc-timeseries.github.io/MARSS/) to analyze 40 years of fish abundance data ([Denise Colombano](https://denise-colombano.github.io/), [UC Berkeley](https://nature.berkeley.edu/))  
-2:15 - 2:20 &nbsp;&nbsp; Break  
-2:20 - 2:50 &nbsp;&nbsp; Creating reproducible reports using R Markdown (James White, [CDFW](https://wildlife.ca.gov/))  
-2:50 - 3:00 &nbsp;&nbsp; [HEC-DSS](https://www.hec.usace.army.mil/software/hec-dss/) and R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+**1:00 - 4:00 pm PST on 18 Nov 2021** 
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
