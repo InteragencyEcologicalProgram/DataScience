@@ -20,7 +20,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:25 &nbsp;&nbsp; Points to linear isopleth, or how I mapped large wood density (Derek Acomb, [CDFW](https://wildlife.ca.gov/))  
-1:25 - 1:45 &nbsp;&nbsp; Preliminary responses of the food web to tidal wetland restoration (Christy Bowles, [CDFW](https://wildlife.ca.gov/)) 
+1:25 - 1:45 &nbsp;&nbsp; Preliminary responses of the food web to tidal wetland restoration (Christy Bowles, [CDFW](https://wildlife.ca.gov/))  
 1:45 - 1:50 &nbsp;&nbsp; Break  
 1:50 - 2:20 &nbsp;&nbsp; Fun with crowd-sourced data - iNaturalist data with the rinat package ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 2:20 - 2:45 &nbsp;&nbsp; An introduction to lapply, sapply, and mapply ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
