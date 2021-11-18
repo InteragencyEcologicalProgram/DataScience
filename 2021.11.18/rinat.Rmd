@@ -25,10 +25,10 @@ library(RColorBrewer) # pretty color palettes
 
 ## iNaturalist - data manimpulation and plotting
 
-I started this project to make a Christmas present for my mother. She takes a lot of pictures of organisms and catelogs them on iNaturalist. iNaturalist is a website/app that "crowd-sources" observations of nature and then makes the data available to analyze. It's pretty cool. 
+I started this project to make a Christmas present for my mother. She takes a lot of pictures of organisms and catalogs them on iNaturalist. iNaturalist is a website/app that "crowd-sources" observations of nature and then makes the data available to analyze. It's pretty cool. 
  <https://www.inaturalist.org/home>.
 
-Each identification has to be confirmed by two other people to cound as "research-grade". There are a lot of issues with uneven sample sizee, and presence-only data if you want to use it for actual species distribution modeling, but it's still pretty neat.
+Each identification has to be confirmed by two other people to count as "research-grade". There are a lot of issues with uneven sample sizee, and presence-only data if you want to use it for actual species distribution modeling, but it's still pretty neat.
 
 The package `rinat` allows you to pull data from iNaturalist.
 
@@ -100,12 +100,13 @@ So, all that was looking at all the observations for a particular taxa. If we wa
 
 My mother's user id is jane41. Let's see what she's been seeing lately.
 
-Note: sometimes it's a little buggy. If it runs for a long time without stopping, intterupt it and try again.
+Note: sometimes it's a little buggy. If it runs for a long time without stopping, interupt it and try again.
 
 ```{r}
 
-mom = get_inat_obs_user("jane41", maxresults = 1000)
-str(mom)
+mom = get_inat_obs_user("jane41", maxresults = 2000)
+#str(mom)
+View(mom)
 
 ```
 
@@ -133,7 +134,7 @@ taxize can query various taxonomic databases on the interwebs and pull out futhe
 Maple = get_uid("Acer rubrum")
 
 #Once you get the unique identifier, you can look up the classificaiton
-Mapleclass = classes = classification(Maple, db = 'ncbi')
+Mapleclass = classification(Maple, db = 'ncbi')
 
 #it automatically comes out as a list, it will be easier to see as a data frame
 Mapleclass = rbind(Mapleclass)
@@ -145,13 +146,14 @@ Now you have a list of all the different levels of classification for red maples
 
 But that was just one organism. What about all the different critters that my mom saw?
 
-The really powerful thing about this querying function is you can feed it a vector of IDs at any taxonomic level. You can mix genus, species, order, phylum, etc, and it will find them and give you the rest of the classfication.
+The really powerful thing about this querying function is you can feed it a vector of IDs at any taxonomic level. You can mix genus, species, order, phylum, etc, and it will find them and give you the rest of the classification.
 
 ```{r, message=FALSE}
 
 #first get all the unique taxa
 
-allspecies = unique(mom$scientific_name)
+allspecies = unique(mom$scientific_name)[1:10]
+
 
 #if you ask the API for too many things at once, it freezes.
 #I found this work around online. Basically, it makes the computer wait
@@ -176,7 +178,7 @@ classes = classification(res, db = 'ncbi', batch_size=10)
 
 #put them into a data frame
 classesR = rbind(classes)
-str(classesR)
+View(classesR)
 
 ```
 
@@ -192,22 +194,24 @@ momclass = classesR %>%
   pivot_wider(id_cols = query, names_from = rank, values_from = name,
               values_fn = first) %>%
   
-  #add the scientific names bak on
+  #add the scientific names back on
   left_join(names) %>%
   
   #remove any duplicate rows
   distinct()
 
-str(momclass)
+View(momclass)
 
 ```
 
-Now that we have the full taxonomic ranks for all the observations, we can merge them onto the origional data frame using 'left_join'
+Now that we have the full taxonomic ranks for all the observations, we can merge them onto the original data frame using 'left_join'
 
 
 ```{r}
+#load the full version of the dataset
+ load("C:/Users/rhartman/OneDrive - California Department of Water Resources/DUWG/DataScience/2021.11.18/momclass.RData")
 momwclasses = left_join(mom, momclass)
-str(momwclasses)
+View(momwclasses)
 
 ```
 
