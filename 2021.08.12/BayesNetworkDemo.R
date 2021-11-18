@@ -7,7 +7,8 @@ library(networkD3)
 library(visNetwork)
 
 #load some example data
-dat <- read_csv("FLOATdataset.csv")
+dat <- read_csv("2021.08.12/FLOATdataset.csv")
+View(dat)
 
 #log-transform and scale all the variable so they work better
 dat = mutate(dat, logzoops = log(FallZoops), logCHL = log(FallChla2), 
@@ -38,7 +39,8 @@ simpleNetwork(
 score(dag, datscaled)
 
 
-### Fit the model parameters and show the CPT for node A
+### Fit the model parameters and show the 
+#CPT for node A
 fit = bn.fit(dag, datscaled, debug = TRUE)
 fit$logCHL
 fit$logzoops
@@ -46,8 +48,10 @@ fit$logFMWT
 
 
 ##############################################
-#However, usually you don't want to trust the computer to make the network for you.
-#it might come up with some interesting relationships you hadn't thought about,
+#However, usually you don't want to trust the computer 
+#to make the network for you.
+#it might come up with some interesting relationships 
+#you hadn't thought about,
 #but more likely it just wont make any sense. 
 
 
@@ -68,7 +72,8 @@ plot.network <- function(structure, ht = "400px"){
   return(visNetwork(nodes, edges, height = ht, width = "100%"))
 }
 
-# Create an empty graph that includes all the nodes we might want to use.
+# Create an empty graph that includes all the nodes we 
+#might want to use.
 structure <- empty.graph(c("logzoops","logCHL", "logPred", "SummerTemp" ,
                            "FallNDOI","FallTemp","logFMWT",
                            "Secchi"))
@@ -92,11 +97,15 @@ plot.network(structure)
 
 #We can assess the probability of any node given the other nodes. 
 
-#what is the probability of a FMWT index greater than 20 when secchi is less than 5 and temp is less than 20?
+#what is the probability of a FMWT index greater than 
+#20 when secchi is less than 5 and temp is less than 20?
 cat("P(logFMWT >6 | FallTemp <20 and Secchi <5) =", cpquery(bn.mod, (logFMWT > .5), (FallTemp < 20 & Secchi < 5 )), "\n")
 
 #or zooplankton...
 cpquery(bn.mod, (logzoops > .55), (FallTemp < 20 & Secchi < 5 ))
+
+cpquery(bn.mod, (SummerTemp > 15), (FallTemp < 20 & Secchi > 20 ))
+
 
 #https://www.bnlearn.com/examples/xval/
 
