@@ -1,0 +1,299 @@
+---
+title: "inaturalist data demo"
+author: "Rosemary Hartman"
+date: "11/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#firt load required packages
+library(tidyverse) #data manipulation
+library(rinat) #grab data from iNaturalist API
+library(sf) # plot spatial data
+library(ggmap) #make nice maps
+library(maps) # get maps of the US
+library(tigris) #maps of US states
+library(lubridate) #deal with dates/times easier
+library(treemap) # Make treemap plots
+library(taxize) #look up taxa to find their full taxonomic hierarchy
+library(ggridges) # make ridge plots
+library(RColorBrewer) # pretty color palettes
+
+```
+
+## iNaturalist - data manimpulation and plotting
+
+I started this project to make a Christmas present for my mother. She takes a lot of pictures of organisms and catelogs them on iNaturalist. iNaturalist is a website/app that "crowd-sources" observations of nature and then makes the data available to analyze. It's pretty cool. 
+ <https://www.inaturalist.org/home>.
+
+Each identification has to be confirmed by two other people to cound as "research-grade". There are a lot of issues with uneven sample sizee, and presence-only data if you want to use it for actual species distribution modeling, but it's still pretty neat.
+
+The package `rinat` allows you to pull data from iNaturalist.
+
+For example, if I want to see where all the periodical cicadas were this summer, I can look up the `taxon_id` on the website for Magicicada septendecim. You can specify observation quality, geographic bounds, time bounds, etc.
+
+You can get up to 10,000 observations with each query, so large queries need to be broken up.
+
+```{r}
+?get_inat_obs
+
+#I'm going to look for all the research-quality observations
+#from 2021 that have geographic location info.
+phar = get_inat_obs(taxon_id = 105098, quality = "research",
+                    geo = TRUE, maxresults = 1000, year = 2021)
+
+str(phar)
+
+```
+
+## Visualizing the data
+
+rinat doesn't have a lot of built-in visualization methods, but it does have the ability to map the data.
+
+```{r}
+#It defaults to the US
+inat_map(phar)
+```
+
+Instead of plotting every point on the map (which is hard to see), I'd rather group the observations by county and use a color ramp to show density of cicadas.
+
+I can get maps of the counties in each US state with the `tigris` package. I'll start with Maryland, because that was the center of the Brood X cicadas, and it's where my mother lives. 
+
+```{r}
+
+#I use the 'counties' data set and specify the state from the tigris package. 
+#Then i use `st_transform` from the sf pacakge to change the coordinate reference 
+# system to match the data. 
+MD = counties(state = "MD") %>%
+  st_transform(crs = 4326)
+
+#now I turn my cicada data frame into a spatial data frame.
+phar_sf = st_as_sf(phar, coords = c("longitude","latitude"), crs = 4326)
+
+#join by county in Maryland
+phar2 = st_join(phar_sf, MD) %>%
+  #remove all obersvations outside of Maryland
+  filter(!is.na(STATEFP)) 
+
+#Remove the 'geometry column' and calculate total number of observations
+#in each county using 'group_by' and 'summarize'
+pharSum = phar2 %>%
+  st_drop_geometry() %>%
+  group_by(NAME) %>%
+  summarize(Cicadas = n())
+
+#join the total number of cicadas to the map of maryland
+MD2 = left_join(MD, pharSum)
+
+#plot th emap
+ggplot() +
+  geom_sf(data = MD2, aes(fill = Cicadas))
+
+```
+
+
+## Observations per individual
+
+So, all that was looking at all the observations for a particular taxa. If we want to look at all the observations for a particular individual, we can do that too.The query in rinat doesn't have as many options for filtering, but we can definitely query all observations for a person.
+
+My mother's user id is jane41. Let's see what she's been seeing lately.
+
+Note: sometimes it's a little buggy. If it runs for a long time without stopping, intterupt it and try again.
+
+```{r}
+
+mom = get_inat_obs_user("jane41", maxresults = 1000)
+str(mom)
+
+```
+
+Alright. I'd like to do some sort of plot of diversity of observations over time, but it doesn't really make sense to do it at the species level. I'd like to plot number of Orders or Families or Phyla or something, but that information isn't provided.
+
+There is the `iconic_taxon_name` which has larger groups, but those might be too big.
+
+
+```{r}
+
+ggplot(mom, aes(x= iconic_taxon_name)) +geom_bar()
+
+```
+
+To figure out what genus, family, order, class, phyla, etc, goes with each species, we can use the `taxize` package. This package is really, really cool. I am going to use it a lot in the future.
+
+taxize can query various taxonomic databases on the interwebs and pull out futher taxonomic levels. It's got tools to look up synonyms, query all data upstream and downstream, etc. It's really powerful. 
+
+```{r}
+#example
+
+#it helps a lot to get the unique identifier for each taxa before querying
+#the database. 
+?get_uid()
+Maple = get_uid("Acer rubrum")
+
+#Once you get the unique identifier, you can look up the classificaiton
+Mapleclass = classes = classification(Maple, db = 'ncbi')
+
+#it automatically comes out as a list, it will be easier to see as a data frame
+Mapleclass = rbind(Mapleclass)
+print(Mapleclass)
+
+```
+
+Now you have a list of all the different levels of classification for red maples! Pretty neat.
+
+But that was just one organism. What about all the different critters that my mom saw?
+
+The really powerful thing about this querying function is you can feed it a vector of IDs at any taxonomic level. You can mix genus, species, order, phylum, etc, and it will find them and give you the rest of the classfication.
+
+```{r, message=FALSE}
+
+#first get all the unique taxa
+
+allspecies = unique(mom$scientific_name)
+
+#if you ask the API for too many things at once, it freezes.
+#I found this work around online. Basically, it makes the computer wait
+#one second between queries. This will take a while
+
+res = lapply(allspecies, function(w) {
+  Sys.sleep(1) # sleep for a second, possibly less to avoid rate limit
+  get_uid(w, rows = 1, messages = FALSE) #get unique identifier
+})
+
+#reformat numbers as unique identifiers
+res <- as.uid(res, check = FALSE) # don't check that ids are valid, much faster
+
+#put it in a data frame
+sigh = as.data.frame(res) 
+
+#bind unique identifiers to species names (for use later)
+names = data.frame(query = sigh$ids, scientific_name = allspecies)
+
+#now query all the unique identifiers
+classes = classification(res, db = 'ncbi', batch_size=10)
+
+#put them into a data frame
+classesR = rbind(classes)
+str(classesR)
+
+```
+
+Now, this is a TON of information. Some of these taxonomic levels are once i've never heard of. There are a lot of 'clades' that aren't used very much unless you are really a specialized taxonomist. Also, the data frame is in 'long' format. I think it will be easier to deal with in 'wide' format with the levels of classification as columns instead of rows.
+
+```{r}
+
+momclass = classesR %>%
+  #Just grab the levels of classification I am most interested in
+  filter(rank %in% c("order", "species", "genus", "phylum", "class", "family"))%>%
+  
+  #shift from long to wide using `pivot_wider`
+  pivot_wider(id_cols = query, names_from = rank, values_from = name,
+              values_fn = first) %>%
+  
+  #add the scientific names bak on
+  left_join(names) %>%
+  
+  #remove any duplicate rows
+  distinct()
+
+str(momclass)
+
+```
+
+Now that we have the full taxonomic ranks for all the observations, we can merge them onto the origional data frame using 'left_join'
+
+
+```{r}
+momwclasses = left_join(mom, momclass)
+str(momwclasses)
+
+```
+
+Now we can filter the data set for a particular type of critter and make graphs!
+
+For example, Mom takes a lot of pictures of insects, particularly the hover flies that land on flowers.I can now filter the dataset for all the insects in the order "Diptera'
+
+```{r}
+
+#use 'filter' from dplyr
+momflies = filter(momwclasses, order == "Diptera")
+
+#how many individuals of per family of flies has mom seen?
+ggplot(momflies, aes(x = family, fill = family)) + geom_bar()+
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+ I can also creat summary data sets by using `group_by` and `summarize` to calculate number of individuals per family (or per genus)
+ 
+```{r}
+ 
+momsum = group_by(momflies, family) %>%
+  summarize(N = n()) %>%
+  
+  #we had so many familmies it was hard to see. Let's group some rare families into 'other'
+  mutate(family2 = case_when(
+    N < 3 ~ "other",
+    is.na(family) ~ "Unknown",
+    TRUE ~ family
+  ))
+
+
+momflies = left_join(momflies, momsum)
+
+momgenus = group_by(momflies, family, genus) %>%
+  summarize(N = n())
+
+#the 'treemap' package allows you do make these cool plots with boxes of proportional sizes based on groups
+?treemap
+treemap(momflies,
+        index=c("family","genus"),
+        vSize="N",
+        type="index",
+        lowerbound.cex.labels = 0
+)
+
+```
+
+I can look at how number of observations changes over time if I reformat the observation date and time with the 'lubridate' package
+
+```{r}
+#reformat the date from ta character to a date, and extract the year, month, and day of the year
+momflies = momflies %>%
+  mutate(Date = ymd(observed_on), Year = year(Date), Month = month(Date), Julian = yday(Date))
+
+#how many individuals of each species did she see each month?
+ggplot(momflies, aes(x = Month, fill = genus)) + geom_bar()
+```
+
+Another neat data visualization we can play with are ridgeline plots from the ggridges package
+
+```{r}
+
+?geom_density_ridges
+ggplot(momflies, aes(x = Julian, y = family2, fill = family2)) + 
+  geom_density_ridges2(jittered_points = TRUE)
+
+```
+#or we can summarize the data and plot numbre of bugs over time
+
+```{r}
+
+#fill in zeros for days with no obeservations and total up 
+#number of observations per day.
+flysum= group_by(momflies, Julian, family2) %>%
+  summarise(N = n()) %>%
+  pivot_wider(id_cols = Julian, names_from = family2, values_fill = 0, values_from = N) %>%
+  pivot_longer(cols = -Julian, names_to = "family", values_to = "N")
+
+
+
+ggplot(flysum, aes(x = Julian, y = family, fill = family, height = N)) + 
+  geom_ridgeline()+
+  scale_y_discrete(expand = c(0.01, 0)) +
+  scale_fill_discrete(guide = "none")
+
+```
+
+There are lots of other fun things to do with this data, I just show you a few visualizations. Have fun!
