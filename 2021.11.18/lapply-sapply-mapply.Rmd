@@ -1,0 +1,158 @@
+---
+title: "An introduction to lapply, sapply, and mapply"
+author: "Travis Hinkelman"
+date: "2021-11-18"
+output: 
+  ioslides_presentation:
+    incremental: true
+widescreen: true
+css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## What about the [purrr](https://purrr.tidyverse.org/) package?
+
+> purrr enhances R’s functional programming (FP) toolkit by providing a complete and consistent set of tools for working with functions and vectors. If you’ve never heard of FP before, the best place to start is the family of map() functions which allow you to replace many for loops with code that is both more succinct and easier to read. The best place to learn about the map() functions is the iteration chapter in R for data science.
+
+## Iteration in R
+
+My personal journey:
+
+- What iteration? Isn't everything in R vectorized?
+
+- `for` loops for the win
+
+- [lapply](https://stat.ethz.ch/R-manual/R-devel/library/base/html/lapply.html)/
+[sapply](https://stat.ethz.ch/R-manual/R-devel/library/base/html/lapply.html)/
+[mapply](https://stat.ethz.ch/R-manual/R-devel/library/base/html/mapply.html)
+
+## Vectorized
+
+```{r echo = TRUE}
+x = 1:10
+
+x + 1
+```
+
+## Contrived, Non-Vectorized Function
+
+```{r echo = TRUE}
+cond_add <- function(x){
+  if (x %% 2 == 0) x + 1 else x + 2
+}
+
+cond_add(x)
+```
+
+## `for` Loop
+
+```{r echo = TRUE}
+for_out = c()
+for (i in x){
+  for_out = c(for_out, cond_add(i))
+}
+for_out
+```
+
+## `sapply`
+
+```{r echo = TRUE}
+sapply(x, cond_add)
+```
+
+## Vectorized Function
+
+```{r echo = TRUE}
+cond_add_v <- function(x){
+  ifelse(x %% 2 == 0, x + 1, x + 2)
+}
+
+cond_add_v(x)
+```
+
+## `lapply`
+
+```{r echo = TRUE}
+sleep_list = split(sleep, ~group)
+
+lapply(sleep_list, head, 3)
+```
+
+
+## `lapply`
+
+```{r echo = TRUE}
+lapply(sleep_list, nrow)
+
+lapply(sleep_list, function(dfx) nrow(dfx))
+```
+
+## `lapply`
+
+```{r echo = TRUE}
+lapply(sleep_list, function(dfx) max(dfx$extra))
+
+aggregate(formula = extra ~ group, data = sleep, FUN = max)
+```
+
+## `mapply`
+
+With `sapply` and `lapply`, you can only iterate on one list or vector. `mapply` allows for iterating over multiple lists or vectors. 
+
+```{r echo = TRUE}
+mapply(function(dfx, grp){
+  write.csv(dfx, paste0("group_", grp, ".csv"), row.names = FALSE)},
+  sleep_list, names(sleep_list))
+```
+
+## Side Effects
+
+I generally prefer a `for` loop for an operation that has side effects, e.g., writing a file.
+
+```{r echo = TRUE}
+for (i in seq_along(sleep_list)){
+  write.csv(sleep_list[[i]], 
+            paste0("group_", names(sleep_list)[i], ".csv"), 
+            row.names = FALSE)
+}
+```
+
+## `lapply`
+
+My most common use case for `lapply` is reading a bunch of files.
+
+```{r echo = TRUE}
+
+grp_files = list.files(pattern = "group")
+grp_files
+
+new_sleep_list = lapply(grp_files, read.csv)
+lapply(new_sleep_list, head, 2)
+
+```
+
+## Base R Pipe
+
+```{r echo = TRUE}
+
+list.files(pattern = "group") |> 
+  lapply(read.csv) |> 
+  dplyr::bind_rows() |> 
+  head()
+```
+
+## Base R Pipe
+
+```{r echo = TRUE}
+
+bind.rows <- function(x) do.call(rbind, x)
+
+list.files(pattern = "group") |> 
+  lapply(read.csv) |> 
+  bind.rows() |> 
+  head()
+```
+
