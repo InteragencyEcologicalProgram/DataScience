@@ -1,0 +1,360 @@
+Survey,StationCode,Lat,Lon,Station,DSLCM.Region,DSLCM.SubRegion,EDSM.SubRegion
+FMWT,72,38.18775,-121.58057,Non-Index,North,Sacramento River near Ryde,Sacramento River near Ryde
+FMWT,73,38.27433,-121.53937,Non-Index,North,Upper Sacramento River,Upper Sacramento River
+FMWT,341,38.12828,-122.2802,Non-Index,Far West,Lower Napa River,Lower Napa River
+FMWT,712,38.19042,-121.64095,Non-Index,North,Upper Sacramento River,Upper Sacramento River
+FMWT,713,38.20712,-121.66008,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+FMWT,715,38.22295,-121.67362,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+FMWT,716,38.23787,-121.68438,Non-Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+FMWT,717,38.17017,-121.63138,Non-Index,North,Sacramento River near Ryde,Sacramento River near Ryde
+FMWT,719,38.33428,-121.64733,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+FMWT,723,38.23615,-121.67348,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+FMWT,724,38.23578,-121.55878,Non-Index,North,Sacramento River near Ryde,Sacramento River near Ryde
+FMWT,735,38.33343,-121.56968,Non-Index,North,Upper Sacramento River,Upper Sacramento River
+FMWT,736,38.36737,-121.5214,Non-Index,North,Upper Sacramento River,Upper Sacramento River
+FMWT,795,38.5377,-121.58468,Non-Index,North,Sacramento River Ship Channel,Upper Sacramento River Ship Channel
+FMWT,796,38.47387,-121.5844,Non-Index,North,Sacramento River Ship Channel,Lower Sacramento River Ship Channel
+FMWT,797,38.40462,-121.6156,Non-Index,North,Sacramento River Ship Channel,Lower Sacramento River Ship Channel
+FMWT,721,38.26815,-121.70277,Non-Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+FMWT,919,38.10572,-121.49525,Non-Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+FMWT,920,38.14138,-121.50475,Non-Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+FMWT,921,38.16513,-121.49303,Non-Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+FMWT,922,38.20438,-121.4789,Non-Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+FMWT,923,38.13445,-121.56625,Non-Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+STN,340,38.0975,-122.26219,Non-Index,Far West,Lower Napa River,Lower Napa River
+STN,713,38.20633,-121.66008,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+STN,716,38.23867,-121.68481,Non-Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+STN,719,38.33339,-121.64753,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+STN,721,38.26814,-121.70278,Non-Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+STN,723,38.23722,-121.67306,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+STN,795,38.53758,-121.58464,Non-Index,North,Sacramento River Ship Channel,Upper Sacramento River Ship Channel
+STN,796,38.47356,-121.58444,Non-Index,North,Sacramento River Ship Channel,Lower Sacramento River Ship Channel
+STN,797,38.40467,-121.61553,Non-Index,North,Sacramento River Ship Channel,Lower Sacramento River Ship Channel
+SFBS,140,37.50185,-122.11618,Non-Index,South Bay,South Bay,South Bay
+SFBS,142,37.76183,-122.30533,Non-Index,Central Bay,Central Bay,Central Bay
+SFBS,243,37.8842,-122.4012,Non-Index,Central Bay,Central Bay,Central Bay
+SFBS,244,37.9237,-122.468,Non-Index,Central Bay,Central Bay,Central Bay
+SFBS,345,37.9975,-122.4242,Non-Index,Far West,West San Pablo SFBS,West San Pablo SFBS
+SFBS,346,38.0555,-122.3,Non-Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+SFBS,447,38.05592,-122.17833,Non-Index,Far West,Carquinez Strait,Carquinez Strait
+SFBS,750,38.08467,-121.75,Non-Index,West,Lower Sacramento River,Lower Sacramento River
+SFBS,751,38.10417,-121.7125,Non-Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SFBS,752,38.1042,-121.7125,Non-Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SFBS,760,38.15233,-121.68483,Non-Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SFBS,761,38.16783,-121.67717,Non-Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SFBS,762,38.175,-121.657,Non-Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SFBS,853,38.0285,-121.737,Non-Index,West,Lower San Joaquin River,Lower San Joaquin River
+SFBS,863,38.09145,-121.6511,Non-Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+SFBS,864,38.10117,-121.598,Non-Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+SFBS,865,38.08667,-121.57633,Non-Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,305,37.9987,-122.4086,Index,Far West,West San Pablo SFBS,West Suisun SFBS
+FMWT,306,38.00042,-122.41488,Index,Far West,West San Pablo SFBS,West Suisun SFBS
+FMWT,307,38.00472,-122.4192,Index,Far West,West San Pablo SFBS,West Suisun SFBS
+FMWT,308,38.01745,-122.40438,Index,Far West,West San Pablo SFBS,West Suisun SFBS
+FMWT,309,38.01442,-122.39387,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,310,38.0297,-122.37355,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,311,38.02087,-122.37743,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,314,38.02812,-122.41167,Index,Far West,West San Pablo SFBS,West Suisun SFBS
+FMWT,315,38.03815,-122.3936,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,321,38.03612,-122.36103,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,322,38.02363,-122.35078,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,323,38.02853,-122.32817,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,325,38.05605,-122.2955,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,326,38.04038,-122.29592,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,327,38.04772,-122.36672,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,328,38.06005,-122.34842,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,329,38.06312,-122.30588,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,334,38.07553,-122.33933,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+FMWT,335,38.0705,-122.3243,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,336,38.06275,-122.27875,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,337,38.0595,-122.27232,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+FMWT,338,38.06003,-122.24892,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,339,38.0667,-122.2568,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,340,38.10508,-122.26988,Index,Far West,Lower Napa River,Lower Napa River
+FMWT,401,38.05758,-122.21245,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,403,38.04883,-122.17192,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,404,38.04645,-122.17887,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,405,38.03353,-122.15815,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,406,38.028,-122.15057,Index,Far West,Carquinez Strait,Carquinez Strait
+FMWT,407,38.03298,-122.14515,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,408,38.03513,-122.12897,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,409,38.04455,-122.10637,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,410,38.04883,-122.09647,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,411,38.06117,-122.06828,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,412,38.06462,-122.06007,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,413,38.06595,-122.0473,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,414,38.05213,-122.11128,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,415,38.05678,-122.10772,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,416,38.0702,-122.09415,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,417,38.08075,-122.083,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,418,38.09383,-122.06973,Index,Far West,West Suisun SFBS,West Suisun SFBS
+FMWT,501,38.06167,-122.01955,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,502,38.05997,-122.00397,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,503,38.06022,-121.9832,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,504,38.05945,-121.9767,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,505,38.05713,-121.95597,Index,West,Honker SFBS,Honker SFBS
+FMWT,507,38.05228,-121.939,Index,West,Honker SFBS,Honker SFBS
+FMWT,508,38.04813,-121.91492,Index,West,Honker SFBS,Confluence
+FMWT,509,38.04547,-121.90412,Index,West,Honker SFBS,Confluence
+FMWT,510,38.04888,-121.88783,Index,West,Honker SFBS,Confluence
+FMWT,511,38.0513,-121.88,Index,West,Lower Sacramento River,Confluence
+FMWT,512,38.05638,-121.87722,Index,West,Lower Sacramento River,Confluence
+FMWT,513,38.0592,-121.86842,Index,West,Lower Sacramento River,Confluence
+FMWT,515,38.092,-122.01472,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,516,38.07867,-121.99408,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,517,38.07022,-121.97938,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+FMWT,518,38.06875,-121.96802,Index,West,Honker SFBS,Honker SFBS
+FMWT,519,38.07378,-121.94725,Index,West,Honker SFBS,Honker SFBS
+FMWT,601,38.1031,-122.0356,Index,West,Mid Suisun SFBS,Grizzly SFBS
+FMWT,602,38.11783,-122.04183,Index,West,Mid Suisun SFBS,Grizzly SFBS
+FMWT,603,38.11552,-122.04805,Index,West,Mid Suisun SFBS,Grizzly SFBS
+FMWT,604,38.12163,-122.05717,Index,West,Mid Suisun SFBS,Grizzly SFBS
+FMWT,605,38.14853,-122.05738,Index,West,Suisun Marsh,Suisun Marsh
+FMWT,606,38.1698,-122.02177,Index,West,Suisun Marsh,Suisun Marsh
+FMWT,608,38.0887,-121.88332,Index,West,Suisun Marsh,Suisun Marsh
+FMWT,701,38.06505,-121.83475,Index,West,Lower Sacramento River,Lower Sacramento River
+FMWT,703,38.06087,-121.79692,Index,West,Lower Sacramento River,Lower Sacramento River
+FMWT,704,38.07087,-121.77892,Index,West,Lower Sacramento River,Lower Sacramento River
+FMWT,705,38.07925,-121.7618,Index,West,Lower Sacramento River,Lower Sacramento River
+FMWT,706,38.0903,-121.74,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,707,38.11397,-121.70797,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,708,38.12608,-121.6967,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,709,38.14787,-121.69048,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,710,38.162,-121.68228,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,711,38.17595,-121.67028,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+FMWT,802,38.03528,-121.83875,Index,West,Lower San Joaquin River,Confluence
+FMWT,804,38.02308,-121.79868,Index,West,Lower San Joaquin River,Lower San Joaquin River
+FMWT,806,38.02872,-121.7617,Index,West,Lower San Joaquin River,Lower San Joaquin River
+FMWT,807,38.02995,-121.73203,Index,West,Lower San Joaquin River,Lower San Joaquin River
+FMWT,808,38.03337,-121.71942,Index,West,Lower San Joaquin River,Lower San Joaquin River
+FMWT,809,38.0512,-121.69305,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+FMWT,810,38.07083,-121.67622,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+FMWT,811,38.09742,-121.66487,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+FMWT,812,38.08792,-121.64883,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+FMWT,813,38.09978,-121.62767,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+FMWT,814,38.10128,-121.6022,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,815,38.0913,-121.57587,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,902,38.0205,-121.58255,Index,South,Holland Cut,Holland Cut
+FMWT,903,38.10628,-121.56747,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+FMWT,904,38.07828,-121.56847,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,905,38.05953,-121.55573,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,906,38.05412,-121.51653,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+FMWT,908,38.04308,-121.5298,Index,South,Mildred Island,Mildred Island West
+FMWT,909,38.02442,-121.46705,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+FMWT,910,38.00228,-121.45037,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+FMWT,911,37.99247,-121.40875,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+FMWT,912,37.96883,-121.37172,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+FMWT,913,37.97012,-121.53705,Index,South,Mildred Island,Mildred Island West
+FMWT,914,37.94662,-121.53475,Index,South,Middle River,Middle River West
+FMWT,915,37.949,-121.55908,Index,South,Old River,Old River
+STN,323,38.04433,-122.29197,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+STN,405,38.03969,-122.1505,Index,Far West,Carquinez Strait,Carquinez Strait
+STN,411,38.05117,-122.07822,Index,Far West,West Suisun SFBS,West Suisun SFBS
+STN,418,38.06481,-122.09781,Index,Far West,West Suisun SFBS,West Suisun SFBS
+STN,501,38.07347,-122.02511,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+STN,504,38.05264,-121.98614,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+STN,508,38.0455,-121.91881,Index,West,Honker SFBS,Confluence
+STN,513,38.05831,-121.868,Index,West,Lower Sacramento River,Confluence
+STN,519,38.07231,-121.95969,Index,West,Honker SFBS,Honker SFBS
+STN,520,38.03281,-121.86931,Index,West,Lower San Joaquin River,Confluence
+STN,602,38.114,-122.04619,Index,West,Mid Suisun SFBS,Grizzly SFBS
+STN,606,38.16947,-122.02567,Index,West,Suisun Marsh,Suisun Marsh
+STN,609,38.16719,-121.938,Index,West,Suisun Marsh,Suisun Marsh
+STN,610,38.11881,-121.88919,Index,West,Suisun Marsh,Suisun Marsh
+STN,704,38.06664,-121.78639,Index,West,Lower Sacramento River,Lower Sacramento River
+STN,706,38.08519,-121.75069,Index,West,Lower Sacramento River,Lower Sacramento River
+STN,707,38.1135,-121.7075,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+STN,711,38.17725,-121.66322,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+STN,801,38.04369,-121.844,Index,West,Lower San Joaquin River,Confluence
+STN,804,38.01819,-121.797,Index,West,Lower San Joaquin River,Lower San Joaquin River
+STN,809,38.05364,-121.69183,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+STN,812,38.09031,-121.6405,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+STN,815,38.08436,-121.57125,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+STN,902,38.01919,-121.58219,Index,South,Holland Cut,Holland Cut
+STN,906,38.04994,-121.50589,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+STN,910,38.00181,-121.45,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+STN,912,37.9665,-121.36906,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+STN,914,37.96722,-121.53069,Index,South,Mildred Island,Mildred Island West
+STN,915,37.94561,-121.569,Index,South,Old River,Old River
+STN,918,37.86136,-121.56944,Index,South,Victoria Canal,Victoria Canal
+STN,919,38.10667,-121.49869,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SFBS,101,37.5355,-122.16627,Index,South Bay,South Bay,South Bay
+SFBS,102,37.5833,-122.2083,Index,South Bay,South Bay,South Bay
+SFBS,103,37.6033,-122.3028,Index,South Bay,South Bay,South Bay
+SFBS,104,37.6797,-122.2367,Index,South Bay,South Bay,South Bay
+SFBS,105,37.7195,-122.2708,Index,South Bay,South Bay,South Bay
+SFBS,106,37.702,-122.3667,Index,South Bay,South Bay,South Bay
+SFBS,107,37.605,-122.2858,Index,South Bay,South Bay,South Bay
+SFBS,108,37.6758,-122.3297,Index,South Bay,South Bay,South Bay
+SFBS,109,37.7392,-122.3533,Index,Central Bay,Central Bay,Central Bay
+SFBS,110,37.78818,-122.35618,Index,Central Bay,Central Bay,Central Bay
+SFBS,211,37.84473,-122.38803,Index,Central Bay,Central Bay,Central Bay
+SFBS,212,37.8545,-122.3527,Index,Central Bay,Central Bay,Central Bay
+SFBS,213,37.8325,-122.42717,Index,Central Bay,Central Bay,Central Bay
+SFBS,214,37.86567,-122.40167,Index,Central Bay,Central Bay,Central Bay
+SFBS,215,37.888,-122.4242,Index,Central Bay,Central Bay,Central Bay
+SFBS,216,37.9208,-122.4363,Index,Central Bay,Central Bay,Central Bay
+SFBS,317,37.98902,-122.40903,Index,Far West,West San Pablo SFBS,West San Pablo SFBS
+SFBS,318,38.0213,-122.345,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+SFBS,319,38.0403,-122.2855,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+SFBS,320,38.06267,-122.31717,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+SFBS,321,38.0662,-122.3675,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+SFBS,322,38.053,-122.4138,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+SFBS,323,38.0187,-122.43,Index,Far West,West San Pablo SFBS,West San Pablo SFBS
+SFBS,325,38.03,-122.3717,Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+SFBS,427,38.0355,-122.1522,Index,Far West,Carquinez Strait,Carquinez Strait
+SFBS,428,38.062,-122.1053,Index,Far West,West Suisun SFBS,West Suisun SFBS
+SFBS,429,38.08583,-122.07683,Index,Far West,West Suisun SFBS,West Suisun SFBS
+SFBS,430,38.1082,-122.055,Index,West,Mid Suisun SFBS,Grizzly SFBS
+SFBS,431,38.1052,-122.028,Index,West,Mid Suisun SFBS,Grizzly SFBS
+SFBS,432,38.0425,-122.108,Index,Far West,West Suisun SFBS,West Suisun SFBS
+SFBS,433,38.06012,-121.98282,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+SFBS,534,38.07145,-121.9562,Index,West,Honker SFBS,Honker SFBS
+SFBS,535,38.04732,-121.91767,Index,West,Honker SFBS,Confluence
+SFBS,736,38.06033,-121.80433,Index,West,Lower Sacramento River,Lower Sacramento River
+SFBS,837,38.0245,-121.76,Index,West,Lower San Joaquin River,Lower San Joaquin River
+20MM,323,38.04289,-122.28631,Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+20MM,328,38.06031,-122.35,Non-Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+20MM,329,38.06361,-122.304,Non-Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+20MM,334,38.07639,-122.338,Non-Index,Far West,Mid San Pablo SFBS,Mid San Pablo SFBS
+20MM,335,38.07111,-122.324,Non-Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+20MM,336,38.06108,-122.278,Non-Index,Far West,East San Pablo SFBS,East San Pablo SFBS
+20MM,340,38.09922,-122.26328,Index,Far West,Lower Napa River,Lower Napa River
+20MM,342,38.14625,-122.28875,Index,Far West,Lower Napa River,Lower Napa River
+20MM,343,38.18236,-122.30928,Index,Far West,Lower Napa River,Lower Napa River
+20MM,344,38.21269,-122.30869,Index,Far West,Upper Napa River,Upper Napa River
+20MM,345,38.22383,-122.30897,Index,Far West,Upper Napa River,Upper Napa River
+20MM,346,38.23639,-122.28717,Index,Far West,Upper Napa River,Upper Napa River
+20MM,405,38.03992,-122.14672,Index,Far West,Carquinez Strait,Carquinez Strait
+20MM,411,38.05022,-122.07653,Index,Far West,West Suisun SFBS,West Suisun SFBS
+20MM,418,38.0675,-122.09556,Index,Far West,West Suisun SFBS,West Suisun SFBS
+20MM,501,38.07333,-122.02633,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+20MM,504,38.05194,-121.98608,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+20MM,508,38.04717,-121.91722,Index,West,Honker SFBS,Confluence
+20MM,513,38.05886,-121.86775,Index,West,Lower Sacramento River,Confluence
+20MM,519,38.07475,-121.95808,Index,West,Honker SFBS,Honker SFBS
+20MM,520,38.03217,-121.86311,Index,West,Lower San Joaquin River,Confluence
+20MM,602,38.11556,-122.04239,Index,West,Mid Suisun SFBS,Grizzly SFBS
+20MM,606,38.17058,-122.02792,Index,West,Suisun Marsh,Suisun Marsh
+20MM,609,38.16708,-121.93783,Index,West,Suisun Marsh,Suisun Marsh
+20MM,610,38.12219,-121.88911,Index,West,Suisun Marsh,Suisun Marsh
+20MM,703,38.04861,-121.79739,Index,West,Lower Sacramento River,Lower Sacramento River
+20MM,704,38.06658,-121.79031,Index,West,Lower Sacramento River,Lower Sacramento River
+20MM,705,38.09761,-121.70875,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+20MM,706,38.08608,-121.75044,Index,West,Lower Sacramento River,Lower Sacramento River
+20MM,707,38.11469,-121.70786,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+20MM,711,38.17742,-121.66225,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+20MM,716,38.23856,-121.68392,Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+20MM,718,38.25756,-121.72903,Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+20MM,719,38.3335,-121.6475,Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+20MM,720,38.26264,-121.77928,Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+20MM,723,38.23725,-121.67308,Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+20MM,724,38.25625,-121.65208,Index,North,Cache Slough and Liberty Island,Upper Sacramento River
+20MM,726,38.28306,-121.64383,Index,North,Cache Slough and Liberty Island,Upper Sacramento River
+20MM,801,38.04369,-121.844,Index,West,Lower San Joaquin River,Confluence
+20MM,804,38.01644,-121.79131,Index,West,Lower San Joaquin River,Lower San Joaquin River
+20MM,809,38.05378,-121.69303,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+20MM,812,38.08992,-121.63992,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+20MM,815,38.08714,-121.57114,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+20MM,901,38.04625,-121.6185,Index,South,Franks Tract,Franks Tract
+20MM,902,38.02039,-121.58267,Index,South,Holland Cut,Holland Cut
+20MM,906,38.05003,-121.50647,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+20MM,910,38.005,-121.45303,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+20MM,912,37.96642,-121.36856,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+20MM,914,37.9715,-121.52,Index,South,Mildred Island,Mildred Island West
+20MM,915,37.94428,-121.56789,Index,South,Old River,Old River
+20MM,918,37.859,-121.56714,Index,South,Victoria Canal,Victoria Canal
+20MM,919,38.10519,-121.49458,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,340,38.09758333,-122.2614167,Index,Far West,Lower Napa River,Lower Napa River
+SKT,405,38.0395,-122.1423611,Index,Far West,Carquinez Strait,Carquinez Strait
+SKT,411,38.05244444,-122.0752222,Index,Far West,West Suisun SFBS,West Suisun SFBS
+SKT,418,38.06655556,-122.0944444,Index,Far West,West Suisun SFBS,West Suisun SFBS
+SKT,501,38.07447222,-122.0272222,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+SKT,504,38.05025,-121.98125,Index,West,Mid Suisun SFBS,Mid Suisun SFBS
+SKT,508,38.04483333,-121.9173056,Index,West,Honker SFBS,Confluence
+SKT,513,38.05861111,-121.8651111,Index,West,Lower Sacramento River,Confluence
+SKT,519,38.0735,-121.9603056,Index,West,Honker SFBS,Honker SFBS
+SKT,520,38.03225,-121.8654167,Index,West,Lower San Joaquin River,Confluence
+SKT,602,38.11630556,-122.04125,Index,West,Mid Suisun SFBS,Grizzly SFBS
+SKT,606,38.16955556,-122.0273889,Index,West,Suisun Marsh,Suisun Marsh
+SKT,609,38.16958333,-121.9399722,Index,West,Suisun Marsh,Suisun Marsh
+SKT,610,38.12252778,-121.8890556,Index,West,Suisun Marsh,Suisun Marsh
+SKT,704,38.06563889,-121.7908333,Index,West,Lower Sacramento River,Lower Sacramento River
+SKT,706,38.08638889,-121.7506667,Index,West,Lower Sacramento River,Lower Sacramento River
+SKT,707,38.11297222,-121.7074167,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SKT,711,38.17638889,-121.6616389,Index,North,Sacramento River near Rio Vista,Sacramento River near Rio Vista
+SKT,712,38.18680556,-121.6450278,Index,North,Upper Sacramento River,Upper Sacramento River
+SKT,713,38.20641667,-121.6600278,Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+SKT,715,38.22830556,-121.675,Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+SKT,716,38.25502778,-121.6885833,Index,North,Cache Slough and Liberty Island,Cache Slough and Liberty Island
+SKT,724,38.23758333,-121.5585,Index,North,Sacramento River near Ryde,Sacramento River near Ryde
+SKT,801,38.04388889,-121.8451944,Index,West,Lower San Joaquin River,Confluence
+SKT,804,38.01641667,-121.793,Index,West,Lower San Joaquin River,Lower San Joaquin River
+SKT,809,38.05066667,-121.6956389,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+SKT,812,38.08986111,-121.6416667,Index,South,San Joaquin River at Twitchell Island,San Joaquin River at Twitchell Island
+SKT,815,38.08541667,-121.5720278,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+SKT,902,38.02016667,-121.5821667,Index,South,Holland Cut,Holland Cut
+SKT,906,38.04930556,-121.5055556,Index,South,San Joaquin River at Prisoners Pt,San Joaquin River at Prisoners Pt
+SKT,910,38.00227778,-121.4507778,Index,South,San Joaquin River near Stockton,San Joaquin River near Stockton
+SKT,912,37.96597222,-121.3683611,Index,South,Disappointment Slough,Disappointment Slough
+SKT,914,37.96752778,-121.5280278,Index,South,Mildred Island,Mildred Island West
+SKT,915,37.94455556,-121.5684167,Index,South,Old River,Old River
+SKT,919,38.10663889,-121.4988333,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,920,38.14222222,-121.5038333,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,921,38.164,-121.4928611,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,922,38.20297222,-121.4782222,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,923,38.13494444,-121.5653889,Index,South,North and South Forks Mokelumne River,North and South Forks Mokelumne River
+SKT,719,38.33428,-121.64733,Non-Index,North,Cache Slough and Liberty Island,Lower Sacramento River Ship Channel
+USFW Beach Seine,AM001S,38.5993568,-121.5057333,Index,North,N/A,N/A
+USFW Beach Seine,DS002S,38.058765,-121.4583571,Index,South,N/A,N/A
+USFW Beach Seine,GS010E,38.2258556,-121.5271963,Index,North,N/A,N/A
+USFW Beach Seine,LP003E,38.1099356,-121.5001684,Index,South,N/A,N/A
+USFW Beach Seine,MK004W,38.1274616,-121.5804697,Index,South,N/A,N/A
+USFW Beach Seine,MR010W,37.9217722,-121.5287972,Index,South,N/A,N/A
+USFW Beach Seine,MS001N,38.0560444,-121.7855639,Index,West,N/A,N/A
+USFW Beach Seine,OR003W,38.031977,-121.581859,Index,South,N/A,N/A
+USFW Beach Seine,OR014W,37.9214863,-121.5558943,Index,South,N/A,N/A
+USFW Beach Seine,OR019E,37.8767421,-121.5767796,Index,South,N/A,N/A
+USFW Beach Seine,OR023E,37.825673,-121.551276,Index,South,N/A,N/A
+USFW Beach Seine,SF014E,38.2269122,-121.4911887,Index,South,N/A,N/A
+USFW Beach Seine,SJ001S,38.0148068,-121.7827132,Index,West,N/A,N/A
+USFW Beach Seine,SJ005N,38.0507934,-121.6994317,Index,South,N/A,N/A
+USFW Beach Seine,SJ026S,38.0516073,-121.5098959,Index,South,N/A,N/A
+USFW Beach Seine,SJ032S,37.9973944,-121.4473917,Index,South,N/A,N/A
+USFW Beach Seine,SJ041N,37.9556219,-121.3462528,Index,South,N/A,N/A
+USFW Beach Seine,SJ051E,37.8306966,-121.3113902,Index,South,N/A,N/A
+USFW Beach Seine,SJ056E,37.7870378,-121.3073651,Index,South,N/A,N/A
+USFW Beach Seine,SJ058W,37.7724392,-121.3030658,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ063W,37.7249721,-121.2968653,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ065W,37.7094064,-121.2787764,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ068W,37.6969269,-121.2721691,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ070N,37.6874193,-121.2746579,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ074A,37.6662158,-121.2467263,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ074W,37.6722717,-121.244883,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ076W,37.6475804,-121.2239856,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ077E,37.6388359,-121.2274124,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ079E,37.6316121,-121.2103708,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SJ083W,37.6131828,-121.176304,Index,San Joaquin,N/A,N/A
+USFW Beach Seine,SR012W,38.1392889,-121.6949056,Index,North,N/A,N/A
+USFW Beach Seine,SR014W,38.186518,-121.6626646,Index,North,N/A,N/A
+USFW Beach Seine,SR015E,38.172303,-121.6420562,Index,North,N/A,N/A
+USFW Beach Seine,SR017E,38.162728,-121.6115749,Index,North,N/A,N/A
+USFW Beach Seine,SR024E,38.2403924,-121.5547949,Index,North,N/A,N/A
+USFW Beach Seine,SR043W,38.3830491,-121.5208997,Index,North,N/A,N/A
+USFW Beach Seine,SR049E,38.4780512,-121.543378,Index,North,N/A,N/A
+USFW Beach Seine,SR055E,38.5273942,-121.5293747,Index,North,N/A,N/A
+USFW Beach Seine,SR057E,38.559775,-121.5163611,Index,North,N/A,N/A
+USFW Beach Seine,SR060E,38.600536,-121.5091653,Index,North,N/A,N/A
+USFW Beach Seine,SR062E,38.5992222,-121.5428694,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR071E,38.6727458,-121.6248473,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR080E,38.7841498,-121.6178397,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR090W,38.8013471,-121.723532,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR094E,38.8530049,-121.7265503,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR119E,39.0246492,-121.8220253,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR130E,39.1106217,-121.9032922,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR138E,39.1942668,-121.9371027,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SR143W,39.216859,-122.012492,Index,Sacramento,N/A,N/A
+USFW Beach Seine,SS011N,38.3047219,-121.5749397,Index,North,N/A,N/A
+USFW Beach Seine,TM001N,38.1166607,-121.6837998,Index,North,N/A,N/A
+USFW Beach Seine,WD002W,37.9554698,-121.6042633,Index,South,N/A,N/A
+USFW Beach Seine,XC001N,38.2455204,-121.5037624,Index,South,N/A,N/A

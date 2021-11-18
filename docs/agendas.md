@@ -1,5 +1,14 @@
 ## Previous meetings
 
+### [2020-08-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.08.12)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:45 &nbsp;&nbsp; Bayesian Network analysis - fun but probably dangerous. ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:45 - 2:15 &nbsp;&nbsp; Application of [MARSS](https://nwfsc-timeseries.github.io/MARSS/) to analyze 40 years of fish abundance data ([Denise Colombano](https://denise-colombano.github.io/), [UC Berkeley](https://nature.berkeley.edu/))  
+2:15 - 2:20 &nbsp;&nbsp; Break  
+2:20 - 2:50 &nbsp;&nbsp; Creating reproducible reports using R Markdown (James White, [CDFW](https://wildlife.ca.gov/))  
+2:50 - 3:00 &nbsp;&nbsp; [HEC-DSS](https://www.hec.usace.army.mil/software/hec-dss/) and R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+
 ### [2020-05-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.05.13)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
