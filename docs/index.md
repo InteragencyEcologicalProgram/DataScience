@@ -20,7 +20,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 1:05 - 1:25 &nbsp;&nbsp; Relativity in the univeRse: file path behavior in different workflows ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:25 - 1:55 &nbsp;&nbsp; Preliminary responses of the food web to tidal wetland restoration ([Ryan Peek](https://ryanpeek.org/), [UC Davis Center for Watershed Sciences](https://watershed.ucdavis.edu/))    
+1:25 - 1:55 &nbsp;&nbsp; Wrangling Ridiculous River Data with R: Linking Biological Stream Condition with Flow Alteration ([Ryan Peek](https://ryanpeek.org/), [UC Davis Center for Watershed Sciences](https://watershed.ucdavis.edu/))    
 1:55 - 2:00 &nbsp;&nbsp; Break  
 2:00 - 2:30 &nbsp;&nbsp; An accessible, integrated database of 9 (and counting) fish surveys in the Bay-Delta ([Sam Bashevkin](https://sbashevkin.wixsite.com/larvecology/), [Delta Science Program](https://deltacouncil.ca.gov/delta-science-program/) and [Jeanette Clark](https://www.linkedin.com/in/jeanette-clark-8b11a0120/), [NCEAS](https://www.nceas.ucsb.edu/))   
 2:30 - 3:00 &nbsp;&nbsp; Visualizing multiple types on data on the same plot - how do I compare apples and oranges? ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
