@@ -1,6 +1,14 @@
 ## Previous meetings
 
-### [2020-11-18](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.11.18)
+### [2022-02-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.02.10)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+1:05 - 1:25 &nbsp;&nbsp; Relativity in the univeRse: file path behavior in different workflows ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
+1:25 - 1:55 &nbsp;&nbsp; Wrangling Ridiculous River Data with R: Linking Biological Stream Condition with Flow Alteration ([Ryan Peek](https://ryanpeek.org/), [UC Davis Center for Watershed Sciences](https://watershed.ucdavis.edu/))    
+1:55 - 2:00 &nbsp;&nbsp; Break  
+2:00 - 2:30 &nbsp;&nbsp; An accessible, integrated database of 9 (and counting) fish surveys in the Bay-Delta ([Sam Bashevkin](https://sbashevkin.wixsite.com/larvecology/), [Delta Science Program](https://deltacouncil.ca.gov/delta-science-program/) and [Jeanette Clark](https://www.linkedin.com/in/jeanette-clark-8b11a0120/), [NCEAS](https://www.nceas.ucsb.edu/))   
+
+### [2021-11-18](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.11.18)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:25 &nbsp;&nbsp; Points to linear isopleth, or how I mapped large wood density (Derek Acomb, [CDFW](https://wildlife.ca.gov/))  
@@ -9,7 +17,7 @@
 1:50 - 2:20 &nbsp;&nbsp; Fun with crowd-sourced data - iNaturalist data with the rinat package ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)). We’ll also be learning how to use the [taxize](https://cran.r-project.org/web/packages/taxize/taxize.pdf) package to aggregate taxonomic data into different levels and make [treemap](https://rpubs.com/brandonkopp/creating-a-treemap-in-r) plots and [ridgeline](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html) plots.  
 2:20 - 2:45 &nbsp;&nbsp; An introduction to lapply, sapply, and mapply ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 
-### [2020-08-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.08.12)
+### [2021-08-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.08.12)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:45 &nbsp;&nbsp; Bayesian Network analysis - fun but probably dangerous. ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
@@ -18,7 +26,7 @@
 2:20 - 2:50 &nbsp;&nbsp; Creating reproducible reports using R Markdown (James White, [CDFW](https://wildlife.ca.gov/))  
 2:50 - 3:00 &nbsp;&nbsp; [HEC-DSS](https://www.hec.usace.army.mil/software/hec-dss/) and R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 
-### [2020-05-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.05.13)
+### [2021-05-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.05.13)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; Folsom Dam Power Bypass for water temperature management: Evaluation using [SacPAS egg mortality tool](http://www.cbr.washington.edu/sacramento/grow/index.html) (Barb Byrne, [NMFS](https://www.fisheries.noaa.gov/))  
@@ -27,7 +35,7 @@
 2:15 - 3:15 &nbsp;&nbsp; Making metadata documents with [EMLaide](https://cvpia-osc.github.io/EMLaide/index.html) ([Sadie Gill](https://www.linkedin.com/in/sadiegill/), [FlowWest](https://www.flowwest.com/))  
 3:15 - 3:45 &nbsp;&nbsp; Introduction to the [officer package](https://davidgohel.github.io/officer/) for manipulating Word and PowerPoint documents from R ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 
-### [2020-02-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11)
+### [2021-02-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.02.11)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 2:00 &nbsp;&nbsp; Bringing open science to Tampa Bay with reproducible workflows and dynamic documents ([Marcus Beck](https://github.com/fawda123), [TBEP](https://tbep.org/))  
