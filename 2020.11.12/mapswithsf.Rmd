@@ -133,7 +133,7 @@ ggplot() +
  scalebar(data = EMPsf, dist = 20, dist_unit = "km",
            transform = TRUE, st.dist = .1) +
   
-  #there are a number of different optinos for north arrow symbols. ?north
+  #there are a number of different options for north arrow symbols. ?north
   north(data = waterways, symbol = 2) 
 
 ```
@@ -154,22 +154,26 @@ There are a number of free basemap sources online, including Google Maps, but St
 
 #download your map from online
 basemap = get_stamenmap(bbox = c(left = -122.6, 
-                                 right = -121.0, bottom = 37.5, top = 38.6),
+                                 right = -121.0, bottom = 37.4, top = 38.7),
                         maptype = "terrain")
 
 #use "ggmap" rather than "ggplot" to work with the basemap
 
 ggmap(basemap)+ #plot the basemap
   
-  geom_sf(data = waterways, inherit.aes = F)+ #add teh waterways. Be sure to use "inherit.aes=F"
+geom_sf(data = waterways, inherit.aes = F)+ #add teh waterways. Be sure to use "inherit.aes=F"
   
   geom_sf(data = EMPsf, aes(color = StationType, size = AverageDepth),inherit.aes = FALSE) + #add EMP
 
   #add scalebar and northa rrow
  scalebar(data = EMPsf, dist = 20, dist_unit = "km",
            transform = TRUE, st.dist = .1) +
-  scale_color_discrete(guide = FALSE) +
-  north(data = waterways, symbol = 2) 
+  scale_color_discrete(guide = "none") +
+  north(data = waterways, symbol = 2) +
+  
+    coord_sf(xlim = c(-122.6,-121),
+           ylim = c(37.4, 38.7),
+           expand = FALSE)
 
 ```
 ## Labels

@@ -13,7 +13,10 @@ library(visreg)
 #I downloaded the data set and subset just the data on Delta Smelt. 
 
 #load the file:
-FMWT_DS = read.csv("FMWT_DeltaSmelt.csv")[,-1]
+FMWT_DS = read.csv("2019.08.08_countmodels presentation/FMWT_DeltaSmelt.csv")[,-1]
+
+#check out the file format
+str(FMWT_DS)
 
 #switch Station to a factor and Date to a date
 FMWT_DS$Station = as.factor(FMWT_DS$Station)
@@ -27,6 +30,11 @@ FMWT_DS2 = filter(FMWT_DS, (Station == "608" | Station == "605" | Station == "60
 #smelt catch, I might try a linear model. However, linear models have assumptions of normality and
 #homogeneity of variance. 
 
+#First thing to do is check for normality. I like to start with a histogram
+hist(FMWT_DS2$catch, breaks = 50)
+#That is not a bell-shaped curve
+
+
 #Just see what a linear model looks like
 dslm = lm(catch~ Station + Secchi + TopEC, data = FMWT_DS2) 
 summary(dslm)
@@ -35,9 +43,6 @@ summary(dslm)
 #check out the diagnostic plots
 #if you need a review of what these plots mean: https://data.library.virginia.edu/diagnostic-plots/
 plot(dslm)
-
-#look at the histogram
-ggplot(FMWT_DS2, aes(x=catch)) + geom_histogram()
 
 #look at a Shapiro-wilk normality test
 shapiro.test(FMWT_DS2$catch)
@@ -50,6 +55,9 @@ FMWT_DS2$logcatch = log(FMWT_DS2$catch +1)
 
 shapiro.test(FMWT_DS2$logcatch)
 #but we are still not normal.
+hist(FMWT_DS2$logcatch, breaks = 30)
+
+
 
 #Furthermore, a lot of stastitions say you shouldn't transform count data.
 #instead we can use generalized linear models with different error distributions.
@@ -64,10 +72,10 @@ dsglm = glm(catch~ Station + Secchi + TopEC, family = poisson, data = FMWT_DS2)
 summary(dsglm)
 #Wow! super significant. but how are we on those diagnostic plots?
 plot(dsglm)
-#Not good. We might have overdispersion. Poisson models are genrally good at describing the mean,
+#Not good. We might have overdispersion. Poisson models are generally good at describing the mean,
 #but they usually underestimate the variance. 
 #To check for that, we look at the difference
-#between a posson and a quazipoisson distribution
+#between a poisson and a quazipoisson distribution
 
 #Quasipoisson
 #A quassipoisson model uses the mean regression function and variance from the Poisson regression,

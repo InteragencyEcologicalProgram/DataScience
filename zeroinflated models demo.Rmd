@@ -1,0 +1,223 @@
+---
+title: "ZINB Tutorial"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(MASS)
+library(DHARMa)
+library(glmmTMB)
+library(lmtest)
+library(pscl)
+
+```
+
+## Zero-inflated model example
+
+The data set: Catch of Delta Smelt in the Fall Midwater Trawl. We are going to subset it to just data from before 2011, because we want a lot of zeros, but not THAT many zeros.  We'll just do 1990-2011, becaues I don't want the dataset to be too big.
+
+FMWT data is avaialable here: ftp://ftp.wildlife.ca.gov/TownetFallMidwaterTrawl/FMWT%20Data/
+I downloaded the data set and subset just the data on Delta Smelt. 
+
+
+
+```{r}
+
+#load the file:
+FMWT_DS = read.csv("2019.08.08_countmodels presentation/FMWT_DeltaSmelt.csv")[,-1]
+
+#check out the file format
+str(FMWT_DS)
+
+#switch Station to a factor and Date to a date
+FMWT_DS$Station = as.factor(FMWT_DS$Station)
+FMWT_DS$Date = as.Date(FMWT_DS$Date)
+
+#just look at data from before 2011
+FMWT_DS2 = filter(FMWT_DS, Year <= 2011, Year > 1990)
+
+
+```
+
+## Get to know your data
+
+I want to use this dataset to investigate what environmental parameters affect Delta Smelt catch. Linear models (or generalized linear models) are my favorite tools for data analysis, but I need to pick the right distribution. If you caught Mike Beake's tutorial, you know about some common ways to deal with count data, such as log-transforming or using a Poisson or Negative binomial distribution. But the first step in any analysis is making sure  you understand your data. I like to start with a few basic visualizations and tests.
+
+First thing to do is check for normality. I like to start with a histogram. If our data is normally distributed, it will make a bell-shaped curve. If it is Poisson, it will be a downward-curving slope that turns into a bell curve when log transformed.
+
+```{r}
+hist(FMWT_DS2$catch, breaks = 50)
+
+```
+
+That's definitely not normal. It might be Poisson, but there are a LOT of zeros.
+
+Let's just see what it looks like when we log-transform it. We will need to add '1' to each value, because you can't log-transform zeros.
+
+```{r}
+FMWT_DS2$logcatch = log(FMWT_DS2$catch +1)
+
+hist(FMWT_DS2$logcatch, breaks = 30)
+
+```
+
+Well, we still don't have a bell curve after log-transforming, which means that a Poisson distribution won't work either. Just for the sake of the example, let's see what happens when we run a linear model on this. 
+
+```{r}
+dslm = lm(catch~  Secchi + TopEC, data = FMWT_DS2) 
+summary(dslm)
+```
+
+Woohoo! Lots of significant pvalues! But we are violating all sorts of assumptions
+
+Now we will check out the diagnostic plots if you need a review of what these plots mean: https://data.library.virginia.edu/diagnostic-plots/
+
+```{r}
+
+plot(dslm)
+
+
+```
+
+### Poisson
+
+So, based on our histograms, we probably don't have a Poisson distribution, but let's see what happens if we do. A lot of stastitions say you shouldn't transform count data. Instead we can use generalized linear models with different error distributions. https://www.r-bloggers.com/do-not-log-transform-count-data-bitches/
+https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00021.x
+
+```{r}
+
+dsglm = glm(catch~ Secchi + TopEC, family = poisson, data = FMWT_DS2) 
+summary(dsglm)
+#Wow! super significant. but how are we on those diagnostic plots?
+plot(dsglm)
+```
+
+
+Not good. We might have overdispersion. Plus a few outliers. Poisson models are generally good at describing the mean, but they usually underestimate the variance.  To check for that, we look at the difference between a poisson and a quazipoisson distribution.
+
+
+### Quasipoisson
+
+Quasipoisson's are kinda weird, so check out this explanation from Zuur et al. 2009:
+A quassipoisson model uses the mean regression function and variance from the Poisson regression, but leaves the dispersion parameter unrestricted. (in a Poisson model dispersion = 1). Do not write in your report or paper that you used a quasi-Poisson distribution. Just say that you did a Poisson GLM, detected overdispersion, and corrected the standard errors using a quasi-GLM model where the variance is given by φ × μ, where μ is the mean and φ the dispersion parameter.
+
+
+```{r}
+
+
+dsglm2 = glm(catch~  Secchi + TopEC, family = quasipoisson, data = FMWT_DS2) 
+print("dispersion coefficient")
+summary(dsglm2)$dispersion 
+
+#test for differences between the two model specifications
+print("p-value")
+pchisq(summary(dsglm2)$dispersion * dsglm$df.residual, dsglm$df.residual, lower = F)
+#it's very overdisperssed
+
+
+```
+
+### Negative Binomial
+
+We can try and see if a negative binomial model fits better than a quazipoisson. Negative binomial distributions account for overdisperssion, but variance is a quadratic function of the mean rather than a linear function of the mean (as in quazipoisson). There is lots of discussion as to which is better (e.g. Ver Hoef and Bveng 2007)
+
+```{r}
+dsnb2 = glm.nb(catch~  Secchi + TopEC,  data = FMWT_DS2) 
+summary(dsnb2)
+plot(dsnb2)
+```
+
+Some of these plots look a little better, but not much. The problem is, we have too many zeros, which isn't dealt with well in either quazipoisson or negative binomial models. 
+
+## Too many Zeros
+ 
+To deal with excess zeros, we can use a zero-inflated model, or a zero-augmented model (hurdle model)
+to figure out which to use, we need to understand the potential sources of zeros (modefied from Zuur et al 2009):
+1. Structural zeros. Delta smelt are not caught because the habitat is not suitable (too hot, to clear, too salty).
+2. Design error. Delta smelt are not caught because the midwater trawl doesn't sample the top part of hte water well and smelt hang out near the surface.
+3. Observer error. Delta smelt were caught, but Rosie thought they were Wakasagi.
+4. Smelt error. The habitat was suitable but the smelt weren't using it.
+
+Structural zeros and "smelt error" are considered "true zeros", 
+whereas design error and observer error are "false zeros"
+
+Zero-augmented models (two-part models or hurdle models) do not differentiate between types of zeros.
+Zero-inflated models (mixture models) do differentiate so you can model zeros caused by the habitat being bad seperately from the zeros caused by observer or design error.
+
+### ZIP and ZINB
+
+The overdisperssion in our Poisson model may have just been caused by the extra zeros, so a zero inflated Poisson might work. If there was also overdisspersion in the counts, then a zero inflated negative binomial will work better. Therefore, we will try both models and see which works better. To run these models we use the `glmmTMB` package
+
+However, before we run it it helps to put all the explanitory variables on the same scale.
+
+```{r}
+
+FMWT_DS2$TopEC2 = scale(FMWT_DS2$TopEC)
+FMWT_DS2$Secchi2 = scale(FMWT_DS2$Secchi)
+
+#try a zero-inflated Poisson
+dszip = glmmTMB(catch~ TopEC2 + Secchi2, ziformula = ~.,  family = "poisson", data = FMWT_DS2)
+summary(dszip)
+```
+
+Note that the `ziformula` statement allows you to speficiy a different set of variables for the zero inflation part of it than the count part of it. So if you think that the counts are based on turbidity and salinity, but zeros are based on region of the Delta, then you might want to specify them differently. Using `~.` means you use the same set of variables for both models. You can also include random effects, which will be covered this afternoon.
+
+Now a zero-inflated negative binomial.
+
+
+```{r}
+dsznb = glmmTMB(catch~ TopEC2 + Secchi2, ziformula = ~.,  family = "nbinom1", data = FMWT_DS2)
+summary(dsznb)
+```
+
+Compare the zeroinflated models with a likelihood ratio test to see if we've dealt with the overdispersion.
+
+```{r}
+
+lrtest(dszip, dsznb)
+```
+
+It's telling me I'm still overdisperssed, I should use the negative binomial version.
+
+Let's look at the covariates again. The covariates in teh count model are what you are used to, but sometimes the results will look a little funny because they will not include the "extra" zeros. So the coefficients might look different from what you would expect based on the mean for each group. The zero-inflation model is a little harder to interpret. This is showing you the probability of "extra" zeros. Higher coefficients means more zeros, lower coefficients mean fewer zeros. 
+
+```{r}
+summary(dsznb)
+```
+
+Unfortunately, we can't just use the 'plot' function for these models. To run the same type of diagnostic plots, we need to use some functions from the DHARma package.
+
+We need to simulate the residuals and then make our residuals versus predicted plot and our normal QQ plots.
+
+```{r}
+dsznb_simres = simulateResiduals(dsznb)
+
+plot(dsznb_simres)
+
+```
+
+```{r}
+library(effects)
+(ae <-allEffects(dsznb)) 
+plot(ae)
+
+```
+
+## Hurdle Model
+
+Hurdle models cant model the different types of models differently, so Inhaven't used them as often. But they may be useful for certain situations, especially if you have high confidence in your presence/absence data, or very complicated model structure that doesn't work with the glmmTMB funciton.
+
+Hurdle models basically have two steps. THey first run a binomial model on presence/absence. Then they subset the data to include only the "presences" and run a generalized linear model on those presences. You can do this 'by hand' by subsetting your data and running two models, or you can use the `hurdle` function from the `pscl` package available in R. 
+
+```{r}
+
+hurd = hurdle(catch~ TopEC2 + Secchi2,   dist = "negbin", data = FMWT_DS2)
+summary(hurd)
+```
+
+Note that the coefficients in the zero hurdle model are in the oposite direction from the zero-inflated models. These are the probabilities of presence, not the probabilities of extra zeros. So it's  a little confusing. I'm sorry.
+
+This is already more stuff than I can cover in a 15 minute presentation, so we'll leave that there. But hopefully this is enoguh to get you started. 
