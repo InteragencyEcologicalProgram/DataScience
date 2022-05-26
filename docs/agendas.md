@@ -3,10 +3,10 @@
 ### [2022-05-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.05.12)
 
 1:00 - 1:20 &nbsp;&nbsp; Microsoft R Open: multi-threaded computing ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:20 - 1:50 &nbsp;&nbsp; [Working with satellite raster data in R](Working_with_raster_data_R/raster_data_slides.html) (Dave Bosworth, [DWR](https://water.ca.gov/))  
+1:20 - 1:50 &nbsp;&nbsp; [Working with satellite raster data in R](presentations/Working_with_raster_data_R/raster_data_slides.html) (Dave Bosworth, [DWR](https://water.ca.gov/))  
 1:50 - 1:55 &nbsp;&nbsp; Break  
 1:55 - 2:15 &nbsp;&nbsp; Assessing multinomial logistic regression models ([Christian Denney](https://scholar.google.com/citations?user=eAYScTMAAAAJ&hl=en), [UC Davis](https://www.ogfishlab.com/people/))   
-2:15 - 2:45 &nbsp;&nbsp; [Small, Medium, Large - An introduction to ordinal regression](ordinalregressions.html)  ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+2:15 - 2:45 &nbsp;&nbsp; [Small, Medium, Large - An introduction to ordinal regression](presentations/ordinalregressions.html)  ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
 
 ### [2022-02-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.02.10)
 
@@ -22,7 +22,7 @@
 1:05 - 1:25 &nbsp;&nbsp; Points to linear isopleth, or how I mapped large wood density (Derek Acomb, [CDFW](https://wildlife.ca.gov/))  
 1:25 - 1:45 &nbsp;&nbsp; Preliminary responses of the food web to tidal wetland restoration (Christy Bowles, [CDFW](https://wildlife.ca.gov/))  
 1:45 - 1:50 &nbsp;&nbsp; Break  
-1:50 - 2:20 &nbsp;&nbsp; Fun with crowd-sourced data - iNaturalist data with the rinat package ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)). We’ll also be learning how to use the [taxize](https://cran.r-project.org/web/packages/taxize/taxize.pdf) package to aggregate taxonomic data into different levels and make [treemap](https://rpubs.com/brandonkopp/creating-a-treemap-in-r) plots and [ridgeline](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html) plots.  
+1:50 - 2:20 &nbsp;&nbsp; [Fun with crowd-sourced data - iNaturalist data with the rinat package](presentations/rinat.html) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)). We’ll also be learning how to use the [taxize](https://cran.r-project.org/web/packages/taxize/taxize.pdf) package to aggregate taxonomic data into different levels and make [treemap](https://rpubs.com/brandonkopp/creating-a-treemap-in-r) plots and [ridgeline](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html) plots.  
 2:20 - 2:45 &nbsp;&nbsp; An introduction to lapply, sapply, and mapply ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 
 ### [2021-08-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2021.08.12)
@@ -64,7 +64,7 @@
 2:10 - 2:30 &nbsp;&nbsp; Peak Pumpkin Spice: When will it end?: The indefinite analysis continues ([Andrew M. Deines](https://www.exponent.com/professionals/d/deines-andrew-m), [Exponent](https://www.exponent.com))  
 2:30 - 2:35 &nbsp;&nbsp; Break  
 2:35 - 2:55 &nbsp;&nbsp; Earth Engine for Earth Observation (Dan Constable, [Delta Council](https://deltacouncil.ca.gov/))  
-2:55 - 3:30 &nbsp;&nbsp; [An intro to making maps with sf](mapswithsf.html) (Rosemary Hartman, [DWR](https://water.ca.gov/))
+2:55 - 3:30 &nbsp;&nbsp; [An intro to making maps with sf](presentations/mapswithsf.html) (Rosemary Hartman, [DWR](https://water.ca.gov/))
 
 ### [2020-08-13](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2020.08.12)
 
