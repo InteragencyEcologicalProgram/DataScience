@@ -16,13 +16,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 #### Next Meeting
 
-**1:00 - 2:45 pm PDT on 12 May 2022** via [Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWEwY2VjYTYtZWVmMC00M2YzLTk4MzMtZDE2NjFmMmIzMjU2%40thread.v2/0?context=%7b%22Tid%22%3a%22b71d5652-4b83-4257-afcd-7fd177884564%22%2c%22Oid%22%3a%22984f44d5-4180-46ad-9b77-e367b17d9727%22%7d)
-
-1:00 - 1:20 &nbsp;&nbsp; Microsoft R Open: multi-threaded computing ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:20 - 1:50 &nbsp;&nbsp; Working with satellite raster data in R (Dave Bosworth, [DWR](https://water.ca.gov/))  
-1:50 - 1:55 &nbsp;&nbsp; Break  
-1:55 - 2:15 &nbsp;&nbsp; Assessing multinomial logistic regression models ([Christian Denney](https://scholar.google.com/citations?user=eAYScTMAAAAJ&hl=en), [UC Davis](https://www.ogfishlab.com/people/))   
-2:15 - 2:45 &nbsp;&nbsp; Small, Medium, Large - An introduction to ordinal regression ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+**1:00 - 4:00 pm PDT on 11 August 2022** via Microsoft Teams
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
