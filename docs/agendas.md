@@ -1,12 +1,12 @@
 ## Previous meetings
 
-### 2022-05-12
+### [2022-05-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.05.12)
 
 1:00 - 1:20 &nbsp;&nbsp; Microsoft R Open: multi-threaded computing ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:20 - 1:50 &nbsp;&nbsp; Working with satellite raster data in R (Dave Bosworth, [DWR](https://water.ca.gov/))  
+1:20 - 1:50 &nbsp;&nbsp; [Working with satellite raster data in R](Working_with_raster_data_R/raster_data_slides.html) (Dave Bosworth, [DWR](https://water.ca.gov/))  
 1:50 - 1:55 &nbsp;&nbsp; Break  
 1:55 - 2:15 &nbsp;&nbsp; Assessing multinomial logistic regression models ([Christian Denney](https://scholar.google.com/citations?user=eAYScTMAAAAJ&hl=en), [UC Davis](https://www.ogfishlab.com/people/))   
-2:15 - 2:45 &nbsp;&nbsp; Small, Medium, Large - An introduction to ordinal regression ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+2:15 - 2:45 &nbsp;&nbsp; [Small, Medium, Large - An introduction to ordinal regression](ordinalregressions.html)  ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
 
 ### [2022-02-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.02.10)
 
