@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Working with Raster Data in R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dave Bosworth CA Department of Water Resources" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Working with Raster Data in R
+]
+.subtitle[
+## Using satellite data for Harmful Algal Blooms (HABs) as an example
+]
+.author[
+### Dave Bosworth<br>CA Department of Water Resources
+]
+.date[
+### Data Science PWT Meeting<br>May 12, 2022
+]
+
+---
+
+
+
+
+# Satellite data for Harmful Algal Blooms
+
+San Francisco Estuary Institute's (SFEI) HAB Satellite Analysis Tool: &lt;https://fhab.sfei.org/&gt;
+
+Provides CyanoHAB abundance estimates for all of California using a Cyanobacteria Index (CI)
+
+&lt;img src="images/SFEI_HAB_Satellite_Tool.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Objective
+
+- Pull out raster pixels of Cyanobacteria Index (CI) for four open water regions in the SF Estuary:
+  
+  - Liberty Island
+  - Franks Tract
+  - Mildred Island
+  - Clifton Court Forebay
+
+--
+
+- Count the number of pixels in each region that fall within four CI categories (Low, Moderate, High, Very High) and two additional categories (Non-detect, Invalid or Missing)
+
+--
+
+- Repeat this procedure for every day with valid imagery between May-October in years 2020 and 2021
+
+---
+
+# Tools
+
+- `stars` - importing and visualizing raster files
+
+- `exactextractr` - extracting raster pixels using polygons, zonal statistics
+
+- `sf` - importing, visualizing, and working with spatial data (polygons)
+
+- `tidyverse` - general data manipulation and visualizing
+
+---
+class: inverse, middle
+
+# Simple Example
+
+Import and process a single raster file
+
+---
+
+# Import raster file as a stars object
+
+
+```r
+library(stars)
+library(here)
+
+# Import satellite raster file from 7/29/2021 as a stars object
+fp_pres &lt;- here("2022.05.12/Working_with_raster_data_R")
+strs_hab_sat &lt;- read_stars(file.path(fp_pres, "spatial_data/hab_satellite_2021-07-29.tif"))
+```
+
+---
+
+# What is a stars object?
+
+
+```r
+strs_hab_sat
+```
+
+```
+## stars object with 2 dimensions and 1 attribute
+## attribute(s), summary of first 1e+05 cells:
+##  hab_satellite_2021-07-29.tif 
+##  255    :92814                
+##  252    : 4978                
+##  0      :  927                
+##  254    :  875                
+##  253    :  395                
+##  251    :   11                
+##  (Other):    0                
+## dimension(s):
+##   from   to  offset delta                refsys point values x/y
+## x    1 3180 -171897   300 WGS 84 / UTM zone 11N FALSE   NULL [x]
+## y    1 3933 4774104  -300 WGS 84 / UTM zone 11N FALSE   NULL [y]
+```
+
+---
+
+# Modifying a stars object
+
+
+```r
+library(dplyr)
+
+# Convert pixel attributes from factor to numeric
+strs_hab_sat_c &lt;- strs_hab_sat %&gt;% mutate(across(everything(), ~ as.numeric(as.character(.x))))
+strs_hab_sat_c
+```
+
+```
+## stars object with 2 dimensions and 1 attribute
+## attribute(s), summary of first 1e+05 cells:
+##                               Min. 1st Qu. Median     Mean 3rd Qu. Max.
+## hab_satellite_2021.07.29.tif     0     255    255 252.4697     255  255
+## dimension(s):
+##   from   to  offset delta                refsys point values x/y
+## x    1 3180 -171897   300 WGS 84 / UTM zone 11N FALSE   NULL [x]
+## y    1 3933 4774104  -300 WGS 84 / UTM zone 11N FALSE   NULL [y]
+```
+
+---
+
+# What does it look like?
+
+.pull-left[
+### Code
+
+***
+
+.small[
+
+```r
+library(ggplot2)
+library(sf)
+
+# Import CA boundary shapefile
+sf_ca_bound &lt;-
+  read_sf(file.path(fp_pres, "spatial_data/CA_State_TIGER2016.shp")) %&gt;%
+  st_transform(crs = st_crs(strs_hab_sat_c))
+
+# Plot satellite data
+ggplot() +
+  geom_stars(data = strs_hab_sat_c) +
+  scale_fill_viridis_b(name ="Cyano Index") +
+  geom_sf(
+    data = sf_ca_bound,
+    alpha = 0,
+    color = "black",
+    size = 1
+  ) +
+  theme_bw()
+```
+]
+]
+
+.pull-right[
+![](raster_data_slides_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# Crop raster using a bounding box
+
+.pull-left[
+### Code
+
+***
+
+.small[
+
+```r
+library(deltamapr)
+
+# Convert crs of WW_Delta to crs of satellite data
+WW_Delta_32611 &lt;- WW_Delta %&gt;%
+  st_transform(crs = st_crs(strs_hab_sat_c))
+
+# Create a bounding box of the WW_Delta shapefile which will
+  # be used to crop the satellite data
+bbox_WW_Delta &lt;- st_bbox(WW_Delta_32611)
+
+# Crop the satellite raster
+strs_hab_sat_crop &lt;- st_crop(strs_hab_sat_c, bbox_WW_Delta)
+
+# Plot cropped satellite data
+ggplot() +
+  geom_stars(data = strs_hab_sat_crop) +
+  scale_fill_viridis_b(name ="Cyano Index") +
+  geom_sf(data = WW_Delta_32611, alpha = 0) +
+  theme_bw()
+```
+]
+]
+
+.pull-right[
+![](raster_data_slides_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# Import polygon shapefile
+
+
+```r
+# Import the polygon shapefile for the four open water regions in the Delta
+sf_ow_delta &lt;- read_sf(file.path(fp_pres, "spatial_data/Franks_Mildr_CCF_LibIsl.shp")) %&gt;% 
+  rename(Region = HNAME) %&gt;% 
+  st_transform(crs = st_crs(strs_hab_sat_c))
+
+sf_ow_delta
+```
+
+```
+## Simple feature collection with 4 features and 1 field
+## Geometry type: POLYGON
+## Dimension:     XY
+## Bounding box:  xmin: 89119.94 ymin: 4195656 xmax: 103911.8 ymax: 4251249
+## Projected CRS: WGS 84 / UTM zone 11N
+## # A tibble: 4 x 2
+##   Region                                                                geometry
+## * &lt;chr&gt;                                                            &lt;POLYGON [m]&gt;
+## 1 Franks Tract          ((95543.62 4217839, 95530.52 4217840, 95517.5 4217842, ~
+## 2 Mildred Island        ((103595.5 4213914, 103584.7 4213910, 103573.8 4213906,~
+## 3 Clifton Court Forebay ((96397.16 4195656, 96394.43 4195656, 96367.03 4195657,~
+## 4 Liberty Island        ((90057.41 4242851, 90044.31 4242852, 90031.3 4242853, ~
+```
+
+---
+
+# Extract raster information contained within polygons
+
+- The `exact_extract` function will return a dataframe of the extracted pixel values within each polygon
+- Its possible to alternatively provide a summary function to run on the extracted pixel values, in which case `exact_extract` will return the result of the summary function for each polygon
+- More information can be found in the documentation: &lt;https://isciences.gitlab.io/exactextractr/reference/exact_extract.html&gt;
+
+
+
+```r
+library(exactextractr)
+
+# Convert cropped satellite data to a raster object to work with `exactextractr`
+rast_hab_sat_crop &lt;- as(strs_hab_sat_crop, "Raster")
+
+# Use `exact_extract` function to extract raster information for the four open
+  # water regions in the Delta
+df_hab_sat_extr &lt;- sf_ow_delta %&gt;% 
+  mutate(df_rast_extr = exact_extract(rast_hab_sat_crop, sf_ow_delta)) %&gt;% 
+  st_drop_geometry()
+```
+
+---
+
+# What does the resulting dataframe look like?
+
+The `df_rast_extr` column contains a list of dataframes with one dataframe for each Region or polygon
+
+
+```r
+df_hab_sat_extr
+```
+
+```
+## # A tibble: 4 x 2
+##   Region                df_rast_extr  
+## * &lt;chr&gt;                 &lt;list&gt;        
+## 1 Franks Tract          &lt;df [264 x 2]&gt;
+## 2 Mildred Island        &lt;df [92 x 2]&gt; 
+## 3 Clifton Court Forebay &lt;df [165 x 2]&gt;
+## 4 Liberty Island        &lt;df [225 x 2]&gt;
+```
+
+---
+
+# What does the dataframe for Franks Tract look like?
+
+Each row represents a pixel either completely or partially within the Franks Tract polygon 
+
+
+```r
+df_hab_sat_extr_fr &lt;- as_tibble(df_hab_sat_extr$df_rast_extr[[1]])
+df_hab_sat_extr_fr
+```
+
+```
+## # A tibble: 264 x 2
+##    value coverage_fraction
+##    &lt;dbl&gt;             &lt;dbl&gt;
+##  1   252          0.00865 
+##  2   252          0.136   
+##  3   252          0.000332
+##  4   254          0.0690  
+##  5   254          0.285   
+##  6   254          0.00363 
+##  7   252          0.130   
+##  8   254          0.723   
+##  9   152          1       
+## 10   161          0.812   
+## # ... with 254 more rows
+```
+
+---
+
+# What does the dataframe for Franks Tract look like?
+
+**Column definitions:**
+
+- `value` - the value assigned to the pixel
+- `coverage_fraction` - the proportion of the pixel that is contained within the polygon with 1 indicating that the pixel is completely within the polygon
+
+
+```r
+summary(df_hab_sat_extr_fr)
+```
+
+```
+##      value       coverage_fraction
+##  Min.   :  0.0   Min.   :0.0000   
+##  1st Qu.:162.0   1st Qu.:0.7200   
+##  Median :182.5   Median :1.0000   
+##  Mean   :187.3   Mean   :0.8133   
+##  3rd Qu.:252.0   3rd Qu.:1.0000   
+##  Max.   :254.0   Max.   :1.0000
+```
+
+---
+
+# Pixel classification into CI categories
+
+&lt;img src="images/SFEI_HAB_Satellite_pixel_values.jpg" width="47%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+Image from the SFEI HAB Satellite
+&lt;br&gt; Analysis Tool: &lt;https://fhab.sfei.org/&gt;
+]
+
+---
+
+# Pixel classification into CI categories
+
+.pull-left[
+### Code
+
+***
+
+.small[
+
+```r
+df_franks_cat &lt;- df_hab_sat_extr_fr %&gt;% 
+  # Only include pixels completely within 
+    # the polygon (100% coverage fraction)
+  filter(coverage_fraction == 1) %&gt;% 
+  mutate(
+    CI_category = case_when(
+      value == 0 ~ "Non_detect",
+      value &lt;= 41 ~ "Low",
+      value &lt;= 99 ~ "Moderate",
+      value &lt;= 183 ~ "High",
+      value &lt;= 250 ~ "Very_high",
+      TRUE ~ "Invalid_or_missing"
+    )
+  )
+
+df_franks_cat
+```
+]
+]
+
+.pull-right[
+### Output
+
+***
+
+
+```
+## # A tibble: 166 x 3
+##    value coverage_fraction CI_category       
+##    &lt;dbl&gt;             &lt;dbl&gt; &lt;chr&gt;             
+##  1   152                 1 High              
+##  2   254                 1 Invalid_or_missing
+##  3   157                 1 High              
+##  4   151                 1 High              
+##  5   147                 1 High              
+##  6   156                 1 High              
+##  7   254                 1 Invalid_or_missing
+##  8   252                 1 Invalid_or_missing
+##  9     0                 1 Non_detect        
+## 10     0                 1 Non_detect        
+## # ... with 156 more rows
+```
+]
+
+---
+
+# Count number of pixels in each CI category
+
+
+```r
+df_franks_ci_count &lt;- df_franks_cat %&gt;% count(CI_category)
+df_franks_ci_count
+```
+
+```
+## # A tibble: 4 x 2
+##   CI_category            n
+##   &lt;chr&gt;              &lt;int&gt;
+## 1 High                 104
+## 2 Invalid_or_missing    17
+## 3 Non_detect            22
+## 4 Very_high             23
+```
+
+---
+
+# Classify and count CI categories for all four regions
+
+We could repeat the classification and counting procedure we used above to produce pixel counts in each CI category for the remaining 3 regions by simple copying and pasting. However, we'll use some **functional programming** to not repeat ourselves.
+
+
+```r
+# Function to count the number of pixels within each CI category for the pixels
+  # completely within the polygon (100% coverage fraction)
+count_ci_cat &lt;- function(df) {
+  df %&gt;%
+    filter(coverage_fraction == 1) %&gt;%
+    mutate(
+      CI_category = case_when(
+        value == 0 ~ "Non_detect",
+        value &lt;= 41 ~ "Low",
+        value &lt;= 99 ~ "Moderate",
+        value &lt;= 183 ~ "High",
+        value &lt;= 250 ~ "Very_high",
+        TRUE ~ "Invalid_or_missing"
+      )
+    ) %&gt;% 
+    count(CI_category, name = "pixel_count")
+}
+```
+
+---
+
+# Classify and count CI categories for all four regions
+
+
+```r
+library(purrr)
+
+# Run the `count_ci_cat` function on each region
+df_hab_sat_count &lt;- df_hab_sat_extr %&gt;% mutate(df_ci_count = map(df_rast_extr, count_ci_cat))
+df_hab_sat_count
+```
+
+```
+## # A tibble: 4 x 3
+##   Region                df_rast_extr   df_ci_count 
+##   &lt;chr&gt;                 &lt;list&gt;         &lt;list&gt;      
+## 1 Franks Tract          &lt;df [264 x 2]&gt; &lt;df [4 x 2]&gt;
+## 2 Mildred Island        &lt;df [92 x 2]&gt;  &lt;df [2 x 2]&gt;
+## 3 Clifton Court Forebay &lt;df [165 x 2]&gt; &lt;df [2 x 2]&gt;
+## 4 Liberty Island        &lt;df [225 x 2]&gt; &lt;df [2 x 2]&gt;
+```
+
+---
+
+# Classify and count CI categories for all four regions
+
+
+```r
+library(tidyr)
+
+# Restructure the dataframe with the CI category counts for all four regions
+df_hab_sat_count_f &lt;- df_hab_sat_count %&gt;% 
+  select(-df_rast_extr) %&gt;% 
+  unnest(df_ci_count) %&gt;% 
+  pivot_wider(names_from = CI_category, values_from = pixel_count)
+
+df_hab_sat_count_f
+```
+
+```
+## # A tibble: 4 x 5
+##   Region                 High Invalid_or_missing Non_detect Very_high
+##   &lt;chr&gt;                 &lt;int&gt;              &lt;int&gt;      &lt;int&gt;     &lt;int&gt;
+## 1 Franks Tract            104                 17         22        23
+## 2 Mildred Island           NA                 25         17        NA
+## 3 Clifton Court Forebay    NA                 24         85        NA
+## 4 Liberty Island           NA                 43        101        NA
+```
+
+---
+class: inverse, middle
+
+# Apply across multiple years of data
+
+A few tips on making process more efficient
+
+---
+
+# Downloading satellite raster files with a URL
+
+- The SFEI HAB Satellite Analysis Tool allows for daily satellite raster files to be downloaded by month as a zip file
+- The zip file for each month of data has a unique and predictable URL and can be downloaded and unzipped using R with the `curl::curl_download()` and `unzip()` functions
+
+
+```r
+# Download data for July 2021 as an example
+library(curl)
+
+url_hab &lt;- "https://fhab.sfei.org/lib/download.php?request=download&amp;dltype=month&amp;year=2021&amp;month=7&amp;product=Mosaic"
+curl_download(url = url_hab, destfile = file_zip)
+unzip(zipfile = file_zip, exdir = fp_file_unzip)
+```
+
+---
+
+# Stars proxy objects
+
+- The `stars` package allows for raster files to be imported as stars proxy objects to handle large image files without exceeding the RAM on your computer
+- Stars proxy objects can be manipulated and processed, but all reading and methods are delayed until the data are actually needed
+
+
+```r
+methods(class = "stars_proxy")
+```
+
+```
+##  [1] [               [[&lt;-            [&lt;-             adrop          
+##  [5] aggregate       aperm           as.data.frame   c              
+##  [9] coerce          dim             droplevels      filter         
+## [13] hist            initialize      is.na           Math           
+## [17] merge           mutate          Ops             plot           
+## [21] predict         print           pull            rename         
+## [25] replace_na      select          show            slice          
+## [29] slotsFromS3     split           st_apply        st_as_sf       
+## [33] st_as_stars     st_crop         st_dimensions&lt;- st_downsample  
+## [37] st_mosaic       st_redimension  st_sample       st_set_bbox    
+## [41] transmute       write_stars    
+## see '?methods' for accessing help and source code
+```
+
+---
+
+# Stars proxy objects
+
+For example, we can compare how long it takes to import the satellite raster file from 7/29/2021 used above importing it as a stars object vs. a stars proxy object
+
+
+```r
+library(microbenchmark)
+
+fp_hab_sat &lt;- file.path(fp_pres, "spatial_data/hab_satellite_2021-07-29.tif")
+microbenchmark(
+  regular = read_stars(fp_hab_sat),
+  proxy = read_stars(fp_hab_sat, proxy = TRUE),
+  times = 10L
+)
+```
+
+```
+## Unit: milliseconds
+##     expr         min           lq         mean      median           uq
+##  regular 9823.189002 11231.876201 15760.460211 12989.09625 18623.245902
+##    proxy    1.806801     1.905701     3.588291     2.62715     3.555101
+##         max neval cld
+##  30398.9725    10   b
+##     12.1979    10  a
+```
+
+---
+
+# Stars proxy objects
+
+
+```r
+# Import satellite raster file from 7/29/2021 as a stars proxy object
+strs_prx_hab_sat &lt;- read_stars(fp_hab_sat, proxy = TRUE)
+strs_prx_hab_sat
+```
+
+```
+## stars_proxy object with 1 attribute in 1 file(s):
+## $`hab_satellite_2021-07-29.tif`
+## [1] "[...]/hab_satellite_2021-07-29.tif"
+## 
+## dimension(s):
+##   from   to  offset delta                refsys point values x/y
+## x    1 3180 -171897   300 WGS 84 / UTM zone 11N FALSE   NULL [x]
+## y    1 3933 4774104  -300 WGS 84 / UTM zone 11N FALSE   NULL [y]
+```
+
+---
+
+# Modifying a stars proxy object
+
+
+```r
+strs_prx_hab_sat_c &lt;- strs_prx_hab_sat %&gt;% 
+  # Convert pixel attributes from factor to numeric
+  mutate(across(everything(), ~ as.numeric(as.character(.x)))) %&gt;% 
+  # Crop to a bounding box
+  st_crop(bbox_WW_Delta)
+```
+
+---
+
+# Modifying a stars proxy object
+
+
+```r
+strs_prx_hab_sat_c
+```
+
+```
+## stars_proxy object with 1 attribute in 1 file(s):
+## $`hab_satellite_2021-07-29.tif`
+## [1] "[...]/hab_satellite_2021-07-29.tif"
+## 
+## dimension(s):
+##   from   to  offset delta                refsys point values x/y
+## x  594 1084 -171897   300 WGS 84 / UTM zone 11N FALSE   NULL [x]
+## y 1610 2071 4774104  -300 WGS 84 / UTM zone 11N FALSE   NULL [y]
+## call_list:
+## [[1]]
+## mutate(.data = .data, across(everything(), ~as.numeric(as.character(.x))))
+## attr(,".Environment")
+## &lt;environment: 0x0000000030391408&gt;
+## 
+## [[2]]
+## st_crop(x = x, y = y, crop = crop, epsilon = epsilon)
+## attr(,".Environment")
+## &lt;environment: 0x00000000303a04b8&gt;
+```
+
+---
+
+# Convert stars proxy object to a stars object
+
+
+```r
+st_as_stars(strs_prx_hab_sat_c)
+```
+
+```
+## stars object with 2 dimensions and 1 attribute
+## attribute(s):
+##                               Min. 1st Qu. Median     Mean 3rd Qu. Max.
+## hab_satellite_2021.07.29.tif     0     252    252 241.2228     252  254
+## dimension(s):
+##   from   to  offset delta                refsys point values x/y
+## x  594 1084 -171897   300 WGS 84 / UTM zone 11N FALSE   NULL [x]
+## y 1610 2071 4774104  -300 WGS 84 / UTM zone 11N FALSE   NULL [y]
+```
+
+---
+class: inverse, middle
+
+# Final Product
+
+Visualizing pixel counts of CI categories for four open water regions across 2020 and 2021
+
+---
+
+# Area Plot
+
+&lt;img src="images/CI_category_area_plot.jpg" width="43%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Useful Links
+
+- R Package documentation:
+  - `stars` - &lt;https://r-spatial.github.io/stars/index.html&gt;
+  - `exactextractr` - &lt;https://isciences.gitlab.io/exactextractr/index.html&gt;
+  - `sf` - &lt;https://r-spatial.github.io/sf/&gt;
+  - `raster` - &lt;https://rspatial.org/raster/&gt;
+  
+  
+- SFEI HAB Satellite Analysis Tool: &lt;https://fhab.sfei.org/&gt;
+
+- The `EDBdata` R data package on GitHub contains the code I used for downloading and processing HAB satellite raster data: &lt;https://github.com/mountaindboz/EDBdata&gt;
+
+- Slides created with the `xaringan` R package: &lt;https://github.com/yihui/xaringan&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/*-- In-line highlighting within text --*/
+.remark-code, .remark-inline-code {
+  font-size:          18px;
+  font-weight:        400;
+  color:              #231F20;
+  background:         #E8EDEE;
+  border-radius:      3px;
+}
+
+.small .remark-code {
+  font-size: 70%
+}
+
+/*-- Code chunk background layer --*/
+pre {
+  /*border: 2px solid rgba(204, 189, 204, 0.8); /* code chunk border*/
+  border:             none;
+  box-shadow:         2px 2px 2px 2px #eee;
+  padding:            0.1em;                    /* padding between code chunk and border */
+  background:         none !important;
+  overflow-x:         auto;                     /* enable horizontal scrolling with overflow */
+  border-radius:      1px;                      /* modify rounding of corners*/
+}
