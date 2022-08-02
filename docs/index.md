@@ -16,7 +16,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 #### Next Meeting
 
-**1:00 - 4:00 pm PDT on 11 August 2022** via Microsoft Teams
+**1:00 - 4:00 pm PDT on 10 November 2022** via Microsoft Teams
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
