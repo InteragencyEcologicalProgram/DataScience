@@ -16,14 +16,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 #### Next Meeting
 
-**1:00 - 2:30 pm PDT on 10 November 2022** via [Microsoft Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWEwY2VjYTYtZWVmMC00M2YzLTk4MzMtZDE2NjFmMmIzMjU2%40thread.v2/0?context=%7b%22Tid%22%3a%22b71d5652-4b83-4257-afcd-7fd177884564%22%2c%22Oid%22%3a%22984f44d5-4180-46ad-9b77-e367b17d9727%22%7d)
-
-1:00 - 1:05 &nbsp;&nbsp; Welcome ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
-1:05 - 1:15 &nbsp;&nbsp; BayDeltaLive.com Data Access and Graphing ([Dave Osti](https://www.linkedin.com/in/david-osti-9189a57/), [34 North](https://www.34north.com/))    
-1:15 - 1:35 &nbsp;&nbsp; Do aquifers have fingerprints? Cluster analysis of multi-well geochemistry in the Sacramento Valley ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:35 - 1:55 &nbsp;&nbsp; Comparing simple features using the mapview package ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
-1:55 - 2:00 &nbsp;&nbsp; Break  
-2:00 - 2:30 &nbsp;&nbsp; Dates and Times - why are they so hard? ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+**1:00 - 4:00 pm PST on 9 February 2022** via Microsoft Teams
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 

@@ -1,5 +1,14 @@
 ## Previous meetings
 
+### 2022-11-10
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+1:05 - 1:15 &nbsp;&nbsp; BayDeltaLive.com Data Access and Graphing ([Dave Osti](https://www.linkedin.com/in/david-osti-9189a57/), [34 North](https://www.34north.com/))    
+1:15 - 1:35 &nbsp;&nbsp; Do aquifers have fingerprints? Cluster analysis of multi-well geochemistry in the Sacramento Valley ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
+1:35 - 1:55 &nbsp;&nbsp; Comparing simple features using the mapview package ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
+1:55 - 2:00 &nbsp;&nbsp; Break  
+2:00 - 2:30 &nbsp;&nbsp; Dates and Times - why are they so hard? ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+
 ### [2022-05-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.05.12)
 
 1:00 - 1:20 &nbsp;&nbsp; Microsoft R Open: multi-threaded computing ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
