@@ -20,7 +20,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:15 &nbsp;&nbsp; Fun with Imagery: AI Restoration  (Dan Constable, [Delta Council](https://deltacouncil.ca.gov/))  
-1:15 - 1:45 &nbsp;&nbsp; R Markdown and Quarto: Creating "The Magic Button" for tech team handouts (Barb Byrne, [NMFS](https://www.fisheries.noaa.gov/))  
+1:15 - 1:45 &nbsp;&nbsp; R Markdown and Quarto: Beginner steps in automating reports and handouts (Barb Byrne, [NMFS](https://www.fisheries.noaa.gov/))  
 1:45 - 2:05 &nbsp;&nbsp; Salvage Database and Entrainment calculations ([Samreen Siddiqui](https://drsamreensiddiqui.godaddysites.com/), [CDFW](https://wildlife.ca.gov/))  
 2:05 - 2:25 &nbsp;&nbsp; QC Scripts in R for over 60 years of Summer Townet (Tim Malinich, [CDFW](https://wildlife.ca.gov/))  
 2:25 - 2:30 &nbsp;&nbsp; Break  
