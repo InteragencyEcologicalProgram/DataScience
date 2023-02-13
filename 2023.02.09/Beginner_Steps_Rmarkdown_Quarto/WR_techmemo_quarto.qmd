@@ -1,0 +1,60 @@
+---
+title: "wrtechmemo"
+author: "BB"
+format: docx
+editor: visual
+---
+
+## ASSOCIATED DOCUMENTS OR DATA FILES:
+
+Data and code files:
+
+-   *Survsacby22.xls*
+
+-   *JPEBY2022prelim.r*
+
+-   *JPEBY2022final.r*
+
+This memo summarizes data and calculations for (a) variance-weighted mean survivals and (b) JPE confidence interval for use in the BY 2022 winter-run JPE calculation.
+
+New data from BY 2021 smolts migrating out in spring 2022 includes:
+
+-   two releases of LSNFH hatchery fish at Redding; the combined survival estimate was used for the variance-weighted mean survival from Redding to the Delta.
+
+-   a release of Battle Creek jumpstart fish into Battle Creek
+
+-   the 2022 survivals were low, and had relatively high weighting, so the survival terms decreased a bit compared to last year's estimates (see cells I1:J4 on the "VWM survs" tab for comparison)
+
+ 
+
+May 2020 Battle Creek release excluded again, as for BY 2021 JPE calculation
+
+-   Last year, at the 12/15/21 meeting, the JPE subteam agreed to exclude the May 2020 Battle Creek release for the BY 2021 JPE calculation.
+
+-   The rationale was, as noted in the footnote to the JPE calculation table: "The survival rate of 64 fish on released on May 18, 2020 was not included in this calculation because fish size and environmental conditions did not represent expected conditions during the BY 2021 winter release."
+
+-   The survival subgroup suggests the same approach for the BY 2022 JPE calculation.
+
+Values of f and JPI for preliminary and final JPE:
+
+| Variable | Prelim | Final  |
+|----------|--------|--------|
+| f        | 0.4946 | 0.4946 |
+| JPE      | 44690  | 49924  |
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

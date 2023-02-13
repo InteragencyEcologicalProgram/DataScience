@@ -1,0 +1,143 @@
+---
+title: "WR tech memo DRAFT"
+author: "Barb Byrne, NMFS"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Associated Documents or Data Files
+
+Data and code files:
+
+* _Survsacby22.xls_
+* _JPEBY2022prelim.r_
+* _JPEBY2022final.r_
+
+## Summary of calculations for BY 2022 winter-run JPE
+
+This memo summarizes data and calculations for (a) variance-weighted mean survivals and (b) JPE confidence interval for use in the BY 2022 winter-run JPE calculation.
+
+**New data from BY 2021 smolts migrating out in spring 2022 includes:**
+
+* two releases of LSNFH hatchery fish at Redding; the combined survival estimate was used for the variance-weighted mean survival from Redding to the Delta.
+* a release of Battle Creek jumpstart fish into Battle Creek
+* the 2022 survivals were low, and had relatively high weighting, so the survival terms decreased a bit compared to last year's estimates (see cells I1:J4 on the "VWM survs" tab for comparison)
+
+**May 2020 Battle Creek release excluded again, as for BY 2021 JPE calculation**
+
+* Last year, at the 12/15/21 meeting, the JPE subteam agreed to exclude the May 2020 Battle Creek release for the BY 2021 JPE calculation.
+* The rationale was, as noted in the footnote to the JPE calculation table: "The survival rate of 64 fish on released on May 18, 2020 was not included in this calculation because fish size and environmental conditions did not represent expected conditions during the BY 2021 winter release."
+* The survival subgroup suggests the same approach for the BY 2022 JPE calculation.
+
+Values of f and JPI for preliminary and final JPE:
+
+|   Variable   | Preliminary | Final  |
+|:------------:|:-----------:|:------:|
+|      f       |   0.4946    | 0.4946 |
+|     JPI      |   278448    | 311058 |
+|     JPE      |    44690    | 49924  |
+| lower 95% CI |    29165    | 32298  |
+| upper 95% CI |    60216    | 67550  |
+
+## Code to calculate VWM survival and JPE
+
+```{r}
+##Performs the natural-origin JPE forecast, assuming Method 2 from
+##O'Farrell et al. 2018. SFEWS.
+#Modeled after JPE2020round.m2 for BY 2020 JPE estimate
+
+#working directory is"C:\Users\barbara.byrne\Documents\Winter run JPE\BY2022\JPEBY2022final"
+#setwd("~/Winter run JPE/BY2022/JPEBY2022final") 
+
+
+##==============================================================================
+## User inputs
+
+JPI <- 311058                         #fry-equivalent JPI (based on actual through 12/31/22 + extrapolated value;including genetics;
+                                      #received in updated JPE letter from Tracy Grimes on 1/6/23.)
+V.JPI <-452638929                     #fry-equivalent JPI variance, received from Bill Poytress on 1/6/23
+                                        
+##------------------------------------------------------------------------------
+
+f.hat <- 0.4946                         #fry-to-smolt survival rate (received from Mike O'Farrell on 12/1/22); unrounded value is 0.4946498
+V.f <- 0.006719416                       #fry-to-smolt survival rate variance (received from Mike O'Farrell on 12/1/22)
+
+##==============================================================================
+## Smolt survival rates
+
+z <- read.table("survsacby2022.csv", header=T, sep=",")
+
+vwm <- function(s, V){                  #function for variance-weighted mean
+    inv.var <- 1 / V                    #survival rate and the variance of that
+    w <- inv.var / sum(inv.var)         #survival rate
+    s.mean <- sum(s * w)
+    s.var <- 1 / sum(inv.var)
+
+    list(   surv = s.mean,
+          v.surv = s.var   )
+}
+
+## Natural-origin
+s.nat <- z$surv.salt.sac                #CJS-estimated surv rates (salt-sac)
+V.s.nat <- z$SE.salt.sac^2              #variances of s.nat
+
+s.nat.mean <- vwm(s.nat, V.s.nat)$surv
+s.nat.var  <- vwm(s.nat, V.s.nat)$v.surv
+round.s.nat.mean<-round(s.nat.mean, 4) #force to 4 digits after decimal
+
+## Hatchery-origin
+s.hat <- z$surv.redding.sac             #CJS-estimated surv rates (redding-sac)
+V.s.hat <- z$SE.redding.sac^2           #variances of s.hat
+
+s.hat.mean <- vwm(s.hat, V.s.hat)$surv
+s.hat.var  <- vwm(s.hat, V.s.hat)$v.surv
+
+##==============================================================================
+## Forecast natural-origin JPE
+
+JPE <- JPI * f.hat * round(s.nat.mean, 4) #JPE forecast
+                                          #enforce 4 sig digits for surv rate
+
+V.JPE <- (JPI^2 - V.JPI) *              #JPE variance (Gray 1999)
+    ((f.hat^2 * s.nat.var) + (round.s.nat.mean^2 * V.f) - (V.f * s.nat.var)) +
+        (f.hat^2 * round.s.nat.mean^2 * V.JPI)
+
+sd.JPE <- sqrt(V.JPE)                   #JPE standard deviation
+
+lci <- JPE - (1.96 * sd.JPE)            #lower 95% confidence interval
+uci <- JPE + (1.96 * sd.JPE)            #upper 95% confidence interval
+
+##==============================================================================
+## Output results
+
+options(scipen=999)
+
+sink("JPEBY2022final.forecast.out")
+
+cat(paste("JPI                  ", round(JPI,0)        , sep=" "), "\n")
+cat(paste("natural surv rate    ", round(s.nat.mean, 4), sep=" "), "\n")
+cat(paste("V natural surv rate  ",       s.nat.var     , sep=" "), "\n")
+cat(paste("f.hat                ", round(f.hat, 4)     , sep=" "), "\n")
+cat(paste("JPE                  ", round(JPE,0)        , sep=" "), "\n")
+cat(paste("V JPE                ", round(V.JPE)        , sep=" "), "\n")
+cat(paste("sd JPE               ", round(sd.JPE)       , sep=" "), "\n")
+cat(paste("L.95                 ", round(lci, 0)       , sep=" "), "\n")
+cat(paste("U.95                 ", round(uci, 0)       , sep=" "), "\n")
+cat(paste("hatchery surv rate   ", round(s.hat.mean, 4), sep=" "), "\n")
+cat(paste("V hatchery surv rate ",       s.hat.var     , sep=" "), "\n")
+
+sink()
+```
+
+## Exploration of survival by year
+
+```{r echo=TRUE}
+z <- read.table("survsacby2022.csv", header=T, sep=",")
+plot(z$year,z$surv.salt.sac)
+```
