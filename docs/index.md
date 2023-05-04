@@ -26,7 +26,9 @@ All presentations will be geared for people with some knowledge of R, but who co
 1:30 - 2:00 &nbsp;&nbsp; [Very basic statistics - linear models and ANOVAs](presentations/FMWTstats-demo.html)   (Rosemary Hartman, [DWR](https://water.ca.gov/))   
 2:00 - 2:30 &nbsp;&nbsp; Intro to ggplot2 (Kyle Hardage, [DWR](https://water.ca.gov/)))  
 2:30-2:40 - BREAK
+
 2:40 - 3:10 &nbsp;&nbsp; Basic Maps  (James White, CDFW) 
+
 3:10 - 3:40 &nbsp;&nbsp; Colors and color-blind friendly paletts (Dan Ellis, CDFW)
 
 
