@@ -24,12 +24,12 @@ All presentations will be geared for people with some knowledge of R, but who co
 1:00 - 1:05 &nbsp;&nbsp; Welcome (Rosemary Hartman, [DWR](https://water.ca.gov/))  
 1:05 - 1:30 &nbsp;&nbsp; [Data Manipulation - filtering, joining, selecting, and summarizing](presentations/FMWTdatademo.html) (Rosemary Hartman [DWR](https://water.ca.gov/))  
 1:30 - 2:00 &nbsp;&nbsp; [Very basic statistics - linear models and ANOVAs](presentations/FMWTstats-demo.html)   (Rosemary Hartman, [DWR](https://water.ca.gov/))   
-2:00 - 2:30 &nbsp;&nbsp; Intro to ggplot2 (Kyle Hardage, [DWR](https://water.ca.gov/)))  
+2:00 - 2:30 &nbsp;&nbsp; [Intro to ggplot2](presentations/Intro_ggplot2.nb.html) (Kyle Hardage, [DWR](https://water.ca.gov/)))  
 2:30-2:40 - BREAK
 
-2:40 - 3:10 &nbsp;&nbsp; Basic Maps  (James White, CDFW) 
+2:40 - 3:10 &nbsp;&nbsp; [Basic Maps](presentations/R maps.html)  (James White, CDFW) 
 
-3:10 - 3:40 &nbsp;&nbsp; Colors and color-blind friendly paletts (Dan Ellis, CDFW)
+3:10 - 3:40 &nbsp;&nbsp; Colors and color-blind friendly palettes (Dan Ellis, CDFW)
 
 
 

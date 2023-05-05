@@ -1,0 +1,294 @@
+---
+title: "Data Manipulation for Beginners"
+author: "Rosie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A few data manipulation tricks
+
+I have taught a 6-hour class on data manipulation. There is a lot to cover! But for today, I want to focus on a few basic topics:
+
+* Filtering
+* Selecting
+* Summarizing
+* Joining
+
+We will be moving fast, but hopefully this gives you a taste of what is possible. Please feel free to reach out for more!
+
+
+### The tidyverse
+
+If you are new to R, you may be confused or nervous about loading 'a bunch of packages'. However, packages are ways to make your life easier, so just embrace them. You can always download one, try it out, and then delete it if you don't like it. Often there are several packages that all do the same thing. In particular, a set of packages known as "the tidyverse" is a popular alternative to many of the base-R functions. I like them, and I think they are easier to learn, so while I'll show you a few Base R tools, mostly I'll use the tidyverse.	
+
+These packages are:
+
+* ggplot2
+* tibble
+* tidyr
+* readr
+* purr
+* dplyr
+* stringr
+* forcats
+
+The tidyverse is a collection of packages that can easily be installed with a single “meta”-package, which is called “tidyverse”. This provides a convenient way of downloading and installing all tidyverse packages with a single R command:
+
+```{r}
+#install.packages("tidyverse")
+
+library(tidyverse)
+
+```
+We'll also want a really nifty package that helps us see what our data manipulation commands are doing called `tidylog`
+
+```{r}
+#install.packages("tidylog")
+library(tidylog)
+
+
+```
+
+
+For more on how these packages work together see `tidyverse::paper`
+
+But rigth now we will just use these packages and worry about phylosophy later.
+
+Another of my favorite packages for data manipulation is `lubridate`. It makes working with dates and times a lot easier.
+
+```{r}
+library(lubridate)
+```
+
+
+
+### Step one - get the data
+
+We will be using the FMWT catch matrices for this demo. By the end of the day we will be able to calculate the index from teh raw catch data.
+
+First we will go to the CDFW FTP site and download the data
+
+https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/ 
+
+The file we want is "FMWT 1967-2022 Catch Matrix_updated.zip"
+
+https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip
+
+Then we will unzip the file and save it in the working directory for this project. 
+
+```{r}
+
+getwd()
+
+```
+I hope you are already working in a project. If not, let's set one up now! 
+
+Create a folder called 'data' and move your file there. 
+
+If you are feeling fancy, you can do this in R
+
+```{r}
+
+temp <- tempfile()
+download.file("https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip",temp)
+FMWT <- read_csv(unz(temp, "FMWT 1967-2022 Catch Matrix_updated.csv"))
+unlink(temp)
+
+```
+
+
+But if you downloaded it and put it in your folder, you can use `read_csv` to bring it in.
+
+`read_csv` is very similar to `read.csv`, but it's a little better at guessing data types.
+
+
+```{r}
+
+FMWT = read_csv("data/FMWT 1967-2022 Catch Matrix_updated.csv")
+
+
+```
+OK, now that we have our data read in, let's try some manipulation.
+
+First, let's filter out just the last 20 years of data, and just the index stations.
+
+```{r}
+#for this, we can use the 'filter' command
+?filter
+
+#filter uses your basic comparison commands. For example, remove all years after 2000
+
+FMWT2 = filter(FMWT, Year >2000)
+```
+
+Now remove all surveys that weren't in the 'normal' (Sept-Dec) time period 
+
+```{r}
+#First create a 'month' variable using the 'mutate' command, and the 'month' command from lubridate.
+
+FMWT3 = mutate(FMWT2, Month = month(SampleDate))
+
+#see my last presention on Lubridate for more on that.
+```
+
+Now we can use `%in%` to find all rows that match a set of values
+
+```{r}
+
+FMWT4 = filter(FMWT3, Month %in% c(9:12))
+
+```
+### Selecting particular columns
+
+The `filter` command allows you to select rows. The `select` command allows you to select columns. You can also use `select` to reorder columns
+
+So, if we wanted just the environmental data and not the fish data:
+
+```{r}
+#(note that the `:` specifies the list of all values in between two values)
+FMWTenv = select(FMWT4, Year:WaveCode)
+```
+
+If we want to put Delta Smelt first in our dataset
+
+```{r}
+#I just learned this cool thing when you have a lot of columns!
+FMWTtest = select(FMWT4, `Delta Smelt`,  everything())
+
+```
+
+
+### Wide to long
+
+Let's now use `pivot_longer` to switch this from 'wide' to 'long' format.
+
+The PI for FMWT was actually very nice, and the file in the zipped folder you downloaded called `FMWT 1967-2022 Catch Matrix_updated_tidy.csv` has it already in long format, but i'll demo this anyway.
+
+`pivot_longer` comes with another command, `pivot_wider` that reverses the process.
+
+```{r}
+?pivot_longer
+?pivot_wider
+
+#last_col() is another useful way of selecting a column without haveing to writeout it's name.
+?tidyselect
+
+FMWTlong = pivot_longer(FMWT4, cols = c(`Aequorea spp`:last_col()),
+                        names_to = "Species",
+                        values_to = "Catch")
+```
+
+Let's do a little more filtering. A few important things to know:
+
+`==` This is the logical equals sign. It means "Is this equal?" whereas a single `=` means "This is equal".
+`|` Or
+`&` And
+`%in%` Contained within
+`!` Not
+
+```{r}
+
+#let's get a dataset that is all the Delta Smelt
+Deltasmelt = filter(FMWTlong, Species == "Delta Smelt")
+
+#how about Delta Smelt and longfin smelt?
+
+smelt = filter(FMWTlong, Species == "Delta Smelt" | Species == "Longfin Smelt")
+
+#you could also write this:
+
+smelt = filter(FMWTlong, Species %in% c("Delta Smelt","Longfin Smelt"))
+
+#everything except Delta Smelt or Longfin Smelt
+
+notsmelt = filter(FMWTlong, !Species %in% c("Delta Smelt","Longfin Smelt"))
+
+```
+
+### Summarizing data
+
+One of the things I do most frequently in R is make summaries of datasets or perform the same operation on different groups of data in my dataset. `group_by` and `summarize` are gold.
+
+
+```{r}
+
+#calculate annual average catch by species
+FMWTann =   summarize(group_by(FMWTlong, Year, Species), Catch = mean(Catch, na.rm =T))
+
+#calculate total catch of Delta Smelt 
+DSann =   summarize(group_by(Deltasmelt, Year), Catch = sum(Catch, na.rm =T))
+
+
+```
+
+
+
+### Pipes
+
+One of the nifty things about the tidyverse family of functions is you can do a lot of operations together. Traditionally, if you want to do a bunch of things to a dataset, you end up with a bunch of nested parentheses that are hard to keep track of. Pipes make the steps easier to see.
+
+`%>%` This is a pipe. IT feeds a dataset into a function. It's part of all the tidyverse packages.
+shortcut: ctrl shift m
+
+It was so popular, R now has it's own 'native' pipe: `|>` 
+
+I still use %>% because I'm used to it, but feel free to try out both. 
+
+
+For example, what if we want to filter out the Delta smelt, and calculate monthly total catch we can do it all in one step
+
+If we used parentheses, it would look like this;
+
+```{r}
+DSann = summarize(group_by(mutate(filter(FMWTlong, Species == "Delta Smelt"), Month = month(SampleDate)), Year, Month), Catch = sum(Catch))
+
+```
+
+With pipes, it's now more clear which attributes come with which funciotn.
+
+```{r}
+DSann = FMWTlong %>%
+  filter(Species == "Delta Smelt") %>%
+  mutate(Month = month(SampleDate)) %>%
+  group_by(Year, Month) %>%
+  summarize(Catch = sum(Catch, na.rm = T))
+```
+
+### Joins
+
+For the last data manipulation topic, I'm going to cover joining multiple datasets together in different ways.
+
+This is very useful if you have information in a look up table (like scientific names, or station GPS coordinate, or whatever)
+
+For example, we might be interested in associating the fish catch with water year type. Fortunately, FlowWest (a consulting firm we work with regularly), has a data package with all the water year types cleaned up and ready to go.
+
+```{r}
+#devtools::install_github("FlowWest/waterYearType")
+library(waterYearType)
+View(water_year_indices)
+```
+
+Let's filter out the Sacramento valley index and select the columns we want (water year, Index, year type)
+
+```{r}
+
+WYs = water_year_indices %>%
+  filter(location == "Sacramento Valley") %>%
+  select(WY, Index, Yr_type)
+```
+
+Now we can use `left_join` to join these two datasets together. This is one of a set of functions in the dplyr package that are very similar to the joins in sql queries. 
+
+It will automatically join on any columns shared between the two dataframes. If they have different names, we just need to tell it what the names are using the 'by' argument.
+
+```{r}
+?left_join
+
+FMWTlong2 = left_join(FMWTlong, WYs, by = c("Year" = "WY"))
+
+```
+This dropped all the years in the `WYs` data frame that don't have FMWT data associated with it, but it kept the FMWT data that doesn't have a water year index (2022). If we wanted to keep all the data, we'd use `full_join`. If we only want to keep data that matches in both data frames, we'd use `inner_join`.

@@ -1,0 +1,220 @@
+---
+title: "FMWT Statistics Demo"
+author: "Rosie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A few basic statistical tests
+
+Now that you have a dataset and have some comfort in manipulating it, you probably want to run some statistics. In this tutorial I will cover a little bit about linear models and ANOVAs. In order to actually analyze complicated ecological data, you will probably need more advanced topics, but this is a start. This is not going to cover statistics in detail, instead it assumes some knowlege of statistics and I will cover how to run a few basic tests in R and evaluate the results. 
+
+Instead of using the FMWT catch matrix we worked with before, we are just going to use the annual abundance indecies for Longfin Smelt. 
+
+```{r}
+library(tidyverse)
+library(tidylog)
+library(lubridate)
+
+FMWTindex = read_csv("https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWTindices.csv")
+
+LFS = select(FMWTindex, Year, `Longfin Smelt`)
+
+```
+Before we do anything with this data, we should make a few basic plots so we know what it looks like. Let's make a histogram so we know what the distribution of the data looks like, and let's plot the index over time.
+
+Histograms are very easy.
+
+```{r}
+hist(LFS$`Longfin Smelt`)
+
+```
+So we can see that we have a lot of small values and very few high values. This is not normally distributed. That could be a problem for later statistical tests that have assumptions of normality. 
+
+What does it look like if we log-transform it?
+
+```{r}
+hist(log(LFS$`Longfin Smelt`))
+
+```
+That looks a lot more like a bell curve! So we will probably have to log-transform our data to use regular linear models or ANOVAs.
+
+For our next step, let's plot longfin catch over time.
+
+```{r}
+plot(x = LFS$Year, y = LFS$`Longfin Smelt`)
+
+```
+
+
+Some very high catches at the beginning, then not a lot. Does log-transforming it help see patterns?
+
+```{r}
+plot(x = LFS$Year, y = log(LFS$`Longfin Smelt`))
+
+```
+The downward trend over time is easier to see now. Let's see if that trend is statistically significant.
+
+For this, we will use a basic linear model.
+
+```{r}
+
+#log-transform the index to make it easier to write in the model
+LFS = mutate(LFS, logIndex = log(`Longfin Smelt`))
+
+mod1 = lm(logIndex ~ Year, data = LFS)
+summary(mod1)
+
+
+```
+
+Discuss output.
+
+But how do we know that this model is appropriate? The `plot.lm` function can give you diagnostic plots to test the assumptions. Remember that a linear model assumes:
+
+* Normality of reiduals
+* Homogeneity of variance
+* Independence of observations
+
+For more information on interpetting these plots, see: https://data.library.virginia.edu/diagnostic-plots/ 
+
+```{r}
+
+plot(mod1)
+
+```
+Residuals verus fitted looks good. We exepect no pattern in the residuals. The red like is close to zero, no clearn patterns.
+
+QQ Plot looks good. Most of the points are close to the 1:1 line.
+
+The scale-location plot also looks good. This is how we test homogeneity of variance. If the variance increases with increasing fitted values, we have a problem. 
+
+Residuals versus leverage plot is how we tell if outliers are skewing our resluts. If any points are outside the 'Cook's Distance' line, we have a problem. In this case, Cook's distance isn't even on the plot. 
+
+If any of these plots indicated issues with the assumptions, we would have to think about choosing another distribution, transform our data, or choose a non-parametric test.
+
+
+As a counter-example, let's see what the plots would look like if we hadn't log-transformed the data.
+
+```{r}
+
+mod2 = lm(`Longfin Smelt`~ Year, data = LFS)
+summary(mod2)
+
+plot(mod2)
+
+```
+Now we see a linear trend in the residuals versus fitted plot, a lot of points are way off the 1:1 line for the normal QQ plot, variance increases with increasing values in the scale-location plot, and we have one point outside the 'Cook's Distance'. 
+
+Those plots were diagnostic plots. What if we want to plot the effect of the terms in our model? We can use the `effects` package for that.
+
+```{r}
+library(effects)
+
+plot(allEffects(mod1))
+
+```
+
+That's a pretty simple example. What if we want to model multiple terms? For example, water year index might be important.
+
+We can join water year type to the indecies, similar to the earlier demo. 
+
+```{r}
+
+library(waterYearType)
+WYs = water_year_indices %>%
+  filter(location == "Sacramento Valley") %>%
+  select(WY, Index, Yr_type)
+
+LFS2 = left_join(LFS, WYs, by = c("Year" = "WY"))
+
+
+```
+Not let's model the impact of both Year and Water Year Index.
+
+```{r}
+
+mod3 = lm(logIndex~ Year + Index, data = LFS2)
+summary(mod3)
+
+plot(mod3)
+
+```
+Now the 'effects' plots will show us the effect of year with the effect of 'Index' removed, and vice versa.
+
+
+```{r}
+
+plot(allEffects(mod3))
+
+```
+What if we think there is an interaction between year and Index?
+
+```{r}
+
+mod4 = lm(logIndex ~ Year*Index, data = LFS2)
+summary(mod4)
+
+plot(allEffects(mod4))
+
+```
+From this we see that the decrease in idex is more dramatic for wetter years than drier years.
+
+
+### ANOVAs
+
+I also said we would look at ANOVA's. MOst people teach ANOVA's first, then linear models. I started with linear models because ANOVAs are actually just a special case of linear models with categorical predictors. 
+
+We can use the `aov` function as a shortcut, or we can run a linear model and follow up with `anova`. Let's look and see if there is a difference in longfin smelt by water year type.
+
+```{r}
+
+a1 = aov(logIndex ~ Yr_type, data = LFS2)
+summary(a1)
+
+
+```
+So, yes! Looks good. How about following up with a tkey post-hoc?
+
+```{r}
+TukeyHSD(a1)
+
+```
+If we want to do this as a linear model with an ANOVA follow up, that looks like this:
+
+```{r}
+a2 = lm(logIndex ~ Yr_type, data = LFS2)
+anova(a2)
+
+
+```
+So, the results are pretty much the same! 
+
+We can also do more complicated models with both continuous and categorical variables. However, when we include interactions we should be doing a  type-III ANOVA. For that we need `Anova` (capital-A) from the `car` package.
+
+```{r}
+library(car)
+a3 = lm(logIndex ~ Yr_type*Year, data = LFS2)
+Anova(a3, type = "III")
+
+plot(allEffects(a3))
+
+```
+The best way to follow up on these more complicated models is with the `emmeans` package. You can use it for Tukey post-hoc or other types of post-hoc tests.
+
+```{r}
+
+library(emmeans)
+a3e = emmeans(a3, pairwise ~ Yr_type|Year, at = list(Year = c(1980, 2000, 2020)))
+
+a3e
+
+plot(a3e, comparisons = T)
+
+```
+
+That's just a quick intro for some of the available statistical tools. 
