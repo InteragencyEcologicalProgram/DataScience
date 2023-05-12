@@ -27,6 +27,7 @@ library(htmltools)
 library(ggmap)
 library(leaflet)
 library(deltamapr) #install first using the command:  devtools::install_github("InteragencyEcologicalProgram/deltamapr")
+#if you have issues installing this your department's firewall settings can be blocking downloads from github, CDFW has such a policy. Don't worry we'll manually download the same shapefile as well.
 ```
 
 I used to run the Fall Midwater Trawl survey so today we'll be creating maps just plotting the historical site locations sampled in this survey, using their GPS coordinates. Let's import that data first.
@@ -117,7 +118,8 @@ sfmap <- read_sf("hydro_delta_marsh.shp") %>%
 #plot map
 sfmap
 ```
-Sometimes it's easier to first convert your data into an sf object then plot.
+Sometimes it's easier to first convert your data into an sf object then plot. Notice the "crs" argument addresses the issue with coordinate reference system which is why the previous plot looks stretched out. Here we're also going to use Sam's library instead of loading the shapefile manually.
+
 ```{r alt sf}
 fmwt_sf <- st_as_sf(fmwt, coords = c("Longitude", "Latitude"), crs = 4326)
 

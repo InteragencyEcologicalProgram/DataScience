@@ -1,0 +1,949 @@
+---
+title: "Plotting with ggplot2"
+subtitle: "Interagency Ecologic Program"
+author: "Kyle Hardage, PhD <br> DWR Sacramento <br> kyle.hardage@water.ca.gov"
+date: "2023-05-11"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+    number_sections: false
+    code_folding: show
+---
+
+```{r setup, include=TRUE, echo=FALSE}
+# suppress console output
+```
+
+## Introduction
+
+R includes a number of was to make graphics, starting with base R and augmented by the grid and lattice package frameworks, but graphic parameters were not always intuitive or consistently implemented. ggplot2 was a way to formalize the grammar of graphics (gg), which is a structured method of building individual elements of a graph. ggplot2 objects differ from base graphics in part because they **are** objects, not just a device output, and can be saved and manipulated to produce complex graphics. This opens up some useful applications while also allowing graphs objects to be saved as part of a reproducible work flow.
+
+Much of the material in this tutorial will come from the references below. Many online resources exist, particularly blog posts and discussions on stack overflow that can be found via search engines.
+
+## References
+
+Fundamentals of Data Visualization: <https://clauswilke.com/dataviz/>
+
+ggplot2 book, 3rd edition: <https://ggplot2-book.org/introduction.html>
+
+ggplot2 cheat sheet: <https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf>
+
+R graph gallery: <https://r-graph-gallery.com/index.html>
+
+```{r libraries}
+library(ggplot2)
+library(tidyverse) # includes ggplot 2 but also dplyr, tibble, and tidyr
+```
+
+List the files and load the data.
+
+```{r}
+# list files
+l <- list.files(here::here("00_data"),
+                full.names = T)
+
+# wide data
+fmwt <- l[1] %>% 
+  read_csv()
+
+# long (tidy) data
+fmwt.long <- l[2] %>% 
+  read_csv()
+```
+
+## Basic ggplot
+
+At its core, a ggplot has three components:
+
+-   data
+-   aesthetics
+-   geometry
+
+Aesthetics include what to plot (x, y, color, shape, etc.), and a geometry indicates how (scatter plot, bar plot, line graph). The cheat sheet linked above highlights the common aesthetics and geometries available.
+
+The arguments data, x, and y can be explicitly or implicitly specified. Nearly every graph type requires these three components, so they are often not written out. Note that the geometry is added using a *+* symbol.
+
+### Basic aesthetics {.tabset .tabset-pills}
+
+#### explicit aes
+
+```{r}
+ggplot(data = fmwt, aes(x = Turbidity, y = Secchi)) +
+  geom_point()
+```
+
+#### implicit aes
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point()
+```
+
+### Mapped aesthetics
+
+Adding additional aesthetics must be explicit.
+
+Here we color the data by the station longitude, a continuous, numeric variable that results in a color ramp. The legend key is automatically generated. That is the benefit of "mapping aesthetic."
+
+#### Color
+
+Continuous color scales occur with numeric data.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point()
+```
+
+Let's look at another example of numeric data. Here, we use *filter()* to subset data from 1993, the year with the most surveys, and pipe that data directly to ggplot. The data appear to be grouped around sampling dates.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = StationLong)) +
+  geom_point()
+```
+
+Let's look at the survey expeditions.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber)) +
+  geom_point()
+```
+
+Not quite what we want. Let's change survey numeric data to factor data and pipe to ggplot.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber)) +
+  geom_point()
+```
+
+The same transformation can be accomplished within ggplot.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = as.factor(SurveyNumber))) +
+  geom_point()
+```
+
+#### Size
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, size = StationLong)) +
+  geom_point()
+```
+
+#### Alpha
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, alpha = Turbidity)) +
+  geom_point()
+```
+
+#### Fill
+
+Why doesn't this do anything?
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, fill = Turbidity)) +
+  geom_point()
+```
+
+Fill only applies to 'empty' plot characters (pch) that can take a fill aesthetic. These are pch = c(21,22,23,24,25). This allows you add color to a shape fill but keep a separate shape outline (black or another color). This usually applies to the final tweaks of your graphic to ensure overlapping points have distinct edges. With high data density as shown below, the point outlines dominate and everything looks dark.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, fill = Turbidity)) +
+  geom_point(pch = 21,
+             size = 3)
+```
+
+#### Others
+
+Other aesthetic mappings include:
+
+-   line type
+-   group
+
+We will come back to these when looking at line geometries.
+
+### Specified aesthetics {.tabset .tabset-pills}
+
+Mapping aesthetics will generate a plot binned into groups with an associated legend. What if you want to set a static value for color/size/alpha? That is achieved withing the geometry.
+
+Note the differences in the following plots.
+
+#### Size geom 1
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(size = 1)
+```
+
+#### Size geom 3
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(size = 3)
+```
+
+#### Color blue
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(col = "blue")
+```
+
+#### Color aes
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(aes(col = "blue"))
+```
+
+### Geometries
+
+So far we have looked at *geom_point* which generates a scatter plot. There are many geometries to choose from. The cheat sheet linked above is very useful for quickly selecting one.
+
+#### Line
+
+Line plots are often used to show time series data.
+
+```{r}
+ggplot(fmwt, aes(SampleDate, WaterTemperature)) +
+  geom_line()
+```
+
+Let's zoom in to the year 1993 which has the most dates with tows to better observe the behavior of lines.
+
+Combining pipes with ggplot2 is powerful.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature)) + # the . is a placeholder for the piped data
+  geom_line()
+```
+
+Well that looks odd. Why do we get spikes connected by long sloping lines? It is because ggplot2 will interpolate across missing data if there are no explicit NA values. Data points on the same dates are connected by a line resulting in vertical spikes on those dates. Let's take a look at the survey numbers again, as points, in tandem with the line geometry.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber)) +
+  geom_point() +
+  geom_line()
+```
+
+Notice that each line has been grouped with its survey number. We can override that with the *group* aesthetic. The trick is to group the data by a variable common to all the data. Here, all data have the same year 1993, so let's group by that.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  geom_line()
+```
+
+The line still connects every point but will do so across the survey number grouping. There are some summary statistics that can be plotted (*stat_summary()*) that will plot the mean on top of this chart, but controlling its options are limited for datetimes and so will not be covered here.
+
+##### Line type
+
+Like color, line type can be mapped to show different categories. First we need data to be in a long format to do this mapping easily.
+
+```{r}
+water.cond <- 
+  fmwt %>% 
+  filter(across(contains("Conductivity"), # filter columns with "Conductivity" in header
+                ~!is.na(.))) %>%          # remove NA values
+  select(Year,                            # keep columns with these names or matched names.
+         SampleDate, 
+         SurveyNumber, 
+         matches("Station|Conductivity"))
+
+water.cond
+```
+
+Pivot data longer because we need the parameters ConductivityTop and ConductivityBottom to be in the same column.
+
+```{r}
+water.cond.long <-
+  water.cond %>% 
+  pivot_longer(cols = contains("Conductivity"),
+               names_to = "water_column",
+               values_to = "Conductivity")
+
+water.cond.long
+```
+
+Now we can plot the data by water_column but will do so using the mean value at each station. You can have up to 6 line types, but more then 3 or 4 gets hard to read.
+
+```{r}
+ggplot(water.cond.long, aes(StationLong, Conductivity, lty = water_column)) +
+  geom_line(stat = "summary", fun = "mean")
+```
+
+#### Path
+
+Lines are associated with the x-axis and drawn from left to right along the plot. This results in weird effects if your x and y axes variables are swapped. Observe the water temperature data from 1993 below. Notice how the lines connect each point across X even though our chronology is on y.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(WaterTemperature, SampleDate, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  geom_line()
+```
+
+A separate function called geom_path will connect points along y in the order they appear in the data set. You may need to use *arrange()* on your data first, but here we do not need to.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(WaterTemperature, SampleDate, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  geom_path()
+```
+
+In most cases, *geom_line* is what you will likely use. *Geom_path* is useful when connecting along y signifies something about the grouping of the data. A common use-case is a depth transect where geom_path is used to connect the points along y (depth) at a given site (a station or coordinate).
+
+#### Smooth
+
+A special line is the geom_smooth function which adds a regression to the data. The default is a LOESS smoothing (locally-weighted scatter plot smoother) which uses local polynomials to generate a continuous curve. This is not predictive, per se, but rather helps guide the eye to trends. The curves will inherit aesthetics defined in *aes()*, in this case, the line type.
+
+```{r}
+ggplot(water.cond.long, aes(StationLong, Conductivity, lty = water_column)) +
+  geom_line(stat = "summary", fun = "mean") +
+  geom_smooth()
+```
+
+The model method can be specified, and commonly this will be a linear least squares regression.
+
+```{r}
+ggplot(water.cond.long, aes(StationLong, Conductivity, lty = water_column)) +
+  geom_line(stat = "summary", fun = "mean") +
+  geom_smooth(method = "lm")
+```
+
+The formula can also be specified, for example, a quadratic regression.
+
+```{r}
+ggplot(water.cond.long, aes(StationLong, Conductivity, lty = water_column)) +
+  geom_line(stat = "summary", fun = "mean") +
+  geom_smooth(method = "lm", 
+              formula = y ~ poly(x, 2))
+```
+
+Geom_smooth is also affected by the grouping aesthetic. Observe.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber)) +
+  geom_point() +
+  geom_smooth()
+
+```
+
+Apply the grouping of Year (common to all the data) to smooth over each unique survey (specific to each survey expedition).
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  geom_smooth()
+
+```
+
+*Geom_smooth* will automatically remove NA values and will provide a 95% confidence band which can be removed.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  geom_smooth(se = FALSE)
+
+```
+
+Because ggplots are built in layers, the order of geometries does matter. You will want background geometries to be added first, and then plot successively on top of these. Observe the difference if *geom_smooth* comes first.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_smooth() +
+  geom_point()
+```
+
+#### Histogram
+
+Unlike points or lines, histograms take only one variable (x) and calculate the frequency (y) automatically.
+
+```{r}
+ggplot(fmwt, aes(WaterTemperature)) +
+  geom_histogram()
+```
+
+Let's look at another.
+
+```{r}
+ggplot(fmwt, aes(ConductivityTop)) +
+  geom_histogram()
+```
+
+Default bin number is 30, but we can increase it to see more detail.
+
+```{r}
+ggplot(fmwt, aes(ConductivityTop)) +
+  geom_histogram(bins = 80)
+```
+
+Mapping aesthetics applies to histogram geometries, too, if data re in long format.
+
+```{r}
+ggplot(water.cond.long, aes(Conductivity, col = water_column)) +
+  geom_histogram()
+```
+
+What happened? Two things: 1) color applies to the *outline* of histogram, so we need fill. 2) these histograms have been stacked to show a total, so we need to 'dodge' the position to see each side by side.
+
+```{r}
+ggplot(water.cond.long, aes(Conductivity, fill = water_column)) +
+  geom_histogram(position = "dodge")
+```
+
+Alternatively, we can overlay them using 'identity' and adjust the transparency. The 'identity' stat will plot a value exactly as is without aggregating it to other data. This is often a useful adjustment when plotting several groups of data together that we want to compare. Notice that the transparency argument 'alpha' goes into the *geom_histogram* line because we want to apply to same alpha to all data, not map alpha by another variable. Alpha ranges from 0 (transparent) to 1 (opaque).
+
+```{r}
+ggplot(water.cond.long, aes(Conductivity, fill = water_column)) +
+  geom_histogram(position = "identity",
+                 alpha = 0.5)
+```
+
+#### Bar
+
+Bars can be useful for count data like species.
+
+First let's look at the total number of specimens caught in the tows. Because there are lots of species with low counts and it crowds the graph, let's look at only species with \> 100 specimens
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, Catch)) +
+  geom_col()                        # geom_col makes columns of stat = "identity"
+```
+
+Yikes, that's hard to read. A simple fix would be to flip x and y so the text labels do not overlap.
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, Catch)) +
+  geom_col() +
+  coord_flip()                      
+```
+
+There are two types of bar graphs in ggplot2: geom_bar and geom_col. Geom_bar will make bars proportional to the number of *cases* in each group, while geom_col will make bars representing the actual values of the data. To illustrate:
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species)) +
+  geom_bar() +
+  coord_flip()
+```
+
+Note that the x axis numbers are now much smaller than with *geom_col()*. Geom_bar is summing the number of cases in which a species occurs. In effect, this is number of times a species was observed at all during a tow, whether that was only 1 specimen or 1000. Northern anchovies were observed on about 1750 different days (each date is a case on the data frame), and there were nearly 1.5 million specimens observed in total (noted in the geom_col above). This distinction takes practice, but *geom_col* is handy to keep in mind.
+
+Note that in both geometries, ggplot takes care of summing the data for you.
+
+#### Boxplot
+
+Another very useful plot type is the boxplot.
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, Catch)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+We can adjust the catch with a log-transform to more easily visualize the data.
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+### Scales
+
+Commonly we want to adjust the scales of the final graphs to make them legible or pretty.
+
+#### Axes
+
+X and Y axes are scaled individually, and you match the scaling type with the data type (continuous = numeric data, discrete = categorical data, etc.).
+
+Scaling can take three parameters:
+
+-   breaks (the axis ticks)
+-   limits (the domain to be shown)
+-   expand (spacing between data and axes)
+
+Breaks are specified as a vector of data, for example c(0,5,10,15,20,25,30). A shortcut is to generate this sequence using seq(begin, end, interval).
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(size = 1) +
+  scale_x_continuous(breaks = seq(0,300,50)) + # create sequence from 0 to 300 in 50 increments
+  scale_y_continuous(breaks = seq(0,7,1))
+```
+
+Now set limits which will clip the data if axis limits are less than data values. Limits are specified simply as c(lower, upper) bounds.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(size = 1) +
+  scale_x_continuous(breaks = seq(0,300,50),
+                     limits = c(0,100)) + 
+  scale_y_continuous(breaks = seq(0,7,1))
+```
+
+The expand parameter will remove spacing between data and axes. This is useful if you have points that would sit directly on an axis. Expand takes values a percent fraction, with the default being 5% c(0.05, 0.05). Setting to 0 will remove padding.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi)) +
+  geom_point(size = 1) +
+  scale_x_continuous(breaks = seq(0,300,50),
+                     limits = c(0,100),
+                     expand = c(0,0)) + 
+  scale_y_continuous(breaks = seq(0,7,1))
+```
+
+Expand is also commonly used to adjust bar charts or histograms. Observe.
+
+```{r}
+# expand defaults
+ggplot(fmwt, aes(WaterTemperature)) +
+  geom_histogram()
+```
+
+```{r}
+# expand padding removed from y
+ggplot(fmwt, aes(WaterTemperature)) +
+  geom_histogram() +
+  scale_y_continuous(expand = c(0,0))
+```
+
+Another helpful scaling is scale\_\*\_reverse which is useful if you are plotting variables against depth. Here we can look at different surveys along a general east-west position and show the depth without needing to multiply by negative values.
+
+```{r}
+fmwt %>% 
+  filter(Year == 2013) %>% 
+  ggplot(., aes(StationLong, DepthBottom, col = as.factor(SurveyNumber))) +
+  geom_point() +
+  geom_line() +
+  scale_y_reverse()
+```
+
+Dates and datetimes are special, so they get their own scaling. Execute **?strptime** to see the date label formats.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  scale_x_date(date_breaks = "1 month",
+               date_labels = "%b-%y")
+```
+
+#### Colors
+
+There are a lot of color options in R, from base colors to specific packages that include color palettes (RColorBrewer, Viridis, WesAnderson, etc.). Color is scaled in a method similar to axes.
+
+A key point to keep in mind is whether the color to be shown is a continuous color ramp or discrete color swatches.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = Secchi)) +
+  geom_point(size = 1) +
+  scale_color_continuous(type = "viridis")
+```
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = Secchi)) +
+  geom_point(size = 1) +
+  scale_color_gradient(low = "blue", high = "red")
+```
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = Secchi)) +
+  geom_point(size = 1) +
+  scale_color_gradientn(colors = c("blue","white","red"))
+```
+
+Discrete colors are also an option, but you must match the number of colors to the number of discrete categories if you do this manually.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  scale_color_manual(values = c("red","tomato","orange","gold","green","forestgreen",
+                                     "blue","purple","cyan","lightblue"))
+```
+
+Pro tip, if you find yourself plotting the same color palette across many graphs, you can store the colors and call them later. This allows for simple consistency across plots.
+
+```{r}
+c.color <- c("grey10","gray40","grey70","grey90")
+
+fmwt %>% 
+  filter(Year == 2013) %>% 
+  ggplot(., aes(StationLong, DepthBottom, col = as.factor(SurveyNumber))) +
+  geom_point() +
+  geom_line() +
+  scale_color_manual(values = c.color)
+```
+
+Also keep in mind that there are scale_fill variants. If you call *col* within *aes()*, you need scale_color\_(continuous/discrete/etc.), and if you call *fill* within aes(), you need scale_fill\_(continuous/discrete/etc.). ggplot accepts both American and British spellings of color/colour, and they do the same thing.
+
+### Labels
+
+ggplot will default to column headers as label names, but these can be adjusted.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  labs(x = "Turbidity (NTU)", y = "Secchi Depth (m)")
+```
+
+ggplot will accept expressions to display special characters.
+
+```{r}
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point() +
+  labs(x = "Date", y = expression("Temperature"~(degree*C)))
+```
+
+If you use the same axis label a lot, you can save it and call it over and over.
+
+```{r}
+lab.cond <- expression(Conductivity~(mu*S/cm))
+
+ggplot(fmwt, aes(ConductivityTop)) +
+  geom_histogram() +
+  labs(x = lab.cond, y = "Count")
+
+```
+
+Plot titles can be handled in two ways, with the *lab()* or *ggtitle()*.
+
+```{r}
+ggplot(fmwt, aes(ConductivityTop)) +
+  geom_histogram() +
+  labs(title = "Surface conductivity, all years")
+
+ggplot(fmwt, aes(ConductivityTop)) +
+  geom_histogram() +
+  ggtitle("Surface conductivity, all years")
+```
+
+To add text directly to plots, you can use *geom_text*, geom_label, or annotate. The ggrepel package can add labels and adjust overlap automatically. Plot text can be finicky and is best left for an advanced workshop.
+
+### Facets
+
+An incredibly useful function in ggplot2 is the facets function. This allows for a series of mini plots by a specified variable. This can be stations, or years, or species, or anything else. Data can be numeric, character, or factor. *Facet_wrap()* will make facets using one variable, facet_grid will make a grid using two variables. Facets work best with a small number of group (12 or less), otherwise plots get too small. Let's look for only smelt species.
+
+#### Facet wrap
+
+```{r}
+# filter for only smelt species
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt")) %>%
+  ggplot(., aes(SampleDate, Catch)) +
+  geom_line() +
+  facet_wrap(.~Species)
+```
+
+Facets will default to the same axis limits for all panels. This is useful if comparing data of similar magnitude, but if there is great difference, we may want to allow the scales to float freely. *Warning*: This can lead to some misrepresentation of the data, so be sure to note the varying scales in a figure caption and alert your readers.
+
+```{r}
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt")) %>%
+  ggplot(., aes(SampleDate, Catch)) +
+  geom_line() +
+  facet_wrap(.~Species, scales = "free_y")
+```
+
+#### Facet grid
+
+*Facet_grid* works best with relatively small numbers of categories to prevent tiny crammed panels. Let's look at how different smelt change over the last three years with the tide code. Here, Catch is log-transformed to handle some high outliers and better demonstrate boxplot appearance.
+
+```{r}
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt"),
+         Year %in% c(2020:2022)) %>%
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  facet_grid(Year~TideCode) +
+  coord_flip()
+```
+
+Note that the TideCode labels across the top only show a number. These are the values within the TideCode column, so you either need to add a label to the axis or mutate the column if you want to display Tide Code on the plot.
+
+```{r}
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt"),
+         Year %in% c(2020:2022)) %>%
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  facet_grid(Year~TideCode) +
+  coord_flip() +
+  labs(subtitle = "Tide Code")
+
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt"),
+         Year %in% c(2020:2022)) %>%
+  mutate(TideCode = paste0("Tide Code ", TideCode)) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  facet_grid(Year~TideCode) +
+  coord_flip()
+```
+
+### Themes {.tabset .tabset-pills}
+
+Themes adjust the appearance of the plot grid and text elements. Up to now, the theme defaults have been used, most notably with the gray grid background. For more traditional-style plots, we can adjust the theme easily. There are both *theme()* and theme\_\*() short cuts which can be combined.
+
+```{r}
+# remove the grids
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  theme(panel.grid = element_blank())
+
+# change the gray background
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  theme_bw()   # a black and white theme
+
+# change the gray background
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+# remove grids and gray background
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  theme_classic()  # classic two-axis plot
+```
+
+Themes can alter text appearance.
+
+```{r}
+# change the gray background
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point() +
+  theme_bw() +
+  theme(axis.text.x.bottom = element_text(size = 12, face = "bold"))
+```
+
+Until now, we have dealt with overlapping labels using *coord_flip()*, but *theme()* will let us change text angle. Observe.
+
+```{r}
+# overlapping text on x axis
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot()
+
+# angled text on x axis
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  theme(axis.text.x.bottom = element_text(angle = 45))
+
+# angled text on x axis with a horizontal justification to the right
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  theme(axis.text.x.bottom = element_text(angle = 45, hjust = 1))
+
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  theme(axis.text.x.bottom = element_text(angle = 90, vjust = 0))
+```
+
+The hjust parameter is a horizontal justification of the text. You are familiar with word processors that just left-justified, center-justified, or right-justified text. Hjust is set with a scale [0,1] with 0 being left, 1 being right, and 0.5 being centered. Most defaults in ggplot2 are 0.5 (centered). There is also a vjust parameter (vertical justification) that follows the same scale of 0 (bottom), 0.5 (centered), and top (1) justification. You may need to play around with parameters to get text to appear as you wish, particularly if you have set an angle.
+
+**Note**: justification moves with the orientation of the text! To illustrate, viewing the following vertical justifications.
+
+#### vjust 0
+
+X axis text moves left.
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  theme(axis.text.x.bottom = element_text(angle = 90, vjust = 0))
+```
+
+#### vjust 1
+
+X axis text moves right. The vertical reference is orthogonal to the text orientation.
+
+```{r}
+fmwt.long %>% 
+  filter(Catch > 100) %>% 
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  theme(axis.text.x.bottom = element_text(angle = 90, vjust = 1))
+```
+
+###  {.unnumbered}
+
+Lastly, adding various theme components to every plot gets cumbersome and is prone to errors of omission. Instead, you can set a theme for all plots at the start of the code. You must run this each time you restart your R session (similar to if you set_wd() or load a package).
+
+```{r}
+theme_set(theme_bw() + 
+          theme(panel.grid = element_blank()))
+```
+
+Now the plots all have the same theme. Rerunning any prior code chunk will also use these theme because it is set for all plots for the duration of this session.
+
+```{r}
+ggplot(fmwt, aes(Turbidity, Secchi, col = StationLong)) +
+  geom_point()
+
+fmwt %>% 
+  filter(Year == 1993) %>% 
+  mutate(SurveyNumber = as.factor(SurveyNumber)) %>% 
+  ggplot(., aes(SampleDate, WaterTemperature, col = SurveyNumber, group = Year)) +
+  geom_point()
+
+ggplot(fmwt, aes(WaterTemperature)) +
+  geom_histogram()
+```
+
+## Synthesis
+
+You have now seen the basics of the grammar of graphics plotting methodology. A graph is defined by the source data, the aesthetics of x, y, color, etc., and a geometry. These basic components can be modified with scales and themes to build attractive, but more importantly, consistent and reproducible, graphics.
+
+Perhaps one drawback to ggplot2 is that the code can be lengthy and verbose, shown below. However, it is easy to read and adjust as desired. Saving and setting components of the graphics can help reduce the length of individual code blocks, provided that you set such parameters at the start of your code.
+
+```{r}
+# example 1
+fmwt.long %>% 
+  filter(str_detect(Species, "smelt|Smelt"),
+         Year %in% c(2020:2022)) %>%
+  ggplot(., aes(Species, log(Catch))) +
+  geom_boxplot() +
+  labs(y = "Natural log of Catch", title = "Smelt catch by tide code") +
+  facet_grid(Year~TideCode) +
+  theme_bw() +
+  theme(panel.grid = element_blank(),
+        axis.text.x.bottom = element_text(angle = 45,
+                                          hjust = 1))
+# example 2
+fmwt %>% 
+  filter(Year >= 2000) %>% 
+  ggplot(., aes(WaterTemperature, col = Year, group = Year)) +
+  geom_freqpoly(alpha = 0.5, 
+                 position = "identity",
+                bins = 50) +
+  scale_y_continuous(expand = c(0,0),
+                     breaks = seq(0,200,20)) +
+  scale_x_continuous(breaks = seq(0,35,5)) +
+  scale_color_viridis_c() +
+  labs(x = expression("Temperature"~(degree*C)), 
+       y = "Frequency",
+       title = "Delta water temperature distribution over 20 years") +
+  theme_bw() +
+  theme(axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14),
+        plot.title = element_text(face = "bold"),
+        legend.position = c(1,1),                 # position scale is 0 to 1 (left to right)
+        legend.justification = c(1,1),            # justification scale is 0 to 1 (left to right)
+        legend.background = element_blank())
+```
+
+## Saving
+
+ggplot makes it easy to save plots. You can store plot objects and then save call them or save them.
+
+```{r}
+p1 <-
+  fmwt %>% 
+  filter(Year >= 2000) %>% 
+  ggplot(., aes(WaterTemperature, col = Year, group = Year)) +
+  geom_freqpoly(alpha = 0.5, 
+                 position = "identity",
+                bins = 50) +
+  scale_y_continuous(expand = c(0,0),
+                     breaks = seq(0,200,20)) +
+  scale_x_continuous(breaks = seq(0,35,5)) +
+  scale_color_viridis_c() +
+  labs(x = expression("Temperature"~(degree*C)), 
+       y = "Frequency",
+       title = "Delta water temperature distribution over 20 years") +
+  theme_bw() +
+  theme(axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14),
+        plot.title = element_text(face = "bold"),
+        legend.position = c(1,1),
+        legend.justification = c(1,1),
+        legend.background = element_blank())
+
+p1
+```
+
+Save with the *ggsave* function. You can save raster-type images (jpeg, png) or vector format (pdf, eps) depending on your needs.
+
+```{r}
+ggsave("delta_temperature.png",
+       plot = p1,
+       device = png,
+       width = 8,
+       height = 6,
+       units = "in",
+       dpi = 300)
+
+ggsave("delta_temperature.pdf",
+       plot = p1,
+       device = pdf,
+       width = 8,
+       height = 6,
+       units = "in")
+```
+
+*End*

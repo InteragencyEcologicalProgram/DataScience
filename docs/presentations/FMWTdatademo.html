@@ -11,7 +11,7 @@
 
 <meta name="author" content="Rosie" />
 
-<meta name="date" content="2023-05-04" />
+<meta name="date" content="2023-05-12" />
 
 <title>Data Manipulation for Beginners</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Data Manipulation for Beginners</h1>
 <h4 class="author">Rosie</h4>
-<h4 class="date">2023-05-04</h4>
+<h4 class="date">2023-05-12</h4>
 
 </div>
 
@@ -523,6 +523,8 @@ FMWTenv = select(FMWT4, Year:WaveCode)</code></pre>
 <pre class="r"><code>#I just learned this cool thing when you have a lot of columns!
 FMWTtest = select(FMWT4, `Delta Smelt`,  everything())</code></pre>
 <pre><code>## select: columns reordered (Delta Smelt, Year, SampleDate, SurveyNumber, StationCode, …)</code></pre>
+<pre class="r"><code>FMWTtest2 = select(FMWT4, -`Delta Smelt`)</code></pre>
+<pre><code>## select: dropped one variable (Delta Smelt)</code></pre>
 </div>
 <div id="wide-to-long" class="section level3">
 <h3>Wide to long</h3>

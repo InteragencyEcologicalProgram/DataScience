@@ -159,6 +159,8 @@ If we want to put Delta Smelt first in our dataset
 #I just learned this cool thing when you have a lot of columns!
 FMWTtest = select(FMWT4, `Delta Smelt`,  everything())
 
+FMWTtest2 = select(FMWT4, -`Delta Smelt`)
+
 ```
 
 
@@ -193,7 +195,7 @@ Let's do a little more filtering. A few important things to know:
 ```{r}
 
 #let's get a dataset that is all the Delta Smelt
-Deltasmelt = filter(FMWTlong, Species == "Delta Smelt")
+Deltasmelt = filter(FMWTlong, Species = "Delta Smelt")
 
 #how about Delta Smelt and longfin smelt?
 

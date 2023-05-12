@@ -11,9 +11,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## A few basic statistical tests
 
-Now that you have a dataset and have some comfort in manipulating it, you probably want to run some statistics. In this tutorial I will cover a little bit about linear models and ANOVAs. In order to actually analyze complicated ecological data, you will probably need more advanced topics, but this is a start. This is not going to cover statistics in detail, instead it assumes some knowlege of statistics and I will cover how to run a few basic tests in R and evaluate the results. 
+Now that you have a dataset and have some comfort in manipulating it, you probably want to run some statistics. In this tutorial I will cover a little bit about linear models and ANOVAs. In order to actually analyze complicated ecological data, you will probably need more advanced topics, but this is a start. This is not going to cover statistics in detail, instead it assumes some knowledge of statistics and I will cover how to run a few basic tests in R and evaluate the results. 
 
-Instead of using the FMWT catch matrix we worked with before, we are just going to use the annual abundance indecies for Longfin Smelt. 
+Instead of using the FMWT catch matrix we worked with before, we are just going to use the annual abundance indecis for Longfin Smelt. 
 
 ```{r}
 library(tidyverse)
@@ -76,11 +76,11 @@ Discuss output.
 
 But how do we know that this model is appropriate? The `plot.lm` function can give you diagnostic plots to test the assumptions. Remember that a linear model assumes:
 
-* Normality of reiduals
+* Normality of residuals
 * Homogeneity of variance
 * Independence of observations
 
-For more information on interpetting these plots, see: https://data.library.virginia.edu/diagnostic-plots/ 
+For more information on interpreting these plots, see: https://data.library.virginia.edu/diagnostic-plots/ 
 
 ```{r}
 
@@ -115,7 +115,7 @@ Those plots were diagnostic plots. What if we want to plot the effect of the ter
 ```{r}
 library(effects)
 
-plot(allEffects(mod1))
+plot(allEffects(mod1, residuals = T))
 
 ```
 
