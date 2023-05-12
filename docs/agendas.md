@@ -1,5 +1,35 @@
 ## Previous meetings
 
+
+### [2023-05-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.05.11)
+
+All presentations will be geared for people with some knowledge of R, but who consider themselves beginners. Most presentations will use the CDFW Fall Midwater Trawl data, available [here](https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip). 
+ 
+[recording available](https://cadwr.box.com/s/hqdy0k62x3pzk98dij8e1lmoa41j6m8k)
+
+1:05 - 1:30 &nbsp;&nbsp; [Data Manipulation - filtering, joining, selecting, and summarizing](presentations/FMWTdatademo.html) (Rosemary Hartman [DWR](https://water.ca.gov/))  
+
+* [Data manipulation demo code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTdatademo.Rmd)
+
+1:30 - 2:00 &nbsp;&nbsp; [Very basic statistics - linear models and ANOVAs](presentations/FMWTstats-demo.html)   (Rosemary Hartman, [DWR](https://water.ca.gov/))   
+
+* [Statistics demo code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTstats%20demo.Rmd)
+
+2:00 - 2:30 &nbsp;&nbsp; [Intro to ggplot2](presentations/Intro_ggplot2.nb.html) (Kyle Hardage, [DWR](https://water.ca.gov/))  
+
+* [GGplot 2 intro code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/Intro_ggplot2.Rmd)
+
+2:40 - 3:10 &nbsp;&nbsp; [Basic Maps](presentations/R maps.html)  (James White, CDFW) 
+
+* [Mapping code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/R%20maps.qmd)
+
+3:10 - 3:40 &nbsp;&nbsp; Colors and color-blind friendly palettes (Dan Ellis, CDFW)
+
+* [ADA compliant figures powerpoint](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/docs/presentations/ADA_Compliant_Figure_Making_DSE_09MAY2023.pptx)
+* [code to generate figures](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/IEP_Data_Science_PWT_ADA_Complant_Figures.R)
+
+
+
 ### [2023-02-09](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.02.09)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
