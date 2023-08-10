@@ -19,9 +19,9 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; Updates to Bay-Delta Live - Explore Data & Time Series Visualizations ([Dave Osti](https://www.linkedin.com/in/david-osti-9189a57/), [34 North](https://www.34north.com/))  
 1:35 - 1:55 &nbsp;&nbsp; CVPIA Decision Support Models ([Mike Urkov](https://www.linkedin.com/in/murkov/), The Urkov Group)  
-1:55 - 2:25 &nbsp;&nbsp; An introduction to the [targets](https://books.ropensci.org/targets/) package ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
-2:25 - 2:30 &nbsp;&nbsp; Break  
-2:30 - 2:50 &nbsp;&nbsp; Date & Time gotchas ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))    
+1:55 - 2:15 &nbsp;&nbsp; Date & Time gotchas ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))   
+2:15 - 2:20 &nbsp;&nbsp; Break   
+2:20 - 2:50 &nbsp;&nbsp; An introduction to the [targets](https://books.ropensci.org/targets/) package ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 2:50 - 3:30 &nbsp;&nbsp; Mixed models - what they are, why you should use them, and how you code them in R ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))      
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
