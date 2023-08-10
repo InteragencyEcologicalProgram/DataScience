@@ -1,5 +1,14 @@
 ## Previous meetings
 
+### [2023-08-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.08.10)
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; Updates to Bay-Delta Live - Explore Data & Time Series Visualizations ([Dave Osti](https://www.linkedin.com/in/david-osti-9189a57/), [34 North](https://www.34north.com/))  
+1:35 - 1:55 &nbsp;&nbsp; CVPIA Decision Support Models ([Mike Urkov](https://www.linkedin.com/in/murkov/), The Urkov Group)  
+1:55 - 2:15 &nbsp;&nbsp; [Date & Time gotchas](https://gist.github.com/Myfanwy/1e2a4fe3a0015c3b14472fd7a32f3af7) ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))   
+2:15 - 2:20 &nbsp;&nbsp; Break   
+2:20 - 2:50 &nbsp;&nbsp; [An introduction to the targets package](https://docs.google.com/presentation/d/13eEy7HuzUKY_TcbLgIvOeHCI6yv_xyF2hvrssLSV2I0/edit?usp=sharing) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
+2:50 - 3:30 &nbsp;&nbsp; Mixed models - what they are, why you should use them, and how you code them in R ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))     
 
 ### [2023-05-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.05.11)
 
