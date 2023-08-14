@@ -8,7 +8,7 @@
 1:55 - 2:15 &nbsp;&nbsp; [Date & Time gotchas](https://gist.github.com/Myfanwy/1e2a4fe3a0015c3b14472fd7a32f3af7) ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))   
 2:15 - 2:20 &nbsp;&nbsp; Break   
 2:20 - 2:50 &nbsp;&nbsp; [An introduction to the targets package](https://docs.google.com/presentation/d/13eEy7HuzUKY_TcbLgIvOeHCI6yv_xyF2hvrssLSV2I0/edit?usp=sharing) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
-2:50 - 3:30 &nbsp;&nbsp; Mixed models - what they are, why you should use them, and how you code them in R ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))     
+2:50 - 3:30 &nbsp;&nbsp; Mixed models - what they are, why you should use them, and how you code them in R ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[slides](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/docs/presentations/mixedmodels/mixed%20models.pptx), [code](https://interagencyecologicalprogram.github.io/DataScience/presentations/mixedmodels/MixedModels.html)]     
 
 ### [2023-05-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.05.11)
 
