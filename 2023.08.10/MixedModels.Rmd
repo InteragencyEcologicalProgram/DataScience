@@ -1,0 +1,245 @@
+---
+title: "Mixed Model Demo"
+author: "Rosie"
+date: "2023-07-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(lme4)
+library(lmerTest)
+library(here)
+library(tidyverse)
+
+
+```
+
+## Mixed Models
+
+Some material adapted from: https://ourcodingclub.github.io/tutorials/mixed-models/#six 
+
+As we discussed in the powerpoint, mixed models are linear models where some of the factors are "fixed" or "explanatory" variables that you want to study. Are variables are known as "random" or "grouping" variables that you need to account for, but you don't really care about them. 
+
+Additionally, the data for our random effect is just a sample of all the possibilities: with unlimited time and funding we might have sampled every cage possible, every school in the country, every chocolate in the box), but we usually tend to generalise results to a whole population based on representative sampling. We don’t care about estimating how much better pupils in school A have done compared to pupils in school B, but we know that their respective teachers might be a reason why their scores would be different, and we’d like to know how much variation is attributable to this when we predict scores for pupils in school Z. For the fish, we don’t really care whether cage 1 is better than cage 2, but we need to know what the cage effect is.
+
+Let's try this out with data on smelt cages. 
+
+Our study questions:
+* Does site impact fish growth?
+* Does season impact fish growth?
+
+```{r cagedata}
+cagedata = read_csv("SmeltCageData.csv") 
+str(cagedata)
+
+#Let's take a look at some of these variables
+table(cagedata$Deployment, cagedata$Cage)
+
+table(cagedata$Deployment, cagedata$Site)
+
+table(cagedata$Deployment, cagedata$CageRep)
+
+table(cagedata$Site, cagedata$Cage)
+
+
+```
+In this case, cage is nested within Site and Deployment. Each cage designation only makes sense within a deployment and a site. Cage A at Rio Vista in summer is not the same as cage A in Suisun in winter. 
+
+Site is crossed with Season. Rio Vista is still Rio Vista whether it is winter or summer. 
+
+This is obviously an unbalanced design, and it's going to be pretty hard to tease anything apart, but we're going to give it a try.
+
+### Data exploration
+
+Before we can model anything, we need to see what the data look like and assess whether we need any transformations.
+
+
+```{r lm1}
+#histogram of forklength
+ggplot(cagedata, aes(x = FL_cm)) + geom_histogram()
+#remarkably normal
+```
+
+
+```{r lm2}
+#histogram of condition factor
+ggplot(cagedata, aes(x = K)) + geom_histogram()
+#also looks ggood
+
+
+```
+
+I like seeing whether I can pick out trends in the raw data that I can model before I get started.
+
+* Does site and/or season impact fish growth?
+
+```{r}
+ggplot(cagedata, aes(x = Site, y = FL_cm)) + geom_boxplot()+
+  facet_wrap(~Deployment)
+
+
+```
+From this boxplot, it looks like we might see a difference in fish length between Rio Vista and FCCL in the fall, but maybe not in other seasons. Also, Fall is lower than other seasons.
+
+But how do we show this statistically?
+
+We know fish within a cage are not independent replicates, so we could just average the length within each cage
+
+```{r}
+avesmelt = group_by(cagedata, Site, Deployment, Cage) %>%
+  summarize(FL = mean(FL_cm, na.rm =T))
+
+lm1 = lm(FL ~ Site + Deployment, data = avesmelt)
+summary(lm1)
+plot(lm1)
+
+```
+However, when we average all the values of fish within a cage, we lose a lot of information, which is a shame. 
+
+A better way, would be to include a random effect of cage (nested within site).
+
+```{r}
+m1 = lmer(FL_cm ~ Site + Deployment + (1|Site/Cage), data = cagedata)
+summary(m1)
+
+```
+
+Comparing the outputs from the two models, the fixed effects of the mixed model looks a lot like the effects of the model with the averages within each cage, however the mixed model also gives us information about the random effects, which is helpful in understanding our data and planing for future studies. 
+
+The output from the linear model tells us the significant difference between the intercept (DWSC and Fall) versus teh other levels of the factor. If we want to know all the pairwise comparisons, we need to do a post-hoc. The `emmeans` package has ways of doing a bunch of different post-hocs.
+
+```{r}
+
+library(emmeans)
+
+#first let's look at the regular linear model
+
+emmeans(lm1, pairwise ~ Deployment)
+
+emmeans(lm1, pairwise ~ Site)
+
+```
+Now let's look at the mixed model.
+
+
+```{r}
+emmeans(m1, pairwise ~ Deployment)
+
+emmeans(m1, pairwise ~ Site)
+
+```
+They look pretty darn similar. However, we can use the variance of the random effects from the origional model output to plan our study design for next time. 
+
+
+## Sampling design
+
+When you are conducting an experiment, like fish in cages, your fixed and random effects are included in your study design. However, when you are dealing with samples from the environment, you might have to make some choices about which variables to treat as fixed and which to treat as random. 
+
+For this demo, we are going to use the Fall Midwater Trawl data from 2000-2010. There is a lot of data, and it's going to be easier if we do this on just 10 years. 
+
+If you haven't already downloaded the data, grab it here:
+https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip 
+
+```{r}
+
+FMWT = read_csv("FMWT 1967-2022 Catch Matrix_updated.csv")
+
+FMWT90 = filter(FMWT, Year>1999, Year <2011)
+
+str(FMWT90)
+
+#A few minor changes to make the data more user-friendly
+
+FMWT90 = mutate(FMWT90, StationCode = as.factor(StationCode), TideCode = as.factor(TideCode), index = as.logical(index), 
+                TotalCatch = rowSums(across(`American Shad`:`Yellowfin Goby`), na.rm =T)) %>%
+  select(Year, SampleDate, SurveyNumber, StationCode, index, StationLat, StationLong, DepthBottom, WaterTemperature,
+         ConductivityTop, Turbidity, Secchi, TideCode, Microcystis, TotalCatch)
+
+```
+
+As always, we want to start by looking at our data.
+
+
+```{r}
+ggplot(FMWT90, aes(x = TotalCatch)) + geom_histogram()
+
+
+ggplot(FMWT90, aes(x = log(TotalCatch +1)))+ geom_histogram()
+
+```
+
+This data is a little zero inflated, so we probably want to use some kind of fancy model to do it right, but for the sake of the example, we'll go with it for now. We'll definitely want to log-transform it though. 
+
+The problem comes when we want to decide which factors are likely to be fixed and which are likely to be random. That is going to be based on our question. We'll start with 
+
+"How does secchi depth impact fish catch".
+
+I like to start with a quick graph.
+
+```{r, warning=FALSE}
+
+FMWT90 = mutate(FMWT90, logcatch = log(TotalCatch+1))
+
+
+ggplot(FMWT90, aes(x = Secchi, y = logcatch))+ geom_point()+ geom_smooth()
+
+```
+
+It looks like there is definitely a trend there. 
+
+However, there are a lot of other factors that probably affect fish abundance too. We should account for them.
+
+* Year
+* Time of year
+* Depth of water
+* Region of the estuary
+* Station
+* amount of water sampled
+* other environmental factors
+
+Some of these factors we might want to include as explanatory variables (fixed effects), whereas other we might want to include as grouping variables (random effects).
+
+We are unlikely to be interested in the impact of station on it's own, so let's definitely put that in the random effects. 
+
+```{r}
+
+m1 = lmer(logcatch ~ Secchi + Year + SurveyNumber + (1|StationCode), data = FMWT90)
+
+summary(m1)
+plot(m1)
+
+```
+
+But maybe we aren't really interested in changes over time. Let's put year and time of year (survey code) as random effects too.
+
+```{r}
+m2 = lmer(logcatch ~ Secchi + (1|Year)+ (1|SurveyNumber)+ (1|StationCode), data = FMWT90)
+
+summary(m2)
+plot(m2)
+```
+
+Let's compare these two models.
+
+```{r}
+
+anova(m1, m2)
+
+```
+The model with fewer fixed effects has a greater log-likelihood and lower BIC (BIC is better than AIC for mixed models). So, if we are trying to choose between including something as a fixed or random effect, and we aren't super interested in it's effects, going with random effects will give you a better model. 
+
+### Further Reading
+
+https://en.wikipedia.org/wiki/Mixed_model 
+
+Greven, S., and T. Kneib. 2010. On the behaviour of marginal and conditional AIC in linear mixed models. Biometrika 97:773-789. 10.1093/biomet/asq042
+
+Zuur AF, Ieno EN, Walker NJ, Saveliev AA, Smith GM. 2009. Mixed Effects Models and Extensions in Ecology with R. New York, NY: Springer. 
+
+
+https://ourcodingclub.github.io/tutorials/mixed-models/#six
+
+https://cran.r-project.org/web/views/MixedModels.html 
+
+https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf 

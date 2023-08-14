@@ -1,0 +1,1163 @@
+Deployment,Period,Site,ID,FL_cm,Weight_g,Cage,K,CageRep
+Winter,Post,DWSC,Winter_122,6.2,1.2,B,0.504,Winter_DWSC_B
+Winter,Post,DWSC,Winter_123,6.1,1.01,B,0.445,Winter_DWSC_B
+Winter,Post,DWSC,Winter_124,6,1.44,B,0.667,Winter_DWSC_B
+Winter,Post,DWSC,Winter_125,6,0.91,B,0.421,Winter_DWSC_B
+Winter,Post,DWSC,Winter_126,6.6,1.8,B,0.626,Winter_DWSC_B
+Winter,Post,DWSC,Winter_127,6.9,1.86,B,0.566,Winter_DWSC_B
+Winter,Post,DWSC,Winter_128,6.2,1.37,B,0.575,Winter_DWSC_B
+Winter,Post,DWSC,Winter_129,6.2,1.48,B,0.621,Winter_DWSC_B
+Winter,Post,DWSC,Winter_130,6.5,1.33,B,0.484,Winter_DWSC_B
+Winter,Post,DWSC,Winter_131,6.4,1.32,B,0.504,Winter_DWSC_B
+Winter,Post,DWSC,Winter_132,6.2,1.11,B,0.466,Winter_DWSC_B
+Winter,Post,DWSC,Winter_133,6.1,0.98,B,0.432,Winter_DWSC_B
+Winter,Post,DWSC,Winter_134,6.1,1.09,B,0.48,Winter_DWSC_B
+Winter,Post,DWSC,Winter_135,6.4,1.34,B,0.511,Winter_DWSC_B
+Winter,Post,DWSC,Winter_136,6.2,1.49,B,0.625,Winter_DWSC_B
+Winter,Post,DWSC,Winter_137,6.5,1.41,B,0.513,Winter_DWSC_B
+Winter,Post,DWSC,Winter_138,6.6,1.5,B,0.522,Winter_DWSC_B
+Winter,Post,DWSC,Winter_139,5.7,1.06,B,0.572,Winter_DWSC_B
+Winter,Post,DWSC,Winter_140,5.8,1.57,B,0.805,Winter_DWSC_B
+Winter,Post,DWSC,Winter_141,7.2,2.11,B,0.565,Winter_DWSC_B
+Winter,Post,DWSC,Winter_142,6,1.19,B,0.551,Winter_DWSC_B
+Winter,Post,DWSC,Winter_143,6.2,1.31,B,0.55,Winter_DWSC_B
+Winter,Post,DWSC,Winter_144,5.7,1.11,B,0.599,Winter_DWSC_B
+Winter,Post,DWSC,Winter_145,6.2,1.41,B,0.592,Winter_DWSC_B
+Winter,Post,DWSC,Winter_146,6.5,1.88,B,0.685,Winter_DWSC_B
+Winter,Post,DWSC,Winter_147,5.5,0.76,B,0.457,Winter_DWSC_B
+Winter,Post,DWSC,Winter_148,6.1,1.01,B,0.445,Winter_DWSC_B
+Winter,Post,DWSC,Winter_149,5.6,1.68,B,0.957,Winter_DWSC_B
+Winter,Post,DWSC,Winter_150,5.6,1.77,B,1.008,Winter_DWSC_B
+Winter,Post,DWSC,Winter_151,6.5,1.36,B,0.495,Winter_DWSC_B
+Winter,Post,DWSC,Winter_152,6.5,1.63,B,0.594,Winter_DWSC_B
+Winter,Post,DWSC,Winter_153,5.1,0.86,B,0.648,Winter_DWSC_B
+Winter,Post,DWSC,Winter_154,6.5,1.29,B,0.47,Winter_DWSC_B
+Winter,Post,DWSC,Winter_155,5.5,0.88,B,0.529,Winter_DWSC_B
+Winter,Post,DWSC,Winter_156,6.7,2.05,B,0.682,Winter_DWSC_B
+Winter,Post,DWSC,Winter_157,6.4,1.36,B,0.519,Winter_DWSC_B
+Winter,Post,DWSC,Winter_158,6.2,1.28,B,0.537,Winter_DWSC_B
+Winter,Post,DWSC,Winter_159,5,0.66,B,0.528,Winter_DWSC_B
+Winter,Post,DWSC,Winter_160,6.3,0.94,B,0.376,Winter_DWSC_B
+Winter,Post,DWSC,Winter_161,5.7,1.04,B,0.562,Winter_DWSC_B
+Winter,Post,DWSC,Winter_162,5.6,0.97,B,0.552,Winter_DWSC_B
+Winter,Post,DWSC,Winter_163,5.6,0.68,B,0.387,Winter_DWSC_B
+Winter,Post,DWSC,Winter_164,6.1,1.16,B,0.511,Winter_DWSC_B
+Winter,Post,DWSC,Winter_165,6.6,1.7,B,0.591,Winter_DWSC_B
+Winter,Post,DWSC,Winter_166,5.4,0.69,B,0.438,Winter_DWSC_B
+Winter,Post,DWSC,Winter_167,7.1,2.52,B,0.704,Winter_DWSC_B
+Winter,Post,DWSC,Winter_168,6,1.06,B,0.491,Winter_DWSC_B
+Winter,Post,DWSC,Winter_169,6,1.19,B,0.551,Winter_DWSC_B
+Winter,Post,DWSC,Winter_170,6.7,1.43,B,0.475,Winter_DWSC_B
+Winter,Post,DWSC,Winter_171,6.2,1,B,0.42,Winter_DWSC_B
+Winter,Post,DWSC,Winter_172,6.9,1.79,B,0.545,Winter_DWSC_B
+Winter,Post,DWSC,Winter_173,6.2,1.13,B,0.474,Winter_DWSC_B
+Winter,Post,DWSC,Winter_174,6.1,1.37,B,0.604,Winter_DWSC_B
+Winter,Post,DWSC,Winter_175,6.3,1.96,B,0.784,Winter_DWSC_B
+Winter,Post,DWSC,Winter_176,5.9,1.22,B,0.594,Winter_DWSC_B
+Winter,Post,DWSC,Winter_177,6.1,1.36,B,0.599,Winter_DWSC_B
+Winter,Post,RV,Winter_178,6.4,1.54,B,0.587,Winter_RV_B
+Winter,Post,RV,Winter_179,6.3,1.8,B,0.72,Winter_RV_B
+Winter,Post,RV,Winter_180,6.8,1.77,B,0.563,Winter_RV_B
+Winter,Post,RV,Winter_181,6.4,1.77,B,0.675,Winter_RV_B
+Winter,Post,RV,Winter_182,6.3,1.97,B,0.788,Winter_RV_B
+Winter,Post,RV,Winter_183,5.5,1.04,B,0.625,Winter_RV_B
+Winter,Post,RV,Winter_184,6.1,1.64,B,0.723,Winter_RV_B
+Winter,Post,RV,Winter_185,6.5,2.1,B,0.765,Winter_RV_B
+Winter,Post,RV,Winter_186,6.6,2.07,B,0.72,Winter_RV_B
+Winter,Post,RV,Winter_187,6.3,1.67,B,0.668,Winter_RV_B
+Winter,Post,RV,Winter_188,6.1,1.62,B,0.714,Winter_RV_B
+Winter,Post,RV,Winter_189,6.4,1.89,B,0.721,Winter_RV_B
+Winter,Post,RV,Winter_190,6,1.45,B,0.671,Winter_RV_B
+Winter,Post,RV,Winter_191,5.5,1.16,B,0.697,Winter_RV_B
+Winter,Post,RV,Winter_192,6.1,1.55,B,0.683,Winter_RV_B
+Winter,Post,RV,Winter_193,5.8,1.22,B,0.625,Winter_RV_B
+Winter,Post,RV,Winter_194,5.3,0.94,B,0.631,Winter_RV_B
+Winter,Post,RV,Winter_195,6,1.58,B,0.731,Winter_RV_B
+Winter,Post,RV,Winter_196,5.9,1.38,B,0.672,Winter_RV_B
+Winter,Post,RV,Winter_197,7,2.43,B,0.708,Winter_RV_B
+Winter,Post,RV,Winter_198,6.8,2.02,B,0.642,Winter_RV_B
+Winter,Post,RV,Winter_199,6.5,1.84,B,0.67,Winter_RV_B
+Winter,Post,RV,Winter_200,5.4,1.74,B,1.105,Winter_RV_B
+Winter,Post,RV,Winter_201,5.6,1.24,B,0.706,Winter_RV_B
+Winter,Post,RV,Winter_202,5.5,1.18,B,0.709,Winter_RV_B
+Winter,Post,RV,Winter_203,5.5,1.17,B,0.703,Winter_RV_B
+Winter,Post,RV,Winter_204,6.2,1.7,B,0.713,Winter_RV_B
+Winter,Post,RV,Winter_205,5.9,1.39,B,0.677,Winter_RV_B
+Winter,Post,RV,Winter_206,6,1.49,B,0.69,Winter_RV_B
+Winter,Post,RV,Winter_207,5.7,1.19,B,0.643,Winter_RV_B
+Winter,Post,RV,Winter_208,6.2,1.59,B,0.667,Winter_RV_B
+Winter,Post,RV,Winter_209,5.6,1.22,B,0.695,Winter_RV_B
+Winter,Post,RV,Winter_210,6.1,1.44,B,0.634,Winter_RV_B
+Winter,Post,RV,Winter_211,6.7,2.31,B,0.768,Winter_RV_B
+Winter,Post,RV,Winter_212,6.4,1.75,B,0.668,Winter_RV_B
+Winter,Post,RV,Winter_213,6.5,1.89,B,0.688,Winter_RV_B
+Winter,Post,RV,Winter_214,6,1.43,B,0.662,Winter_RV_B
+Winter,Post,RV,Winter_215,6.4,1.74,B,0.664,Winter_RV_B
+Winter,Post,RV,Winter_216,7,2.25,B,0.656,Winter_RV_B
+Winter,Post,RV,Winter_217,7.4,2.9,B,0.716,Winter_RV_B
+Winter,Post,RV,Winter_218,6.5,2.09,B,0.761,Winter_RV_B
+Winter,Post,RV,Winter_219,5.6,1.17,B,0.666,Winter_RV_B
+Winter,Post,RV,Winter_220,6.6,2.15,B,0.748,Winter_RV_B
+Winter,Post,RV,Winter_221,6.3,1.66,B,0.664,Winter_RV_B
+Winter,Post,RV,Winter_222,6.3,1.65,B,0.66,Winter_RV_B
+Winter,Post,RV,Winter_223,6.4,1.81,B,0.69,Winter_RV_B
+Winter,Post,RV,Winter_224,6.4,1.9,B,0.725,Winter_RV_B
+Winter,Post,RV,Winter_225,6.7,2.29,B,0.761,Winter_RV_B
+Winter,Post,RV,Winter_226,6.4,1.67,B,0.637,Winter_RV_B
+Winter,Post,RV,Winter_227,6.6,2.04,B,0.71,Winter_RV_B
+Winter,Post,RV,Winter_228,6,1.26,B,0.583,Winter_RV_B
+Winter,Post,RV,Winter_229,6.4,1.73,B,0.66,Winter_RV_B
+Winter,Post,RV,Winter_230,6.2,1.46,B,0.613,Winter_RV_B
+Winter,Post,RV,Winter_231,5,0.81,B,0.648,Winter_RV_B
+Winter,Post,RV,Winter_232,6,1.48,B,0.685,Winter_RV_B
+Winter,Post,RV,Winter_233,6.2,1.55,B,0.65,Winter_RV_B
+Winter,Post,RV,Winter_234,5.6,0.98,B,0.558,Winter_RV_B
+Winter,Post,RV,Winter_235,6,1.52,B,0.704,Winter_RV_B
+Winter,Post,RV,Winter_236,5.8,1.34,B,0.687,Winter_RV_B
+Winter,Post,DWSC,Winter_237,6.4,1.48,B,0.565,Winter_DWSC_B
+Winter,Post,DWSC,Winter_238,6.8,1.94,B,0.617,Winter_DWSC_B
+Winter,Post,DWSC,Winter_239,6.5,1.2,B,0.437,Winter_DWSC_B
+Winter,Post,DWSC,Winter_240,6.3,1.28,B,0.512,Winter_DWSC_B
+Winter,Post,RV,Winter_241,5.9,1.4,B,0.682,Winter_RV_B
+Winter,Post,RV,Winter_242,6,1.33,B,0.616,Winter_RV_B
+Winter,Post,RV,Winter_243,6.2,1.61,B,0.676,Winter_RV_B
+Winter,Post,RV,Winter_244,6.4,1.71,B,0.652,Winter_RV_B
+Winter,Post,RV,Winter_245,6,1.31,B,0.606,Winter_RV_B
+Winter,Post,DWSC,Winter_246,6.1,1.46,C,0.643,Winter_DWSC_C
+Winter,Post,DWSC,Winter_247,6.4,1.86,C,0.71,Winter_DWSC_C
+Winter,Post,DWSC,Winter_248,6.3,1.63,C,0.652,Winter_DWSC_C
+Winter,Post,DWSC,Winter_249,5.1,0.68,C,0.513,Winter_DWSC_C
+Winter,Post,DWSC,Winter_250,6.6,1.79,C,0.623,Winter_DWSC_C
+Winter,Post,DWSC,Winter_251,4.9,0.63,C,0.535,Winter_DWSC_C
+Winter,Post,DWSC,Winter_252,5.7,0.69,C,0.373,Winter_DWSC_C
+Winter,Post,DWSC,Winter_253,6.5,1.74,C,0.634,Winter_DWSC_C
+Winter,Post,DWSC,Winter_254,5.3,0.6,C,0.403,Winter_DWSC_C
+Winter,Post,DWSC,Winter_255,5.4,0.97,C,0.616,Winter_DWSC_C
+Winter,Post,DWSC,Winter_256,6,1.01,C,0.468,Winter_DWSC_C
+Winter,Post,DWSC,Winter_257,6,1.14,C,0.528,Winter_DWSC_C
+Winter,Post,DWSC,Winter_258,6.8,1.34,C,0.426,Winter_DWSC_C
+Winter,Post,DWSC,Winter_259,6.8,1.43,C,0.455,Winter_DWSC_C
+Winter,Post,DWSC,Winter_260,6,1.02,C,0.472,Winter_DWSC_C
+Winter,Post,DWSC,Winter_261,5.9,1.31,C,0.638,Winter_DWSC_C
+Winter,Post,DWSC,Winter_262,5.2,0.56,C,0.398,Winter_DWSC_C
+Winter,Post,DWSC,Winter_263,6.7,1.44,C,0.479,Winter_DWSC_C
+Winter,Post,DWSC,Winter_264,6.3,1.39,C,0.556,Winter_DWSC_C
+Winter,Post,DWSC,Winter_265,6.5,1.55,C,0.564,Winter_DWSC_C
+Winter,Post,DWSC,Winter_266,6.4,1.53,C,0.584,Winter_DWSC_C
+Winter,Post,DWSC,Winter_267,6.4,1.33,C,0.507,Winter_DWSC_C
+Winter,Post,DWSC,Winter_268,7,1.91,C,0.557,Winter_DWSC_C
+Winter,Post,DWSC,Winter_269,6.4,1.38,C,0.526,Winter_DWSC_C
+Winter,Post,DWSC,Winter_270,6.3,1.22,C,0.488,Winter_DWSC_C
+Winter,Post,DWSC,Winter_271,6.2,1.1,C,0.462,Winter_DWSC_C
+Winter,Post,DWSC,Winter_272,6.4,0.9,C,0.343,Winter_DWSC_C
+Winter,Post,DWSC,Winter_273,6,1.36,C,0.63,Winter_DWSC_C
+Winter,Post,DWSC,Winter_274,6.2,1.01,C,0.424,Winter_DWSC_C
+Winter,Post,DWSC,Winter_275,6.2,0.91,C,0.382,Winter_DWSC_C
+Winter,Post,DWSC,Winter_276,5.8,0.97,C,0.497,Winter_DWSC_C
+Winter,Post,DWSC,Winter_277,5.6,1.03,C,0.587,Winter_DWSC_C
+Winter,Post,DWSC,Winter_278,6.3,1.58,C,0.632,Winter_DWSC_C
+Winter,Post,DWSC,Winter_279,7,1.54,C,0.449,Winter_DWSC_C
+Winter,Post,DWSC,Winter_280,6.2,1.05,C,0.441,Winter_DWSC_C
+Winter,Post,DWSC,Winter_281,5.2,0.66,C,0.469,Winter_DWSC_C
+Winter,Post,DWSC,Winter_282,5.7,1.04,C,0.562,Winter_DWSC_C
+Winter,Post,DWSC,Winter_283,5.7,1.11,C,0.599,Winter_DWSC_C
+Winter,Post,DWSC,Winter_284,6.2,1.35,C,0.566,Winter_DWSC_C
+Winter,Post,DWSC,Winter_285,5.9,1.22,C,0.594,Winter_DWSC_C
+Winter,Post,DWSC,Winter_286,7,1.95,C,0.569,Winter_DWSC_C
+Winter,Post,DWSC,Winter_287,5.5,0.81,C,0.487,Winter_DWSC_C
+Winter,Post,DWSC,Winter_288,6.3,1.62,C,0.648,Winter_DWSC_C
+Winter,Post,DWSC,Winter_289,6.2,1.55,C,0.65,Winter_DWSC_C
+Winter,Post,DWSC,Winter_290,6.4,1.49,C,0.568,Winter_DWSC_C
+Winter,Post,DWSC,Winter_291,6.5,1.91,C,0.695,Winter_DWSC_C
+Winter,Post,DWSC,Winter_292,6,1.29,C,0.597,Winter_DWSC_C
+Winter,Post,DWSC,Winter_293,7.4,2.56,C,0.632,Winter_DWSC_C
+Winter,Post,DWSC,Winter_294,6.9,2.02,C,0.615,Winter_DWSC_C
+Winter,Post,DWSC,Winter_295,5.5,0.71,C,0.427,Winter_DWSC_C
+Winter,Post,DWSC,Winter_296,6.2,1.49,C,0.625,Winter_DWSC_C
+Winter,Post,DWSC,Winter_297,7,2.35,C,0.685,Winter_DWSC_C
+Winter,Post,DWSC,Winter_298,7,1.99,C,0.58,Winter_DWSC_C
+Winter,Post,RV,Winter_299,5.8,1.46,C,0.748,Winter_RV_C
+Winter,Post,RV,Winter_300,6.2,1.7,C,0.713,Winter_RV_C
+Winter,Post,RV,Winter_301,5.3,1.24,C,0.833,Winter_RV_C
+Winter,Post,RV,Winter_302,5.6,1.31,C,0.746,Winter_RV_C
+Winter,Post,RV,Winter_303,6.3,1.66,C,0.664,Winter_RV_C
+Winter,Post,RV,Winter_304,6.1,1.5,C,0.661,Winter_RV_C
+Winter,Post,RV,Winter_305,6.1,1.79,C,0.789,Winter_RV_C
+Winter,Post,RV,Winter_306,6.7,2.09,C,0.695,Winter_RV_C
+Winter,Post,RV,Winter_307,6,1.23,C,0.569,Winter_RV_C
+Winter,Post,RV,Winter_308,5.9,1.4,C,0.682,Winter_RV_C
+Winter,Post,RV,Winter_309,5,0.83,C,0.664,Winter_RV_C
+Winter,Post,RV,Winter_310,6,1.53,C,0.708,Winter_RV_C
+Winter,Post,RV,Winter_311,6.6,2.25,C,0.783,Winter_RV_C
+Winter,Post,RV,Winter_312,5.5,1.12,C,0.673,Winter_RV_C
+Winter,Post,RV,Winter_313,6.1,2.09,C,0.921,Winter_RV_C
+Winter,Post,RV,Winter_314,5.3,1.09,C,0.732,Winter_RV_C
+Winter,Post,RV,Winter_315,5.9,1.54,C,0.75,Winter_RV_C
+Winter,Post,RV,Winter_316,6,1.46,C,0.676,Winter_RV_C
+Winter,Post,RV,Winter_317,5.9,1.39,C,0.677,Winter_RV_C
+Winter,Post,DWSC,Winter_318,5.5,0.69,C,0.415,Winter_DWSC_C
+Winter,Post,DWSC,Winter_319,6.9,1.55,C,0.472,Winter_DWSC_C
+Winter,Post,DWSC,Winter_320,6.2,1.33,C,0.558,Winter_DWSC_C
+Winter,Post,DWSC,Winter_321,6.7,1.78,C,0.592,Winter_DWSC_C
+Winter,Post,DWSC,Winter_322,5.7,1.17,C,0.632,Winter_DWSC_C
+Winter,Post,RV,Winter_323,6.8,2.64,C,0.84,Winter_RV_C
+Winter,Post,RV,Winter_324,6.7,2.38,C,0.791,Winter_RV_C
+Winter,Post,RV,Winter_325,6.9,2.45,C,0.746,Winter_RV_C
+Winter,Post,RV,Winter_326,6.2,1.95,C,0.818,Winter_RV_C
+Winter,Post,RV,Winter_327,6.1,1.98,C,0.872,Winter_RV_C
+Winter,Post,RV,Winter_328,6,1.4,C,0.648,Winter_RV_C
+Winter,Post,RV,Winter_329,6.8,2.34,C,0.744,Winter_RV_C
+Winter,Post,RV,Winter_330,6.7,2.25,C,0.748,Winter_RV_C
+Winter,Post,RV,Winter_331,5.7,1.42,C,0.767,Winter_RV_C
+Winter,Post,RV,Winter_332,6.1,1.66,C,0.731,Winter_RV_C
+Winter,Post,RV,Winter_333,5.4,1.26,C,0.8,Winter_RV_C
+Winter,Post,RV,Winter_334,5.1,0.9,C,0.678,Winter_RV_C
+Winter,Post,RV,Winter_335,5.9,1.32,C,0.643,Winter_RV_C
+Winter,Post,RV,Winter_336,7.1,2.93,C,0.819,Winter_RV_C
+Winter,Post,RV,Winter_337,6.2,1.36,C,0.571,Winter_RV_C
+Winter,Post,RV,Winter_338,6.4,1.83,C,0.698,Winter_RV_C
+Winter,Post,RV,Winter_339,6.2,1.6,C,0.671,Winter_RV_C
+Winter,Post,RV,Winter_340,6.5,1.88,C,0.685,Winter_RV_C
+Winter,Post,RV,Winter_341,5.7,1.23,C,0.664,Winter_RV_C
+Winter,Post,RV,Winter_342,6.5,1.67,C,0.608,Winter_RV_C
+Winter,Post,RV,Winter_343,5.4,1.04,C,0.66,Winter_RV_C
+Winter,Post,RV,Winter_344,6.6,2.23,C,0.776,Winter_RV_C
+Winter,Post,RV,Winter_345,6,1.6,C,0.741,Winter_RV_C
+Winter,Post,RV,Winter_346,6,2.05,C,0.949,Winter_RV_C
+Winter,Post,RV,Winter_347,5.9,1.3,C,0.633,Winter_RV_C
+Winter,Post,RV,Winter_348,7,2.85,C,0.831,Winter_RV_C
+Winter,Post,RV,Winter_349,6.4,1.93,C,0.736,Winter_RV_C
+Winter,Post,RV,Winter_350,5.7,1.25,C,0.675,Winter_RV_C
+Winter,Post,RV,Winter_351,5.4,1.15,C,0.73,Winter_RV_C
+Winter,Post,RV,Winter_352,5.9,1.33,C,0.648,Winter_RV_C
+Winter,Post,RV,Winter_353,5.4,1.08,C,0.686,Winter_RV_C
+Winter,Post,RV,Winter_354,5,0.9,C,0.72,Winter_RV_C
+Winter,Post,RV,Winter_355,6.2,1.86,C,0.78,Winter_RV_C
+Winter,Post,RV,Winter_356,6.5,1.85,C,0.674,Winter_RV_C
+Winter,Post,RV,Winter_357,6.5,2.11,C,0.768,Winter_RV_C
+Winter,Post,RV,Winter_358,6.7,2.1,C,0.698,Winter_RV_C
+Winter,Post,RV,Winter_359,6.1,1.63,C,0.718,Winter_RV_C
+Winter,Post,RV,Winter_360,5.4,1.23,C,0.781,Winter_RV_C
+Winter,Post,RV,Winter_361,6.4,1.56,C,0.595,Winter_RV_C
+Winter,Post,RV,Winter_362,5.8,1.36,C,0.697,Winter_RV_C
+Winter,Post,RV,Winter_363,5.8,1.25,C,0.641,Winter_RV_C
+Winter,Post,RV,Winter_364,5.4,1.12,C,0.711,Winter_RV_C
+Winter,Post,RV,Winter_365,6.3,1.65,C,0.66,Winter_RV_C
+Winter,Post,RV,Winter_366,6,1.52,C,0.704,Winter_RV_C
+Winter,Post,RV,Winter_367,6.7,1.83,C,0.608,Winter_RV_C
+Winter,Post,DWSC,Winter_368,5.5,1.08,D,0.649,Winter_DWSC_D
+Winter,Post,DWSC,Winter_369,5.6,0.81,D,0.461,Winter_DWSC_D
+Winter,Post,DWSC,Winter_370,7.8,1.5,D,0.316,Winter_DWSC_D
+Winter,Post,DWSC,Winter_371,6.2,1.19,D,0.499,Winter_DWSC_D
+Winter,Post,DWSC,Winter_372,5.8,0.97,D,0.497,Winter_DWSC_D
+Winter,Post,DWSC,Winter_373,5.2,0.89,D,0.633,Winter_DWSC_D
+Winter,Post,DWSC,Winter_374,5.7,1.06,D,0.572,Winter_DWSC_D
+Winter,Post,DWSC,Winter_375,6.2,1.09,D,0.457,Winter_DWSC_D
+Winter,Post,DWSC,Winter_376,5.2,0.65,D,0.462,Winter_DWSC_D
+Winter,Post,DWSC,Winter_377,6.6,1.62,D,0.563,Winter_DWSC_D
+Winter,Post,DWSC,Winter_378,5.7,0.89,D,0.481,Winter_DWSC_D
+Winter,Post,DWSC,Winter_379,6.4,1.39,D,0.53,Winter_DWSC_D
+Winter,Post,DWSC,Winter_380,5.6,0.91,D,0.518,Winter_DWSC_D
+Winter,Post,DWSC,Winter_381,6.4,1.45,D,0.553,Winter_DWSC_D
+Winter,Post,DWSC,Winter_382,6.5,0.96,D,0.35,Winter_DWSC_D
+Winter,Post,DWSC,Winter_383,6.2,1.15,D,0.483,Winter_DWSC_D
+Winter,Post,DWSC,Winter_384,6.4,1.15,D,0.439,Winter_DWSC_D
+Winter,Post,DWSC,Winter_385,6.3,0.98,D,0.392,Winter_DWSC_D
+Winter,Post,DWSC,Winter_386,5.8,1.09,D,0.559,Winter_DWSC_D
+Winter,Post,DWSC,Winter_387,6.3,1.31,D,0.524,Winter_DWSC_D
+Winter,Post,DWSC,Winter_388,6.2,1.12,D,0.47,Winter_DWSC_D
+Winter,Post,DWSC,Winter_389,5.5,0.79,D,0.475,Winter_DWSC_D
+Winter,Post,DWSC,Winter_390,6.5,1.63,D,0.594,Winter_DWSC_D
+Winter,Post,DWSC,Winter_391,6,1.29,D,0.597,Winter_DWSC_D
+Winter,Post,DWSC,Winter_392,5.7,0.81,D,0.437,Winter_DWSC_D
+Winter,Post,DWSC,Winter_393,6.4,1.53,D,0.584,Winter_DWSC_D
+Winter,Post,DWSC,Winter_394,6.4,1.24,D,0.473,Winter_DWSC_D
+Winter,Post,DWSC,Winter_395,6.6,1.88,D,0.654,Winter_DWSC_D
+Winter,Post,DWSC,Winter_396,6,1.43,D,0.662,Winter_DWSC_D
+Winter,Post,DWSC,Winter_397,5.5,0.81,D,0.487,Winter_DWSC_D
+Winter,Post,DWSC,Winter_398,5.3,1.33,D,0.893,Winter_DWSC_D
+Winter,Post,DWSC,Winter_399,6.2,1.68,D,0.705,Winter_DWSC_D
+Winter,Post,DWSC,Winter_400,6.4,1.65,D,0.629,Winter_DWSC_D
+Winter,Post,DWSC,Winter_401,6.3,1.44,D,0.576,Winter_DWSC_D
+Winter,Post,DWSC,Winter_402,6.7,1.86,D,0.618,Winter_DWSC_D
+Winter,Post,DWSC,Winter_403,6.7,1.61,D,0.535,Winter_DWSC_D
+Winter,Post,DWSC,Winter_404,5.5,0.94,D,0.565,Winter_DWSC_D
+Winter,Post,DWSC,Winter_405,7,2.2,D,0.641,Winter_DWSC_D
+Winter,Post,DWSC,Winter_406,6.7,1.61,D,0.535,Winter_DWSC_D
+Winter,Post,DWSC,Winter_407,6.5,1.66,D,0.604,Winter_DWSC_D
+Winter,Post,DWSC,Winter_408,6.4,1.7,D,0.648,Winter_DWSC_D
+Winter,Post,DWSC,Winter_409,6,0.93,D,0.431,Winter_DWSC_D
+Winter,Post,DWSC,Winter_410,5,0.76,D,0.608,Winter_DWSC_D
+Winter,Post,DWSC,Winter_411,6.5,1.24,D,0.452,Winter_DWSC_D
+Winter,Post,DWSC,Winter_412,6,1.01,D,0.468,Winter_DWSC_D
+Winter,Post,DWSC,Winter_413,6.2,1.47,D,0.617,Winter_DWSC_D
+Winter,Post,DWSC,Winter_414,6.5,1.55,D,0.564,Winter_DWSC_D
+Winter,Post,DWSC,Winter_415,5.5,0.72,D,0.433,Winter_DWSC_D
+Winter,Post,DWSC,Winter_416,5.6,1.08,D,0.615,Winter_DWSC_D
+Winter,Post,DWSC,Winter_417,5.5,0.66,D,0.397,Winter_DWSC_D
+Winter,Post,DWSC,Winter_418,6.5,1.64,D,0.597,Winter_DWSC_D
+Winter,Post,DWSC,Winter_419,6.1,1.54,D,0.678,Winter_DWSC_D
+Winter,Post,DWSC,Winter_420,6.4,1.41,D,0.538,Winter_DWSC_D
+Winter,Post,DWSC,Winter_421,6.2,0.78,D,0.327,Winter_DWSC_D
+Winter,Post,DWSC,Winter_422,6.7,1.63,D,0.542,Winter_DWSC_D
+Winter,Post,DWSC,Winter_423,7.2,2.15,D,0.576,Winter_DWSC_D
+Winter,Post,DWSC,Winter_424,6.5,1.69,D,0.615,Winter_DWSC_D
+Winter,Post,DWSC,Winter_425,6.5,1.56,D,0.568,Winter_DWSC_D
+Winter,Post,DWSC,Winter_426,6.4,1.28,D,0.488,Winter_DWSC_D
+Winter,Post,RV,Winter_427,5.6,1.16,D,0.661,Winter_RV_D
+Winter,Post,RV,Winter_428,5.9,1.33,D,0.648,Winter_RV_D
+Winter,Post,RV,Winter_429,5.8,1.22,D,0.625,Winter_RV_D
+Winter,Post,RV,Winter_430,6.3,2.26,D,0.904,Winter_RV_D
+Winter,Post,RV,Winter_431,6.5,1.72,D,0.626,Winter_RV_D
+Winter,Post,RV,Winter_432,6,1.39,D,0.644,Winter_RV_D
+Winter,Post,RV,Winter_433,6.8,2,D,0.636,Winter_RV_D
+Winter,Post,RV,Winter_434,6.1,1.35,D,0.595,Winter_RV_D
+Winter,Post,RV,Winter_435,6.5,1.65,D,0.601,Winter_RV_D
+Winter,Post,RV,Winter_436,6.2,1.35,D,0.566,Winter_RV_D
+Winter,Post,RV,Winter_437,6.7,1.95,D,0.648,Winter_RV_D
+Winter,Post,RV,Winter_438,6.7,1.94,D,0.645,Winter_RV_D
+Winter,Post,RV,Winter_439,6,1.3,D,0.602,Winter_RV_D
+Winter,Post,RV,Winter_440,6,1.4,D,0.648,Winter_RV_D
+Winter,Post,RV,Winter_441,4.9,0.71,D,0.603,Winter_RV_D
+Winter,Post,RV,Winter_442,6.6,2.03,D,0.706,Winter_RV_D
+Winter,Post,RV,Winter_443,6,1.64,D,0.759,Winter_RV_D
+Winter,Post,RV,Winter_444,6,1.34,D,0.62,Winter_RV_D
+Winter,Post,RV,Winter_445,5.9,1.38,D,0.672,Winter_RV_D
+Winter,Post,RV,Winter_446,6.1,1.48,D,0.652,Winter_RV_D
+Winter,Post,RV,Winter_447,6.6,2.2,D,0.765,Winter_RV_D
+Winter,Post,RV,Winter_448,5.6,1.15,D,0.655,Winter_RV_D
+Winter,Post,RV,Winter_449,6.4,1.72,D,0.656,Winter_RV_D
+Winter,Post,RV,Winter_450,5.5,1.03,D,0.619,Winter_RV_D
+Winter,Post,RV,Winter_451,6.4,1.86,D,0.71,Winter_RV_D
+Winter,Post,RV,Winter_452,6.1,1.36,D,0.599,Winter_RV_D
+Winter,Post,RV,Winter_453,5.9,1.22,D,0.594,Winter_RV_D
+Winter,Post,RV,Winter_454,5.8,1.2,D,0.615,Winter_RV_D
+Winter,Post,RV,Winter_455,6.1,1.36,D,0.599,Winter_RV_D
+Winter,Post,RV,Winter_456,6.5,2.04,D,0.743,Winter_RV_D
+Winter,Post,RV,Winter_457,6.3,1.84,D,0.736,Winter_RV_D
+Winter,Post,RV,Winter_458,6,1.38,D,0.639,Winter_RV_D
+Winter,Post,RV,Winter_459,5.9,1.33,D,0.648,Winter_RV_D
+Winter,Post,RV,Winter_460,6.6,2.11,D,0.734,Winter_RV_D
+Winter,Post,RV,Winter_461,6.2,1.47,D,0.617,Winter_RV_D
+Winter,Post,RV,Winter_462,6.2,2.01,D,0.843,Winter_RV_D
+Winter,Post,RV,Winter_463,7,2.37,D,0.691,Winter_RV_D
+Winter,Post,RV,Winter_464,5.8,1.47,D,0.753,Winter_RV_D
+Winter,Post,RV,Winter_465,6.4,1.82,D,0.694,Winter_RV_D
+Winter,Post,RV,Winter_466,6.1,1.41,D,0.621,Winter_RV_D
+Winter,Post,RV,Winter_467,5.3,0.92,D,0.618,Winter_RV_D
+Winter,Post,RV,Winter_468,6.6,2.11,D,0.734,Winter_RV_D
+Winter,Post,RV,Winter_469,6.5,1.92,D,0.699,Winter_RV_D
+Winter,Post,RV,Winter_470,6.5,2.15,D,0.783,Winter_RV_D
+Winter,Post,RV,Winter_471,5.8,1.06,D,0.543,Winter_RV_D
+Winter,Post,RV,Winter_472,6,1.51,D,0.699,Winter_RV_D
+Winter,Post,RV,Winter_473,6.1,1.7,D,0.749,Winter_RV_D
+Winter,Post,RV,Winter_474,6.2,1.56,D,0.655,Winter_RV_D
+Winter,Post,RV,Winter_475,5.8,1.27,D,0.651,Winter_RV_D
+Winter,Post,RV,Winter_476,6.8,2.27,D,0.722,Winter_RV_D
+Winter,Post,RV,Winter_477,5.9,1.41,D,0.687,Winter_RV_D
+Winter,Post,RV,Winter_478,5.9,1.28,D,0.623,Winter_RV_D
+Winter,Post,DWSC,Winter_479,6,1.41,D,0.653,Winter_DWSC_D
+Winter,Post,RV,Winter_480,6.5,1.89,D,0.688,Winter_RV_D
+Winter,Post,RV,Winter_481,6.5,1.89,D,0.688,Winter_RV_D
+Winter,Post,RV,Winter_482,6.2,1.61,D,0.676,Winter_RV_D
+Winter,Post,RV,Winter_483,6.5,1.76,D,0.641,Winter_RV_D
+Winter,Post,RV,Winter_484,5.9,1.34,D,0.652,Winter_RV_D
+Winter,Post,RV,Winter_485,5.6,1.18,D,0.672,Winter_RV_D
+Winter,Post,RV,Winter_486,5.8,1.38,D,0.707,Winter_RV_D
+Winter,Post,RV,Winter_487,6.4,1.64,D,0.626,Winter_RV_D
+Winter,Post,RV,Winter_488,6.1,1.5,D,0.661,Winter_RV_D
+Winter,Post,RV,Winter_489,6,1.25,D,0.579,Winter_RV_D
+Winter,Post,RV,Winter_490,6.3,1.56,D,0.624,Winter_RV_D
+Winter,Post,RV,Winter_491,5.2,0.96,D,0.683,Winter_RV_D
+Summer,Post,RV,RV_082819_1,4.4,0.35,Cage A,0.411,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_2,4.5,0.65,Cage A,0.713,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_3,5,0.92,Cage A,0.736,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_4,5,0.71,Cage A,0.568,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_5,4.9,0.75,Cage A,0.637,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_6,4.9,0.69,Cage A,0.586,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_7,5.2,0.95,Cage A,0.676,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_8,4.8,0.77,Cage A,0.696,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_9,4.8,0.69,Cage A,0.624,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_10,5,0.84,Cage B,0.672,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_11,5,0.86,Cage B,0.688,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_12,4.9,0.85,Cage B,0.722,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_13,4.9,0.78,Cage B,0.663,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_14,5,0.83,Cage B,0.664,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_15,5.7,1.12,Cage B,0.605,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_16,5,0.79,Cage B,0.632,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_17,5,0.71,Cage C,0.568,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_18,4.9,0.74,Cage C,0.629,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_19,4.7,0.81,Cage C,0.78,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_20,4.7,0.86,Cage C,0.828,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_21,5.3,1.17,Cage C,0.786,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_22,4.7,0.49,Cage C,0.472,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_41,5.5,0.95,Cage A,0.571,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_42,4.7,0.71,Cage A,0.684,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_43,5.1,0.94,Cage A,0.709,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_44,4.6,0.6,Cage A,0.616,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_45,4.6,0.63,Cage A,0.647,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_46,5,0.84,Cage A,0.672,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_47,4.9,0.71,Cage A,0.603,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_48,4.9,0.67,Cage A,0.569,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_49,5.8,1.29,Cage A,0.661,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_50,5,0.73,Cage A,0.584,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_51,4.7,0.64,Cage A,0.616,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_52,5.2,0.84,Cage A,0.597,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_53,5.6,1.14,Cage A,0.649,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_54,5.2,1.06,Cage A,0.754,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_55,5.6,1.13,Cage A,0.643,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_56,5.4,1.11,Cage A,0.705,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_57,5.1,0.88,Cage A,0.663,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_58,5.5,0.88,Cage A,0.529,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_59,5.1,0.88,Cage A,0.663,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_60,4.6,0.51,Cage A,0.524,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_61,4.5,0.54,Cage A,0.593,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_62,5.1,0.92,Cage A,0.694,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_63,5,0.69,Cage A,0.552,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_64,4.5,0.44,Cage A,0.483,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_65,4.9,0.85,Cage A,0.722,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_66,4.8,0.79,Cage A,0.714,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_67,4.9,0.65,Cage A,0.552,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_68,5,0.64,Cage A,0.512,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_69,5,0.89,Cage A,0.712,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_70,4.7,0.41,Cage B,0.395,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_71,4.7,0.66,Cage B,0.636,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_72,4.1,0.46,Cage B,0.667,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_73,5.6,1.06,Cage B,0.604,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_74,4.8,0.53,Cage B,0.479,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_75,4.9,0.67,Cage C,0.569,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_76,4.8,0.7,Cage B,0.633,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_77,5,0.82,Cage B,0.656,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_78,4.9,0.77,Cage B,0.654,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_79,4.7,0.75,Cage B,0.722,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_80,4.5,0.53,Cage B,0.582,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_81,5.4,1.16,Cage B,0.737,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_82,5,0.83,Cage B,0.664,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_83,6,1.67,Cage B,0.773,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_84,4.5,0.4,Cage B,0.439,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_85,5.1,0.92,Cage B,0.694,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_86,5.3,0.98,Cage B,0.658,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_87,5.4,1.05,Cage B,0.667,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_88,5,0.83,Cage B,0.664,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_89,4.7,0.7,Cage B,0.674,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_90,5,0.67,Cage A,0.536,Summer_RV_Cage A
+Summer,Post,RV,RV_082819_91,4.5,0.55,Cage B,0.604,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_92,4.5,0.7,Cage B,0.768,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_93,4.9,0.89,Cage B,0.756,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_94,4.9,0.59,Cage B,0.501,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_95,5.4,0.88,Cage C,0.559,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_96,4.8,0.72,Cage B,0.651,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_97,4.3,0.57,Cage B,0.717,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_98,4.7,0.55,Cage C,0.53,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_99,4.7,0.55,Cage B,0.53,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_100,4.9,0.75,Cage C,0.637,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_101,4.7,0.8,Cage C,0.771,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_102,4.9,0.79,Cage C,0.671,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_103,4.7,0.68,Cage C,0.655,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_104,4.8,0.66,Cage C,0.597,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_105,5.5,1.19,Cage C,0.715,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_106,4.9,0.79,Cage C,0.671,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_107,5.1,0.67,Cage C,0.505,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_108,4.9,0.85,Cage C,0.722,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_109,5.3,1.06,Cage C,0.712,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_110,4.8,0.85,Cage C,0.769,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_111,4.9,0.62,Cage C,0.527,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_112,4.6,0.43,Cage C,0.442,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_113,4.7,0.66,Cage C,0.636,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_114,4.9,0.64,Cage C,0.544,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_115,5.1,0.58,Cage C,0.437,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_116,5,0.88,Cage C,0.704,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_117,4.8,0.69,Cage C,0.624,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_118,5.3,1.01,Cage C,0.678,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_119,4.7,0.71,Cage C,0.684,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_120,5,0.81,Cage C,0.648,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_121,5.1,0.8,Cage C,0.603,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_122,4.8,0.71,Cage C,0.642,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_123,5.1,0.89,Cage C,0.671,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_124,5.1,0.82,Cage C,0.618,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_125,4.9,0.77,Cage C,0.654,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_126,4.9,0.81,Cage C,0.688,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_127,4.6,0.48,Cage C,0.493,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_128,4.9,0.69,Cage C,0.586,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_129,4.6,0.68,Cage C,0.699,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_130,5.3,0.84,Cage B,0.564,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_131,4.7,0.55,Cage C,0.53,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_132,5,0.51,Cage C,0.408,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_133,5.3,0.86,Cage C,0.578,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_134,5,0.78,Cage C,0.624,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_135,4.8,0.47,Cage C,0.425,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_136,4.1,0.3,Cage B,0.435,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_137,4,0.16,Cage B,0.25,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_138,NA,0.31,Cage B,NA,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_139,NA,0.09,Cage C,NA,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_140,5.3,0.69,Cage C,0.463,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_141,4,0.36,Cage C,0.562,Summer_RV_Cage C
+Summer,Post,RV,RV_082819_142,4.8,0.61,Cage B,0.552,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_143,NA,0.15,Cage B,NA,Summer_RV_Cage B
+Summer,Post,RV,RV_082819_144,NA,0.1,Cage C,NA,Summer_RV_Cage C
+Summer,Post,FCCL,FCCL_082919_1,5.3,0.74,B3,0.497,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_2,5.7,1.15,B3,0.621,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_3,6.2,1.41,B3,0.592,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_4,4.7,0.46,B3,0.443,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_5,5.3,0.71,B3,0.477,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_6,5.4,1.07,B3,0.68,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_7,6,1.16,B4,0.537,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_8,4.8,0.7,B4,0.633,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_9,5.7,1.15,B4,0.621,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_10,5.6,1.23,B4,0.7,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_11,4.1,0.41,B4,0.595,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_12,5.8,1.16,B4,0.595,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_13,5.2,0.98,B5,0.697,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_14,5.1,0.9,B5,0.678,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_15,5.3,1.11,B5,0.746,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_16,5.8,1.3,B5,0.666,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_17,5.3,0.85,B5,0.571,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_18,5.5,1.15,B5,0.691,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_19,5.6,1.24,B3,0.706,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_20,5.7,1.18,B3,0.637,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_21,4.9,0.51,B3,0.433,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_22,6.4,1.78,B3,0.679,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_23,5.2,1.13,B3,0.804,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_24,5.7,1.32,B3,0.713,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_25,5.4,0.86,B3,0.546,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_26,5.3,0.96,B3,0.645,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_27,5,0.56,B3,0.448,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_28,4.6,0.57,B3,0.586,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_29,4.4,0.52,B3,0.61,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_30,5.1,0.71,B3,0.535,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_31,4.4,0.45,B3,0.528,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_32,5,0.68,B3,0.544,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_33,5,0.82,B3,0.656,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_34,5.9,1.44,B3,0.701,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_35,6.4,1.88,B3,0.717,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_36,4.7,0.6,B3,0.578,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_37,5.5,1.07,B3,0.643,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_38,5.3,0.77,B3,0.517,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_39,4.9,0.73,B3,0.62,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_40,4.6,0.6,B3,0.616,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_41,5.7,1.39,B3,0.751,Summer_FCCL_B3
+Summer,Post,FCCL,FCCL_082919_42,5.8,1.22,B4,0.625,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_43,4.7,0.61,B4,0.588,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_44,4.5,0.56,B4,0.615,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_45,4.7,0.64,B4,0.616,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_46,5.4,1.05,B4,0.667,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_47,4.8,0.5,B4,0.452,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_48,4.7,0.55,B4,0.53,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_49,5.8,1.44,B4,0.738,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_50,6,1.54,B4,0.713,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_51,5,0.76,B4,0.608,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_52,5.5,1.31,B4,0.787,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_53,5.3,0.92,B4,0.618,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_54,5,0.79,B4,0.632,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_55,5.4,1.11,B4,0.705,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_56,4.8,0.81,B4,0.732,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_57,5.9,1.48,B4,0.721,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_58,5.6,1.31,B4,0.746,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_59,5.2,0.93,B4,0.661,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_60,4.8,0.69,B4,0.624,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_61,5.8,1.23,B4,0.63,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_62,4.5,0.6,B4,0.658,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_63,4.9,0.61,B4,0.518,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_64,5,0.52,B4,0.416,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_65,4.7,0.43,B5,0.414,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_66,5.4,1.1,B5,0.699,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_67,4.9,0.66,B5,0.561,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_68,4.5,0.4,B4,0.439,Summer_FCCL_B4
+Summer,Post,FCCL,FCCL_082919_69,5.1,0.79,B5,0.596,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_70,5.6,0.99,B5,0.564,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_71,5.6,1.09,B5,0.621,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_72,4.2,0.34,B5,0.459,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_73,5.5,1.02,B5,0.613,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_74,4.6,0.45,B5,0.462,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_75,5.1,0.8,B5,0.603,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_76,5.3,1.04,B5,0.699,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_77,5.4,1.11,B5,0.705,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_78,5.4,1.1,B5,0.699,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_79,5.3,0.78,B5,0.524,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_80,4.4,0.35,B5,0.411,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_81,4.9,0.62,B5,0.527,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_82,4.9,0.89,B5,0.756,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_83,5.4,0.96,B5,0.61,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_84,5.2,0.93,B5,0.661,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_85,5.2,0.89,B5,0.633,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_86,6,1.26,B5,0.583,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_87,5.9,1.46,B5,0.711,Summer_FCCL_B5
+Summer,Post,FCCL,FCCL_082919_88,5.4,1.09,B5,0.692,Summer_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_1,4.9,0.37,B3,0.314,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_2,5.7,1.02,B3,0.551,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_3,5.4,0.85,B3,0.54,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_4,6.2,1.54,B3,0.646,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_5,5.8,1.07,B3,0.548,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_6,5.6,0.86,B3,0.49,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_7,5.3,0.73,B3,0.49,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_8,5.6,1.24,B3,0.706,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_9,6.2,1.3,B3,0.545,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_10,6.3,1.56,B4,0.624,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_11,6.4,1.84,B4,0.702,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_12,6.2,1.94,B4,0.814,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_13,5.6,0.97,B4,0.552,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_14,6,1.37,B4,0.634,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_15,6.3,1.81,B4,0.724,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_16,6.5,2.03,B4,0.739,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_17,7,2.44,B4,0.711,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_18,6.6,1.89,B4,0.657,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_19,5.8,1.13,B5,0.579,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_20,6.1,1.62,B5,0.714,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_21,6,1.27,B3,0.588,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_22,5.5,1.32,B3,0.793,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_23,5.6,1.09,B3,0.621,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_24,5.8,1.37,B3,0.702,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_25,4.7,0.57,B3,0.549,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_26,5.1,0.65,B3,0.49,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_27,5.6,0.97,B3,0.552,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_28,6.5,1.9,B3,0.692,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_29,6.7,2.05,B3,0.682,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_30,5.3,0.94,B3,0.631,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_31,6,1.62,B3,0.75,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_32,6.3,1.58,B3,0.632,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_33,5.7,0.94,B3,0.508,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_34,6.2,1.43,B3,0.6,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_35,5,0.85,B3,0.68,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_36,6.5,2.01,B3,0.732,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_37,5.3,0.98,B3,0.658,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_38,6.2,1.47,B3,0.617,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_39,6,1.56,B3,0.722,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_40,6,1.56,B3,0.722,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_41,5.5,1.01,B3,0.607,Fall_FCCL_B3
+Fall,Post,FCCL,FCCL_110519_42,6.8,1.78,B4,0.566,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_43,6,1.39,B4,0.644,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_44,5.6,1.18,B4,0.672,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_45,6,1.65,B4,0.764,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_46,6.1,1.72,B4,0.758,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_47,7.1,3.59,B4,1.003,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_48,5.2,0.87,B4,0.619,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_49,6.3,1.7,B4,0.68,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_50,5.3,1.13,B4,0.759,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_51,6.2,1.92,B4,0.806,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_52,6.2,1.91,B4,0.801,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_53,6.3,1.65,B4,0.66,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_54,6.2,1.67,B4,0.701,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_55,6,1.36,B4,0.63,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_56,7.4,2.83,B4,0.698,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_57,6.5,1.89,B4,0.688,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_58,5.3,1.01,B4,0.678,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_59,5.6,1.07,B4,0.609,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_60,5,0.91,B4,0.728,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_61,5.1,1.03,B4,0.776,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_62,6.2,1.85,B4,0.776,Fall_FCCL_B4
+Fall,Post,FCCL,FCCL_110519_63,6.1,1.38,B5,0.608,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_64,6.2,1.69,B5,0.709,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_65,5.5,1.03,B5,0.619,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_66,6,1.42,B5,0.657,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_67,5,0.89,B5,0.712,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_68,5.5,1.03,B5,0.619,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_69,6,1.45,B5,0.671,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_70,6,1.8,B5,0.833,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_71,6.4,1.95,B5,0.744,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_72,5.2,0.92,B5,0.654,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_73,5.7,1.5,B5,0.81,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_74,7,2.56,B5,0.746,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_75,5.3,0.84,B5,0.564,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_76,5.3,1.03,B5,0.692,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_77,4.8,0.69,B5,0.624,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_78,6.1,0.68,B5,0.3,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_79,6.1,1.6,B5,0.705,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_80,5.8,1.4,B5,0.718,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_81,5.2,0.8,B5,0.569,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_82,5,0.9,B5,0.72,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_83,6.8,2.22,B5,0.706,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_84,5.2,0.9,B5,0.64,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_85,6.1,1.29,B5,0.568,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_86,5.3,0.98,B5,0.658,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_87,4.6,0.61,B5,0.627,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_88,5.9,1.22,B5,0.594,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_89,5.8,1.22,B5,0.625,Fall_FCCL_B5
+Fall,Post,FCCL,FCCL_110519_90,4.2,0.46,B5,0.621,Fall_FCCL_B5
+Fall,Post,RV,RV_110619_1,5,0.84,A,0.672,Fall_RV_A
+Fall,Post,RV,RV_110619_2,5.6,0.72,A,0.41,Fall_RV_A
+Fall,Post,RV,RV_110619_3,5,0.71,A,0.568,Fall_RV_A
+Fall,Post,RV,RV_110619_4,5.9,1.22,A,0.594,Fall_RV_A
+Fall,Post,RV,RV_110619_5,5.1,0.66,A,0.498,Fall_RV_A
+Fall,Post,RV,RV_110619_6,5.6,0.81,A,0.461,Fall_RV_A
+Fall,Post,RV,RV_110619_7,5.7,0.99,A,0.535,Fall_RV_A
+Fall,Post,RV,RV_110619_8,6.5,1.37,A,0.499,Fall_RV_A
+Fall,Post,RV,RV_110619_9,6.4,1.55,A,0.591,Fall_RV_A
+Fall,Post,RV,RV_110619_10,6.2,1.38,A,0.579,Fall_RV_A
+Fall,Post,RV,RV_110619_11,5.3,0.74,A,0.497,Fall_RV_A
+Fall,Post,RV,RV_110619_12,6.1,1.63,A,0.718,Fall_RV_A
+Fall,Post,RV,RV_110619_13,6.9,1.93,A,0.588,Fall_RV_A
+Fall,Post,RV,RV_110619_14,5.7,0.99,A,0.535,Fall_RV_A
+Fall,Post,RV,RV_110619_15,6.3,1.56,A,0.624,Fall_RV_A
+Fall,Post,RV,RV_110619_16,4.5,0.47,B,0.516,Fall_RV_B
+Fall,Post,RV,RV_110619_17,7.1,2.09,B,0.584,Fall_RV_B
+Fall,Post,RV,RV_110619_18,6.3,1.26,B,0.504,Fall_RV_B
+Fall,Post,RV,RV_110619_19,6.8,1.75,B,0.557,Fall_RV_B
+Fall,Post,RV,RV_110619_20,5.5,1.02,B,0.613,Fall_RV_B
+Fall,Post,RV,RV_110619_21,6.4,1.19,B,0.454,Fall_RV_B
+Fall,Post,RV,RV_110619_22,6.2,1.39,B,0.583,Fall_RV_B
+Fall,Post,RV,RV_110619_23,6,1.18,B,0.546,Fall_RV_B
+Fall,Post,RV,RV_110619_24,6,1.29,B,0.597,Fall_RV_B
+Fall,Post,RV,RV_110619_25,6.2,1.45,B,0.608,Fall_RV_B
+Fall,Post,RV,RV_110619_26,6.8,1.88,B,0.598,Fall_RV_B
+Fall,Post,RV,RV_110619_27,6.1,1.23,B,0.542,Fall_RV_B
+Fall,Post,RV,RV_110619_28,7,2.18,B,0.636,Fall_RV_B
+Fall,Post,RV,RV_110619_29,6.7,1.54,B,0.512,Fall_RV_B
+Fall,Post,RV,RV_110619_30,6.4,1.43,B,0.546,Fall_RV_B
+Fall,Post,RV,RV_110619_31,4.9,0.49,C,0.416,Fall_RV_C
+Fall,Post,RV,RV_110619_32,6,1.34,C,0.62,Fall_RV_C
+Fall,Post,RV,RV_110619_33,5.7,0.91,C,0.491,Fall_RV_C
+Fall,Post,RV,RV_110619_34,7,2.13,C,0.621,Fall_RV_C
+Fall,Post,RV,RV_110619_35,6.5,1.57,C,0.572,Fall_RV_C
+Fall,Post,RV,RV_110619_36,5.3,0.64,C,0.43,Fall_RV_C
+Fall,Post,RV,RV_110619_37,5.4,0.85,C,0.54,Fall_RV_C
+Fall,Post,RV,RV_110619_38,4.8,0.6,C,0.543,Fall_RV_C
+Fall,Post,RV,RV_110619_39,5.5,1.02,C,0.613,Fall_RV_C
+Fall,Post,RV,RV_110619_40,7,2.07,C,0.603,Fall_RV_C
+Fall,Post,RV,RV_110619_41,6.4,1.62,C,0.618,Fall_RV_C
+Fall,Post,RV,RV_110619_42,6.4,1.54,C,0.587,Fall_RV_C
+Fall,Post,RV,RV_110619_43,6.3,1.36,C,0.544,Fall_RV_C
+Fall,Post,RV,RV_110619_44,6.1,1.24,C,0.546,Fall_RV_C
+Fall,Post,RV,RV_110619_45,5.9,1.13,C,0.55,Fall_RV_C
+Fall,Post,RV,RV_110619_46,5.3,0.5,A,0.336,Fall_RV_A
+Fall,Post,RV,RV_110619_47,5.2,0.66,A,0.469,Fall_RV_A
+Fall,Post,RV,RV_110619_48,6.5,1.87,A,0.681,Fall_RV_A
+Fall,Post,RV,RV_110619_49,5.3,0.91,A,0.611,Fall_RV_A
+Fall,Post,RV,RV_110619_50,4.7,0.52,A,0.501,Fall_RV_A
+Fall,Post,RV,RV_110619_51,4.9,0.68,A,0.578,Fall_RV_A
+Fall,Post,RV,RV_110619_52,6.2,1.45,A,0.608,Fall_RV_A
+Fall,Post,RV,RV_110619_53,5.9,0.95,A,0.463,Fall_RV_A
+Fall,Post,RV,RV_110619_54,6.1,1.4,A,0.617,Fall_RV_A
+Fall,Post,RV,RV_110619_55,6.4,1.41,A,0.538,Fall_RV_A
+Fall,Post,RV,RV_110619_56,6.5,1.87,A,0.681,Fall_RV_A
+Fall,Post,RV,RV_110619_57,6.7,1.93,A,0.642,Fall_RV_A
+Fall,Post,RV,RV_110619_58,6.5,1.55,A,0.564,Fall_RV_A
+Fall,Post,RV,RV_110619_59,5,0.71,A,0.568,Fall_RV_A
+Fall,Post,RV,RV_110619_60,6.8,2.11,A,0.671,Fall_RV_A
+Fall,Post,RV,RV_110619_61,7,1.98,A,0.577,Fall_RV_A
+Fall,Post,RV,RV_110619_62,6.3,1.48,A,0.592,Fall_RV_A
+Fall,Post,RV,RV_110619_63,5.5,0.71,A,0.427,Fall_RV_A
+Fall,Post,RV,RV_110619_64,6.9,2.09,A,0.636,Fall_RV_A
+Fall,Post,RV,RV_110619_65,6.9,2.41,A,0.734,Fall_RV_A
+Fall,Post,RV,RV_110619_66,6.1,1.36,A,0.599,Fall_RV_A
+Fall,Post,RV,RV_110619_67,6.2,1.44,A,0.604,Fall_RV_A
+Fall,Post,RV,RV_110619_68,7.1,2.18,A,0.609,Fall_RV_A
+Fall,Post,RV,RV_110619_69,5.8,1.18,A,0.605,Fall_RV_A
+Fall,Post,RV,RV_110619_70,5.5,1.06,A,0.637,Fall_RV_A
+Fall,Post,RV,RV_110619_71,6.5,1.76,A,0.641,Fall_RV_A
+Fall,Post,RV,RV_110619_72,6.8,2.16,A,0.687,Fall_RV_A
+Fall,Post,RV,RV_110619_73,7.1,2.48,A,0.693,Fall_RV_A
+Fall,Post,RV,RV_110619_74,4.9,0.54,A,0.459,Fall_RV_A
+Fall,Post,RV,RV_110619_75,5.5,1.04,A,0.625,Fall_RV_A
+Fall,Post,RV,RV_110619_76,5.8,1.3,A,0.666,Fall_RV_A
+Fall,Post,RV,RV_110619_77,5.1,0.7,A,0.528,Fall_RV_A
+Fall,Post,RV,RV_110619_78,5.4,0.62,A,0.394,Fall_RV_A
+Fall,Post,RV,RV_110619_79,4.7,0.63,A,0.607,Fall_RV_A
+Fall,Post,RV,RV_110619_80,5.2,0.93,A,0.661,Fall_RV_A
+Fall,Post,RV,RV_110619_81,7.4,2.97,A,0.733,Fall_RV_A
+Fall,Post,RV,RV_110619_82,4.8,0.55,B,0.497,Fall_RV_B
+Fall,Post,RV,RV_110619_83,5.8,1.19,B,0.61,Fall_RV_B
+Fall,Post,RV,RV_110619_84,6.6,1.51,B,0.525,Fall_RV_B
+Fall,Post,RV,RV_110619_85,5.7,0.97,B,0.524,Fall_RV_B
+Fall,Post,RV,RV_110619_86,6.3,1.3,B,0.52,Fall_RV_B
+Fall,Post,RV,RV_110619_87,6.1,1.22,B,0.537,Fall_RV_B
+Fall,Post,RV,RV_110619_88,7,2.25,B,0.656,Fall_RV_B
+Fall,Post,RV,RV_110619_89,5.3,0.73,B,0.49,Fall_RV_B
+Fall,Post,RV,RV_110619_90,5.4,0.94,B,0.597,Fall_RV_B
+Fall,Post,RV,RV_110619_91,6.4,1.59,B,0.607,Fall_RV_B
+Fall,Post,RV,RV_110619_92,6.5,1.66,B,0.604,Fall_RV_B
+Fall,Post,RV,RV_110619_93,6.6,1.8,B,0.626,Fall_RV_B
+Fall,Post,RV,RV_110619_94,6.2,1.51,B,0.634,Fall_RV_B
+Fall,Post,RV,RV_110619_95,6.8,2.04,B,0.649,Fall_RV_B
+Fall,Post,RV,RV_110619_96,6,1.37,B,0.634,Fall_RV_B
+Fall,Post,RV,RV_110619_97,6,1.14,B,0.528,Fall_RV_B
+Fall,Post,RV,RV_110619_98,5.6,0.87,B,0.495,Fall_RV_B
+Fall,Post,RV,RV_110619_99,6.5,1.82,B,0.663,Fall_RV_B
+Fall,Post,RV,RV_110619_100,6.1,1.41,B,0.621,Fall_RV_B
+Fall,Post,RV,RV_110619_101,6.5,1.57,B,0.572,Fall_RV_B
+Fall,Post,RV,RV_110619_102,6.2,1.32,B,0.554,Fall_RV_B
+Fall,Post,RV,RV_110619_103,5.7,1.01,B,0.545,Fall_RV_B
+Fall,Post,RV,RV_110619_104,6.2,1.34,B,0.562,Fall_RV_B
+Fall,Post,RV,RV_110619_105,6.1,1.47,B,0.648,Fall_RV_B
+Fall,Post,RV,RV_110619_106,5.1,0.71,B,0.535,Fall_RV_B
+Fall,Post,RV,RV_110619_107,6.8,1.95,B,0.62,Fall_RV_B
+Fall,Post,RV,RV_110619_108,5.4,0.88,B,0.559,Fall_RV_B
+Fall,Post,RV,RV_110619_109,7.2,2.6,B,0.697,Fall_RV_B
+Fall,Post,RV,RV_110619_110,6.8,2.09,B,0.665,Fall_RV_B
+Fall,Post,RV,RV_110619_111,6.9,2.21,B,0.673,Fall_RV_B
+Fall,Post,RV,RV_110619_112,5.6,1.02,B,0.581,Fall_RV_B
+Fall,Post,RV,RV_110619_113,6.2,1.49,B,0.625,Fall_RV_B
+Fall,Post,RV,RV_110619_114,7.3,2.55,B,0.655,Fall_RV_B
+Fall,Post,RV,RV_110619_115,6.7,1.83,B,0.608,Fall_RV_B
+Fall,Post,RV,RV_110619_116,6.4,1.49,B,0.568,Fall_RV_B
+Fall,Post,RV,RV_110619_117,5.9,1.14,B,0.555,Fall_RV_B
+Fall,Post,RV,RV_110619_118,5.8,1.17,C,0.6,Fall_RV_C
+Fall,Post,RV,RV_110619_119,4.7,0.56,C,0.539,Fall_RV_C
+Fall,Post,RV,RV_110619_120,5.2,0.51,C,0.363,Fall_RV_C
+Fall,Post,RV,RV_110619_121,5.1,0.66,C,0.498,Fall_RV_C
+Fall,Post,RV,RV_110619_122,5.7,0.9,C,0.486,Fall_RV_C
+Fall,Post,RV,RV_110619_123,5.7,0.35,C,0.189,Fall_RV_C
+Fall,Post,RV,RV_110619_124,5.7,1.08,C,0.583,Fall_RV_C
+Fall,Post,RV,RV_110619_125,6.4,1.51,C,0.576,Fall_RV_C
+Fall,Post,RV,RV_110619_126,5.6,1.1,C,0.626,Fall_RV_C
+Fall,Post,RV,RV_110619_127,5.5,0.83,C,0.499,Fall_RV_C
+Fall,Post,RV,RV_110619_128,4.5,0.32,C,0.351,Fall_RV_C
+Fall,Post,RV,RV_110619_129,5.4,0.87,C,0.553,Fall_RV_C
+Fall,Post,RV,RV_110619_130,5.6,1.02,C,0.581,Fall_RV_C
+Fall,Post,RV,RV_110619_131,6.8,2.04,C,0.649,Fall_RV_C
+Fall,Post,RV,RV_110619_132,6,1.22,C,0.565,Fall_RV_C
+Fall,Post,RV,RV_110619_133,6.1,1.28,C,0.564,Fall_RV_C
+Fall,Post,RV,RV_110619_134,6.4,1.44,C,0.549,Fall_RV_C
+Fall,Post,RV,RV_110619_135,6.5,1.59,C,0.579,Fall_RV_C
+Fall,Post,RV,RV_110619_136,6,1.2,C,0.556,Fall_RV_C
+Fall,Post,RV,RV_110619_137,6.5,1.65,C,0.601,Fall_RV_C
+Fall,Post,RV,RV_110619_138,6.1,1.55,C,0.683,Fall_RV_C
+Fall,Post,RV,RV_110619_139,6.4,1.53,C,0.584,Fall_RV_C
+Fall,Post,RV,RV_110619_140,5.1,0.56,C,0.422,Fall_RV_C
+Fall,Post,RV,RV_110619_141,6.2,1.03,C,0.432,Fall_RV_C
+Fall,Post,RV,RV_110619_142,6.3,1.03,C,0.412,Fall_RV_C
+Fall,Post,RV,RV_110619_143,5.9,1.07,C,0.521,Fall_RV_C
+Fall,Post,RV,RV_110619_144,5.9,1.5,C,0.73,Fall_RV_C
+Fall,Post,RV,RV_110619_145,6.2,1.44,C,0.604,Fall_RV_C
+Fall,Post,RV,RV_110619_146,6.5,1.54,C,0.561,Fall_RV_C
+Fall,Post,RV,RV_110619_147,6.1,1.25,C,0.551,Fall_RV_C
+Fall,Post,RV,RV_110619_148,7.4,2.59,C,0.639,Fall_RV_C
+Fall,Post,RV,RV_110619_149,5.5,0.71,C,0.427,Fall_RV_C
+Fall,Post,RV,RV_110619_150,6.8,1.87,C,0.595,Fall_RV_C
+Fall,Post,RV,RV_110619_151,6.2,1.48,C,0.621,Fall_RV_C
+Fall,Post,RV,RV_110619_152,6.8,1.8,A,0.572,Fall_RV_A
+Fall,Post,RV,RV_110619_153,6.3,1.4,C,0.56,Fall_RV_C
+Fall,Post,RV,RV_110619_154,6.3,1.7,B,0.68,Fall_RV_B
+Fall,Post,RV,RV_110619_155,6.1,1.6,C,0.705,Fall_RV_C
+Fall,Post,RV,RV_110619_156,5.9,1.3,C,0.633,Fall_RV_C
+Fall,Post,RV,RV_110619_157,6.8,2.2,A,0.7,Fall_RV_A
+Fall,Post,RV,RV_110619_158,4.9,0.7,B,0.595,Fall_RV_B
+Fall,Post,RV,RV_110619_159,5.8,1.2,C,0.615,Fall_RV_C
+Fall,Post,RV,RV_110619_160,6.2,1.5,A,0.629,Fall_RV_A
+Fall,Post,RV,RV_110619_161,4.9,0.6,B,0.51,Fall_RV_B
+Fall,Post,SM,SM_110719_1,6,1.14,A,0.528,Fall_SM_A
+Fall,Post,SM,SM_110719_2,5.8,0.87,A,0.446,Fall_SM_A
+Fall,Post,SM,SM_110719_3,5.5,0.66,A,0.397,Fall_SM_A
+Fall,Post,SM,SM_110719_4,7,2.14,A,0.624,Fall_SM_A
+Fall,Post,SM,SM_110719_5,6,1.11,A,0.514,Fall_SM_A
+Fall,Post,SM,SM_110719_6,6.3,1.43,A,0.572,Fall_SM_A
+Fall,Post,SM,SM_110719_7,5.8,1.08,A,0.554,Fall_SM_A
+Fall,Post,SM,SM_110719_8,6.8,1.72,A,0.547,Fall_SM_A
+Fall,Post,SM,SM_110719_9,5.3,0.66,A,0.443,Fall_SM_A
+Fall,Post,SM,SM_110719_10,5.6,0.93,A,0.53,Fall_SM_A
+Fall,Post,SM,SM_110719_11,6.5,1.57,A,0.572,Fall_SM_A
+Fall,Post,SM,SM_110719_12,5.4,0.69,A,0.438,Fall_SM_A
+Fall,Post,SM,SM_110719_13,6,1.16,A,0.537,Fall_SM_A
+Fall,Post,SM,SM_110719_14,6.7,1.72,A,0.572,Fall_SM_A
+Fall,Post,SM,SM_110719_15,6,1.3,A,0.602,Fall_SM_A
+Fall,Post,SM,SM_110719_16,6.2,1.12,B,0.47,Fall_SM_B
+Fall,Post,SM,SM_110719_17,6.3,1.29,B,0.516,Fall_SM_B
+Fall,Post,SM,SM_110719_18,6.6,1.79,B,0.623,Fall_SM_B
+Fall,Post,SM,SM_110719_19,5.8,0.99,B,0.507,Fall_SM_B
+Fall,Post,SM,SM_110719_20,5.8,1.21,B,0.62,Fall_SM_B
+Fall,Post,SM,SM_110719_21,6,1.14,B,0.528,Fall_SM_B
+Fall,Post,SM,SM_110719_22,5.7,1.03,B,0.556,Fall_SM_B
+Fall,Post,SM,SM_110719_23,5.8,1.17,B,0.6,Fall_SM_B
+Fall,Post,SM,SM_110719_24,6.4,1.42,B,0.542,Fall_SM_B
+Fall,Post,SM,SM_110719_25,5,0.64,B,0.512,Fall_SM_B
+Fall,Post,SM,SM_110719_26,5.5,0.8,B,0.481,Fall_SM_B
+Fall,Post,SM,SM_110719_27,5.7,1.06,B,0.572,Fall_SM_B
+Fall,Post,SM,SM_110719_28,6.5,1.65,B,0.601,Fall_SM_B
+Fall,Post,SM,SM_110719_29,5.8,1.11,B,0.569,Fall_SM_B
+Fall,Post,SM,SM_110719_30,6,1.3,B,0.602,Fall_SM_B
+Fall,Post,SM,SM_110719_31,6.4,1.41,C,0.538,Fall_SM_C
+Fall,Post,SM,SM_110719_32,5.1,0.51,C,0.384,Fall_SM_C
+Fall,Post,SM,SM_110719_33,6.3,1.5,C,0.6,Fall_SM_C
+Fall,Post,SM,SM_110719_34,5.8,1.05,C,0.538,Fall_SM_C
+Fall,Post,SM,SM_110719_35,6,1.29,C,0.597,Fall_SM_C
+Fall,Post,SM,SM_110719_36,5.6,0.9,C,0.512,Fall_SM_C
+Fall,Post,SM,SM_110719_37,6.1,1.09,C,0.48,Fall_SM_C
+Fall,Post,SM,SM_110719_38,7,1.81,C,0.528,Fall_SM_C
+Fall,Post,SM,SM_110719_39,6.1,1.17,C,0.515,Fall_SM_C
+Fall,Post,SM,SM_110719_40,7,1.81,C,0.528,Fall_SM_C
+Fall,Post,SM,SM_110719_41,7,1.71,C,0.499,Fall_SM_C
+Fall,Post,SM,SM_110719_42,5,0.64,C,0.512,Fall_SM_C
+Fall,Post,SM,SM_110719_43,6.3,1.38,C,0.552,Fall_SM_C
+Fall,Post,SM,SM_110719_44,6.6,1.62,C,0.563,Fall_SM_C
+Fall,Post,SM,SM_110719_45,5.9,1.23,C,0.599,Fall_SM_C
+Fall,Post,SM,SM_110619_46,5.3,1,A,0.672,Fall_SM_A
+Fall,Post,SM,SM_110619_47,6,1.22,A,0.565,Fall_SM_A
+Fall,Post,SM,SM_110619_48,5,0.62,A,0.496,Fall_SM_A
+Fall,Post,SM,SM_110619_49,6.2,1.37,A,0.575,Fall_SM_A
+Fall,Post,SM,SM_110619_50,6.7,1.95,A,0.648,Fall_SM_A
+Fall,Post,SM,SM_110619_51,6.3,1.6,A,0.64,Fall_SM_A
+Fall,Post,SM,SM_110619_52,5.5,0.92,A,0.553,Fall_SM_A
+Fall,Post,SM,SM_110619_53,6.1,1.13,A,0.498,Fall_SM_A
+Fall,Post,SM,SM_110619_54,6.1,0.87,A,0.383,Fall_SM_A
+Fall,Post,SM,SM_110619_55,5.5,0.63,A,0.379,Fall_SM_A
+Fall,Post,SM,SM_110619_56,5.2,0.65,A,0.462,Fall_SM_A
+Fall,Post,SM,SM_110619_57,5.5,0.89,A,0.535,Fall_SM_A
+Fall,Post,SM,SM_110619_58,6,1.1,A,0.509,Fall_SM_A
+Fall,Post,SM,SM_110619_59,5.4,0.89,A,0.565,Fall_SM_A
+Fall,Post,SM,SM_110619_60,5.8,0.79,A,0.405,Fall_SM_A
+Fall,Post,SM,SM_110619_61,5.8,0.86,A,0.441,Fall_SM_A
+Fall,Post,SM,SM_110619_62,6.1,1.4,A,0.617,Fall_SM_A
+Fall,Post,SM,SM_110619_63,6.1,1.24,A,0.546,Fall_SM_A
+Fall,Post,SM,SM_110619_64,5.5,0.74,A,0.445,Fall_SM_A
+Fall,Post,SM,SM_110619_65,6.3,1.4,A,0.56,Fall_SM_A
+Fall,Post,SM,SM_110619_66,5.6,0.6,A,0.342,Fall_SM_A
+Fall,Post,SM,SM_110619_67,5.6,0.85,A,0.484,Fall_SM_A
+Fall,Post,SM,SM_110619_68,6.2,1.15,A,0.483,Fall_SM_A
+Fall,Post,SM,SM_110619_69,5.8,0.89,A,0.456,Fall_SM_A
+Fall,Post,SM,SM_110619_70,6,0.6,A,0.278,Fall_SM_A
+Fall,Post,SM,SM_110619_71,6,2.23,A,1.032,Fall_SM_A
+Fall,Post,SM,SM_110619_72,5.5,1.09,A,0.655,Fall_SM_A
+Fall,Post,SM,SM_110619_73,6,1.3,A,0.602,Fall_SM_A
+Fall,Post,SM,SM_110619_74,5.9,1.12,A,0.545,Fall_SM_A
+Fall,Post,SM,SM_110619_75,6.3,1.34,A,0.536,Fall_SM_A
+Fall,Post,SM,SM_110619_76,6,1.25,A,0.579,Fall_SM_A
+Fall,Post,SM,SM_110619_77,6.5,1.67,A,0.608,Fall_SM_A
+Fall,Post,SM,SM_110619_78,6.6,1.44,A,0.501,Fall_SM_A
+Fall,Post,SM,SM_110619_79,5.5,0.9,A,0.541,Fall_SM_A
+Fall,Post,SM,SM_110619_80,5.3,0.68,A,0.457,Fall_SM_A
+Fall,Post,SM,SM_110619_81,5.3,0.77,A,0.517,Fall_SM_A
+Fall,Post,SM,SM_110619_82,5.6,0.91,A,0.518,Fall_SM_A
+Fall,Post,SM,SM_110619_83,6.3,1.4,B,0.56,Fall_SM_B
+Fall,Post,SM,SM_110619_84,6.3,1.62,B,0.648,Fall_SM_B
+Fall,Post,SM,SM_110619_85,6,1.43,B,0.662,Fall_SM_B
+Fall,Post,SM,SM_110619_86,5.1,0.75,B,0.565,Fall_SM_B
+Fall,Post,SM,SM_110619_87,4.6,0.47,B,0.483,Fall_SM_B
+Fall,Post,SM,SM_110619_88,5.4,0.7,B,0.445,Fall_SM_B
+Fall,Post,SM,SM_110619_89,5.1,0.72,B,0.543,Fall_SM_B
+Fall,Post,SM,SM_110619_90,6.9,2.04,B,0.621,Fall_SM_B
+Fall,Post,SM,SM_110619_91,6.3,1.36,B,0.544,Fall_SM_B
+Fall,Post,SM,SM_110619_92,5.9,1.15,B,0.56,Fall_SM_B
+Fall,Post,SM,SM_110619_93,5.5,0.78,B,0.469,Fall_SM_B
+Fall,Post,SM,SM_110619_94,6.3,1.38,B,0.552,Fall_SM_B
+Fall,Post,SM,SM_110619_95,6.3,1.66,B,0.664,Fall_SM_B
+Fall,Post,SM,SM_110619_96,5.4,0.85,B,0.54,Fall_SM_B
+Fall,Post,SM,SM_110619_97,4.8,0.61,B,0.552,Fall_SM_B
+Fall,Post,SM,SM_110619_98,5.7,1.13,B,0.61,Fall_SM_B
+Fall,Post,SM,SM_110619_99,5.9,1.24,B,0.604,Fall_SM_B
+Fall,Post,SM,SM_110619_100,6.1,1.32,B,0.582,Fall_SM_B
+Fall,Post,SM,SM_110619_101,5.3,0.78,B,0.524,Fall_SM_B
+Fall,Post,SM,SM_110619_102,5.6,0.82,B,0.467,Fall_SM_B
+Fall,Post,SM,SM_110619_103,7.2,2.4,B,0.643,Fall_SM_B
+Fall,Post,SM,SM_110619_104,6.2,1.43,B,0.6,Fall_SM_B
+Fall,Post,SM,SM_110619_105,6.3,1.44,B,0.576,Fall_SM_B
+Fall,Post,SM,SM_110619_106,5.4,0.7,B,0.445,Fall_SM_B
+Fall,Post,SM,SM_110619_107,5.7,0.91,B,0.491,Fall_SM_B
+Fall,Post,SM,SM_110619_108,5.3,0.75,B,0.504,Fall_SM_B
+Fall,Post,SM,SM_110619_109,5.7,1.05,B,0.567,Fall_SM_B
+Fall,Post,SM,SM_110619_110,5.7,1.02,B,0.551,Fall_SM_B
+Fall,Post,SM,SM_110619_111,5.9,1.17,B,0.57,Fall_SM_B
+Fall,Post,SM,SM_110619_112,6.7,1.59,B,0.529,Fall_SM_B
+Fall,Post,SM,SM_110619_113,5.7,1.01,B,0.545,Fall_SM_B
+Fall,Post,SM,SM_110619_114,6,0.91,B,0.421,Fall_SM_B
+Fall,Post,SM,SM_110619_115,6.4,1.73,B,0.66,Fall_SM_B
+Fall,Post,SM,SM_110619_116,6.4,1.65,B,0.629,Fall_SM_B
+Fall,Post,SM,SM_110619_117,5.9,0.96,B,0.467,Fall_SM_B
+Fall,Post,SM,SM_110619_118,5.5,1.19,C,0.715,Fall_SM_C
+Fall,Post,SM,SM_110619_119,6.4,1.42,C,0.542,Fall_SM_C
+Fall,Post,SM,SM_110619_120,4.7,0.47,C,0.453,Fall_SM_C
+Fall,Post,SM,SM_110619_121,5.5,0.9,C,0.541,Fall_SM_C
+Fall,Post,SM,SM_110619_122,5.2,0.53,C,0.377,Fall_SM_C
+Fall,Post,SM,SM_110619_123,6.7,1.81,C,0.602,Fall_SM_C
+Fall,Post,SM,SM_110619_124,5.1,0.69,C,0.52,Fall_SM_C
+Fall,Post,SM,SM_110619_125,6,1.28,C,0.593,Fall_SM_C
+Fall,Post,SM,SM_110619_126,5.9,1.21,C,0.589,Fall_SM_C
+Fall,Post,SM,SM_110619_127,4.6,0.7,C,0.719,Fall_SM_C
+Fall,Post,SM,SM_110619_128,5.6,0.87,C,0.495,Fall_SM_C
+Fall,Post,SM,SM_110619_129,6.8,1.99,C,0.633,Fall_SM_C
+Fall,Post,SM,SM_110619_130,5.3,0.74,C,0.497,Fall_SM_C
+Fall,Post,SM,SM_110619_131,7,1.99,C,0.58,Fall_SM_C
+Fall,Post,SM,SM_110619_132,5.5,0.85,C,0.511,Fall_SM_C
+Fall,Post,SM,SM_110619_133,6.9,1.69,C,0.514,Fall_SM_C
+Fall,Post,SM,SM_110619_134,5.1,0.71,C,0.535,Fall_SM_C
+Fall,Post,SM,SM_110619_135,5.5,0.77,C,0.463,Fall_SM_C
+Fall,Post,SM,SM_110619_136,6,1.03,C,0.477,Fall_SM_C
+Fall,Post,SM,SM_110619_137,5.6,0.83,C,0.473,Fall_SM_C
+Fall,Post,SM,SM_110619_138,5.2,0.79,C,0.562,Fall_SM_C
+Fall,Post,SM,SM_110619_139,5.6,0.94,C,0.535,Fall_SM_C
+Fall,Post,SM,SM_110619_140,5.8,1.06,C,0.543,Fall_SM_C
+Fall,Post,SM,SM_110619_141,5.5,0.83,C,0.499,Fall_SM_C
+Fall,Post,SM,SM_110619_142,4.1,0.27,C,0.392,Fall_SM_C
+Fall,Post,SM,SM_110619_143,5.9,1.3,C,0.633,Fall_SM_C
+Fall,Post,SM,SM_110619_144,5.2,0.8,C,0.569,Fall_SM_C
+Fall,Post,SM,SM_110619_145,4.9,0.54,C,0.459,Fall_SM_C
+Fall,Post,SM,SM_110619_146,6.8,1.97,C,0.627,Fall_SM_C
+Fall,Post,SM,SM_110619_147,5.5,0.83,C,0.499,Fall_SM_C
+Fall,Post,SM,SM_110619_148,6.3,1.56,C,0.624,Fall_SM_C
+Fall,Post,SM,SM_110619_149,6,1.13,C,0.523,Fall_SM_C
+Fall,Post,SM,SM_110619_150,8,3.32,C,0.648,Fall_SM_C
+Fall,Post,SM,SM_110619_151,7.1,2.09,C,0.584,Fall_SM_C
+Fall,Post,SM,SM_110619_152,5.6,1.2,A,0.683,Fall_SM_A
+Fall,Post,SM,SM_110619_153,4.4,0.7,B,0.822,Fall_SM_B
+Fall,Post,SM,SM_110619_154,6,1.2,B,0.556,Fall_SM_B
+Fall,Post,SM,SM_110619_155,4.9,0.8,B,0.68,Fall_SM_B
+Fall,Post,SM,SM_110619_156,5.9,1.2,B,0.584,Fall_SM_B
+Fall,Post,SM,SM_110619_157,5.8,1.7,C,0.871,Fall_SM_C
+Fall,Post,SM,SM_110619_158,5.3,1.4,B,0.94,Fall_SM_B
+Fall,Post,SM,SM_110619_159,6,1.2,B,0.556,Fall_SM_B
+Fall,Post,SM,SM_110619_160,6.4,1.4,C,0.534,Fall_SM_C
+Fall,Post,SM,SM_110619_161,6.2,1.3,A,0.545,Fall_SM_A
+Fall,Post,SM,SM_110619_162,7.4,2.9,C,0.716,Fall_SM_C
+Fall,Post,SM,SM_110619_163,5.6,1.2,B,0.683,Fall_SM_B
+Fall,Post,SM,SM_110619_164,5.7,1.1,B,0.594,Fall_SM_B
+Fall,Post,SM,SM_110619_165,5.5,1.3,A,0.781,Fall_SM_A
+Fall,Post,SM,SM_110619_166,5.9,1,A,0.487,Fall_SM_A
+Fall,Post,Yolo,YB_110719_1,6.5,1.57,A,0.572,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_2,5.3,0.83,A,0.558,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_3,6,1.17,A,0.542,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_4,5,0.59,A,0.472,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_5,5.7,1.02,A,0.551,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_6,5.9,1.09,A,0.531,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_7,6,1.03,A,0.477,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_8,6.5,1.41,A,0.513,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_9,5.7,1.04,A,0.562,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_10,6,1.21,A,0.56,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_11,5.2,0.85,A,0.605,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_12,6.4,1.68,A,0.641,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_13,5.3,1.8,A,1.209,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_14,5.1,0.62,A,0.467,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_15,7.1,2.25,A,0.629,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_16,5.9,1.31,B,0.638,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_17,6.3,1.61,B,0.644,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_18,5.7,1.1,B,0.594,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_19,5.6,0.98,B,0.558,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_20,6.1,1.52,B,0.67,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_21,6.2,1.42,B,0.596,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_22,5.3,0.72,B,0.484,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_23,6,1.17,B,0.542,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_24,6.5,1.74,B,0.634,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_25,6,1.21,B,0.56,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_26,5.7,1.08,B,0.583,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_27,6.4,1.45,B,0.553,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_28,6.1,1.29,B,0.568,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_29,6.6,1.79,B,0.623,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_30,6.4,1.54,B,0.587,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_31,6.4,1.63,C,0.622,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_32,5.3,0.81,C,0.544,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_33,5.9,1.08,C,0.526,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_34,5.7,1.12,C,0.605,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_35,5.3,0.86,C,0.578,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_36,6.1,1.37,C,0.604,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_37,5.6,1.96,C,1.116,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_38,6.5,1.83,C,0.666,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_39,5.8,1.2,C,0.615,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_40,5.9,1.21,C,0.589,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_41,5.8,1.05,C,0.538,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_42,6.7,1.63,C,0.542,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_43,6.2,1.27,C,0.533,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_44,6.6,1.85,C,0.643,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_45,6.2,1.33,C,0.558,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_46,5.8,1.27,A,0.651,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_47,5.9,1.49,A,0.725,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_48,5.4,0.84,A,0.533,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_49,6.3,1.33,A,0.532,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_50,6,1.19,A,0.551,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_51,6.3,1.26,A,0.504,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_52,6.6,1.68,A,0.584,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_53,6.1,1.23,A,0.542,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_54,6,1.25,A,0.579,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_55,6.4,1.54,A,0.587,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_56,5.9,1.24,A,0.604,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_57,6.1,1.14,A,0.502,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_58,6.1,1.4,A,0.617,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_59,5.5,0.9,A,0.541,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_60,6.6,1.51,A,0.525,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_61,6,1.4,A,0.648,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_62,6.5,1.61,A,0.586,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_63,5.4,0.94,A,0.597,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_64,4.7,0.51,A,0.491,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_65,6.2,1.33,A,0.558,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_66,5,0.55,A,0.44,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_67,4.4,1.23,A,1.444,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_68,6.3,1.61,A,0.644,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_69,6.4,1.79,A,0.683,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_70,6.5,1.6,A,0.583,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_71,5.5,0.87,A,0.523,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_72,6,1.15,A,0.532,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_73,6.3,1.65,A,0.66,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_74,6.5,1.79,A,0.652,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_75,5.4,0.86,A,0.546,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_76,5.3,0.89,A,0.598,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_77,4.7,0.53,A,0.51,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_78,6,1.2,A,0.556,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_79,6.3,1.68,A,0.672,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_80,6,1.51,A,0.699,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_81,5.8,1.2,A,0.615,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_82,5.6,0.82,A,0.467,Fall_Yolo_A
+Fall,Post,Yolo,YB_110719_83,6.1,1.25,B,0.551,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_84,6,1.3,B,0.602,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_85,5.2,0.78,B,0.555,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_86,5.9,1.21,B,0.589,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_87,5.1,0.77,B,0.58,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_88,6.6,1.47,B,0.511,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_89,4.6,0.54,B,0.555,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_90,5.6,0.95,B,0.541,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_91,5.8,1.04,B,0.533,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_92,6.5,1.41,B,0.513,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_93,6.7,1.58,B,0.525,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_94,5.1,0.85,B,0.641,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_95,5.4,0.86,B,0.546,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_96,5.3,0.83,B,0.558,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_97,6.1,1.37,B,0.604,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_98,6.3,1.57,B,0.628,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_99,5.8,1.2,B,0.615,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_100,6.3,1.51,B,0.604,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_101,5,0.61,B,0.488,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_102,6,1.21,B,0.56,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_103,6.1,1.5,B,0.661,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_104,6,1.27,B,0.588,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_105,5.8,1.18,B,0.605,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_106,5.8,1.2,B,0.615,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_107,6.3,1.63,B,0.652,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_108,6.2,1.37,B,0.575,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_109,5.6,0.99,B,0.564,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_110,5.6,0.96,B,0.547,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_111,6,1.06,B,0.491,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_112,6.5,1.79,B,0.652,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_113,5.4,0.78,B,0.495,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_114,6,1.24,B,0.574,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_115,6,1.4,B,0.648,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_116,6.4,1.57,B,0.599,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_117,5.9,1.19,B,0.579,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_118,5,0.62,B,0.496,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_119,5.3,0.89,B,0.598,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_120,6.2,1.52,B,0.638,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_121,5.2,0.8,B,0.569,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_122,5.6,0.98,B,0.558,Fall_Yolo_B
+Fall,Post,Yolo,YB_110719_123,7.5,2.74,C,0.649,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_124,5.6,0.89,C,0.507,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_125,5.3,0.87,C,0.584,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_126,5.8,1.21,C,0.62,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_127,5.9,1.12,C,0.545,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_128,5.6,0.92,C,0.524,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_129,5.9,1.9,C,0.925,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_130,5.4,0.98,C,0.622,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_131,6.9,2.29,C,0.697,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_132,5.5,0.83,C,0.499,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_133,5.9,1.07,C,0.521,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_134,6,1.22,C,0.565,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_135,6.5,1.73,C,0.63,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_136,5.4,0.9,C,0.572,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_137,6.5,1.91,C,0.695,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_138,6.5,1.83,C,0.666,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_139,5.9,1.21,C,0.589,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_140,6.2,1.43,C,0.6,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_141,6,1.3,C,0.602,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_142,6,1.25,C,0.579,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_143,4.9,0.55,C,0.467,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_144,5.8,1.16,C,0.595,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_145,6.5,1.72,C,0.626,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_146,5.8,1.1,C,0.564,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_147,5.8,1.04,C,0.533,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_148,6,1.23,C,0.569,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_149,5.8,1.2,C,0.615,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_150,6.1,1.39,C,0.612,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_151,7.1,1.29,C,0.36,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_152,7,2.05,C,0.598,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_153,6.2,1.37,C,0.575,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_154,6,1.23,C,0.569,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_155,6,1.24,C,0.574,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_156,5.9,1.13,C,0.55,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_157,4.8,0.55,C,0.497,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_158,6.2,1.63,C,0.684,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_159,5.6,1.03,C,0.587,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_160,5.4,0.97,C,0.616,Fall_Yolo_C
+Fall,Post,Yolo,YB_110719_161,5.7,1.19,C,0.643,Fall_Yolo_C
