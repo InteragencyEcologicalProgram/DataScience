@@ -1,5 +1,11 @@
 ## Previous meetings
 
+### 2023-11-09
+
+1:00 - 1:20 &nbsp;&nbsp; [Project-oriented workflows and file management in R](https://docs.google.com/presentation/d/1255p2jvfSJVkMx0IM6ro88U2zSkmf4wNO67lfxMSRTw/edit#slide=id.p) ([Corey Clatterbuck](https://www.coreyclatterbuck.com/), [SWRCB - OIMA](https://www.waterboards.ca.gov/resources/oima/))  
+1:20 - 1:35 &nbsp;&nbsp; Regular Expressions (regex) - it's magic if it works ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:35 - 2:00 &nbsp;&nbsp; Datasheet Hoarding: When do you let go of your physical datasheets? (Tim Malinich, [CDFW](https://wildlife.ca.gov/))  
+
 ### [2023-08-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.08.10)
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
