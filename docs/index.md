@@ -1,4 +1,4 @@
-## Welcome to the [IEP](https://water.ca.gov/Programs/Environmental-Services/Interagency-Ecological-Program) Data Science PWT
+## Welcome to the [IEP](https://iep.ca.gov/) Data Science PWT
 
 A statistical help group for people who love fish, wildlife, water, and writing code.
 
