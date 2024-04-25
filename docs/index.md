@@ -14,7 +14,7 @@ We meet quarterly on a Thursday afternoon in February, May, August, and November
 
 Give a presentation at a future meeting by filling out [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJlYOBoqxdqHwain-XFrraKFtymYsTwxwBMKekBd0B98q5CA/viewform?usp=sf_link).
 
-#### Next Meeting - February 8th, 1:00-4:00 PST  
+#### Next Meeting - May 9th, 1:00-4:00 PDT  
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
 
