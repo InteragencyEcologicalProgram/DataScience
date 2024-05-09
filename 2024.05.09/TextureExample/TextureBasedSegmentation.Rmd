@@ -1,0 +1,143 @@
+---
+title: "TextureBasedSegmentation"
+author: "Shruti"
+date: "2023-09-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Practicing code to implement simple GLCM texture based segmentation
+
+# load necessary libraries
+
+```{r}
+# package for vector and raster manipulation
+library(terra)
+# package for calculating texture metrics
+library(GLCMTextures)
+# package for segmentation
+library(supercells)
+library(sf)
+library(dplyr)
+```
+
+## read the TIFF image and plot it
+
+
+```{r}
+
+# path to UAV
+in.dir = "X:/delta_sav/raster/UAVimages/BlacklockComp_exp_32cm_sub_mskd.img"
+
+# read the file
+blklock = terra::rast(in.dir)
+# print basic information about the file
+blklock
+```
+
+```{r}
+# plot band 4
+plot(blklock[[4]])
+```
+
+```{r}
+# plot a true color image
+plotRGB(blklock, r = 4, g = 2, b = 3)
+
+```
+
+## Run the GLCM matrix to calculate a bunch of texture measures based on Haralick et al. 1989
+
+https://cran.r-project.org/web/packages/GLCMTextures/vignettes/README.html
+
+good website for explanation of the GLCMTextures package and how to use it 
+to calculated texture metrics
+
+Citation for this package:
+Ilich, Alexander R. 2020. “GLCMTextures.”, https://doi.org/10.5281/zenodo.4310186. https://github.com/ailich/GLCMTextures
+
+Alternative workflow in this ppt: https://r-spatialecology.github.io/ialena-2020/#1
+Citation for Fragstats in R: https://onlinelibrary.wiley.com/doi/10.1111/ecog.04617
+
+
+```{r}
+
+# run the glcm matrix to calculate all texture measures
+# only run on the green band (can try with NIR too)
+blklock.glcm <- glcm_textures(blklock[[2]], w = c(5,5), n_levels = 16, quantization = "equal range", 
+                              shift = list(c(1, 0), c(1, 1), c(0, 1), c(-1, 1)))
+
+# where w = the window size over which the texture is calculated
+# n_levels = number of quantization levels to reduce the band to (has a huge impact on computation time)
+# quantization = method of reducing gray levels - in this case, equalizing the histogram (equal prob)
+# shift = what direction the texture is calculated in - default is all four directions as shown here in this list
+
+plot(blklock.glcm)
+```
+
+
+```{r}
+plot(blklock.glcm$glcm_entropy)
+
+```
+
+## segment the image based on GLCM measures and display it
+
+Based on methods described in this citation:
+Achanta, Radhakrishna, Appu Shaji, Kevin Smith, Aurelien Lucchi, Pascal Fua, and Sabine Süsstrunk. 2012. “SLIC Superpixels Compared to State-of-the-Art Superpixel Methods.” IEEE Transactions on Pattern Analysis and Machine Intelligence 34 (11): 2274–82.
+
+Package: supercells
+Not yet figured out how to combine cells of same color
+
+```{r}
+
+# first var is the image to be segmented - I only gave it the entropy band
+# k is the number of supercells required
+# compactness is the standard shape of each segment. Higher the number, more regular the shape
+# iter is number of iterations to be performed; default is 10
+seg.tex = supercells(blklock.glcm$glcm_entropy, k = 1000, compactness = 1, iter = 20)
+
+# plot the NIR band of the UAV image
+plot(blklock[[2]])
+# plot the segmented layer
+plot(seg.tex)
+
+```
+
+
+## export the polygons; combine them with attribute data; merge if possible
+
+```{r}
+# checking if I can output the polygons
+# none of the attributes are associated with the geometry
+try.vec = st_sf(st_geometry(seg.tex$geometry))
+
+# hence writing out the attribute table to join to polygons
+try.df = data.frame(seg.tex) %>% mutate(phrag = ifelse(glcm_entropy > 2.5, 1, 
+                                                ifelse(glcm_entropy == 0, 0,
+                                                ifelse(glcm_entropy < 0.52, 2, 3))))
+
+# convert the data frame to a points vector
+cen.poly <- st_as_sf(try.df, coords = c("x", "y"), crs = 32610)
+#plot(cen.poly)
+
+# join the polygons to their attributes
+seg.poly <- st_join(try.vec, cen.poly)
+plot(seg.poly)
+
+# dissolve into just two classes 
+seg.cls <- seg.poly %>% group_by(phrag) %>% summarize()
+plot(seg.cls)
+
+# create the output vector file name
+#outname = paste0(dirname(in.dir), "/blklock_segmented_v2.shp")
+
+# output the polygons layer as a shapefile
+#st_write(seg.cls, outname, append = FALSE)
+
+```
+
+
