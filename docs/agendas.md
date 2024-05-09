@@ -1,5 +1,11 @@
 ## Previous meetings
 
+### 2024-05-09  
+
+1:00 - 2:00 &nbsp;&nbsp; [SacPAS Egg Growth tool tutorial: How to manage and execute bulk runs and user-defined scenarios](https://github.com/nickobeer/Egg_Growth/tree/main/code) ([Nick Beer](https://www.cbr.washington.edu/people/beer), [University of Washington](https://www.cbr.washington.edu/))  
+2:00 - 2:40 &nbsp;&nbsp; [A simple workflow to classify drone imagery using texture analysis](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2024.05.09/TextureExample) ([Shruti Khanna](https://wildlife.ca.gov/Science-Institute/Featured-Scientist/shruti-khanna), [CDFW](https://wildlife.ca.gov/))  
+2:40 - 3:10 &nbsp;&nbsp; [Working with targets workflow](https://github.com/ryanpeek/2024_targets_demo) ([Ryan Peek](https://ryanpeek.org/), [CDFW](https://wildlife.ca.gov/)) 
+
 ### 2023-11-09
 
 1:00 - 1:20 &nbsp;&nbsp; [Project-oriented workflows and file management in R](https://docs.google.com/presentation/d/1255p2jvfSJVkMx0IM6ro88U2zSkmf4wNO67lfxMSRTw/edit#slide=id.p) ([Corey Clatterbuck](https://www.coreyclatterbuck.com/), [SWRCB - OIMA](https://www.waterboards.ca.gov/resources/oima/))  
