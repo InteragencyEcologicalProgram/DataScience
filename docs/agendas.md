@@ -1,5 +1,12 @@
 ## Previous meetings
 
+### 2024-12-12
+
+1:00 - 1:20 &nbsp;&nbsp; Community input: how to align complex ggplots across pages ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+1:20 - 1:40 &nbsp;&nbsp; [Using R to compare Lowrance GPX data to SQL database](presentations/RLowranceGPX.pptx) ([Claudia Macfarlane](https://www.linkedin.com/in/claudia-macfarlane-80a140140/), [USFWS](https://www.fws.gov/office/lodi-fish-and-wildlife)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2024.12.12/Lowrance_processing1_dbremoved.R)]  
+1:40 - 2:10 &nbsp;&nbsp; [GUI apps with R & tcltk](https://www.travishinkelman.com/pdf/ZoopSynth-tcltk.pdf) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))    
+2:10 - 2:30 &nbsp;&nbsp; [Naming Things](presentations/NamingThings.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+
 ### 2024-05-09  
 
 1:00 - 2:00 &nbsp;&nbsp; [SacPAS Egg Growth tool tutorial: How to manage and execute bulk runs and user-defined scenarios](https://github.com/nickobeer/Egg_Growth/tree/main/code) ([Nick Beer](https://www.cbr.washington.edu/people/beer), [University of Washington](https://www.cbr.washington.edu/))  
@@ -20,7 +27,7 @@
 1:55 - 2:15 &nbsp;&nbsp; [Date & Time gotchas](https://gist.github.com/Myfanwy/1e2a4fe3a0015c3b14472fd7a32f3af7) ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))   
 2:15 - 2:20 &nbsp;&nbsp; Break   
 2:20 - 2:50 &nbsp;&nbsp; An introduction to the targets package ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
-2:50 - 3:30 &nbsp;&nbsp; Mixed models - what they are, why you should use them, and how you code them in R ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[slides](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/docs/presentations/mixedmodels/mixed%20models.pptx), [code](https://interagencyecologicalprogram.github.io/DataScience/presentations/mixedmodels/MixedModels.html)]     
+2:50 - 3:30 &nbsp;&nbsp; [Mixed models - what they are, why you should use them, and how you code them in R](presentations/mixedmodels/mixed%20models.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://interagencyecologicalprogram.github.io/DataScience/presentations/mixedmodels/MixedModels.html)]     
 
 ### [2023-05-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.05.11)
 
