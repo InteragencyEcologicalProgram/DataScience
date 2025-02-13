@@ -1,5 +1,11 @@
 ## Previous meetings
 
+### 2025-02-13
+
+1:00 - 1:20 &nbsp;&nbsp; [Plotly vs. Highchart: A Comparison of Interactive Plots](presentations/R%20Interactive%20charts/interactive%20charts.html)  (James White, [CDFW](https://wildlife.ca.gov/))  
+1:20 - 1:50 &nbsp;&nbsp; [Extract data from PDF tables with R and Python](https://github.com/hinkelman/pdf-extract-example) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))    
+1:50 - 2:30 &nbsp;&nbsp; Grab bag of productivity tips ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+
 ### 2024-12-12
 
 1:00 - 1:20 &nbsp;&nbsp; Community input: how to align complex ggplots across pages ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  

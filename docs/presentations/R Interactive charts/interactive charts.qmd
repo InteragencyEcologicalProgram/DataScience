@@ -1,0 +1,341 @@
+---
+title: "Plotly vs. Highchart: A Comparison of Interactive Plots"
+execute:
+  warning: false
+author: "James White, CDFW"
+date: "2/13/2025"
+date-format: long
+format: 
+  html:
+    page-layout: full
+editor: source
+---
+
+### Load necessary libraries
+
+```{r load libraries}
+
+library(tidyverse)
+library(plotly)
+library(RColorBrewer)
+library(here)
+library(data.table)
+library(highcharter)
+library(lubridate)
+library(sf)
+library(geojsonsf)
+library(jsonlite)
+library(deltamapr) #devtools::install_github("InteragencyEcologicalProgram/deltamapr")
+```
+
+## Introduction
+
+If you are creating R Markdown (html) or Shiny apps with your data and want to take advantage of those formats, you should consider using interactive plots to enable end-users to explore your data. 
+
+I use the R library Plotly a lot, because I can simply take an exisiting ggplot and convert it to plotly with a single line. But I recently have been exploring other interactive Javascript based libraries, such as Highchart. You can use both Plotly and Highchart with other programming languages such as Python, but we'll play with R today.
+
+You can read more about the Plotly and Highcharter R libraries here: [Plotly](https://plotly.com/r/){target="_blank"} & [Highcharter](https://jkunst.com/highcharter/){target="_blank"}. For even more visualization libraries, check out the list here: [Shiny extensions](https://github.com/nanxstats/awesome-shiny-extensions?tab=readme-ov-file#visualization){target="_blank"}.
+
+## Download FMWT data
+
+I used to run the FMWT survey at CDFW and before I left that position, made the data more readily accessable in R. We'll use this dataset for this tutorial.
+
+```{r download data}
+
+#url for file download
+url <- "https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2023%20Catch%20Matrix_updated.zip"
+
+#file name for the file we want to grab from the zip file
+fn <- "FMWT 1967-2023 Catch Matrix_updated_tidy.csv"
+
+#Now download the catch data. It's an csv file in a zipped folder so first we have to download the zip folder and extract the file
+temp <- tempfile()
+download.file(url, temp)
+FMWT <- fread(unzip(temp, files = fn))
+unlink(temp)
+
+#we'll rename some columns and select a few fish species to reduce the dataset a bit
+#rename
+FMWT <- FMWT %>%
+  rename(Date = SampleDate, Survey = SurveyNumber, Station = StationCode, Latitude = StationLat, Longitude = StationLong) %>%
+
+#subset just a few fish and variables
+  select(Year, Date, Survey, Station, Latitude, Longitude, Species, Catch) %>%
+  #reformat date
+  mutate(Date = ymd(Date),
+         Station = as.character(Station),
+         Longitude = as.numeric(Longitude)) %>%
+  filter(Species %in% c("American Shad", "Delta Smelt", "Longfin Smelt", "Striped Bass age-0", "Threadfin Shad", "Splittail", "Northern Anchovy"))
+
+#We'll also grab a table of Index values
+FMWT.index <- fread("https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWTindices.csv")
+
+#also import a table of abiotic variables
+abiotic <- fread("https://raw.githubusercontent.com/jamesryanwhite/Rtutorials/refs/heads/main/R%20Interactive%20charts/Sample.csv") %>%
+  filter(SurveyNumber %in% 3:6L, #just currently sampled period
+         MethodCode == "MWTR") %>% #just fish trawls, not zooplankton
+  mutate(Date = mdy_hms(SampleDate),
+         Month = case_when(SurveyNumber == 3L ~ "Sept",
+                           SurveyNumber == 4L ~ "Oct",
+                           SurveyNumber == 5L ~ "Nov",
+                           SurveyNumber == 6L ~ "Dec"),
+         Station = as.character(StationCode),
+         Salinity = round((0.36966/(((ConductivityTop*0.001)^-1.07)-0.00074))*1.28156,2)) %>% #convert uS/cm to ppt
+  select(Date, Month, Station, Secchi, Salinity) %>%
+  arrange(Date, Month, Station)
+
+```
+
+## Scatter/Line Plots
+
+For Plotly, first we create a ggplot then apply the function ggplotly() to our ggplot object to make it interactive.
+
+```{r line plot plotly}
+#make index table into long format
+FMWT.index.long <- FMWT.index %>%
+  pivot_longer(., cols = `Threadfin Shad`:Splittail, names_to = "Species", values_to = "Index") %>%
+  filter(Year > 1980L) #just to remove data gaps for aesthetic reasons
+
+#plot
+lplot <- FMWT.index.long %>%
+  ggplot( aes(x = Year, y = Index, group = Species, color = Species)) +
+  geom_line() +
+  scale_color_brewer(palette = "Dark2") +
+  theme(legend.position = "none") +
+  theme_minimal() +
+  ggtitle("FMWT Fish Index Values")
+
+#apply the plotly function ggplot
+ggplotly(lplot)
+
+```
+
+Now let's make the same plot with Highcharter. It has a slightly different syntax than ggplot, but nothing too complicated.
+
+```{r line plot highcharter}
+#define color palette
+cols <- brewer.pal(7, "Dark2")
+
+hchart(FMWT.index.long, type = "line", hcaes(x = Year, y = Index, group = Species),
+       marker = list(enabled = FALSE)) %>% #remove line points
+    hc_title(text = "FMWT Fish Index Values") %>%
+    hc_colors(cols)
+```
+
+## Boxplots
+
+Plotly version:
+
+```{r boxplot plotly}
+#create sum of annual fish species catch
+a.catch <- FMWT %>%
+  group_by(Year, Species) %>%
+  summarize(Annual.Catch = sum(Catch)) %>%
+  ungroup()
+
+bplot <- a.catch %>%
+  ggplot(., aes(fill = Species, y = Annual.Catch, x = Species)) +
+  geom_boxplot(alpha = 0.5) +
+  geom_jitter(alpha = 0.1, width = 0.15) +
+  scale_fill_brewer(palette = "Dark2") +
+  theme_minimal() +
+  xlab("Year") +
+  ylab("Annual Catch")
+
+ggplotly(bplot)
+
+```
+
+Highcharter version:
+
+```{r boxplot highcharter}
+dat <- data_to_boxplot(
+          data = a.catch,
+          variable = Annual.Catch,
+          Species,
+          group_var = Species,
+          add_outliers = FALSE,
+          fillColor = cols,
+          color = "black")
+
+highchart() %>%  
+hc_xAxis(type = "category") %>%
+hc_add_series_list(dat) %>%
+hc_xAxis(title = list(text = "Species"))%>%
+hc_yAxis(title = list(text = "Summed Annual Catch"))%>%
+  hc_legend(enabled = TRUE)
+
+```
+
+## Heatmap
+
+Plotly version:
+
+```{r heatmap plotly}
+#create monthly table of Secchi for 2022
+m.abiotic <- abiotic %>%
+  filter(year(Date) == 2022) %>%
+  mutate(Month = factor(Month, levels = c("Sept", "Oct", "Nov", "Dec"))) # set proper order of x axis
+
+heatmap <- m.abiotic %>%
+  ggplot(., aes(x = Month, y = Station)) +
+  geom_tile(aes(fill = Secchi)) +
+  scale_fill_distiller(palette = "Spectral", direction = -1, na.value = "grey40") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 7)) +
+  xlab("Month") +
+  ylab("Station") +
+  labs(fill = "Secchi depth (cm)")
+
+ggplotly(heatmap)
+```
+
+Highcharter version:
+
+```{r heatmap highcharter}
+stops <- brewer.pal(10, "Spectral") #define color palette
+stops <- rev(stops)
+
+#tooltip
+tt <- JS("function(){
+ return this.series.xAxis.categories[this.point.x] + ' ' + this.series.yAxis.categories[this.point.y] + ': ' +
+  Highcharts.numberFormat(this.point.value, 2);
+}")
+
+
+hchart(
+  m.abiotic,
+  type = "heatmap",
+  hcaes(x = Month, y = Station, value = Secchi)) %>%
+hc_colorAxis(
+    stops = color_stops(10, colors = stops)) %>%
+  hc_yAxis(
+    title = list(text = "Station"),
+    reversed = FALSE, 
+    tickLength = 0,
+    gridLineWidth = 0, 
+    minorGridLineWidth = 0,
+    labels = list(style = list(fontSize = "9px"))
+  ) %>%
+   hc_tooltip(
+    formatter = tt
+    ) %>%
+  hc_legend(
+    layout = "vertical",
+    verticalAlign = "top",
+    align = "right",
+    valueDecimals = 0,
+    title = list(
+      text = "Secchi Depth (cm)",
+      style = list(
+        textDecoration = "underline")))
+  
+```
+
+## Choropleth Map
+
+Plotly version:
+
+```{r choropleth plotly}
+#assign stations to regions for geospatial data
+#fmwt
+mapidf <- data.frame("Station" = as.character(c(101:113, 201:211, 301:339, 340:341, 401:408, 409:419, 501:513, 515:519, 601:604, 605:609, 514, 801:802, 803:815, 904:906, 908:912, 902, 915:916, 918, 917, 913:914, 907, 924, 919, 923, 920:922, 925, 901, 701:711, 717, 71:73, 724, 735:736, 70, 712, 713, 715:716, 721, 723, 719, 799, 794:797, 903)),
+                    "Region" = c(rep("SAN FRANCISCO BAY",24), rep("SAN PABLO BAY",39), rep("NAPA RIVER",2), rep("SUISUN BAY",8), rep("GRIZZLY BAY",33), rep("MONTEZUMA SLOUGH", 5), rep("BROAD SLOUGH",3), rep("SAN JOAQUIN RIVER",21), "SHEEP SLOUGH", rep("OLD RIVER",3), "VICTORIA CANAL", rep("MIDDLE RIVER", 2), "LITTLE CONNECTION SLOUGH", "POTATO SLOUGH", "LITTLE POTATO SLOUGH", "NORTH MOKELUMNE RIVER", rep("SOUTH MOKELUMNE RIVER", 3), "SYCAMORE SLOUGH", "FALSE RIVER", rep("SACRAMENTO RIVER", 18), "GEORGIANA SLOUGH", "STEAMBOAT SLOUGH", rep("CACHE SLOUGH",4), rep("SACTO. R DEEP WATER SH CHAN", 7), "MOKELUMNE RIVER"))
+mapidf <- filter(mapidf, !is.na(Region))
+
+#join with catch and abiotic data, just use 2022
+map.data <- FMWT %>%
+  filter(Year == 2022 & Survey == 6L) %>%
+  left_join(., mapidf, by = "Station") %>%
+  left_join(., m.abiotic, by = c("Date", "Station"))
+
+#create a df of average Dec monthly salinity by region to use for choropleth scaling
+avg <- map.data %>%
+  group_by(Month, Region) %>%
+  summarize(Salinity = round(mean(Salinity), 1)) %>%
+  ungroup() %>%
+  filter(Month == "Dec")
+
+#merge data with shapefile
+spdf <- deltamapr::WW_Delta %>%
+ filter(HNAME %in% unique(avg$Region)) %>%
+ right_join(. , avg, by= c("HNAME" = "Region"))
+
+#read other water bodies w/o stations
+other <- deltamapr::WW_Delta
+
+#plot choropleth
+map <- ggplot(
+  # define main data source
+  data = spdf
+) +
+  #draw non-sampled water bodies transparent
+  geom_sf(
+    data = other,
+    fill = "transparent",
+    color = "transparent"
+  ) +
+  # add main fill aesthetic
+  # use thin black stroke for region borders
+  geom_sf(
+    mapping = aes(
+      fill = Salinity
+    ),
+    color = "grey40",
+    size = 0.001
+  ) +
+  # use the predefined color scale
+scale_fill_distiller(palette = "Spectral", direction = -1, na.value = "white") +
+    # add titles
+  labs(x = NULL,
+       y = NULL,
+       title = "2022 Dec Average Water Salinity") +
+  theme_minimal()
+
+ggplotly(map)
+```
+
+Highcharter version:
+
+```{r choropleth highcharter}
+# Ensure correct coordinate reference system (CRS) is WGS84 (EPSG:4326)
+spdf <- st_transform(spdf, crs = 4326)
+
+# Convert sf object to GeoJSON format
+geojson_data <- geojsonsf::sf_geojson(spdf)
+
+# Parse the GeoJSON into a list (Highcharts requires this format)
+geojson_list <- jsonlite::fromJSON(geojson_data, simplifyVector = FALSE)
+
+# Prepare data for Highcharter
+region_data <- spdf %>% select(HNAME, Salinity) %>% st_drop_geometry()
+
+# Create Highcharter choropleth map
+map.h <- highchart(type = "map") %>%
+  #salinity choropleth layer
+  hc_add_series_map(
+    map = geojson_list,  # Use the parsed GeoJSON
+    df = region_data,
+    joinBy = "HNAME",
+    value = "Salinity",
+    name = "Salinity (ppt)",
+    tooltip = list(valueDecimals = 2)) %>%
+  hc_colorAxis(stops = color_stops(10, colors = stops)) %>%
+  hc_legend(
+    layout = "horizontal",
+    verticalAlign = "bottom",
+    align = "center",
+    valueDecimals = 0,
+    title = list(
+      text = "Salinity (ppt)",
+      style = list(
+        textDecoration = "underline"))) %>%
+  
+  #title
+  hc_title(text = "2022 Dec Average Water Salinity") %>%
+  #make zoomable/moveable
+  hc_mapNavigation(enabled = TRUE)
+
+map.h
+
+```
