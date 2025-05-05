@@ -18,7 +18,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 
 1:00 - 1:30 &nbsp;&nbsp; MORE POWER (an overview of different types of power analysis) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:30 - 2:00 &nbsp;&nbsp; Comparison of gear types used in predator removal efforts at Clifton Court Forebay ([Danny Cox](https://www.linkedin.com/in/daniel-cox-08665025/), [DWR](https://water.ca.gov/))  
-2:00 - 2:30 &nbsp;&nbsp; A spatial interface to IEP fish monitoring survey data ([Travis Hinkelman](https://www.travishinkelman.com/) and [Taylor Spaulding](https://www.linkedin.com/in/taylorjspaulding/), [ESA](https://esassoc.com/))    
+2:00 - 2:30 &nbsp;&nbsp; A map-based interface to IEP fish monitoring survey data ([Travis Hinkelman](https://www.travishinkelman.com/) and [Taylor Spaulding](https://www.linkedin.com/in/taylorjspaulding/), [ESA](https://esassoc.com/))    
 
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
