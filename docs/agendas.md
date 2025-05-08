@@ -1,5 +1,11 @@
 ## Previous meetings
 
+### 2025-05-08
+
+1:00 - 1:30 &nbsp;&nbsp; [MORE POWER (an overview of different types of power analysis)](presentations/MORE%20POWER.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.05.08/power%20examples.R)]   
+1:30 - 2:00 &nbsp;&nbsp; [Comparison of gear types used in predator removal efforts at Clifton Court Forebay](presentations/GearComparison_PWT_DanielCox20250508.pptx) ([Danny Cox](https://www.linkedin.com/in/daniel-cox-08665025/), [DWR](https://water.ca.gov/))  
+2:00 - 2:30 &nbsp;&nbsp; [A map-based interface to IEP fish monitoring survey data](https://esassoc.shinyapps.io/sfe-fish-abundance/) ([Travis Hinkelman](https://www.travishinkelman.com/) and [Taylor Spaulding](https://www.linkedin.com/in/taylorjspaulding/), [ESA](https://esassoc.com/))    
+
 ### 2025-02-13
 
 1:00 - 1:20 &nbsp;&nbsp; [Plotly vs. Highchart: A Comparison of Interactive Plots](presentations/R%20Interactive%20charts/interactive%20charts.html)  (James White, [CDFW](https://wildlife.ca.gov/))  
