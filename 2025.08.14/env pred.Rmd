@@ -1,0 +1,268 @@
+---
+title: "Environmental Predictability"
+author: "Pete Nelson"
+date: "2025-07-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### what do we mean by *environmental predictability*?
+
+Tonkin et al. (2017) define predictability as "...the regularity of recurrence of the within cycle (e.g., annual) distribution of events across multiple cycles."
+
+### how is *environmental predictability* **relevant** to us?
+
+* ecology & evolution
+* conservation
+* DWR
+* water management
+* environmental quality
+* functional ecology
+* restoration
+
+### how to **visualize** *environmental predictability*
+load libraries
+```{r, message=FALSE}
+library(tidyverse)
+library(readxl)
+library(zoo)
+library(tsibble)
+library(ggplot2)
+library(envPred)
+# library(hydrostats) # alternative to envPred; I really haven't used it though
+```
+We'll start by pulling in some example rainfall data. These come from some fairly haphazard locations throughout the world, and vary, not only in the length (and quality) of the time series, but also, as you might expect, in the predictability of the precipitation recorded. All the data are in the Excel file, 'data repository.xlsx', and there's quite a lot more than just precipitation ('PRCP') data. Check out the pdf, 'GSOM_documentation.pdf', for more information on the other environmental data these files contain.
+
+Note that data from different locations are in different tabs in the Excel file. Here's a list of the <u>tab names</u> and some location information:
+
+* sac [Sacramento, California]
+* curador [Brazil] 
+* sharjah [UAE]
+* alain  [UAE]
+* dubai [UAE]
+* ellesmere [Canadia Arctic]
+* teresina [Brazil]
+* estonia [Estonia]
+* telhara [India]
+* forks [Forks, Washington]
+* grays [Grays River Hatchery, Washington]
+* miami [Miami, Florida]
+* showlow [Show Low, Arizona]
+* joshuatree [Joshua Tree, California]
+* vegas [Las Vegas, Nevada]
+* flagstaff [Flagstaff, Arizona]
+* cuyamaca [Cuyamaca, California]
+* deathvalley [Death Valley, California]
+
+```{r}
+location <- "sac" # this is the name of the tab w the desired data...
+# swap 'sac' for one of the other tab names (eg 'grays') to select a different dataset
+raw <- read_excel("data/data repository.xlsx", sheet = location)
+```
+
+Now that you've got some data loaded, we'll start getting those data in a form where we can first visualize what's going on and then analyze them.
+
+```{r}
+head(raw)
+
+# select the precipitation & date data, ignoring the other data
+ts <- raw %>% 
+  select(c(DATE, PRCP)) %>% 
+  mutate(date = ym(DATE),
+         prcp = PRCP,
+         .keep = "none")
+
+range(ts$date) # start/end dates
+range(ts$prcp, na.rm = TRUE) # range of precipitation values
+
+# check if time series is missing months
+months <- tibble(date = seq(range(ts$date)[1], range(ts$date)[2], by = "months"))
+
+list <- lst(ts, months) # build list with the incomplete ts and a complete run of all months
+
+# form a complete time series with the data (ie missing months included albeit no precipitation data)
+dat_ts_raw <-
+  list %>% 
+  lapply(read.zoo) %>% # create list of zoo objects
+  do.call(what = "merge") %>% 
+  fortify.zoo(name = "date")
+colnames(dat_ts_raw) <- c("date", "prcp")
+
+range(dat_ts_raw$prcp, na.rm = T) # min and max values for precipitation
+# if max>1024, then...note that package hydrostats may have a more flexible interface for dealing these kinds of issues
+# if min<0, something is really amiss
+range(dat_ts_raw$date)
+
+# define index of logarithmic precipitation classes from i = 1 to 12
+# following Colwell 1974
+# class 1 = 0 measurable precipitation
+# class 2 is measurable but less than or equal to 1
+# classes 3:12 min >2^(i-3) and max <=2^(i-2)
+# class 12 = max of 1024 units (here, mm)
+
+indices <- tibble(i = 3:12,
+                  min = 2^(i-3),
+                  max = 2^(i-2)) %>% 
+  add_row(i = 1:2, min = c(0, 0.1), max = c(0, 1), .before = 1) %>% 
+  print()
+```
+
+Note that the number of indices or classes is going to affect the eventual predictability *measurements*. Think of it this way: the more divisions in your data (i.e., the finer the grain), the more sensitive the analysis is. If you cram your data into a small handful of classes, you're going to get cruder results. 
+
+Equally important, if you plan to compare predictability measures among multiple sites or time periods, <u>the number of indices has to be constant for all time series that you want to compare</u>.
+
+```{r}
+# tidy up the ts and add the environmental variable indices
+temp <- 
+  dat_ts_raw %>% 
+  mutate(year = factor(year(date)), 
+         month = factor(month(date, label = TRUE, abbr = TRUE),
+                        levels = month.abb)) %>% 
+  select(-date) %>% 
+  tibble() %>% 
+  relocate(-prcp)
+
+# generate the class indices for each prcp datum
+dat_ts <- 
+  temp %>% 
+  mutate(class = cut(prcp, 
+                     breaks = indices$min, # should be > min
+                     right = TRUE, # interval should be closed on right, open on left (ie <= next class min)
+                     ordered_result = TRUE,
+                     labels = FALSE), # simple integer codes instead of factor
+         class = if_else(prcp == 0, 1, class), # for prcp=0, class=1
+         class = if_else(prcp == 1024, 12, class), # for prcp=1024, class=12
+         month = as_factor(month)) %>% 
+  print(n = 20) 
+# if there were data>1024, you'd have to deal with that but there weren't any in these examples
+```
+
+Now, we're going to generate a table with the frequency of occurrences for each class across all time divisions (in this case, months). This is a pretty handy (albeit still crude) way to visualize the predictability of your data.
+
+```{r}
+f_table_min <-
+  dat_ts %>% 
+  count(class, month) %>% 
+  arrange(month) %>% 
+  pivot_wider(names_from = month, values_from = n) %>% 
+  mutate(class = factor(class)) %>% 
+  arrange(class) %>% 
+  filter(class != "NA") %>% # remove row where class=NA
+  replace(is.na(.), 0) # replace NAs with 0
+
+# note that there weren't any data where 512>prcp<=1024, so this code doesn't generate any rows where class=12
+# I removed class=NA (here, row 12); the other NAs are where
+# no data from that particular class were found for that particular month (eg
+# class=5, month=May)
+
+# Now, I'm going to generate rows (classes) with all 0 to ensure all tables include all classes (1:12)
+blank_rows <- tibble(class = factor(1:12), Jan = 0, Feb = 0, Mar = 0, Apr = 0, May = 0,
+                     Jun = 0, Jul = 0, Aug = 0, Sep = 0, Oct = 0, Nov = 0, Dec = 0) %>% 
+  mutate(across(Jan:Dec, as.integer))
+
+# ...and add blank rows (classes) to 'final' table
+f_table <-
+  f_table_min %>% 
+  bind_rows(anti_join(blank_rows, f_table_min,
+                      by = join_by(class))) %>% 
+  print()
+```
+This is reasonably informative, as-is, but let's make a figure that really show-cases these data. To do so, we're going to use the class-frequency data to generate a heat map. Somewhat perversely, we're going to do so by reformatting our class-frequency table as a time series.
+
+```{r}
+# format data for heat map
+df <- f_table %>% 
+  gather(month, count, Jan:Dec) %>% 
+  mutate(month = factor(month, levels = month.abb))
+head(df)
+# Our original time series object, dat_ts, the one we used to make the basic class-frequency table (f_table), doesn't have the date information in date format, so it was easiest to do this.
+```
+
+And, now, we can make a heat map:
+```{r}
+hm <- 
+  ggplot(df, 
+       aes(
+         x = month, 
+         y = class, 
+         fill = count)) +
+  geom_tile() +
+  theme_bw() +
+  coord_equal() + # square tiles
+  scale_fill_distiller(palette = "Blues", direction = 1) +
+  geom_text(aes(label = count), color = "black") +
+  guides(fill = FALSE) + # remove legend
+  xlab(NULL) + ylab(NULL) +
+  scale_y_discrete(limits=rev) # reverses order of y-axis & class data
+
+# add title, etc., but note that you'll want to enter the appropriate text for the labels!
+hm + ggtitle(label = "Precipitation",
+             subtitle = "Sacramento, CA, 1941-2025") +
+  xlab(NULL) +
+  ylab("Amount (i)")
+# FWIW, we only have one month of data from 1941!
+```
+
+If you want the heat map only (what I used for the ppt), use this:
+
+```{r, fig.show='hide'}
+
+hm + theme(axis.ticks = element_blank(),
+           axis.text = element_blank())
+```
+
+### how to **quantify** *environmental predictabilty*
+
+We need to start by examining our time series data, in particular, to see if it's missing records from any dates between the start and end of the series. A time series that has gaps in it, is referred to as an *irregular time series*, but most analyses require that you *regularize* your data. Note that this actually has nothing to do with missing *data*--where, for example, you went out in the field this morning (25 July 2025) with your Secchi disk to measure water clarity, but dropped it overboard! Your regular time series should include today but you don't have any data to report:
+```{r, echo=FALSE}
+example <-
+  tibble(date = seq(ymd("2025-07-20"), ymd("2025-07-31"), by = "days"),
+       clarity = sample.int(11, 12, replace = TRUE))
+example[6,2] <- NA
+example
+```
+
+If you just omitted today's date from your time series, it'd be an irregular time series: 
+```{r, echo=FALSE}
+(example[-6,])
+```
+
+So, we're going to figure out what you've got, and, if necessary, fill those gaps in the dates.There are techniques for interpolation--filling in your missing water clarity datum--but we're not going to go into that here.
+```{r}
+temp <- ts %>% 
+  mutate(date = yearmonth(date)) %>% 
+  tsibble(.,
+          key = NULL,
+          index = "date") %>%  
+  fill_gaps(.full = TRUE) # regularize ts
+
+# check that ts is regular
+temp %>% filter(is.na(prcp))
+# an irregular time series will have rows; a regular ts will have length=0
+# 'prop_na' in the env_stats() output provides a measure of how irregular...
+```
+
+At last, we're going to get some statistics on predictability!
+```{r}
+(stats <- 
+  env_stats(ts$prcp, # data from your time series
+            ts$date, # datES from your time series
+            n_states = 12, # number classes you're using
+            delta = 1, # time interval
+            is_uneven = TRUE, # we've regularized our ts, but can (?) handle irregular ts
+            interpolate = FALSE, # use with caution, if at all (don't drop the Secchi!)
+            show_warns = TRUE,
+            noise_method = 'lomb_scargle')) # must use this method for ts w missing data & interpolate = F
+
+```
+Notes:
+
+* Time series length matters; time series should have a min of 128 interval (10+ years). 
+* The package envPred is set up for month-based calculations only; hydrostats might be more flexible?
+* As far as I can tell, the warning message about ts beginning/ending at different times of the year doesn't matter, but should probably be tested. 
+* Environmental color (env_col) ranges from white noise (0) where there's no auto-correlation to red (1) where there at least some correlation between measurements.
+* Seasonality here ((un)bounded_seasonality) is estimated as a proportion of the variance in seasonal trend and the variance of the residual ts, but is also commonly estimated as M/P, values from Colwell's work. To what degree these are correlated would be an interesting exercise.
+* Spectral analysis (wavelets) is another powerful tool that folks have applied to these kinds of issues. Topic for another workshop?!

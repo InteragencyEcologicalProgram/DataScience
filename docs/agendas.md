@@ -1,5 +1,14 @@
 ## Previous meetings
 
+### [2025-08-14](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.08.14/)
+
+1:00 - 1:20 &nbsp;&nbsp; Otolith-Dayflow Project ([John Schiff](https://www.linkedin.com/in/john-s-484b8415/), [Contra Costa Water District](https://www.ccwater.com/))  
+1:20 - 1:40 &nbsp;&nbsp; [Quantifying environmental predictability](presentations/environmental%20predictability.pptx) (Pete Nelson, [DWR](https://water.ca.gov/))  
+1:40 - 1:45 &nbsp;&nbsp; [Graph of the meeting](presentations/Graph%20of%20the%20Day.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:45 - 2:00 &nbsp;&nbsp; Data Science PWT survey results and discussion about future meetings ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/) and [Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))   
+2:00 - 2:05 &nbsp;&nbsp; Break  
+2:05 - 2:45 &nbsp;&nbsp; Acquisition and outlier detection in continuous IEP datasets (Dan Ellis, [IEP](https://iep.ca.gov/))  
+
 ### 2025-05-08
 
 1:00 - 1:30 &nbsp;&nbsp; [MORE POWER (an overview of different types of power analysis)](presentations/MORE%20POWER.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.05.08/power%20examples.R)]   
