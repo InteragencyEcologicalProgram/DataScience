@@ -1,5 +1,13 @@
 ## Previous meetings
 
+### 2025-11-13
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:45 &nbsp;&nbsp; [timetk: a time series toolkit in R](presentations/timetk_quarto_presentation.html) ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+1:45 - 2:15 &nbsp;&nbsp; [Using LLMs, APIs, and R packages for text analysis and classification](presentations/20251113_iep_datapwt_llms.pptx) ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/))  
+2:15 - 2:20 &nbsp;&nbsp; Break  
+2:20 - 3:00 &nbsp;&nbsp; Machine learning for prediction of harmful algal blooms in the Delta ([Gourab Saha](https://www.linkedin.com/in/gourab-saha-577967110/) and [Peyman Hosseinzadeh Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/)) [[dashboard](https://dwrmsohab.azurewebsites.net/habdashboard)] [[code](https://github.com/PeymanHNamadi/HAB/)]
+
 ### [2025-08-14](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.08.14/)
 
 1:00 - 1:20 &nbsp;&nbsp; Otolith-Dayflow Project ([John Schiff](https://www.linkedin.com/in/john-s-484b8415/), [Contra Costa Water District](https://www.ccwater.com/))  
@@ -11,28 +19,28 @@
 
 ### 2025-05-08
 
-1:00 - 1:30 &nbsp;&nbsp; [MORE POWER (an overview of different types of power analysis)](presentations/MORE%20POWER.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.05.08/power%20examples.R)]   
+1:00 - 1:30 &nbsp;&nbsp; [MORE POWER (an overview of different types of power analysis)](presentations/MORE%20POWER.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.05.08/power%20examples.R)]  
 1:30 - 2:00 &nbsp;&nbsp; [Comparison of gear types used in predator removal efforts at Clifton Court Forebay](presentations/GearComparison_PWT_DanielCox20250508.pptx) ([Danny Cox](https://www.linkedin.com/in/daniel-cox-08665025/), [DWR](https://water.ca.gov/))  
-2:00 - 2:30 &nbsp;&nbsp; [A map-based interface to IEP fish monitoring survey data](https://esassoc.shinyapps.io/sfe-fish-abundance/) ([Travis Hinkelman](https://www.travishinkelman.com/) and [Taylor Spaulding](https://www.linkedin.com/in/taylorjspaulding/), [ESA](https://esassoc.com/))    
+2:00 - 2:30 &nbsp;&nbsp; [A map-based interface to IEP fish monitoring survey data](https://esassoc.shinyapps.io/sfe-fish-abundance/) ([Travis Hinkelman](https://www.travishinkelman.com/) and [Taylor Spaulding](https://www.linkedin.com/in/taylorjspaulding/), [ESA](https://esassoc.com/))  
 
 ### 2025-02-13
 
 1:00 - 1:20 &nbsp;&nbsp; [Plotly vs. Highchart: A Comparison of Interactive Plots](presentations/R%20Interactive%20charts/interactive%20charts.html)  (James White, [CDFW](https://wildlife.ca.gov/))  
-1:20 - 1:50 &nbsp;&nbsp; [Extract data from PDF tables with R and Python](https://github.com/hinkelman/pdf-extract-example) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))    
+1:20 - 1:50 &nbsp;&nbsp; [Extract data from PDF tables with R and Python](https://github.com/hinkelman/pdf-extract-example) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 1:50 - 2:30 &nbsp;&nbsp; [Grab bag of productivity tips](presentations/grab_bag_presentation.html) ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
 
 ### 2024-12-12
 
 1:00 - 1:20 &nbsp;&nbsp; Community input: how to align complex ggplots across pages ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
 1:20 - 1:40 &nbsp;&nbsp; [Using R to compare Lowrance GPX data to SQL database](presentations/RLowranceGPX.pptx) ([Claudia Macfarlane](https://www.linkedin.com/in/claudia-macfarlane-80a140140/), [USFWS](https://www.fws.gov/office/lodi-fish-and-wildlife)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2024.12.12/Lowrance_processing1_dbremoved.R)]  
-1:40 - 2:10 &nbsp;&nbsp; [GUI apps with R & tcltk](https://www.travishinkelman.com/pdf/ZoopSynth-tcltk.pdf) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))    
+1:40 - 2:10 &nbsp;&nbsp; [GUI apps with R & tcltk](https://www.travishinkelman.com/pdf/ZoopSynth-tcltk.pdf) ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
 2:10 - 2:30 &nbsp;&nbsp; [Naming Things](presentations/NamingThings.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 
 ### 2024-05-09  
 
 1:00 - 2:00 &nbsp;&nbsp; [SacPAS Egg Growth tool tutorial: How to manage and execute bulk runs and user-defined scenarios](https://github.com/nickobeer/Egg_Growth/tree/main/code) ([Nick Beer](https://www.cbr.washington.edu/people/beer), [University of Washington](https://www.cbr.washington.edu/))  
 2:00 - 2:40 &nbsp;&nbsp; [A simple workflow to classify drone imagery using texture analysis](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2024.05.09/TextureExample) ([Shruti Khanna](https://wildlife.ca.gov/Science-Institute/Featured-Scientist/shruti-khanna), [CDFW](https://wildlife.ca.gov/))  
-2:40 - 3:10 &nbsp;&nbsp; [Working with targets workflow](https://github.com/ryanpeek/2024_targets_demo) ([Ryan Peek](https://ryanpeek.org/), [CDFW](https://wildlife.ca.gov/)) 
+2:40 - 3:10 &nbsp;&nbsp; [Working with targets workflow](https://github.com/ryanpeek/2024_targets_demo) ([Ryan Peek](https://ryanpeek.org/), [CDFW](https://wildlife.ca.gov/))  
 
 ### 2023-11-09
 
@@ -45,39 +53,22 @@
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; Updates to Bay-Delta Live - Explore Data & Time Series Visualizations ([Dave Osti](https://www.linkedin.com/in/david-osti-9189a57/), [34 North](https://www.34north.com/))  
 1:35 - 1:55 &nbsp;&nbsp; CVPIA Decision Support Models ([Mike Urkov](https://www.linkedin.com/in/murkov/), The Urkov Group)  
-1:55 - 2:15 &nbsp;&nbsp; [Date & Time gotchas](https://gist.github.com/Myfanwy/1e2a4fe3a0015c3b14472fd7a32f3af7) ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))   
-2:15 - 2:20 &nbsp;&nbsp; Break   
+1:55 - 2:15 &nbsp;&nbsp; [Date & Time gotchas](https://gist.github.com/Myfanwy/1e2a4fe3a0015c3b14472fd7a32f3af7) ([Myfanwy Johnston](https://www.linkedin.com/in/myfanwyjohnston/), [CFS](https://www.fishsciences.net/))  
+2:15 - 2:20 &nbsp;&nbsp; Break  
 2:20 - 2:50 &nbsp;&nbsp; An introduction to the targets package ([Travis Hinkelman](https://www.travishinkelman.com/), [ESA](https://esassoc.com/))  
-2:50 - 3:30 &nbsp;&nbsp; [Mixed models - what they are, why you should use them, and how you code them in R](presentations/mixedmodels/mixed%20models.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://interagencyecologicalprogram.github.io/DataScience/presentations/mixedmodels/MixedModels.html)]     
+2:50 - 3:30 &nbsp;&nbsp; [Mixed models - what they are, why you should use them, and how you code them in R](presentations/mixedmodels/mixed%20models.pptx) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) [[code](https://interagencyecologicalprogram.github.io/DataScience/presentations/mixedmodels/MixedModels.html)]  
 
 ### [2023-05-11](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.05.11)
 
-All presentations will be geared for people with some knowledge of R, but who consider themselves beginners. Most presentations will use the CDFW Fall Midwater Trawl data, available [here](https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip). 
+All presentations will be geared for people with some knowledge of R, but who consider themselves beginners. Most presentations will use the CDFW Fall Midwater Trawl data, available [here](https://filelib.wildlife.ca.gov/Public/TownetFallMidwaterTrawl/FMWT%20Data/FMWT%201967-2022%20Catch%20Matrix_updated.zip).  
  
 [recording available](https://cadwr.box.com/s/hqdy0k62x3pzk98dij8e1lmoa41j6m8k)
 
-1:05 - 1:30 &nbsp;&nbsp; [Data Manipulation - filtering, joining, selecting, and summarizing](presentations/FMWTdatademo.html) (Rosemary Hartman [DWR](https://water.ca.gov/))  
-
-* [Data manipulation demo code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTdatademo.Rmd)
-
-1:30 - 2:00 &nbsp;&nbsp; [Very basic statistics - linear models and ANOVAs](presentations/FMWTstats-demo.html)   (Rosemary Hartman, [DWR](https://water.ca.gov/))   
-
-* [Statistics demo code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTstats%20demo.Rmd)
-
-2:00 - 2:30 &nbsp;&nbsp; [Intro to ggplot2](presentations/Intro_ggplot2.nb.html) (Kyle Hardage, [DWR](https://water.ca.gov/))  
-
-* [GGplot 2 intro code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/Intro_ggplot2.Rmd)
-
-2:40 - 3:10 &nbsp;&nbsp; [Basic Maps](presentations/R maps.html)  (James White, CDFW) 
-
-* [Mapping code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/R%20maps.qmd)
-
-3:10 - 3:40 &nbsp;&nbsp; Colors and color-blind friendly palettes (Dan Ellis, CDFW)
-
-* [ADA compliant figures powerpoint](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/docs/presentations/ADA_Compliant_Figure_Making_DSE_09MAY2023.pptx)
-* [code to generate figures](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/IEP_Data_Science_PWT_ADA_Complant_Figures.R)
-
-
+1:05 - 1:30 &nbsp;&nbsp; [Data Manipulation - filtering, joining, selecting, and summarizing](presentations/FMWTdatademo.html) (Rosemary Hartman [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTdatademo.Rmd)]  
+1:30 - 2:00 &nbsp;&nbsp; [Very basic statistics - linear models and ANOVAs](presentations/FMWTstats-demo.html)   (Rosemary Hartman, [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/FMWTstats%20demo.Rmd)]  
+2:00 - 2:30 &nbsp;&nbsp; [Intro to ggplot2](presentations/Intro_ggplot2.nb.html) (Kyle Hardage, [DWR](https://water.ca.gov/)) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/Intro_ggplot2.Rmd)]  
+2:40 - 3:10 &nbsp;&nbsp; [Basic Maps](presentations/R%20maps.html)  (James White, CDFW) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/R%20maps.qmd)]  
+3:10 - 3:40 &nbsp;&nbsp; [Colors and color-blind friendly palettes](presentations/ADA_Compliant_Figure_Making_DSE_09MAY2023.pptx) (Dan Ellis, CDFW) [[code](https://github.com/InteragencyEcologicalProgram/DataScience/blob/master/2023.05.11/IEP_Data_Science_PWT_ADA_Complant_Figures.R)]  
 
 ### [2023-02-09](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2023.02.09)
 
@@ -87,7 +78,7 @@ All presentations will be geared for people with some knowledge of R, but who co
 1:45 - 2:05 &nbsp;&nbsp; QC Scripts in R for over 60 years of Summer Townet (Tim Malinich, [CDFW](https://wildlife.ca.gov/))  
 2:05 - 2:25 &nbsp;&nbsp; Planning for data science beginners session during May meeting  
 2:25 - 2:30 &nbsp;&nbsp; Break  
-2:30 - 3:00 &nbsp;&nbsp; Exploring invertebrate communities in restored wetlands using Bayesian hierarchical models and PERMANOVAs (Gabriel Ng, [CDFW](https://wildlife.ca.gov/))        
+2:30 - 3:00 &nbsp;&nbsp; Exploring invertebrate communities in restored wetlands using Bayesian hierarchical models and PERMANOVAs (Gabriel Ng, [CDFW](https://wildlife.ca.gov/))  
 3:00 - 4:00 &nbsp;&nbsp; Late Holocene environmental change in coastal lagoons of Yucatan, Mexico ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
 
 ### 2022-11-10
@@ -97,7 +88,7 @@ All presentations will be geared for people with some knowledge of R, but who co
 1:15 - 1:35 &nbsp;&nbsp; Do aquifers have fingerprints? Cluster analysis of multi-well geochemistry in the Sacramento Valley ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
 1:35 - 1:55 &nbsp;&nbsp; Comparing simple features using the mapview package ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
 1:55 - 2:00 &nbsp;&nbsp; Break  
-2:00 - 2:30 &nbsp;&nbsp; Dates and Times - why are they so hard? ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
+2:00 - 2:30 &nbsp;&nbsp; Dates and Times - why are they so hard? ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 
 ### [2022-05-12](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.05.12)
 
@@ -215,4 +206,3 @@ All presentations will be geared for people with some knowledge of R, but who co
 2:30 - 3:00 &nbsp;&nbsp; [Overdispersed, zero-inflated count data](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2019.08.08_countmodels%20presentation) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 3:00 - 3:30 &nbsp;&nbsp; [Intro to Python](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2019.08.08intro-to-python) ([John Franco Saraceno](https://www.linkedin.com/in/john-franco-saraceno-7a780751/), [DWR](https://water.ca.gov/))  
 3:30 - 4:30 &nbsp;&nbsp; Intro to GitHub ([Jason DuBois](https://www.linkedin.com/in/jason-dubois-10899a50/), [CDFW](https://wildlife.ca.gov/))  
-
