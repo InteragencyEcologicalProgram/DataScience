@@ -6,7 +6,7 @@
 1:05 - 1:45 &nbsp;&nbsp; [timetk: a time series toolkit in R](presentations/timetk_quarto_presentation.html) ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
 1:45 - 2:15 &nbsp;&nbsp; [Using LLMs, APIs, and R packages for text analysis and classification](presentations/20251113_iep_datapwt_llms.pptx) ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/))  
 2:15 - 2:20 &nbsp;&nbsp; Break  
-2:20 - 3:00 &nbsp;&nbsp; Machine learning for prediction of harmful algal blooms in the Delta ([Gourab Saha](https://www.linkedin.com/in/gourab-saha-577967110/) and [Peyman Hosseinzadeh Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/)) [[dashboard](https://dwrmsohab.azurewebsites.net/habdashboard)] [[code](https://github.com/PeymanHNamadi/HAB/)]
+2:20 - 3:00 &nbsp;&nbsp; [Machine learning for prediction of harmful algal blooms in the Delta](presentations/Modeling_HABs_DWR_11_13_2025_Gourab_Saha0.pdf) ([Gourab Saha](https://www.linkedin.com/in/gourab-saha-577967110/) and [Peyman Hosseinzadeh Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/)) [[dashboard](https://dwrmsohab.azurewebsites.net/habdashboard)] [[code](https://github.com/PeymanHNamadi/HAB/)]
 
 ### [2025-08-14](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2025.08.14/)
 
