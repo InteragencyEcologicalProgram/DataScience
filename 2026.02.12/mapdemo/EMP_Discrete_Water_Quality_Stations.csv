@@ -1,0 +1,44 @@
+Station,Location,StationType,Latitude,Longitude,Status,AverageDepth
+C10,San Joaquin River near Vernalis  ,Shore-based,37.67575,-121.265,Inactive,3
+C10A,San Joaquin River near Vernalis @ SJR Club,Shore-based,37.67934,-121.2647,Active,4
+C3,Sacramento River @ Green's Landing,Shore-based,38.34575,-121.5461,Inactive,2
+C3A,Sacramento River @ Hood,Shore-based,38.36771,-121.5205,Active,1
+C7,San Joaquin River from Boat Dock @ Mossdale Bridge,Shore-based,37.78607,-121.3077,Inactive,1
+C9,West Canal @ Clifton Court Intake,Shore-based,37.83095,-121.554,Active,45
+D10,Sacramento River @ Chipps Island,Mid-channel,38.04631,-121.9183,Active,23
+D11,Sherman Lake near Antioch,Mid-channel,38.04229,-121.7995,Inactive,12
+D12,San Joaquin River @ Antioch Ship Channel,Mid-channel,38.02161,-121.8063,Active,6
+D14A,Big Break near Oakley,Mid-channel,38.01776,-121.7114,Inactive,23
+D15,San Joaquin River @ Jersey Point,Mid-channel,38.05217,-121.6896,Inactive,4
+D16,San Joaquin River @ Twitchell Island,Mid-channel,38.0969,-121.6691,Active,1
+D19,Frank's Tract near Russo's Landing,Mid-channel,38.04376,-121.6148,Active,35
+D2,Suisun Bay near Preston Point,Mid-channel,38.06544,-122.0545,Inactive,6
+D22,Sacramento River @ Emmaton,Mid-channel,38.08453,-121.7391,Active,4
+D24,Sacramento River below Rio Vista Bridge,Shore-based,38.15778,-121.6847,Inactive,2
+D26,San Joaquin River @ Potato Slough,Mid-channel,38.07664,-121.5669,Active,1
+D28A,Old River @ Rancho Del Rio,Mid-channel,37.97048,-121.573,Active,34
+D4,Sacramento River above Point Sacramento,Mid-channel,38.06248,-121.8205,Active,5
+D41 ,San Pablo Bay near Pinole Point,Mid-channel,38.03022,-122.3729,Active,74
+D41A,San Pablo Bay near Mouth of Petaluma River,Mid-channel,38.08472,-122.3907,Active,23
+D42,San Pablo Bay near Mare Island,Mid-channel,38.05872,-122.2847,Inactive,43
+D6,Suisun Bay @ Bulls Head nr. Martinez,Mid-channel,38.04436,-122.1177,Active,4
+D7,Grizzly Bay @ Dolphin nr. Suisun Slough,Mid-channel,38.11714,-122.0397,Active,5
+D8,Suisun Bay off Middle Point nr. Nichols,Mid-channel,38.05992,-121.99,Active,34
+MD10,Disappointment Slough @ Bishop Cut,Shore-based,38.04381,-121.4188,Inactive,3
+MD10A,Disapointment Slough @ Bishop Cut,Mid-channel,38.04226,-121.4199,Active,4
+MD6,Sycamore Slough near Mouth,Mid-channel,38.1415,-121.4687,Inactive,2
+MD7,South Fork Mokelumne below Sycamore Slough,Mid-channel,38.12513,-121.497,Inactive,1
+MD7A,Little Potato Slough @ Terminous,Mid-channel,38.11382,-121.498,Inactive,1
+NZ002,Carquinez Straite near Glencove Harbor,Mid-channel,38.06529,-122.2152,Active,45
+NZ004,Carquinez Straite near Ozol Pier,Mid-channel,38.03576,-122.1616,Active,23
+NZ032,"Montezuma Slough, 2nd bend from mouth",Mid-channel,38.16991,-122.0211,Active,12
+NZ068,Sacramento River below Rio Vista Bridge,Mid-channel,38.14272,-121.6895,Active,6
+NZ325,San Pablo Bay near Rock Wall and Light 15,Mid-channel,38.05798,-122.2919,Active,23
+NZS42,Suisun Slough @ Volanti Slough,Mid-channel,38.18045,-122.0476,Active,4
+P10,Middle River @ Victoria Canal,Shore-based,37.8912,-121.4894,Inactive,1
+P10A,Middle River @ Union Point,Shore-based,37.89126,-121.4883,Inactive,35
+P12,Old River @ Tracy Road Bridge,Shore-based,37.80472,-121.45,Inactive,6
+P12A,Old River @ Oak Island,Shore-based,37.80284,-121.4569,Inactive,4
+P2,Mokelumne River @ Franklin Road Bridge,Shore-based,38.25542,-121.4403,Inactive,2
+P8,San Joaquin River @ Buckley Cove,Mid-channel,37.97817,-121.3823,Active,1
+S42,Suisun Slough 300' south of Volanti Slough,Shore-based,38.18047,-122.0469,Inactive,34
