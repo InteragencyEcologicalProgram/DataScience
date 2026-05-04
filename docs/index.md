@@ -14,6 +14,12 @@ We meet quarterly on a Thursday afternoon in February, May, August, and November
 
 Give a presentation at a future meeting by filling out [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJlYOBoqxdqHwain-XFrraKFtymYsTwxwBMKekBd0B98q5CA/viewform?usp=sf_link).
 
-#### Next Meeting - May 14th, 1:00-4:00 PDT  
+#### Next Meeting - May 14th, 1:00-2:30 PDT ([via Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_Zjc5M2I1YTMtNjMxYS00OTUzLWE0YzktNGVhZjFlMGI0NzUx%40thread.v2/0?context=%7b%22Tid%22%3a%22b71d5652-4b83-4257-afcd-7fd177884564%22%2c%22Oid%22%3a%22984f44d5-4180-46ad-9b77-e367b17d9727%22%7d))
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; South Delta Real-Time Ion Forecasting Dashboard ([Peyman Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/))  
+1:35 - 2:05 &nbsp;&nbsp; Dependency management, targets package, and continuous integration in R ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/))  
+2:05 - 2:30 &nbsp;&nbsp; Introduction to geopackage files to replace shapefiles ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
