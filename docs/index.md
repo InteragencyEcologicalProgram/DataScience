@@ -19,7 +19,7 @@ Give a presentation at a future meeting by filling out [this form](https://docs.
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; South Delta Real-Time Ion Forecasting Dashboard ([Peyman Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/))  
 1:35 - 2:05 &nbsp;&nbsp; Dependency management, targets package, and continuous integration in R ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/))  
-2:05 - 2:30 &nbsp;&nbsp; Introduction to geopackage files to replace shapefiles ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+2:05 - 2:30 &nbsp;&nbsp; Beyond the Shapefile: Why GeoPackage Is the Modern Standard for Open Spatial Data ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
 
 
 #### [Previous Meetings](https://interagencyecologicalprogram.github.io/DataScience/agendas)
