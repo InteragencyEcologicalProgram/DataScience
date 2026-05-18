@@ -1,5 +1,12 @@
 ## Previous meetings
 
+### 2025-05-14
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; South Delta Real-Time Ion Forecasting Dashboard ([Peyman Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/))  
+1:35 - 2:05 &nbsp;&nbsp; [Dependency management, targets package, and continuous integration in R](https://lucy-dwr.github.io/reproducible-r-workflow-demo) ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/)) [[code](https://github.com/lucy-dwr/reproducible-r-workflow-demo)]  
+2:05 - 2:30 &nbsp;&nbsp; [Beyond the Shapefile: Why GeoPackage Is the Modern Standard for Open Spatial Data](presentations/2026-05-14_HardageK_DWR_geopackage_files_overview.pptx) ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
+
 ### 2025-02-12
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
@@ -105,7 +112,7 @@ All presentations will be geared for people with some knowledge of R, but who co
 1:00 - 1:20 &nbsp;&nbsp; Microsoft R Open: multi-threaded computing ([Kyle Hardage](https://www.linkedin.com/in/kylehbroach/), [DWR](https://water.ca.gov/))  
 1:20 - 1:50 &nbsp;&nbsp; [Working with satellite raster data in R](presentations/Working_with_raster_data_R/raster_data_slides.html) (Dave Bosworth, [DWR](https://water.ca.gov/))  
 1:50 - 1:55 &nbsp;&nbsp; Break  
-1:55 - 2:15 &nbsp;&nbsp; Assessing multinomial logistic regression models ([Christian Denney](https://scholar.google.com/citations?user=eAYScTMAAAAJ&hl=en), [UC Davis](https://www.ogfishlab.com/people/))   
+1:55 - 2:15 &nbsp;&nbsp; Assessing multinomial logistic regression models ([Christian Denney](https://scholar.google.com/citations?user=eAYScTMAAAAJ&hl=en), [UC Davis](https://www.ogfishlab.com/people/))  
 2:15 - 2:45 &nbsp;&nbsp; [Small, Medium, Large - An introduction to ordinal regression](presentations/ordinalregressions.html)  ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/)) 
 
 ### [2022-02-10](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2022.02.10)
