@@ -1,5 +1,11 @@
 ## Previous meetings
 
+### 2025-11-12
+
+1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:05 - 1:35 &nbsp;&nbsp; [Automating literature review](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2026.11.12/litreviewdemo.R) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
+1:35 - 2:00 &nbsp;&nbsp; [Stimulate, simulate, insinuate](presentations/simulate-first.html) ([Alex Vaisvil](https://vaisvila.github.io/), [DWR](https://water.ca.gov/))  
+
 ### 2025-05-14
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
