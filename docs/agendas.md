@@ -1,19 +1,19 @@
 ## Previous meetings
 
-### 2025-11-12
+### 2026-11-12
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; [Automating literature review](https://github.com/InteragencyEcologicalProgram/DataScience/tree/master/2026.11.12/litreviewdemo.R) ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:35 - 2:00 &nbsp;&nbsp; [Stimulate, simulate, insinuate](presentations/simulate-first.html) ([Alex Vaisvil](https://vaisvila.github.io/), [DWR](https://water.ca.gov/))  
 
-### 2025-05-14
+### 2026-05-14
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:35 &nbsp;&nbsp; South Delta Real-Time Ion Forecasting Dashboard ([Peyman Namadi](https://www.researchgate.net/profile/Peyman-Hosseinzadeh-Namadi-2), [DWR](https://water.ca.gov/))  
 1:35 - 2:05 &nbsp;&nbsp; [Dependency management, targets package, and continuous integration in R](https://lucy-dwr.github.io/reproducible-r-workflow-demo) ([Lucy Andrews](https://www.lucyrandrews.com/), [DWR](https://water.ca.gov/)) [[code](https://github.com/lucy-dwr/reproducible-r-workflow-demo)]  
 2:05 - 2:30 &nbsp;&nbsp; [Beyond the Shapefile: Why GeoPackage Is the Modern Standard for Open Spatial Data](presentations/2026-05-14_HardageK_DWR_geopackage_files_overview.pptx) ([Kyle Hardage](https://www.linkedin.com/in/kylehardage/), [DWR](https://water.ca.gov/))  
 
-### 2025-02-12
+### 2026-02-12
 
 1:00 - 1:05 &nbsp;&nbsp; Welcome ([Rosemary Hartman](https://www.linkedin.com/in/rosemary-hartman-1b3b53bb/), [DWR](https://water.ca.gov/))  
 1:05 - 1:30 &nbsp;&nbsp; Cartography basics and mapmaking in ArcGIS Pro ([Celeste Dodge](https://www.linkedin.com/in/sensor-celeste/), [CDFW](https://wildlife.ca.gov/))  
